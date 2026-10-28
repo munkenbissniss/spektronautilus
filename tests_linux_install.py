@@ -21,7 +21,7 @@ env2 = {**env, "SPEKTRO_BROWSER": str(fake)}
 p = subprocess.Popen([str(home / ".local/bin/spektronautilus"), "--port", "8792", "--path", "live-dj/"], env=env2, stdout=subprocess.PIPE, text=True)
 time.sleep(2)
 try:
-    page = urllib.request.urlopen("http://127.0.0.1:8792/live-dj/", timeout=5).read().decode(); check("Live" in page, "launcher serves the installed site")
+    page = urllib.request.urlopen("http://127.0.0.1:8792/live-dj/", timeout=5).read().decode(); check("Video DJ" in page, "launcher serves the installed site")
     args = (T / "args.txt").read_text(); check("--app=http://127.0.0.1:8792/live-dj/" in args and "--autoplay-policy=no-user-gesture-required" in args and "--disable-renderer-backgrounding" in args and "--user-data-dir=" + str(home / ".config/spektronautilus/browser") in args, "browser opened as an app window with the live-visual flags")
     p.wait(timeout=15); check(p.returncode == 0, "the program ends when the window is closed")
 finally:

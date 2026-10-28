@@ -7,7 +7,7 @@ Sorted by how much they would help, with a rough size: S = hours, M = a day or t
 - ✅ **Done: "Ready for the show?"** in the four live mixers: H.264, offline-ready, screen stays awake, pop-ups, second screen, full screen, MIDI, sound, battery, speed test, free space, output window and loaded loops/tracks, with a test card for the projector and a copyable report.
 - **Render faster than real time in Magic Mixer** with WebCodecs, L. **Not done, on purpose.** Today a 4-minute song takes 4 minutes. A faster renderer needs its own MP4 reader (to get video samples out of the loops), a decoder with seeking, an encoder and an MP4 writer, and the H.264 parts can only be verified in a normal Chrome (the test browser used for development has no H.264). A renderer that cannot be tested end to end could produce broken files, which is worse than a slow one. Next step, when you can test in Chrome: build it as an "Experimental fast export" switch that falls back to today's real-time render on any error. On the Linux version a better route exists: let ffmpeg compose the planned shots (no browser limits).
 - **Error log + "Copy debug info" button**, S. One global handler that collects errors and browser info, so a bug report is one paste.
-- **Restore after a crash or accidental reload** in Live DJ and VJ mixer (decks, pads, layers, effects), M. Pads already have "remember loops".
+- **Restore after a crash or accidental reload** in Video DJ and VJ mixer (decks, pads, layers, effects), M. Pads already have "remember loops".
 - **Photosensitivity safety**, S–M. A "limit flashing" switch that caps flash/strobe/invert to 3 per second (default on for public events), and a clear warning near those effects.
 
 ## 2. Speed
@@ -15,7 +15,7 @@ Sorted by how much they would help, with a rough size: S = hours, M = a day or t
 - **Mixers on the GPU (WebGL)**, L. Blend modes and effects as shaders instead of Canvas 2D filters. Large gain on weak laptops and 1080p, and enables better effects (RGB split, glitch, kaleidoscope, feedback).
 - **Heavy-clip warning**, S. When a pad gets a 4K or HEVC clip, say so and offer "make a light copy" with the Tools.
 - **Frame-rate meter** with automatic quality drop (lower picture size when the frame rate falls), S–M.
-- **Draw hidden channels less often**, done in the VJ mixer desktop version (every 3rd frame when the channel is not heard). Same trick for the Live DJ and phone mixers: S.
+- **Draw hidden channels less often**, done in the VJ mixer desktop version (every 3rd frame when the channel is not heard). Same trick for the Video DJ and phone mixers: S.
 
 ## 3. Using it (UX)
 - **First-run tour** (3 short steps) per mixer and a **"?" shortcut sheet**, S.
@@ -45,7 +45,7 @@ Sorted by how much they would help, with a rough size: S = hours, M = a day or t
 - **Duplicate finder** for big loop folders, S.
 
 ## 6. New mixer features
-- **Live DJ**: playlist and setlist, BPM detection with beat-matched auto-mix, countdown and clock, "now playing" text from file names, QR code overlay for social links.
+- **Video DJ**: playlist and setlist, BPM detection with beat-matched auto-mix, countdown and clock, "now playing" text from file names, QR code overlay for social links.
 - **VJ mixer**: scenes (save a combination of layers and effects, recall with one key), audio-reactive effects from the microphone spectrum, video echo/feedback effects, record the program output.
 - **Output to other software**: on Linux, a virtual camera (v4l2loopback) so OBS, Zoom or Resolume can take the mixer picture. NDI is possible with the Linux version but needs extra software.
 

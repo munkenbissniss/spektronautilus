@@ -2,12 +2,12 @@ T = {
 "lang": "no", "label": "Norsk", "locale": "nb_NO",
 "site": "Spektronautilus",
 "tagline": "Den magiske videomikseren",
-"nav": {"home": "Hjem", "magic": "Magisk mikser", "live": "Live DJ-mikser", "vj": "VJ-mikser", "tools": "Verktøy", "packs": "Loop-pakker", "blog": "Blogg", "queue": "Kø", "about": "Om"},
-"ui": {"soon": "Under utvikling", "live": "Tilgjengelig", "open": "Åpne", "skip": "Hopp til innhold", "lang": "Språk", "read": "Les",
+"nav": {"home": "Hjem", "magic": "Magisk mikser", "live": "Video DJ", "vj": "VJ-mikser", "tools": "Verktøy", "packs": "Loop-pakker", "docs": "Guider", "queue": "Kø", "about": "Om"},
+"ui": {"g_guide": "Guide", "g_open": "Åpne verktøyet", "g_phone": "Mobilversjon", "g_all": "Alle guider", "g_on": "På denne siden", "g_prev": "Forrige", "g_next": "Neste", "g_read": "Les guiden", "g_tasks": "Jeg vil…", "g_grp_start": "Start her", "g_grp_mixers": "Mikserne", "g_grp_tools": "Loop-verktøy", "g_grp_more": "Greit å vite", "g_fb_t": "Mangler noe, eller er noe uklart?", "g_fb_b": "Si fra, så forbedrer jeg guiden.", "g_fb_btn": "Tilbakemelding", "soon": "Under utvikling", "live": "Tilgjengelig", "open": "Åpne", "skip": "Hopp til innhold", "lang": "Språk", "read": "Les",
        "footer": "Gratis verktøy for VJ-er, visuelle kunstnere og musikkelskere. Filene dine blir på enheten din.", "devnote": "Verktøyene og mikserne finnes også på norsk: bruk 🌐-knappen inne i dem for å bytte språk.",
        "download": "Last ned (zip)", "nopacks": "De første loop-pakkene er under arbeid. Kom tilbake snart.", "noposts": "Ingen innlegg ennå.", "posts_by": "Publisert"},
 "pages": {
-"home": {"title": "Spektronautilus – gratis videomikser og VJ-verktøy", "desc": "Gratis nettleserverktøy for VJ-er og visuelle kunstnere: en magisk videomikser som klipper loops til musikken din, verktøy for VJ-loops, og snart en live video-DJ-mikser.",
+"home": {"title": "Spektronautilus – gratis videomikser og VJ-verktøy", "desc": "Gratis nettleserverktøy for VJ-er og visuelle kunstnere: en magisk videomikser som klipper loops til musikken din, verktøy for VJ-loops, en video-DJ-mikser og en VJ-mikser.",
   "h1": "Spektronautilus", "tag": "Den magiske videomikseren",
   "lead": "Gratis verktøy for VJ-er, visuelle kunstnere og alle som liker å mikse musikk og video. Alt kjører i nettleseren din. Filene dine forlater aldri enheten.",
   "body": """
@@ -15,11 +15,11 @@ T = {
 <h2>Hva kan du gjøre her</h2>
 <div class="cards">
 <a class="card" href="{r}magic-mixer/"><h3>Magisk videomikser <span class="badge live">Tilgjengelig</span></h3><p>Gi den en sang og en mappe med loops. Den lytter til musikken og klipper sammen en video som følger stemningen.</p></a>
-<a class="card" href="{r}live-mixer/"><h3>Live video-DJ-mikser <span class="badge live">Tilgjengelig</span></h3><p>Miks hele musikkvideoer på to kanaler som en DJ, med crossfader, forhåndsvisning og HDMI-utgang.</p></a>
+<a class="card" href="{r}live-mixer/"><h3>Video DJ <span class="badge live">Tilgjengelig</span></h3><p>Miks hele musikkvideoer på to kanaler som en DJ, med crossfader, forhåndsvisning og HDMI-utgang.</p></a>
 <a class="card" href="{r}vj-mixer/"><h3>VJ-mikser <span class="badge live">Tilgjengelig</span></h3><p>Spill loopene dine live med lag, beat-effekter, logo og tekstplakater.</p></a>
 <a class="card" href="{r}tools/"><h3>Verktøy <span class="badge live">Tilgjengelig</span></h3><p>Konverter GIF-er og videoer, lag sømløse loops og finn gratis loops på nett.</p></a>
 <a class="card" href="{r}packs/"><h3>Loop-pakker</h3><p>Ferdige loop-pakker du kan laste ned og bruke.</p></a>
-<a class="card" href="{r}blog/"><h3>Blogg</h3><p>Nyheter, tips og hvordan ting lages.</p></a>
+<a class="card" href="{r}guides/"><h3>Guider</h3><p>Manualer og veiledninger for alt på siden.</p></a>
 </div>
 <h2>Enkelt først, avansert hvis du vil</h2>
 <p>Hvert verktøy starter med noen få enkle valg. Tekniske innstillinger er gjemt under <em>Advanced</em>, så du kan se bort fra dem til du trenger dem.</p>"""},
@@ -33,8 +33,8 @@ T = {
 <h2>Greit å vite</h2>
 <ul class="spec"><li>Den kan lage rolige, langsomme miks med lange klipp, eller raskere miks som følger beaten.</li><li>Alt behandles i nettleseren din. Ingenting lastes opp.</li><li>Fungerer best i en nyere Chrome, Edge eller Firefox.</li></ul>
 <details><summary>Advanced</summary><p>Versjonen for datamaskin har innstillinger for klipplengde, overganger, flyt og glatthet, og kan legge eksporter i en kø. Selve mikseren er på engelsk.</p></details>"""},
-"live": {"title": "Live video-DJ-mikser – miks musikkvideoer på to kanaler | Spektronautilus", "desc": "Gratis live video-DJ-mikser i nettleseren: to kanaler med musikkvideoer, crossfader, forhåndsvisning, logo, tekstplakater og MIDI, med eget utgangsvindu for HDMI-projektor.",
-  "h1": "Live video-DJ-mikser", "lead": "Miks hele musikkvideoer som en DJ. Laget for å være solid på arrangementer, med en utgang tilpasset HDMI-projektor.",
+"live": {"title": "Video DJ – miks musikkvideoer på to kanaler | Spektronautilus", "desc": "Gratis video-DJ-mikser i nettleseren: to kanaler med musikkvideoer, crossfader, forhåndsvisning, logo, tekstplakater og MIDI, med eget utgangsvindu for HDMI-projektor.",
+  "h1": "Video DJ", "lead": "Miks hele musikkvideoer som en DJ. Laget for å være solid på arrangementer, med en utgang tilpasset HDMI-projektor.",
   "body": """
 <div class="cta"><a class="btn main" data-app="live" href="{r}live-dj/">Åpne mikseren</a><a class="btn" href="{r}live-mobile/">Mobilversjon</a></div>
 <p class="note">Den fulle mikseren er laget for datamaskin med Chrome eller Edge. På mobil blir du sendt til en enklere versjon med to dekk, crossfader, effekter, plakater, fullskjerm og en måte å sende bildet til en annen skjerm. Den er ny: test den hjemme før et show, og ha en reserveplan. Selve mikseren er på engelsk.</p>
@@ -73,7 +73,7 @@ T = {
 <p>Hvert verktøy legger arbeidet i en jobbliste, så du kan sette mange filer i kø og la det gå. Åpen kildekode: <a href="https://github.com/munkenbissniss/spektronautilus">kode og skrivebordsversjon</a>.</p>
 <details><summary>Advanced</summary><p>Kodek, størrelse, bildefrekvens, kvalitet og navnemønstre ligger i <em>Advanced</em>-delene i hvert verktøy. En kommandolinjeversjon ligger i kildekoden.</p></details>"""},
 "packs": {"title": "Gratis VJ loop-pakker til nedlasting | Spektronautilus", "desc": "Last ned ferdige VJ loop-pakker som zip-filer.", "h1": "Loop-pakker", "lead": "Ferdige pakker med videoloops, laget for VJ-ing. Hver pakke er en zip-fil.", "body": ""},
-"blog": {"title": "Blogg | Spektronautilus", "desc": "Nyheter, tips og bak kulissene hos Spektronautilus.", "h1": "Blogg", "lead": "Nyheter, tips og hvordan ting lages.", "body": ""},
+"docs": {"title": "Guider og manualer – slik bruker du Spektronautilus", "desc": "Steg-for-steg-guider for Magisk videomikser, Video DJ, VJ-mikser og loop-verktøyene. Start her hvis du er ny, og finn svar når noe ikke virker.", "h1": "Guider", "lead": "Alt du trenger å vite, fra din første miks til din første show. Velg hva du vil gjøre, eller les guidene én etter én.", "tasks": [["Lage en video av en sang og noen loops", "magic-mixer"], ["Spille musikkvideoer på fest", "video-dj"], ["Spille loops live med pads og effekter", "vj-mixer"], ["Konvertere GIF-er eller fikse loops", "tools"], ["Sjekke at alt virker før et show", "show-check"], ["Noe virker ikke", "help"]], "body": ""},
 "about": {"title": "Om og kontakt | Spektronautilus", "desc": "Om Spektronautilus, hvem som står bak, og hvordan du tar kontakt.", "h1": "Om",
   "lead": "Spektronautilus er et sett gratis verktøy for VJ-er, visuelle kunstnere og musikkentusiaster.",
   "body": """

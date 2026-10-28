@@ -38,7 +38,7 @@
 38 ¦ Venstre ¦ Izquierda ¦ Links ¦ Esquerda
 39 ¦ Nivå ¦ Nivel ¦ Pegel ¦ Nível
 40 ¦ Lineær ¦ Lineal ¦ Linear ¦ Linear
-41 ¦ Live Video DJ-mikser ¦ Mezclador de video DJ en vivo ¦ Live-Video-DJ-Mixer ¦ Mixer de vídeo DJ ao vivo
+41 ¦ Video DJ ¦ Video DJ ¦ Video DJ ¦ Video DJ
 42 ¦ Last sporene helt inn i minnet (tryggere på show) ¦ Cargar las pistas completas en memoria (más seguro en shows) ¦ Titel komplett in den Speicher laden (sicherer bei Shows) ¦ Carregar as faixas inteiras na memória (mais seguro em shows)
 43 ¦ Logo ¦ Logotipo ¦ Logo ¦ Logo
 44 ¦ Logobilde ¦ Imagen del logotipo ¦ Logo-Bild ¦ Imagem do logo
@@ -144,7 +144,7 @@
 144 ¦ Inverter ¦ Invertir ¦ Invertieren ¦ Inverter
 145 ¦ Hold denne siden åpen og skjermen våken under et show. Fungerer best i nyere Chrome (Android) og Safari (iPhone), med videoer i mp4 (H.264). ¦ Mantén esta página abierta y la pantalla encendida durante un show. Funciona mejor en Chrome (Android) y Safari (iPhone) recientes, con videos en mp4 (H.264). ¦ Lass diese Seite geöffnet und den Bildschirm wach während einer Show. Funktioniert am besten in aktuellem Chrome (Android) und Safari (iPhone) mit Videos als mp4 (H.264). ¦ Mantenha esta página aberta e a tela ligada durante um show. Funciona melhor no Chrome (Android) e no Safari (iPhone) recentes, com vídeos em mp4 (H.264).
 146 ¦ Lyst eller mørkt tema ¦ Tema claro u oscuro ¦ Helles oder dunkles Design ¦ Tema claro ou escuro
-147 ¦ Live-mikser ¦ Mezclador en vivo ¦ Live-Mixer ¦ Mixer ao vivo
+147 ¦ Video DJ ¦ Video DJ ¦ Video DJ ¦ Video DJ
 148 ¦ Last videoer inn i minnet (tryggere, bruker mer minne) ¦ Cargar los videos en memoria (más seguro, usa más memoria) ¦ Videos in den Speicher laden (sicherer, braucht mehr Speicher) ¦ Carregar os vídeos na memória (mais seguro, usa mais memória)
 149 ¦ Gjenta ¦ Bucle ¦ Wiederholen ¦ Repetir
 150 ¦ Melding ¦ Mensaje ¦ Nachricht ¦ Mensagem

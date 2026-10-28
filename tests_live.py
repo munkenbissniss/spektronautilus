@@ -1,4 +1,4 @@
-"""Browser test of the Live Video DJ Mixer (docs/live-dj). Needs ffmpeg (to make small test videos), playwright and Pillow.
+"""Browser test of the Video DJ (docs/live-dj). Needs ffmpeg (to make small test videos), playwright and Pillow.
 The test videos are webm because the test browser has no H.264; real shows use mp4 in Chrome or Edge.
 MIDI is tested with a fake MIDI device. Real MIDI hardware, an HDMI projector and casting are NOT tested here."""
 import functools, http.server, subprocess, sys, tempfile, threading

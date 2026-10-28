@@ -10,22 +10,22 @@ The site is static (GitHub Pages: publish the `docs/` folder). English is at the
 |---|---|
 | `docs/` | The finished site. This is what you publish. |
 | `docs/mixer/`, `docs/mixer-mobile/` | Magic Video Mixer (desktop and phone). Phones that open `/mixer/` are sent to the phone version (`?desktop=1` turns that off). |
-| `docs/live-dj/` | Live Video DJ Mixer (`index.html` control window, `output.html` projector window, `app.js`, pure logic in `core.js`) |
-| `docs/live-mobile/` | Phone live mixer (`index.html`) and the receiver page for sending the picture to another screen (`receiver.html`, `cast.js`) |
-| `docs/vj-pad/` | VJ Mixer (same layout as the Live DJ mixer; shares `../live-dj/core.js`) |
+| `docs/live-dj/` | Video DJ (`index.html` control window, `output.html` projector window, `app.js`, pure logic in `core.js`) |
+| `docs/live-mobile/` | Phone Video DJ (`index.html`) and the receiver page for sending the picture to another screen (`receiver.html`, `cast.js`) |
+| `docs/vj-pad/` | VJ Mixer (same layout as the Video DJ; shares `../live-dj/core.js`) |
 | `docs/tools/app/` | The loop tools (convert, GIF→MP4, make loops, filters, find loops, crop & trim, sizes, HAP/ProRes, catalogue, loop pack). Needs the engine files, see below. |
 | `docs/shared/` | Shared scripts: queue, offline (service worker registration), language (`i18n.js` + `lang/`, generated), the "Ready for the show?" check (`check.js`, `testcard.html`) |
 | `src/i18n-app/` | The texts of the apps and their translations (`en.txt` is the master, one string per line; `t*.txt` hold `ID ¦ no ¦ es ¦ de ¦ pt`). `build_i18n.py` turns them into `docs/shared/lang/*.js` and checks that nothing is missing. |
-| `build.py`, `i18n/`, `content/`, `data/`, `src/` | Generator for the pages around the apps (home, landing pages, blog, packs, sitemap) |
+| `build.py`, `i18n/`, `content/`, `data/`, `src/` | Generator for the pages around the apps (home, landing pages, guides, packs, sitemap) |
 | `tools-source/` | Desktop/CLI version of the tools (`python3 vj ui`), and the tests for the tools |
 | `tests_site.py` | Checks the built site (links, SEO tags, phone redirect) |
 
 ## Daily work
 
 ```
-python3 build.py        # rebuilds docs/ from the texts, blog posts and packs
+python3 build.py        # rebuilds docs/ from the texts, guides and packs
 python3 tests_site.py   # checks links, SEO tags and the phone redirect
-python3 tests_live.py   # browser test of the Live DJ mixer (needs ffmpeg, playwright, Pillow)
+python3 tests_live.py   # browser test of the Video DJ (needs ffmpeg, playwright, Pillow)
 python3 tests_vj.py     # browser test of the VJ mixer
 python3 tests_live_mobile.py   # phone live mixer, incl. sending the picture to a receiver page over WebRTC
 python3 tests_vj_mobile.py     # phone VJ mixer
@@ -47,22 +47,21 @@ Commit `docs/tools/app/vendor/` together with the rest.
 ### Loop packs
 Edit `data/packs.json`: one entry per pack with `title`, `url` (the Jottacloud share link), and optionally `desc`, `desc_no`, `clips`, `size`. Run `python3 build.py`.
 
-### Blog
-Add `content/blog/YYYY-MM-DD-name.en.md` (and `.no.md`) with a front matter block:
-```
----
-title: My post
-date: 2026-11-01
----
-Text. **bold**, *italic*, [links](https://example.com), "## headings" and "- lists".
-```
+### Guides
+`content/guides/<lang>.md` holds all nine guides of a language (menu item *Guides*, address `/guides/…`). Each guide starts with `=== slug`, then `name:`, `title:`, `desc:` and `summary:` lines, a blank line and the text.
+- Headings: `## Title {#anchor}` (the anchors are the same in every language, other guides link to them). `> text` makes a tip box.
+- Links: `[text](@guides/video-dj/)` to a page in the same language, `[text](@@tools/app/#loop)` to an app at the site root.
+- Buttons and settings of the apps are written `[[English label]]` and are shown as the app shows them in that language. The build stops if a label does not exist in `src/i18n-app/en.txt`. Keys are written `{{F}}`.
+- Every language needs every guide. To add a guide: add it to `GUIDES` in `build.py` and to all five files.
+- Apps link to their guide and have the Feedback button through `docs/shared/extras.js` (`<script src="../shared/extras.js" data-guide="video-dj" defer>`). The form opens the visitor's mail program (mailto), because a static site cannot send mail. The address is set at the top of that file.
+- Test: `python3 tests_guides.py`.
 
 ### Another language
 Pages: copy `i18n/en.py` to `i18n/<code>.py` and translate, run `python3 build.py`. The language switcher, hreflang links and sitemap update by themselves.
 Apps (mixers and tools): add a column to the `src/i18n-app/t*.txt` lines and the language code to `LANGS` in `build_i18n.py` and `docs/shared/i18n.js`. Changed or new English text in an app: add the line to the end of `src/i18n-app/en.txt` and its translations in a new `t*.txt`; `python3 build.py` stops with a list if something is missing or a `{placeholder}` differs.
 
 ### SEO
-Every page has its own title and description, a canonical URL, `hreflang` links between languages (plus `x-default`), Open Graph tags and JSON-LD. `sitemap.xml`, `robots.txt` and `feed.xml` are written by the build. Set the real address in `site.json` before you publish; if you later get your own domain, change it there and rebuild.
+Every page has its own title and description, a canonical URL, `hreflang` links between languages (plus `x-default`), Open Graph tags and JSON-LD. `sitemap.xml` and `robots.txt` are written by the build. Set the real address in `site.json` before you publish; if you later get your own domain, change it there and rebuild.
 
 ## Linux version (runs locally)
 `linux/` contains a launcher that serves the whole site on your own computer (127.0.0.1 only) and opens it in Chrome/Chromium in its own window, started with settings for live visuals. If `ffmpeg` is installed, the tools use it instead of the slower WebAssembly engine (the page says "Fast mode"). Nothing needs to be downloaded or installed with pip.
@@ -73,5 +72,5 @@ Every page has its own title and description, a canonical URL, `hreflang` links 
 - Safety: the server refuses other Host names and requests without its custom header (stops other websites from using it), only lets ffmpeg touch its own temporary folder, and deletes that folder on exit.
 
 ## Status
-- Available: Magic Video Mixer (desktop and phone), Live Video DJ Mixer (desktop and phone), VJ Mixer (desktop and phone), tools (crop & trim, sizes, HAP/ProRes (Linux version), catalogue and loop pack on top of the first five), a "Ready for the show?" check in the live mixers, offline mode (installable), five languages, a shared queue page (`/queue/`) that shows jobs from the tools and both Magic Mixers.
+- Available: Magic Video Mixer (desktop and phone), Video DJ (desktop and phone), VJ Mixer (desktop and phone), tools (crop & trim, sizes, HAP/ProRes (Linux version), catalogue and loop pack on top of the first five), a "Ready for the show?" check in the live mixers, offline mode (installable), five languages, a shared queue page (`/queue/`) that shows jobs from the tools and both Magic Mixers.
 - Not yet set up: loop packs (waiting for the Jottacloud links), donations.

@@ -38,7 +38,7 @@ Learn
 Left
 Level
 Linear
-Live Video DJ Mixer
+Video DJ
 Load tracks fully into memory (safer on shows)
 Logo
 Logo image
@@ -144,7 +144,7 @@ Full screen
 Invert
 Keep this page open and the screen awake during a show. Works best in recent Chrome (Android) and Safari (iPhone), with videos in mp4 (H.264).
 Light or dark theme
-Live Mixer
+Video DJ
 Load videos into memory (safer, uses more memory)
 Loop
 Message

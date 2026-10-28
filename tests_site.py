@@ -20,9 +20,10 @@ for p in pages:
         if t.is_dir(): t = t / "index.html"
         if not t.exists(): bad.append(f"{rel}: broken link {h}"); print("FAIL", rel, "broken link", h)
 check(not [b for b in bad if "broken" in b], "no broken local links")
-for t in ("sitemap.xml", "robots.txt", "feed.xml"): check((DOCS / t).exists(), t + " exists")
+for t in ("sitemap.xml", "robots.txt"): check((DOCS / t).exists(), t + " exists")
+check(not (DOCS / "feed.xml").exists() and not (DOCS / "blog").exists(), "the blog is gone")
 sm = (DOCS / "sitemap.xml").read_text()
-check("hreflang=\"no\"" in sm and sm.count("<url>") >= 17, "sitemap lists both languages with alternates")
+check("hreflang=\"no\"" in sm and sm.count("<url>") >= 60 and "/guides/video-dj/" in sm, "sitemap lists both languages with alternates")
 check(not re.search("munken", " ".join(p.read_text(encoding="utf-8") for p in DOCS.rglob("*.html") if "vendor" not in p.parts), re.I) or True, "(internal storage keys may still say munken)")
 def text_of(p):
     t = re.sub(r"<(script|style)[\s\S]*?</\1>", "", p.read_text(encoding="utf-8"))
@@ -46,7 +47,7 @@ with sync_playwright() as pw:
     pg.goto(base + "/mixer/"); pg.wait_for_timeout(500); check(urlparse(pg.url).path == "/mixer/", "desktop stays on desktop mixer")
     pg.goto(base + "/no/"); check(pg.get_attribute("html", "lang") == "no", "Norwegian page has lang=no")
     pg.click("nav.main >> text=Verktøy"); check(urlparse(pg.url).path == "/no/tools/", "Norwegian nav works")
-    pg.goto(base + "/blog/"); check(pg.locator("article.post").count() == 1, "blog lists the post")
+    pg.goto(base + "/guides/"); check(pg.locator("a.gcard").count() == 9, "guides page lists nine guides")
     pg.goto(base + "/packs/"); check("loop packs" in pg.inner_text("main").lower(), "packs page renders")
     check(not errs, f"no page errors {errs}")
     # phone

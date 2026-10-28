@@ -2,8 +2,8 @@ T = {
 "lang": "es", "label": "Español", "locale": "es_ES",
 "site": "Spektronautilus",
 "tagline": "El mezclador de video mágico",
-"nav": {"home": "Inicio", "magic": "Mezclador mágico", "live": "Mezclador DJ en vivo", "vj": "Mezclador VJ", "tools": "Herramientas", "packs": "Packs de loops", "blog": "Blog", "queue": "Cola", "about": "Acerca de"},
-"ui": {"soon": "En desarrollo", "live": "Disponible", "open": "Abrir", "skip": "Saltar al contenido", "lang": "Idioma", "read": "Leer",
+"nav": {"home": "Inicio", "magic": "Mezclador mágico", "live": "Video DJ", "vj": "Mezclador VJ", "tools": "Herramientas", "packs": "Packs de loops", "docs": "Guías", "queue": "Cola", "about": "Acerca de"},
+"ui": {"g_guide": "Guía", "g_open": "Abrir la herramienta", "g_phone": "Versión para móvil", "g_all": "Todas las guías", "g_on": "En esta página", "g_prev": "Anterior", "g_next": "Siguiente", "g_read": "Leer la guía", "g_tasks": "Quiero…", "g_grp_start": "Empieza aquí", "g_grp_mixers": "Los mezcladores", "g_grp_tools": "Herramientas de loops", "g_grp_more": "Conviene saber", "g_fb_t": "¿Falta algo o no se entiende?", "g_fb_b": "Cuéntamelo y mejoraré la guía.", "g_fb_btn": "Comentarios", "soon": "En desarrollo", "live": "Disponible", "open": "Abrir", "skip": "Saltar al contenido", "lang": "Idioma", "read": "Leer",
        "footer": "Herramientas gratuitas para VJs, artistas visuales y amantes de la música. Tus archivos se quedan en tu dispositivo.", "devnote": "Los mezcladores y las herramientas también están en español: usa el botón 🌐 dentro de ellos para cambiar de idioma.",
        "download": "Descargar (zip)", "nopacks": "Los primeros packs de loops están en preparación. Vuelve pronto.", "noposts": "Aún no hay entradas.", "posts_by": "Publicado"},
 "pages": {
@@ -15,11 +15,11 @@ T = {
 <h2>Qué puedes hacer aquí</h2>
 <div class="cards">
 <a class="card" href="{r}magic-mixer/"><h3>Magic Video Mixer <span class="badge live">Disponible</span></h3><p>Dale una canción y una carpeta de loops. Escucha la música y monta un video que sigue el ambiente.</p></a>
-<a class="card" href="{r}live-mixer/"><h3>Mezclador de video DJ en vivo <span class="badge live">Disponible</span></h3><p>Mezcla videoclips completos en dos canales como un DJ, con crossfader, vista previa y salida HDMI.</p></a>
+<a class="card" href="{r}live-mixer/"><h3>Video DJ <span class="badge live">Disponible</span></h3><p>Mezcla videoclips completos en dos canales como un DJ, con crossfader, vista previa y salida HDMI.</p></a>
 <a class="card" href="{r}vj-mixer/"><h3>Mezclador VJ <span class="badge live">Disponible</span></h3><p>Toca tus loops en directo con capas, efectos al ritmo, logotipo y carteles de texto.</p></a>
 <a class="card" href="{r}tools/"><h3>Herramientas <span class="badge live">Disponible</span></h3><p>Convierte GIF y videos, crea loops sin cortes y encuentra loops gratuitos en línea.</p></a>
 <a class="card" href="{r}packs/"><h3>Packs de loops</h3><p>Packs de loops listos para descargar y usar.</p></a>
-<a class="card" href="{r}blog/"><h3>Blog</h3><p>Novedades, consejos y cómo se hacen las cosas.</p></a>
+<a class="card" href="{r}guides/"><h3>Guías</h3><p>Manuales y tutoriales de todo lo que hay en el sitio.</p></a>
 </div>
 <h2>Fácil primero, avanzado si lo quieres</h2>
 <p>Cada herramienta empieza con unas pocas decisiones sencillas. Los ajustes técnicos están plegados en <em>Avanzado</em>, así que puedes ignorarlos hasta que los necesites.</p>"""},
@@ -33,8 +33,8 @@ T = {
 <h2>Conviene saber</h2>
 <ul class="spec"><li>Puede crear mezclas tranquilas y lentas con planos largos, o más rápidas que siguen el ritmo.</li><li>Todo se procesa en tu navegador. No se sube nada.</li><li>Funciona mejor en una versión reciente de Chrome, Edge o Firefox.</li></ul>
 <details><summary>Avanzado</summary><p>La versión de escritorio tiene ajustes de duración de planos, fundidos cruzados, fluidez y suavidad, y puede poner exportaciones en una cola.</p></details>"""},
-"live": {"title": "Mezclador de video DJ en vivo – mezcla videoclips en dos canales | Spektronautilus", "desc": "Mezclador de video DJ en vivo gratuito en tu navegador: dos canales de videoclips, crossfader, vista previa, logotipo, carteles de texto y MIDI, con una ventana de salida para un proyector HDMI.",
-  "h1": "Mezclador de video DJ en vivo", "lead": "Mezcla videoclips completos como un DJ. Pensado para ser sólido en eventos, con una salida preparada para un proyector HDMI.",
+"live": {"title": "Video DJ – mezcla videoclips en dos canales | Spektronautilus", "desc": "Video DJ gratuito en tu navegador: dos canales de videoclips, crossfader, vista previa, logotipo, carteles de texto y MIDI, con una ventana de salida para un proyector HDMI.",
+  "h1": "Video DJ", "lead": "Mezcla videoclips completos como un DJ. Pensado para ser sólido en eventos, con una salida preparada para un proyector HDMI.",
   "body": """
 <div class="cta"><a class="btn main" data-app="live" href="{r}live-dj/">Abrir el mezclador</a><a class="btn" href="{r}live-mobile/">Versión para móvil</a></div>
 <p class="note">El mezclador completo está hecho para un ordenador con Chrome o Edge. En un móvil se te envía a una versión más sencilla con dos decks, crossfader, efectos, carteles, pantalla completa y una forma de enviar la imagen a otra pantalla. Es nuevo: pruébalo en casa antes de un show y ten un plan B.</p>
@@ -73,7 +73,7 @@ T = {
 <p>Cada herramienta pone su trabajo en una lista, así que puedes poner muchos archivos en cola y dejar que siga. Código abierto: <a href="https://github.com/munkenbissniss/spektronautilus">código y versión de escritorio</a>.</p>
 <details><summary>Avanzado</summary><p>El códec, el tamaño, los fotogramas por segundo, la calidad y los patrones de nombre están en las secciones <em>Avanzado</em> de cada herramienta. Hay una versión de línea de comandos en el código fuente.</p></details>"""},
 "packs": {"title": "Packs de loops VJ gratuitos para descargar | Spektronautilus", "desc": "Descarga packs de loops VJ ya hechos en archivos zip.", "h1": "Packs de loops", "lead": "Packs de loops de video ya hechos, pensados para VJs. Cada pack es un archivo zip.", "body": ""},
-"blog": {"title": "Blog | Spektronautilus", "desc": "Novedades, consejos y entre bastidores de Spektronautilus.", "h1": "Blog", "lead": "Novedades, consejos y cómo se hacen las cosas.", "body": ""},
+"docs": {"title": "Guías y manuales – cómo usar Spektronautilus", "desc": "Guías paso a paso del Mezclador mágico de video, Video DJ, el Mezclador VJ y las herramientas de loops. Empieza aquí si eres nuevo y encuentra respuestas cuando algo no funciona.", "h1": "Guías", "lead": "Todo lo que necesitas saber, desde tu primera mezcla hasta tu primer show. Elige lo que quieres hacer o lee las guías una por una.", "tasks": [["Convertir una canción y unos loops en un video", "magic-mixer"], ["Poner videoclips en una fiesta", "video-dj"], ["Tocar loops en vivo con pads y efectos", "vj-mixer"], ["Convertir GIFs o arreglar loops", "tools"], ["Comprobar que todo funciona antes de un show", "show-check"], ["Algo no funciona", "help"]], "body": ""},
 "about": {"title": "Acerca de y contacto | Spektronautilus", "desc": "Acerca de Spektronautilus, quién está detrás y cómo ponerte en contacto.", "h1": "Acerca de",
   "lead": "Spektronautilus es un conjunto de herramientas gratuitas para VJs, artistas visuales y entusiastas de la música.",
   "body": """
