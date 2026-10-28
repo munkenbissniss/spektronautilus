@@ -2,8 +2,8 @@ T = {
 "lang": "no", "label": "Norsk", "locale": "nb_NO",
 "site": "Spektronautilus",
 "tagline": "Den magiske videomikseren",
-"nav": {"home": "Hjem", "magic": "Magisk mikser", "live": "Video DJ", "vj": "VJ-mikser", "tools": "Verktøy", "packs": "Loop-pakker", "docs": "Guider", "queue": "Kø", "about": "Om"},
-"ui": {"g_guide": "Guide", "g_open": "Åpne verktøyet", "g_phone": "Mobilversjon", "g_all": "Alle guider", "g_on": "På denne siden", "g_prev": "Forrige", "g_next": "Neste", "g_read": "Les guiden", "g_tasks": "Jeg vil…", "g_grp_start": "Start her", "g_grp_mixers": "Mikserne", "g_grp_tools": "Loop-verktøy", "g_grp_more": "Greit å vite", "g_fb_t": "Mangler noe, eller er noe uklart?", "g_fb_b": "Si fra, så forbedrer jeg guiden.", "g_fb_btn": "Tilbakemelding", "soon": "Under utvikling", "live": "Tilgjengelig", "open": "Åpne", "skip": "Hopp til innhold", "lang": "Språk", "read": "Les",
+"nav": {"mixers": "Mikserne", "home": "Hjem", "magic": "Magisk mikser", "live": "Video DJ", "vj": "VJ-mikser", "tools": "Verktøy", "packs": "Loop-pakker", "docs": "Guider", "queue": "Kø", "about": "Om"},
+"ui": {"f_more": "Mer", "g_guide": "Guide", "g_open": "Åpne verktøyet", "g_phone": "Mobilversjon", "g_all": "Alle guider", "g_on": "På denne siden", "g_prev": "Forrige", "g_next": "Neste", "g_read": "Les guiden", "g_tasks": "Jeg vil…", "g_grp_start": "Start her", "g_grp_mixers": "Mikserne", "g_grp_tools": "Loop-verktøy", "g_grp_more": "Greit å vite", "g_fb_t": "Mangler noe, eller er noe uklart?", "g_fb_b": "Si fra, så forbedrer jeg guiden.", "g_fb_btn": "Tilbakemelding", "soon": "Under utvikling", "live": "Tilgjengelig", "open": "Åpne", "skip": "Hopp til innhold", "lang": "Språk", "read": "Les",
        "footer": "Gratis verktøy for VJ-er, visuelle kunstnere og musikkelskere. Filene dine blir på enheten din.", "devnote": "Verktøyene og mikserne finnes også på norsk: bruk 🌐-knappen inne i dem for å bytte språk.",
        "download": "Last ned (zip)", "nopacks": "De første loop-pakkene er under arbeid. Kom tilbake snart.", "noposts": "Ingen innlegg ennå.", "posts_by": "Publisert"},
 "pages": {

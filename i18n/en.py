@@ -2,8 +2,8 @@ T = {
 "lang": "en", "label": "English", "locale": "en_US",
 "site": "Spektronautilus",
 "tagline": "The magic video mixer",
-"nav": {"home": "Home", "magic": "Magic Mixer", "live": "Video DJ", "vj": "VJ Mixer", "tools": "Tools", "packs": "Loop Packs", "docs": "Guides", "queue": "Queue", "about": "About"},
-"ui": {"g_guide": "Guide", "g_open": "Open the tool", "g_phone": "Phone version", "g_all": "All guides", "g_on": "On this page", "g_prev": "Previous", "g_next": "Next", "g_read": "Read the guide", "g_tasks": "I want to…", "g_grp_start": "Start here", "g_grp_mixers": "The mixers", "g_grp_tools": "Loop tools", "g_grp_more": "Good to know", "g_fb_t": "Something missing or unclear?", "g_fb_b": "Tell me and I will improve the guide.", "g_fb_btn": "Feedback", "soon": "In development", "live": "Available", "open": "Open", "skip": "Skip to content", "lang": "Language", "read": "Read",
+"nav": {"mixers": "Mixers", "home": "Home", "magic": "Magic Mixer", "live": "Video DJ", "vj": "VJ Mixer", "tools": "Tools", "packs": "Loop Packs", "docs": "Guides", "queue": "Queue", "about": "About"},
+"ui": {"f_more": "More", "g_guide": "Guide", "g_open": "Open the tool", "g_phone": "Phone version", "g_all": "All guides", "g_on": "On this page", "g_prev": "Previous", "g_next": "Next", "g_read": "Read the guide", "g_tasks": "I want to…", "g_grp_start": "Start here", "g_grp_mixers": "The mixers", "g_grp_tools": "Loop tools", "g_grp_more": "Good to know", "g_fb_t": "Something missing or unclear?", "g_fb_b": "Tell me and I will improve the guide.", "g_fb_btn": "Feedback", "soon": "In development", "live": "Available", "open": "Open", "skip": "Skip to content", "lang": "Language", "read": "Read",
        "footer": "Free tools for VJs, visual artists and music lovers. Your files stay on your device.", "devnote": "The mixers and tools also speak Spanish, German, Portuguese and Norwegian: use the 🌐 button inside them to switch language.",
        "download": "Download (zip)", "nopacks": "The first loop packs are being prepared. Check back soon.", "noposts": "No posts yet.", "posts_by": "Posted"},
 "pages": {

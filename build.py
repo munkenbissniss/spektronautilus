@@ -14,6 +14,7 @@ ROOT = Path(__file__).resolve().parent
 DOCS = ROOT / "docs"
 SITE = json.loads((ROOT / "site.json").read_text())["url"].rstrip("/") + "/"
 SLUGS = {"home": "", "magic": "magic-mixer/", "live": "live-mixer/", "vj": "vj-mixer/", "tools": "tools/", "packs": "packs/", "docs": "guides/", "about": "about/"}
+MIXERS = ["magic", "live", "vj"]
 NAV = ["home", "magic", "live", "vj", "tools", "packs", "docs", "about"]
 # the guides: (slug, group, icon, tool) ; tool = (desktop path, phone path or None) of the app the guide is about
 GUIDES = [("start", "start", "🧭", None),
@@ -154,6 +155,7 @@ document.addEventListener('DOMContentLoaded',function(){document.querySelectorAl
 
 
 # shows how many jobs are running in the Queue link (the tools and mixers write the count to localStorage)
+DD_JS = """document.addEventListener('DOMContentLoaded',function(){var d=document.querySelector('.dd');if(!d)return;var b=d.querySelector('.ddb'),m=d.querySelector('.ddm');function set(o){m.hidden=!o;b.setAttribute('aria-expanded',o?'true':'false')}b.addEventListener('click',function(e){e.stopPropagation();set(m.hidden)});document.addEventListener('click',function(e){if(!d.contains(e.target))set(false)});document.addEventListener('keydown',function(e){if(e.key==='Escape'&&!m.hidden){set(false);b.focus()}});d.addEventListener('focusout',function(e){if(!d.contains(e.relatedTarget))set(false)})});"""
 QBADGE_JS = """document.addEventListener('DOMContentLoaded',function(){function u(){try{var o=JSON.parse(localStorage.getItem('spk_q')||'{}'),n=Date.now()-(o.t||0)<30000?o.n||0:0;document.querySelectorAll('.qn').forEach(function(b){b.hidden=!n;b.textContent=n})}catch(e){}}u();addEventListener('storage',u);setInterval(u,4000)});"""
 
 
@@ -161,8 +163,13 @@ def render(lang, L, key, body_html, title, desc, extra_ld=None, path=None, alt=N
     path = SLUGS[key] if path is None else path
     r = depth_root(lang, path)
     rl = r + prefix(lang)                       # root of this language
-    nav = "".join(f'<a href="{rl}{SLUGS[k]}"{" aria-current=page" if k == key else ""}>{e(L["nav"][k])}</a>' for k in NAV)
-    nav += f'<a href="{r}queue/" class="qlink">{e(L["nav"]["queue"])}<span class="qn" hidden></span></a>'
+    def link(k): return f'<a href="{rl}{SLUGS[k]}"{" aria-current=page" if k == key else ""}>{e(L["nav"][k])}</a>'
+    mix = "".join(link(k) for k in MIXERS)
+    nav = link("home") + (f'<div class="dd"><button type="button" class="ddb" aria-expanded="false" aria-haspopup="true"{" data-current" if key in MIXERS else ""}>{e(L["nav"]["mixers"])} <span aria-hidden="true">▾</span></button>'
+                          f'<div class="ddm" hidden>{mix}</div></div>') + link("tools") + link("packs") + link("docs")
+    foot = (f'<div class="wrap fcols"><div><div class="dgt">{e(L["nav"]["mixers"])}</div>{mix}</div>'
+            f'<div><div class="dgt">Spektronautilus</div>{link("home")}{link("tools")}{link("packs")}{link("docs")}</div>'
+            f'<div><div class="dgt">{e(L["ui"]["f_more"])}</div>{link("about")}<a href="{r}queue/">{e(L["nav"]["queue"])}<span class="qn" hidden></span></a></div></div>')
     alts = alt if alt is not None else {lg: path for lg in LANGS}
     sw = "".join(f'<a href="{r}{prefix(lg)}{p}" hreflang="{lg}" lang="{lg}"{" aria-current=true" if lg == lang else ""}>{e(LANGS[lg]["label"])}</a>' for lg, p in alts.items()) if len(alts) > 1 else ""
     hre = "".join(f'<link rel="alternate" hreflang="{lg}" href="{url(lg, p)}">' for lg, p in alts.items())
@@ -187,9 +194,10 @@ def render(lang, L, key, body_html, title, desc, extra_ld=None, path=None, alt=N
 <style>{STYLE}</style>
 <script type="application/ld+json">{ld}</script>
 <script>{MOBILE_JS}</script>
+<script>{DD_JS}</script>
 <script>{QBADGE_JS}try{{localStorage.setItem('spk_lang','{lang}')}}catch(e){{}}</script>
 <script src="{r}shared/sw-register.js" defer></script>
-<script src="{r}shared/extras.js" defer></script>
+<script src="{r}shared/extras.js" data-dock="1" defer></script>
 </head>
 <body>
 <a href="#main" class="sr" style="position:absolute;left:-999px">{e(L['ui']['skip'])}</a>
@@ -201,7 +209,7 @@ def render(lang, L, key, body_html, title, desc, extra_ld=None, path=None, alt=N
 <main id="main"><div class="wrap">
 {body_html}
 </div></main>
-<footer><div class="wrap"><span>{e(L['ui']['footer'])}</span><span data-spk-feedback-slot></span><span>© Spektronautilus · MIT</span></div></footer>
+<footer>{foot}<div class="wrap fbase"><span>{e(L['ui']['footer'])}</span><span data-spk-feedback-slot></span><span>© Spektronautilus · MIT</span></div></footer>
 </body></html>
 """
 

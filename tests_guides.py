@@ -44,7 +44,7 @@ with sync_playwright() as pw:
             a = pg.locator(".spkx a"); href = a.get_attribute("href") if a.count() else ""
             check(href == f"{B}/{prefix}guides/{g}/", f"{lang} {path}: Guide link goes to {prefix}guides/{g}/ ({href})")
             if lang == "en" and path == "mixer/":
-                check(pg.locator(".spkx-fix").count() == 1, "an app without a header link gets a small floating pill")
+                check(pg.locator(".spkx-fix").count() == 0, f"{path}: the links sit in the header, not floating over the app")
             pg.close()
         ctx.close()
     ctx = b.new_context(viewport={"width": 1100, "height": 800}); ctx.add_init_script("localStorage.setItem('spk_lang','no'); localStorage.setItem('spk_desktop','1'); document.addEventListener('click', function(e){var a=e.target.closest && e.target.closest('a[href^=\"mailto:\"]'); if(a){window.__mail=a.href; e.preventDefault();}}, true); window.__keys=0; document.addEventListener('keydown', function(){window.__keys++});")
@@ -62,5 +62,18 @@ with sync_playwright() as pw:
     check(not errs, f"no page errors {errs}")
     # the site pages carry the button in the footer
     pg.goto(B + "/no/guides/help/"); pg.wait_for_selector("footer [data-spk-feedback]"); pg.click(".gfb [data-spk-feedback]"); check(pg.locator("#spkx-m").count() == 1, "the feedback box on a guide opens the form")
+    # menu: mixers in a dropdown, About and Queue in the footer, queue panel and to-top button
+    pg.goto(B + "/"); nav = pg.inner_text("nav.main")
+    check("About" not in nav and "Queue" not in nav and pg.locator("nav.main > a").count() == 4, f"main menu is short: {nav!r}")
+    check(pg.locator(".ddm").is_hidden(), "the Mixers menu starts closed"); pg.click(".ddb"); check(pg.locator(".ddm a").count() == 3 and pg.locator(".ddm").is_visible(), "the Mixers menu opens with three mixers")
+    pg.keyboard.press("Escape"); check(pg.locator(".ddm").is_hidden(), "Escape closes the menu")
+    check(pg.locator("footer .fcols a", has_text="About").count() == 1 and pg.locator("footer .fcols a", has_text="Queue").count() == 1, "About and Queue are in the footer")
+    pg.goto(B + "/guides/tools/"); check(not pg.locator(".spkdock .up").is_visible(), "no to-top button at the top")
+    pg.evaluate("window.scrollTo(0, 1500)"); pg.wait_for_timeout(500); check(pg.locator(".spkdock .up").is_visible(), "to-top button appears after scrolling")
+    pg.click(".spkdock .up"); pg.wait_for_function("scrollY < 5", timeout=5000); check(True, "to-top button scrolls up")
+    pg.click(".spkdock >> text=Queue"); pg.wait_for_selector("#spkq iframe"); fr = pg.frame_locator("#spkq iframe"); fr.locator("#list").wait_for(timeout=5000)
+    check(pg.locator("#spkq").is_visible() and fr.locator("h1").is_hidden(), "Queue opens as a panel at the bottom of any page")
+    pg.keyboard.press("Escape"); check(pg.locator("#spkq").is_hidden(), "Escape closes the queue panel")
+    pg.goto(B + "/queue/"); check(pg.locator("h1").is_visible(), "the full queue page still exists")
     b.close()
 print("\nALL OK" if not bad else f"\n{len(bad)} FAILED"); raise SystemExit(1 if bad else 0)
