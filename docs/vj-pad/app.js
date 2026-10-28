@@ -21,6 +21,8 @@ const S = {
 if (S.fxCfg) S.fx = S.fxCfg.slice(0, FX.length); S.fxCfg = null;
 window.SPK = { S, cfg };
 const toastEl = $('#toast'); let toastT;
+window.SPK_CHECK_EXTRA = () => { const n = S.pads.filter(Boolean).length; return [S.out && !S.out.closed ? { name: 'Output window', state: 'ok', msg: 'The output window is open.' } : { name: 'Output window', state: 'warn', msg: 'The output window is not open yet. Press “Open output window”.' },
+  n ? { name: 'Loops', state: 'ok', msg: '{a} loop(s) loaded.', a: n } : { name: 'Loops', state: 'warn', msg: 'No loops yet. Add some to the pads first.' }]; };
 function toast(msg, ms = 3500) { toastEl.textContent = msg; toastEl.classList.add('show'); clearTimeout(toastT); toastT = setTimeout(() => toastEl.classList.remove('show'), ms); S.log.push(msg); }
 const safe = (fn, label) => (...a) => { try { return fn(...a); } catch (e) { console.error(label, e); S.log.push('ERR ' + label + ': ' + e.message); } };
 
@@ -233,7 +235,8 @@ function tick() {
   const now = performance.now(); S.lastTick = now; S.tickN++;
   try {
     if (S.auto) { const a = S.auto, p = autoFadePos(a.from, a.to, now - a.t0, a.dur); setF(p); if (now - a.t0 >= a.dur) { S.auto = null; setF(a.to); } }
-    drawChannel(gA, 'A'); drawChannel(gB, 'B');                                 // both previews always run
+    // a channel that is not heard or seen right now is only redrawn every 3rd frame (just for its small preview): saves a lot of work on weaker computers
+    if (S.f < 0.999 || S.tickN % 3 === 0) drawChannel(gA, 'A'); if (S.f > 0.001 || S.tickN % 3 === 0) drawChannel(gB, 'B');
     gc.globalAlpha = 1; gc.fillStyle = '#000'; gc.fillRect(0, 0, comp.width, comp.height);
     if (S.f < 0.999) gc.drawImage(cvA, 0, 0);
     if (S.f > 0.001) { gc.globalAlpha = S.f >= 0.999 ? 1 : S.f; gc.drawImage(cvB, 0, 0); gc.globalAlpha = 1; }

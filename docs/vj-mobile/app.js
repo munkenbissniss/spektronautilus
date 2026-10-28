@@ -18,6 +18,7 @@ const S = {
 };
 window.SPK = { S, cfg };
 const toastEl = $('#toast'); let toastT;
+window.SPK_CHECK_EXTRA = () => { const n = S.pads.filter(Boolean).length; return [n ? { name: 'Loops', state: 'ok', msg: '{a} loop(s) loaded.', a: n } : { name: 'Loops', state: 'warn', msg: 'No loops yet. Add some to the pads first.' }]; };
 function toast(msg, ms = 3500) { toastEl.textContent = msg; toastEl.classList.add('show'); clearTimeout(toastT); toastT = setTimeout(() => toastEl.classList.remove('show'), ms); S.log.push(msg); }
 
 // ---------------------------------------------------------------- canvases

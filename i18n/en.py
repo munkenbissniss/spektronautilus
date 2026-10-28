@@ -4,7 +4,7 @@ T = {
 "tagline": "The magic video mixer",
 "nav": {"home": "Home", "magic": "Magic Mixer", "live": "Live DJ Mixer", "vj": "VJ Mixer", "tools": "Tools", "packs": "Loop Packs", "blog": "Blog", "queue": "Queue", "about": "About"},
 "ui": {"soon": "In development", "live": "Available", "open": "Open", "skip": "Skip to content", "lang": "Language", "read": "Read",
-       "footer": "Free tools for VJs, visual artists and music lovers. Your files stay on your device.", "devnote": "The tools themselves are in English; this page is translated.",
+       "footer": "Free tools for VJs, visual artists and music lovers. Your files stay on your device.", "devnote": "The mixers and tools also speak Spanish, German, Portuguese and Norwegian: use the 🌐 button inside them to switch language.",
        "download": "Download (zip)", "nopacks": "The first loop packs are being prepared. Check back soon.", "noposts": "No posts yet.", "posts_by": "Posted"},
 "pages": {
 "home": {"title": "Spektronautilus – free video mixer and VJ tools", "desc": "Free browser tools for VJs and visual artists: a magic video mixer that cuts loops to your music, VJ loop tools, and soon a live video DJ mixer.",
@@ -62,6 +62,11 @@ T = {
 <a class="card" href="{r}tools/app/#convert"><h3>Convert <span class="badge live">Available</span></h3><p>Turn mov, webm and other formats into VJ-friendly mp4, with bulk file naming.</p></a>
 <a class="card" href="{r}tools/app/#search"><h3>Find loops <span class="badge live">Available</span></h3><p>Search free video sources, then download and convert. Credits and licences are saved.</p></a>
 <a class="card" href="{r}tools/app/#filters"><h3>Filters <span class="badge live">Available</span></h3><p>Add VJ-style looks to a whole folder of loops: glow, glitch, mirror, kaleidoscope and six more.</p></a>
+<a class="card" href="{r}tools/app/#crop"><h3>Crop &amp; trim <span class="badge live">Available</span></h3><p>Cut clips to widescreen, vertical or square and trim the start and end, for a whole folder at once.</p></a>
+<a class="card" href="{r}tools/app/#sizes"><h3>Sizes <span class="badge live">Available</span></h3><p>Make a small proxy, 720p, 1080p and 4K of every clip in one go.</p></a>
+<a class="card" href="{r}tools/app/#pro"><h3>HAP / ProRes <span class="badge live">Linux version</span></h3><p>Professional formats for Resolume, VDMX, Millumin and video editors. Needs the local Linux version.</p></a>
+<a class="card" href="{r}tools/app/#catalog"><h3>Catalogue <span class="badge live">Available</span></h3><p>A web page and a spreadsheet file with a picture, length, size and loop quality for every loop.</p></a>
+<a class="card" href="{r}tools/app/#pack"><h3>Loop pack <span class="badge live">Available</span></h3><p>Bundle loops into a ready-to-share zip with preview picture, info file and licence.</p></a>
 </div>
 <h2>Jobs and queue</h2>
 <p>Each tool puts its work in a job list, so you can queue many files and let it run. Open source: <a href="https://github.com/munkenbissniss/spektronautilus">code and desktop version</a>.</p>

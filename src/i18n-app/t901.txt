@@ -1,0 +1,70 @@
+901 ¦ Beskjær klipp til formen du trenger (bredformat, stående, kvadrat) og kutt av start og slutt. ¦ Recorta los clips a la forma que necesites (panorámico, vertical, cuadrado) y ajusta el inicio y el final. ¦ Schneide Clips auf das Format zu, das du brauchst (Breitbild, Hochformat, quadratisch), und kürze Anfang und Ende. ¦ Corte os clipes no formato de que precisa (widescreen, vertical, quadrado) e apare o início e o fim.
+902 ¦ Beskjær og trim ¦ Recortar y ajustar ¦ Zuschneiden & kürzen ¦ Cortar e aparar
+903 ¦ Størrelser ¦ Tamaños ¦ Größen ¦ Tamanhos
+904 ¦ HAP / ProRes ¦ HAP / ProRes ¦ HAP / ProRes ¦ HAP / ProRes
+905 ¦ Katalog ¦ Catálogo ¦ Katalog ¦ Catálogo
+906 ¦ Loop-pakke ¦ Pack de loops ¦ Loop-Paket ¦ Pacote de loops
+907 ¦ 2. Velg størrelser ¦ 2. Elegir tamaños ¦ 2. Größen wählen ¦ 2. Escolher tamanhos
+908 ¦ Hver fil får ett nytt klipp per størrelse. En størrelse som er større enn selve klippet hoppes over. Bruk den lille proxyen til redigering på en treg datamaskin, og de store til showet. ¦ Cada archivo recibe un clip nuevo por tamaño. Se omite un tamaño mayor que el propio clip. Usa el proxy pequeño para editar en un ordenador lento y los grandes para el show. ¦ Jede Datei bekommt pro Größe einen neuen Clip. Eine Größe, die über dem Clip selbst liegt, wird übersprungen. Nimm den kleinen Proxy zum Schneiden auf einem langsamen Computer und die großen für die Show. ¦ Cada arquivo recebe um clipe novo por tamanho. Um tamanho maior que o próprio clipe é ignorado. Use o proxy pequeno para editar em um computador lento e os grandes para o show.
+909 ¦ 480p (liten proxy) ¦ 480p (proxy pequeño) ¦ 480p (kleiner Proxy) ¦ 480p (proxy pequeno)
+910 ¦ Dette verktøyet trenger Linux-versjonen (lokal). ¦ Esta herramienta necesita la versión de Linux (local). ¦ Dieses Werkzeug braucht die Linux-Version (lokal). ¦ Esta ferramenta precisa da versão para Linux (local).
+911 ¦ HAP og ProRes kan ikke lages i nettversjonen. Alt annet her fungerer i nettleseren. ¦ HAP y ProRes no se pueden crear en la versión web. Todo lo demás funciona en el navegador. ¦ HAP und ProRes lassen sich in der Web-Version nicht erzeugen. Alles andere hier funktioniert im Browser. ¦ HAP e ProRes não podem ser criados na versão web. Todo o resto funciona no navegador.
+912 ¦ Beskjær og trim ¦ Recortar y ajustar ¦ Zuschneiden und kürzen ¦ Cortar e aparar
+913 ¦ Beskjær til formen ¦ Recortar a la forma ¦ Auf das Format zuschneiden ¦ Cortar no formato
+914 ¦ Bredformat 16:9 ¦ Panorámico 16:9 ¦ Breitbild 16:9 ¦ Widescreen 16:9
+915 ¦ Stående 9:16 (telefon, stories) ¦ Vertical 9:16 (móvil, historias) ¦ Hochformat 9:16 (Handy, Stories) ¦ Vertical 9:16 (celular, stories)
+916 ¦ Kvadrat 1:1 ¦ Cuadrado 1:1 ¦ Quadratisch 1:1 ¦ Quadrado 1:1
+917 ¦ Ultrabredt 21:9 ¦ Ultrapanorámico 21:9 ¦ Ultrabreit 21:9 ¦ Ultrawide 21:9
+918 ¦ Behold formen (bare trim) ¦ Mantener la forma (solo ajustar) ¦ Format beibehalten (nur kürzen) ¦ Manter o formato (só aparar)
+919 ¦ Bildet beskjæres, ikke presses sammen. Størrelsesboksen over setter den største størrelsen. ¦ La imagen se recorta, no se deforma. El cuadro de tamaño de arriba fija el tamaño máximo. ¦ Das Bild wird zugeschnitten, nicht gestaucht. Die Größen-Box oben legt die größte Größe fest. ¦ A imagem é cortada, não esticada. A caixa de tamanho acima define o tamanho máximo.
+920 ¦ Behold hvilken del ¦ Qué parte conservar ¦ Welchen Teil behalten ¦ Qual parte manter
+921 ¦ Midten ¦ El centro ¦ Die Mitte ¦ O meio
+922 ¦ Starten (venstre eller topp) ¦ El inicio (izquierda o arriba) ¦ Den Anfang (links oder oben) ¦ O início (esquerda ou topo)
+923 ¦ Slutten (høyre eller bunn) ¦ El final (derecha o abajo) ¦ Das Ende (rechts oder unten) ¦ O fim (direita ou base)
+924 ¦ Start ved (sekunder) ¦ Empezar en (segundos) ¦ Start bei (Sekunden) ¦ Começar em (segundos)
+925 ¦ Kutter så mye av begynnelsen. ¦ Quita esto del principio. ¦ Schneidet so viel vom Anfang ab. ¦ Corta isso do começo.
+926 ¦ Lengde (sekunder) ¦ Duración (segundos) ¦ Länge (Sekunden) ¦ Duração (segundos)
+927 ¦ 0 = til slutten av klippet. ¦ 0 = hasta el final del clip. ¦ 0 = bis zum Ende des Clips. ¦ 0 = até o fim do clipe.
+928 ¦ Format ¦ Formato ¦ Format ¦ Formato
+929 ¦ HAP (rask å spille, store filer) ¦ HAP (reproducción rápida, archivos grandes) ¦ HAP (schnell abzuspielen, große Dateien) ¦ HAP (reprodução rápida, arquivos grandes)
+930 ¦ HAP Q (bedre farger, større) ¦ HAP Q (mejor color, más grande) ¦ HAP Q (bessere Farben, größer) ¦ HAP Q (cores melhores, maior)
+931 ¦ HAP Alpha (beholder gjennomsiktighet) ¦ HAP Alpha (conserva la transparencia) ¦ HAP Alpha (behält Transparenz) ¦ HAP Alpha (mantém a transparência)
+932 ¦ ProRes 422 Proxy (liten) ¦ ProRes 422 Proxy (pequeño) ¦ ProRes 422 Proxy (klein) ¦ ProRes 422 Proxy (pequeno)
+933 ¦ ProRes 422 LT ¦ ProRes 422 LT ¦ ProRes 422 LT ¦ ProRes 422 LT
+934 ¦ ProRes 422 ¦ ProRes 422 ¦ ProRes 422 ¦ ProRes 422
+935 ¦ ProRes 422 HQ (best til redigering) ¦ ProRes 422 HQ (lo mejor para editar) ¦ ProRes 422 HQ (am besten zum Schneiden) ¦ ProRes 422 HQ (melhor para edição)
+936 ¦ ProRes 4444 (beholder gjennomsiktighet) ¦ ProRes 4444 (conserva la transparencia) ¦ ProRes 4444 (behält Transparenz) ¦ ProRes 4444 (mantém a transparência)
+937 ¦ HAP spilles jevnt i Resolume, VDMX, Millumin og andre, fordi grafikkortet gjør jobben. ProRes er for redigeringsprogram som Final Cut og DaVinci Resolve. Filene er .mov og mye større enn mp4. ¦ HAP se reproduce con fluidez en Resolume, VDMX, Millumin y otros, porque la tarjeta gráfica hace el trabajo. ProRes es para editores como Final Cut y DaVinci Resolve. Los archivos son .mov y mucho más grandes que mp4. ¦ HAP läuft in Resolume, VDMX, Millumin und anderen flüssig, weil die Grafikkarte die Arbeit übernimmt. ProRes ist für Schnittprogramme wie Final Cut und DaVinci Resolve. Die Dateien sind .mov und viel größer als mp4. ¦ O HAP toca com fluidez no Resolume, VDMX, Millumin e outros, porque a placa de vídeo faz o trabalho. O ProRes é para editores como Final Cut e DaVinci Resolve. Os arquivos são .mov e muito maiores que mp4.
+938 ¦ Tittel ¦ Título ¦ Titel ¦ Título
+939 ¦ Vises øverst i katalogen. ¦ Se muestra en la parte superior del catálogo. ¦ Wird oben im Katalog angezeigt. ¦ Aparece no topo do catálogo.
+940 ¦ Sjekk hvilke klipp som looper sømløst ¦ Comprobar qué clips hacen loop sin cortes ¦ Prüfen, welche Clips nahtlos loopen ¦ Verificar quais clipes fazem loop perfeito
+941 ¦ Tar litt lengre tid. Klipp over ett minutt sjekkes ikke. ¦ Tarda un poco más. Los clips de más de un minuto no se comprueban. ¦ Dauert etwas länger. Clips über einer Minute werden nicht geprüft. ¦ Demora um pouco mais. Clipes com mais de um minuto não são verificados.
+942 ¦ Detaljer om pakken ¦ Detalles del pack ¦ Paket-Details ¦ Detalhes do pacote
+943 ¦ Navn på pakken ¦ Nombre del pack ¦ Name des Pakets ¦ Nome do pacote
+944 ¦ Laget av ¦ Hecho por ¦ Erstellt von ¦ Feito por
+945 ¦ Lisens ¦ Licencia ¦ Lizenz ¦ Licença
+946 ¦ CC0: offentlig eiendom, alt er lov ¦ CC0: dominio público, todo vale ¦ CC0: gemeinfrei, alles erlaubt ¦ CC0: domínio público, vale tudo
+947 ¦ CC BY 4.0: fri bruk, oppgi opphavsperson ¦ CC BY 4.0: uso libre, da crédito al autor ¦ CC BY 4.0: frei nutzbar, Urheber nennen ¦ CC BY 4.0: uso livre, dê crédito ao autor
+948 ¦ Gratis til personlig og kommersiell bruk, ikke videresalg av loopene ¦ Gratis para uso personal y comercial, sin reventa de los loops ¦ Kostenlos für private und kommerzielle Nutzung, kein Weiterverkauf der Loops ¦ Grátis para uso pessoal e comercial, sem revenda dos loops
+949 ¦ Kun personlig bruk ¦ Solo uso personal ¦ Nur private Nutzung ¦ Somente uso pessoal
+950 ¦ Egendefinert (beskriv i notatene) ¦ Personalizada (descríbela en las notas) ¦ Eigene (in den Notizen beschreiben) ¦ Personalizada (descreva nas notas)
+951 ¦ Notater (vises i infofilen) ¦ Notas (se muestran en el archivo de información) ¦ Notizen (in der Infodatei angezeigt) ¦ Notas (aparecem no arquivo de informações)
+952 ¦ For eksempel hvor man kan kjøpe mer, et nettsted eller hvordan man krediterer deg. ¦ Por ejemplo, dónde comprar más, un sitio web o cómo darte crédito. ¦ Zum Beispiel, wo man mehr kaufen kann, eine Website oder wie man dich nennen soll. ¦ Por exemplo, onde comprar mais, um site ou como dar crédito a você.
+953 ¦ Legger til en loop-markering i katalogen inni pakken. ¦ Añade una marca de loop en el catálogo dentro del pack. ¦ Fügt im Katalog im Paket eine Loop-Markierung hinzu. ¦ Adiciona uma marca de loop no catálogo dentro do pacote.
+954 ¦ Lag flere størrelser av hvert klipp på én gang: en liten proxy til redigering, 720p, 1080p, 4K. ¦ Crea varios tamaños de cada clip a la vez: un proxy pequeño para editar, 720p, 1080p, 4K. ¦ Erzeuge mehrere Größen jedes Clips auf einmal: einen kleinen Proxy zum Schneiden, 720p, 1080p, 4K. ¦ Crie vários tamanhos de cada clipe de uma vez: um proxy pequeno para edição, 720p, 1080p, 4K.
+955 ¦ Lag størrelser ¦ Crear tamaños ¦ Größen erstellen ¦ Criar tamanhos
+956 ¦ Velg filer ovenfor og minst én størrelse ¦ Selecciona archivos arriba y al menos un tamaño ¦ Wähle oben Dateien und mindestens eine Größe aus ¦ Selecione arquivos acima e pelo menos um tamanho
+957 ¦ Profesjonelle formater for Resolume, VDMX, Millumin og videoredigering. Trenger Linux-versjonen (lokal). ¦ Formatos profesionales para Resolume, VDMX, Millumin y editores de video. Necesita la versión de Linux (local). ¦ Profi-Formate für Resolume, VDMX, Millumin und Videoschnitt. Braucht die Linux-Version (lokal). ¦ Formatos profissionais para Resolume, VDMX, Millumin e editores de vídeo. Precisa da versão para Linux (local).
+958 ¦ Eksporter ¦ Exportar ¦ Exportieren ¦ Exportar
+959 ¦ En liste over alle loopene dine med bilde, lengde, størrelse og loop-kvalitet, som nettside og regnearkfil. ¦ Una lista de todos tus loops con imagen, duración, tamaño y calidad de loop, como página web y archivo de hoja de cálculo. ¦ Eine Liste aller deiner Loops mit Bild, Länge, Größe und Loop-Qualität, als Webseite und als Tabellendatei. ¦ Uma lista de todos os seus loops com imagem, duração, tamanho e qualidade de loop, como página web e arquivo de planilha.
+960 ¦ Lag katalog ¦ Crear catálogo ¦ Katalog erstellen ¦ Criar catálogo
+961 ¦ Pakk loops i én zip som er klar til deling: forhåndsbilde, infofil, kreditering og lisens. ¦ Agrupa loops en un zip listo para compartir: imagen de vista previa, archivo de información, créditos y licencia. ¦ Packe Loops in eine zip-Datei, die bereit zum Teilen ist: Vorschaubild, Infodatei, Credits und Lizenz. ¦ Reúna loops em um zip pronto para compartilhar: imagem de prévia, arquivo de informações, créditos e licença.
+962 ¦ Bygg pakke ¦ Crear pack ¦ Paket erstellen ¦ Criar pacote
+963 ¦ Velg minst én størrelse først. ¦ Elige primero al menos un tamaño. ¦ Wähle zuerst mindestens eine Größe. ¦ Escolha primeiro pelo menos um tamanho.
+964 ¦ HAP og ProRes trenger Linux-versjonen (lokal) av Spektronautilus, fordi nettversjonen ikke kan lage dem. Alt annet på denne siden fungerer i nettleseren. ¦ HAP y ProRes necesitan la versión de Linux (local) de Spektronautilus, porque la versión web no puede crearlos. Todo lo demás de esta página funciona en el navegador. ¦ HAP und ProRes brauchen die Linux-Version (lokal) von Spektronautilus, weil die Web-Version sie nicht erzeugen kann. Alles andere auf dieser Seite funktioniert im Browser. ¦ HAP e ProRes precisam da versão para Linux (local) do Spektronautilus, porque a versão web não consegue criá-los. Todo o resto desta página funciona no navegador.
+965 ¦ {a} fil(er) × {b} størrelse(r) ¦ {a} archivo(s) × {b} tamaño(s) ¦ {a} Datei(en) × {b} Größe(n) ¦ {a} arquivo(s) × {b} tamanho(s)
+966 ¦ Starttiden er etter slutten av dette klippet ¦ El tiempo de inicio es posterior al final de este clip ¦ Die Startzeit liegt nach dem Ende dieses Clips ¦ O tempo inicial é depois do fim deste clipe
+967 ¦ Kunne ikke beskjære denne filen ({a}) ¦ No se pudo recortar este archivo ({a}) ¦ Diese Datei konnte nicht zugeschnitten werden ({a}) ¦ Não foi possível cortar este arquivo ({a})
+968 ¦ Kunne ikke eksportere denne filen ({a}) ¦ No se pudo exportar este archivo ({a}) ¦ Diese Datei konnte nicht exportiert werden ({a}) ¦ Não foi possível exportar este arquivo ({a})
+969 ¦ Pakker zip-filen… ¦ Empaquetando el zip… ¦ Packe die zip-Datei… ¦ Compactando o zip…
+970 ¦ Lager filene… ¦ Creando los archivos… ¦ Erstelle die Dateien… ¦ Criando os arquivos…

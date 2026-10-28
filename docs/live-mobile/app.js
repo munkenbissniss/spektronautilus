@@ -15,6 +15,7 @@ const S = {
 };
 window.SPK = { S, cfg };
 const toastEl = $('#toast'); let toastT;
+window.SPK_CHECK_EXTRA = () => [S.lib.length ? { name: 'Tracks', state: 'ok', msg: '{a} track(s) in the list.', a: S.lib.length } : { name: 'Tracks', state: 'warn', msg: 'No tracks yet. Add some videos first.' }];
 function toast(m, ms = 3500) { toastEl.textContent = m; toastEl.classList.add('show'); clearTimeout(toastT); toastT = setTimeout(() => toastEl.classList.remove('show'), ms); S.log.push(m); }
 const safe = (fn, l) => (...a) => { try { return fn(...a); } catch (e) { console.error(l, e); S.log.push('ERR ' + l + ': ' + e.message); } };
 

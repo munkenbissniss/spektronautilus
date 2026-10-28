@@ -81,6 +81,7 @@ def posts():
 
 STYLE = (ROOT / "src" / "style.css").read_text()
 LOGO = (ROOT / "src" / "logo.svg").read_text().strip()
+LOGO = re.sub(r"<metadata>.*?</metadata>", "", LOGO, flags=re.S).replace(' xmlns:c2pa="http://c2pa.org/manifest"', "")      # the file carries a large hidden metadata block; no need to ship it on every page
 # Phones are sent to the phone version of an app. ?desktop=1 turns that off.
 MOBILE_JS = """(function(){try{var q=location.search.indexOf('desktop=1')>-1;if(q)localStorage.setItem('spk_desktop','1');
 var m=!localStorage.getItem('spk_desktop')&&matchMedia('(pointer:coarse) and (max-width:900px)').matches;if(!m)return;
@@ -118,11 +119,13 @@ def render(lang, L, key, body_html, title, desc, extra_ld=None, path=None, alt=N
 <meta name="twitter:card" content="summary">
 <meta name="theme-color" content="#14182b">
 <link rel="icon" href="{r}favicon.svg" type="image/svg+xml">
+<link rel="manifest" href="{r}manifest.webmanifest">
 <link rel="alternate" type="application/rss+xml" title="Spektronautilus blog" href="{SITE}feed.xml">
 <style>{STYLE}</style>
 <script type="application/ld+json">{ld}</script>
 <script>{MOBILE_JS}</script>
-<script>{QBADGE_JS}</script>
+<script>{QBADGE_JS}try{{localStorage.setItem('spk_lang','{lang}')}}catch(e){{}}</script>
+<script src="{r}shared/sw-register.js" defer></script>
 </head>
 <body>
 <a href="#main" class="sr" style="position:absolute;left:-999px">{e(L['ui']['skip'])}</a>
@@ -167,6 +170,21 @@ def page_body(L, key, r, P):
                 cards.append(f'<div class="card pack"><div><h3>{e(p["title"])}</h3><p>{e(d)}</p><p class="mute">{e(meta)}</p></div><a class="btn main" href="{e(p["url"])}" rel="noopener">{e(ui["download"])}</a></div>')
             body = '<div class="cards" style="grid-template-columns:1fr">' + "".join(cards) + "</div>"
     return head + body
+
+
+def write_offline():
+    """service worker + manifest + icons: the whole site is stored in the browser on the first visit"""
+    import hashlib, shutil
+    for n in ("icon-192.png", "icon-512.png"): shutil.copy2(ROOT / "src" / n, DOCS / n)
+    skip = {"sw.js", "sitemap.xml", "robots.txt", "feed.xml"}
+    files, h = [], hashlib.sha1()
+    for p in sorted(DOCS.rglob("*")):
+        rel = p.relative_to(DOCS).as_posix()
+        if not p.is_file() or rel in skip or rel.startswith("tools/app/vendor/") or "__pycache__" in rel or rel.endswith((".png~", ".map")) or rel.startswith("shot-"): continue
+        h.update(rel.encode()); h.update(p.read_bytes()); files.append(rel)
+        if rel.endswith("/index.html") or rel == "index.html": files.append(rel[:-10] or "./")
+    tpl = (ROOT / "src" / "sw.template.js").read_text()
+    (DOCS / "sw.js").write_text(tpl.replace("__VERSION__", h.hexdigest()[:12]).replace("__FILES__", json.dumps(sorted(set(files)))), encoding="utf-8")
 
 
 def main():
@@ -219,6 +237,8 @@ def main():
     write("favicon.svg", LOGO + "\n")
     L = LANGS["en"]
     write("404.html", render("en", L, "home", '<h1>Page not found</h1><p class="lead">That page does not exist. Try the <a href="./">home page</a>.</p>', "Not found | Spektronautilus", "Page not found", path="", alt={"en": ""}, noindex=True).replace('href="../favicon', 'href="favicon'))
+    import build_i18n; build_i18n.build()
+    write_offline()
     write(".nojekyll", "")
     print("built", len(LANGS), "languages:", ", ".join(LANGS))
 

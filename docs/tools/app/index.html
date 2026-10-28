@@ -66,14 +66,18 @@ button.on{background:var(--ink);color:var(--bg)}
 .ft .im{aspect-ratio:16/9;background:#000;display:flex;align-items:center;justify-content:center;color:#6b7194;font-size:.8rem}.ft .im img{width:100%;height:100%;object-fit:cover;display:block}
 .ft .b{padding:6px 8px;font-size:.82rem}.ft .b b{display:block;font-size:.92rem}.ft .b span{color:var(--mute)}
 </style>
+<link rel="manifest" href="../../manifest.webmanifest">
+<script src="../../shared/sw-register.js" defer></script>
+<script src="../../shared/i18n.js"></script>
 </head>
-<body><div class="wrap">
+<body><div class="wrap" role="main">
 <p style="margin:0 0 6px"><a href="../../" style="color:inherit;font-size:.9rem;text-decoration:none">← Spektronautilus</a></p>
 <h1>VJ Tools</h1>
 <p class="sub" id="sub">Tools for people who make VJ loops and digital visuals.</p>
 <p class="hint" style="margin:-8px 0 14px">Everything runs inside your browser. Your files never leave your computer.</p>
 <div class="tabs" id="tabs"></div>
 <div class="muted" id="engine" style="min-height:1.2em"></div>
+<div class="muted" id="ekind" style="font-size:.85rem"></div>
 
 <!-- search -->
 <div class="card" data-for="search">
@@ -107,7 +111,7 @@ button.on{background:var(--ink);color:var(--bg)}
 </div>
 
 <!-- files -->
-<div class="card" data-for="convert gif2mp4 loop filters">
+<div class="card" data-for="convert gif2mp4 loop filters crop sizes pro catalog pack">
   <h2 id="ftitle">1. Files <span class="muted" id="fcount"></span></h2>
   <div class="drop" id="drop"><span id="droptxt">Drop videos here</span> or <button class="sm" id="pick">choose files</button> <button class="sm" id="pickdir">choose folder</button>
     <button class="sm" id="selall">Select all</button> <button class="sm" id="selnone">Select none</button> <button class="sm" id="clearf">Clear list</button></div>
@@ -128,8 +132,16 @@ button.on{background:var(--ink);color:var(--bg)}
   <div class="muted" id="fmsg" style="margin-top:6px"></div>
 </div>
 
+<!-- sizes -->
+<div class="card" data-for="sizes">
+  <h2>2. Pick sizes</h2>
+  <p class="hint" style="margin-top:0">Every file gets one new clip per size. A size bigger than the clip itself is skipped. Use the small proxy for editing on a slow computer, and the big ones for the show.</p>
+  <div class="chips" id="sgrid"></div>
+</div>
+<div class="card hide" id="pronote"><b>This tool needs the Linux (local) version.</b> <span class="hint">HAP and ProRes cannot be made in the web version. Everything else here works in the browser.</span></div>
+
 <!-- settings -->
-<div class="card"><h2 id="stitle">2. Settings</h2>
+<div class="card" id="setcard"><h2 id="stitle">2. Settings</h2>
   <div id="groups"></div>
 </div>
 

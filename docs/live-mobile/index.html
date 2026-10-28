@@ -14,7 +14,7 @@
 body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.4 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;touch-action:manipulation;padding:env(safe-area-inset-top) env(safe-area-inset-right) env(safe-area-inset-bottom) env(safe-area-inset-left)}
 .wrap{max-width:600px;margin:0 auto;padding:10px 12px 40px}
 a{color:inherit}h1{font-size:1.25rem;margin:0;letter-spacing:-.02em}h2{font-size:1rem;margin:0 0 6px}
-.top{display:flex;align-items:center;gap:8px;flex-wrap:wrap;margin-bottom:8px}.top .sp{flex:1}.back{font-size:.8rem;color:var(--mute);text-decoration:none}
+.top{display:flex;align-items:center;gap:8px;flex-wrap:wrap;margin-bottom:8px}.top .sp{flex:1}.back{display:inline-block;padding:10px 0;font-size:.8rem;color:var(--mute);text-decoration:none}
 button{font:inherit;cursor:pointer;border:2px solid var(--ink);background:transparent;color:var(--ink);padding:8px 14px;border-radius:999px;font-weight:700;min-height:44px}
 button.main,button.on{background:var(--ink);color:var(--bg)}button.sm{min-height:36px;padding:3px 12px;font-size:.9rem}button:disabled{opacity:.4}
 button:focus-visible,input:focus-visible,select:focus-visible,summary:focus-visible{outline:3px solid var(--b);outline-offset:2px}
@@ -40,9 +40,13 @@ details.card>summary{cursor:pointer;font-weight:800;min-height:32px}details.card
 textarea{width:100%;font:.75rem ui-monospace,monospace;min-height:90px;border:1px solid var(--line);border-radius:8px;background:var(--bg);color:var(--ink);padding:6px}
 #toast{position:fixed;left:50%;bottom:calc(14px + env(safe-area-inset-bottom));transform:translateX(-50%);background:var(--ink);color:var(--bg);padding:10px 16px;border-radius:999px;font-weight:600;max-width:92vw;opacity:0;transition:opacity .25s;pointer-events:none;z-index:9;text-align:center}#toast.show{opacity:1}
 </style>
+<link rel="manifest" href="../manifest.webmanifest">
+<script src="../shared/sw-register.js" defer></script>
+<script src="../shared/i18n.js"></script>
+<script src="../shared/check.js"></script>
 </head>
 <body>
-<div class="wrap">
+<div class="wrap" role="main">
 <div class="top"><div><a class="back" href="../">← Spektronautilus</a><h1>Live Mixer <span class="chip">phone</span></h1></div><div class="sp"></div><button id="fs" class="sm">Full screen</button><button id="theme" class="sm" aria-label="Light or dark theme">Theme</button></div>
 
 <div id="stage"><canvas id="prog" width="960" height="540"></canvas><button class="sm fsx" id="fsx">Close</button></div>
@@ -74,7 +78,7 @@ textarea{width:100%;font:.75rem ui-monospace,monospace;min-height:90px;border:1p
 </details>
 
 <details class="card"><summary>Logo</summary>
-  <input type="file" id="logoFile" accept="image/*"><label class="f" for="logoSize">Size</label><input type="range" id="logoSize" min="4" max="30" value="12">
+  <input type="file" id="logoFile" accept="image/*" aria-label="Logo image"><label class="f" for="logoSize">Size</label><input type="range" id="logoSize" min="4" max="30" value="12">
   <div class="row" style="margin-top:6px"><label class="hint row" style="gap:6px"><input type="checkbox" id="logoOn" checked style="width:22px;height:22px"> Show (upper right)</label><button class="sm" id="logoClear">Remove</button></div>
 </details>
 

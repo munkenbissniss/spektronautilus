@@ -4,7 +4,7 @@ T = {
 "tagline": "Den magiske videomikseren",
 "nav": {"home": "Hjem", "magic": "Magisk mikser", "live": "Live DJ-mikser", "vj": "VJ-mikser", "tools": "Verktøy", "packs": "Loop-pakker", "blog": "Blogg", "queue": "Kø", "about": "Om"},
 "ui": {"soon": "Under utvikling", "live": "Tilgjengelig", "open": "Åpne", "skip": "Hopp til innhold", "lang": "Språk", "read": "Les",
-       "footer": "Gratis verktøy for VJ-er, visuelle kunstnere og musikkelskere. Filene dine blir på enheten din.", "devnote": "Selve verktøyene er på engelsk. Denne siden er oversatt.",
+       "footer": "Gratis verktøy for VJ-er, visuelle kunstnere og musikkelskere. Filene dine blir på enheten din.", "devnote": "Verktøyene og mikserne finnes også på norsk: bruk 🌐-knappen inne i dem for å bytte språk.",
        "download": "Last ned (zip)", "nopacks": "De første loop-pakkene er under arbeid. Kom tilbake snart.", "noposts": "Ingen innlegg ennå.", "posts_by": "Publisert"},
 "pages": {
 "home": {"title": "Spektronautilus – gratis videomikser og VJ-verktøy", "desc": "Gratis nettleserverktøy for VJ-er og visuelle kunstnere: en magisk videomikser som klipper loops til musikken din, verktøy for VJ-loops, og snart en live video-DJ-mikser.",
@@ -63,6 +63,11 @@ T = {
 <a class="card" href="{r}tools/app/#convert"><h3>Konverter <span class="badge live">Tilgjengelig</span></h3><p>Gjør mov, webm og andre formater om til VJ-vennlig mp4, med filnavn i bulk.</p></a>
 <a class="card" href="{r}tools/app/#search"><h3>Finn loops <span class="badge live">Tilgjengelig</span></h3><p>Søk i gratis videokilder, last ned og konverter. Kreditering og lisens lagres.</p></a>
 <a class="card" href="{r}tools/app/#filters"><h3>Filtre <span class="badge live">Tilgjengelig</span></h3><p>Legg VJ-looks på en hel mappe med loops: glød, glitch, speil, kaleidoskop og seks til.</p></a>
+<a class="card" href="{r}tools/app/#crop"><h3>Beskjær og trim <span class="badge live">Tilgjengelig</span></h3><p>Kutt klipp til bredformat, stående eller kvadrat og trim start og slutt, for en hel mappe samtidig.</p></a>
+<a class="card" href="{r}tools/app/#sizes"><h3>Størrelser <span class="badge live">Tilgjengelig</span></h3><p>Lag en liten proxy, 720p, 1080p og 4K av hvert klipp i én operasjon.</p></a>
+<a class="card" href="{r}tools/app/#pro"><h3>HAP / ProRes <span class="badge live">Linux-versjonen</span></h3><p>Profesjonelle formater for Resolume, VDMX, Millumin og videoredigering. Krever den lokale Linux-versjonen.</p></a>
+<a class="card" href="{r}tools/app/#catalog"><h3>Katalog <span class="badge live">Tilgjengelig</span></h3><p>En nettside og en regnearkfil med bilde, lengde, størrelse og loop-kvalitet for hver loop.</p></a>
+<a class="card" href="{r}tools/app/#pack"><h3>Loop-pakke <span class="badge live">Tilgjengelig</span></h3><p>Pakk loops i en delingsklar zip med forhåndsbilde, infofil og lisens.</p></a>
 </div>
 <h2>Jobber og kø</h2>
 <p>Hvert verktøy legger arbeidet i en jobbliste, så du kan sette mange filer i kø og la det gå. Åpen kildekode: <a href="https://github.com/munkenbissniss/spektronautilus">kode og skrivebordsversjon</a>.</p>

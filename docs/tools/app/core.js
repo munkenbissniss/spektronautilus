@@ -80,16 +80,17 @@ export function targetSize(info, prof) {
   return [even(w), even(h)];
 }
 
-export function vfChain(info, prof, fps, extra = '') {
+export function vfChain(info, prof, fps, extra = '', o = {}) {
   const [w, h] = targetSize(info, prof);
   const f = [];
-  if (info.alpha) f.push(`format=rgba,split[a][b];[a]drawbox=x=0:y=0:w=iw:h=ih:color=${prof.bg}:t=fill[bg];[bg][b]overlay=format=auto`);
+  if (o.pre) f.push(o.pre);                                  // runs first, on the original picture (for example crop)
+  if (info.alpha && !o.keepAlpha) f.push(`format=rgba,split[a][b];[a]drawbox=x=0:y=0:w=iw:h=ih:color=${prof.bg}:t=fill[bg];[bg][b]overlay=format=auto`);
   if (prof.fit === 'fill') f.push(`scale=${w}:${h}:force_original_aspect_ratio=increase:flags=lanczos,crop=${w}:${h}`);
   else if (prof.fit === 'fit') f.push(`scale=${w}:${h}:force_original_aspect_ratio=decrease:flags=lanczos,pad=${w}:${h}:(ow-iw)/2:(oh-ih)/2:color=${prof.bg}`);
   else f.push(`scale=${w}:${h}:flags=lanczos`);
   f.push(`fps=${fps}`, 'setsar=1');
   if (extra) f.push(extra);
-  f.push('format=yuv420p');
+  f.push(`format=${o.pix || 'yuv420p'}`);
   return f.join(',');
 }
 
@@ -105,22 +106,49 @@ export function codecArgs(prof) {
 }
 
 // full ffmpeg argument list that makes `src` VJ friendly in `dst`
-export function encodeArgs(src, dst, prof, info, { repeat = 1, trimFrames = 0, extra = '', seek = 0, limit = 0 } = {}) {
+export function encodeArgs(src, dst, prof, info, { repeat = 1, trimFrames = 0, extra = '', seek = 0, limit = 0, pre = '', pix = '', codec = null, keepAlpha = false, audioCodec = null } = {}) {
   const fps = chooseFps(info, prof);
   const a = ['-y'];
   if (repeat > 1) a.push('-stream_loop', String(repeat - 1));
   if (seek) a.push('-ss', String(seek));
   a.push('-i', src);
   if (limit) a.push('-t', String(limit));
-  const vf = vfChain(info, prof, fps, extra);
-  if (info.alpha || extra) a.push('-filter_complex', `[0:v]${vf}[v]`, '-map', '[v]');
+  const vf = vfChain(info, prof, fps, extra, { pre, pix, keepAlpha });
+  if ((info.alpha && !keepAlpha) || extra) a.push('-filter_complex', `[0:v]${vf}[v]`, '-map', '[v]');
   else a.push('-vf', vf, '-map', '0:v:0');
-  if (prof.keepAudio && info.hasAudio) a.push('-map', '0:a:0?', '-c:a', 'aac', '-b:a', '192k');
+  if (prof.keepAudio && info.hasAudio) a.push('-map', '0:a:0?', ...(audioCodec || ['-c:a', 'aac', '-b:a', '192k']));
   else a.push('-an');
   if (trimFrames) a.push('-frames:v', String(Math.floor(trimFrames)));
-  a.push('-fps_mode', 'cfr', ...codecArgs(prof), '-map_metadata', '-1', dst);
+  a.push('-fps_mode', 'cfr', ...(codec || codecArgs(prof)), '-map_metadata', '-1', dst);
   return a;
 }
+
+// ---------------------------------------------------------------------------------------------
+// new tools: crop, sizes, pro formats
+// ---------------------------------------------------------------------------------------------
+export const SHAPES = { '169': 16 / 9, '916': 9 / 16, '11': 1, '43': 4 / 3, '219': 21 / 9 };
+// the ffmpeg crop filter that cuts a picture to a shape; pos is 'c' (centre), 'a' (start: left/top) or 'z' (end: right/bottom). Returns { filter, width, height }.
+export function cropFor(info, shape, pos = 'c') {
+  const A = SHAPES[shape]; if (!A || !(info.width > 0 && info.height > 0)) return { filter: '', width: info.width, height: info.height };
+  let cw = info.width, ch = info.height;
+  if (info.width / info.height > A) cw = info.height * A; else ch = info.width / A;
+  cw = Math.max(2, Math.floor(cw / 2) * 2); ch = Math.max(2, Math.floor(ch / 2) * 2); cw = Math.min(cw, info.width); ch = Math.min(ch, info.height);
+  const free = (total, part) => pos === 'a' ? 0 : pos === 'z' ? total - part : Math.floor((total - part) / 2);
+  const x = free(info.width, cw) & ~1, y = free(info.height, ch) & ~1;
+  return { filter: cw === info.width && ch === info.height ? '' : `crop=${cw}:${ch}:${x}:${y}`, width: cw, height: ch };
+}
+export const SIZE_STEPS = [['480', 854, 480, '480p (small proxy)'], ['720', 1280, 720, '720p'], ['1080', 1920, 1080, '1080p'], ['1440', 2560, 1440, '1440p'], ['2160', 3840, 2160, '4K']];
+// pro formats: HAP needs picture sizes divisible by 4 and RGBA; ProRes is 10 bit
+export const PRO_FORMATS = {
+  hap: { label: 'HAP (fast to play, big files)', ext: '.mov', alpha: false, pix: 'rgba', codec: ['-c:v', 'hap', '-format', 'hap', '-compressor', 'snappy', '-chunks', '4'], mod4: true },
+  hapq: { label: 'HAP Q (better colour, bigger)', ext: '.mov', alpha: false, pix: 'rgba', codec: ['-c:v', 'hap', '-format', 'hap_q', '-compressor', 'snappy', '-chunks', '4'], mod4: true },
+  hapa: { label: 'HAP Alpha (keeps transparency)', ext: '.mov', alpha: true, pix: 'rgba', codec: ['-c:v', 'hap', '-format', 'hap_alpha', '-compressor', 'snappy', '-chunks', '4'], mod4: true },
+  prores_proxy: { label: 'ProRes 422 Proxy (small)', ext: '.mov', alpha: false, pix: 'yuv422p10le', codec: ['-c:v', 'prores_ks', '-profile:v', '0', '-vendor', 'apl0'] },
+  prores_lt: { label: 'ProRes 422 LT', ext: '.mov', alpha: false, pix: 'yuv422p10le', codec: ['-c:v', 'prores_ks', '-profile:v', '1', '-vendor', 'apl0'] },
+  prores: { label: 'ProRes 422', ext: '.mov', alpha: false, pix: 'yuv422p10le', codec: ['-c:v', 'prores_ks', '-profile:v', '2', '-vendor', 'apl0'] },
+  prores_hq: { label: 'ProRes 422 HQ (best for editing)', ext: '.mov', alpha: false, pix: 'yuv422p10le', codec: ['-c:v', 'prores_ks', '-profile:v', '3', '-vendor', 'apl0'] },
+  prores_4444: { label: 'ProRes 4444 (keeps transparency)', ext: '.mov', alpha: true, pix: 'yuva444p10le', codec: ['-c:v', 'prores_ks', '-profile:v', '4', '-vendor', 'apl0', '-alpha_bits', '16'] },
+};
 
 // ---------------------------------------------------------------------------------------------
 // naming

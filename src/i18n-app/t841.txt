@@ -1,0 +1,60 @@
+841 ¦ Videoformat ¦ Formato de video ¦ Videoformat ¦ Formato de vídeo
+842 ¦ Fungerer uten nett ¦ Funciona sin internet ¦ Funktioniert ohne Internet ¦ Funciona sem internet
+843 ¦ Skjermen holdes våken ¦ La pantalla se mantiene encendida ¦ Bildschirm bleibt wach ¦ A tela fica ligada
+844 ¦ Popup-vinduer ¦ Ventanas emergentes ¦ Pop-up-Fenster ¦ Janelas pop-up
+845 ¦ Andre skjerm ¦ Segunda pantalla ¦ Zweiter Bildschirm ¦ Segunda tela
+846 ¦ MIDI-kontroller ¦ Controlador MIDI ¦ MIDI-Controller ¦ Controlador MIDI
+847 ¦ Lyd ¦ Sonido ¦ Ton ¦ Som
+848 ¦ Batteri ¦ Batería ¦ Akku ¦ Bateria
+849 ¦ Hastighet ¦ Rendimiento ¦ Geschwindigkeit ¦ Velocidade
+850 ¦ Ledig plass ¦ Espacio libre ¦ Freier Speicher ¦ Espaço livre
+851 ¦ Utgangsvindu ¦ Ventana de salida ¦ Ausgabefenster ¦ Janela de saída
+852 ¦ OK ¦ OK ¦ OK ¦ OK
+853 ¦ Sjekk ¦ Revisar ¦ Prüfen ¦ Verificar
+854 ¦ Problem ¦ Problema ¦ Problem ¦ Problema
+855 ¦ Info ¦ Info ¦ Info ¦ Info
+856 ¦ Denne nettleseren spiller mp4 (H.264), formatet mikserne liker best. ¦ Este navegador reproduce mp4 (H.264), el formato que mejor van a los mezcladores. ¦ Dieser Browser spielt mp4 (H.264) ab, das Format, das die Mixer am liebsten mögen. ¦ Este navegador toca mp4 (H.264), o formato de que os mixers mais gostam.
+857 ¦ Denne nettleseren kan ikke spille mp4 (H.264). Bruk Chrome, Edge eller Safari, eller konverter loopene dine med verktøyene. ¦ Este navegador no puede reproducir mp4 (H.264). Usa Chrome, Edge o Safari, o convierte tus loops con las Herramientas. ¦ Dieser Browser kann kein mp4 (H.264) abspielen. Nutze Chrome, Edge oder Safari oder wandle deine Loops mit den Werkzeugen um. ¦ Este navegador não toca mp4 (H.264). Use Chrome, Edge ou Safari, ou converta seus loops com as Ferramentas.
+858 ¦ Nettstedet er lagret i denne nettleseren og fungerer også uten internett. ¦ El sitio está guardado en este navegador y también funciona sin internet. ¦ Die Website ist in diesem Browser gespeichert und funktioniert auch ohne Internet. ¦ O site está salvo neste navegador e também funciona sem internet.
+859 ¦ Ikke lagret for offline-bruk ennå. Åpne nettstedet én gang med internett og vent et minutt, så fungerer det også uten Wi-Fi på spillestedet. ¦ Aún no está guardado para uso sin conexión. Abre el sitio una vez con internet y espera un minuto; así también funcionará sin Wi-Fi en el local. ¦ Noch nicht für die Offline-Nutzung gespeichert. Öffne die Website einmal mit Internet und warte eine Minute, dann funktioniert sie auch ohne WLAN am Veranstaltungsort. ¦ Ainda não está salvo para uso offline. Abra o site uma vez com internet e espere um minuto; assim ele também funciona sem Wi-Fi no local.
+860 ¦ Skjermen kan holdes våken under showet. ¦ La pantalla se puede mantener encendida durante el show. ¦ Der Bildschirm kann während der Show wach gehalten werden. ¦ A tela pode ser mantida ligada durante o show.
+861 ¦ Denne nettleseren kan ikke holde skjermen våken. Slå av skjermsparer og hvilemodus i systeminnstillingene. ¦ Este navegador no puede mantener la pantalla encendida. Desactiva el salvapantallas y la suspensión en los ajustes del sistema. ¦ Dieser Browser kann den Bildschirm nicht wach halten. Schalte Bildschirmschoner und Energiesparmodus in den Systemeinstellungen aus. ¦ Este navegador não consegue manter a tela ligada. Desative a proteção de tela e a suspensão nas configurações do sistema.
+862 ¦ Popup-vinduer er tillatt (trengs for utgangsvinduet). ¦ Las ventanas emergentes están permitidas (necesarias para la ventana de salida). ¦ Pop-up-Fenster sind erlaubt (nötig für das Ausgabefenster). ¦ Janelas pop-up estão permitidas (necessárias para a janela de saída).
+863 ¦ Nettleseren blokkerte et popup-vindu. Tillat popup-vinduer for dette nettstedet, ellers kan ikke utgangsvinduet åpnes. ¦ El navegador bloqueó una ventana emergente. Permite las ventanas emergentes para este sitio o la ventana de salida no podrá abrirse. ¦ Der Browser hat ein Pop-up blockiert. Erlaube Pop-ups für diese Website, sonst kann sich das Ausgabefenster nicht öffnen. ¦ O navegador bloqueou um pop-up. Permita pop-ups para este site, ou a janela de saída não poderá abrir.
+864 ¦ En andre skjerm er tilkoblet. ¦ Hay una segunda pantalla conectada. ¦ Ein zweiter Bildschirm ist verbunden. ¦ Há uma segunda tela conectada.
+865 ¦ Fant bare én skjerm. Koble til projektoren og trykk «Kjør sjekken på nytt». ¦ Solo se encontró una pantalla. Conecta el proyector y pulsa «Repetir la comprobación». ¦ Nur ein Bildschirm gefunden. Schließe den Projektor an und klicke auf „Prüfung erneut starten“. ¦ Só foi encontrada uma tela. Conecte o projetor e clique em “Refazer a verificação”.
+866 ¦ Denne nettleseren kan ikke si om en andre skjerm er tilkoblet. Åpne utgangsvinduet og se. ¦ Este navegador no puede saber si hay una segunda pantalla conectada. Abre la ventana de salida y compruébalo. ¦ Dieser Browser kann nicht erkennen, ob ein zweiter Bildschirm verbunden ist. Öffne das Ausgabefenster und sieh nach. ¦ Este navegador não sabe dizer se há uma segunda tela conectada. Abra a janela de saída e veja.
+867 ¦ Fullskjerm er tilgjengelig. ¦ La pantalla completa está disponible. ¦ Vollbild ist verfügbar. ¦ Tela cheia disponível.
+868 ¦ Fullskjerm er ikke tilgjengelig i denne nettleseren. ¦ La pantalla completa no está disponible en este navegador. ¦ Vollbild ist in diesem Browser nicht verfügbar. ¦ Tela cheia não está disponível neste navegador.
+869 ¦ Denne nettleseren har ikke MIDI. Bruk Chrome eller Edge hvis du vil bruke en kontroller. ¦ Este navegador no tiene MIDI. Usa Chrome o Edge si quieres usar un controlador. ¦ Dieser Browser hat kein MIDI. Nutze Chrome oder Edge, wenn du einen Controller verwenden möchtest. ¦ Este navegador não tem MIDI. Use Chrome ou Edge se quiser usar um controlador.
+870 ¦ {a} MIDI-kontroller(e) tilkoblet. ¦ {a} controlador(es) MIDI conectado(s). ¦ {a} MIDI-Controller verbunden. ¦ {a} controlador(es) MIDI conectado(s).
+871 ¦ Fant ingen MIDI-kontroller. Det er greit hvis du bruker mus eller berøring. ¦ No se encontró ningún controlador MIDI. No pasa nada si usas el ratón o el tacto. ¦ Kein MIDI-Controller gefunden. Das ist in Ordnung, wenn du Maus oder Touch nutzt. ¦ Nenhum controlador MIDI encontrado. Tudo bem se você usa mouse ou toque.
+872 ¦ MIDI er ikke slått på ennå. Trykk «Slå på MIDI» hvis du bruker en kontroller. ¦ MIDI aún no está activado. Pulsa «Activar MIDI» si usas un controlador. ¦ MIDI ist noch nicht eingeschaltet. Klicke auf „MIDI aktivieren“, wenn du einen Controller nutzt. ¦ O MIDI ainda não está ligado. Clique em “Ativar MIDI” se você usa um controlador.
+873 ¦ Lyd er klar. ¦ El sonido está listo. ¦ Der Ton ist bereit. ¦ O som está pronto.
+874 ¦ Lyd er ikke tilgjengelig i denne nettleseren. ¦ El sonido no está disponible en este navegador. ¦ Ton ist in diesem Browser nicht verfügbar. ¦ O som não está disponível neste navegador.
+875 ¦ Lader ({a} %). ¦ Cargando ({a} %). ¦ Lädt ({a} %). ¦ Carregando ({a} %).
+876 ¦ Batteriet er nesten tomt ({a} %). Koble til strøm før showet. ¦ La batería está baja ({a} %). Enchufa el cargador antes del show. ¦ Der Akku ist schwach ({a} %). Schließe vor der Show das Ladegerät an. ¦ A bateria está baixa ({a} %). Ligue na tomada antes do show.
+877 ¦ Batteri {a} %. ¦ Batería {a} %. ¦ Akku {a} %. ¦ Bateria {a} %.
+878 ¦ Jevnt: ca. {a} bilder per sekund på denne skjermen ({b} Hz). ¦ Fluido: unos {a} fotogramas por segundo en esta pantalla ({b} Hz). ¦ Flüssig: etwa {a} Bilder pro Sekunde auf diesem Bildschirm ({b} Hz). ¦ Fluido: cerca de {a} quadros por segundo nesta tela ({b} Hz).
+879 ¦ Tregt: bare ca. {a} bilder per sekund. Lukk andre faner og programmer, og bruk en mindre bildestørrelse. ¦ Lento: solo unos {a} fotogramas por segundo. Cierra otras pestañas y programas y usa un tamaño de imagen menor. ¦ Langsam: nur etwa {a} Bilder pro Sekunde. Schließe andere Tabs und Programme und nutze eine kleinere Bildgröße. ¦ Lento: apenas cerca de {a} quadros por segundo. Feche outras abas e programas e use um tamanho de imagem menor.
+880 ¦ {a} GB ledig plass i denne nettleseren. ¦ {a} GB de espacio libre en este navegador. ¦ {a} GB freier Speicher in diesem Browser. ¦ {a} GB de espaço livre neste navegador.
+881 ¦ Lite ledig plass ({a} GB). Frigjør diskplass før du tar opp. ¦ Queda poco espacio libre ({a} GB). Libera espacio en el disco antes de grabar. ¦ Wenig freier Speicher ({a} GB). Schaffe Platz auf der Festplatte, bevor du aufnimmst. ¦ Pouco espaço livre ({a} GB). Libere espaço no disco antes de gravar.
+882 ¦ Utgangsvinduet er åpent. ¦ La ventana de salida está abierta. ¦ Das Ausgabefenster ist geöffnet. ¦ A janela de saída está aberta.
+883 ¦ Utgangsvinduet er ikke åpnet ennå. Trykk «Åpne utgangsvindu». ¦ La ventana de salida aún no está abierta. Pulsa «Abrir ventana de salida». ¦ Das Ausgabefenster ist noch nicht geöffnet. Klicke auf „Ausgabefenster öffnen“. ¦ A janela de saída ainda não está aberta. Clique em “Abrir janela de saída”.
+884 ¦ {a} loop(er) lastet. ¦ {a} loop(s) cargado(s). ¦ {a} Loop(s) geladen. ¦ {a} loop(s) carregado(s).
+885 ¦ Ingen loops ennå. Legg noen på padene først. ¦ Aún no hay loops. Añade algunos a los pads primero. ¦ Noch keine Loops. Füge zuerst einige zu den Pads hinzu. ¦ Ainda não há loops. Adicione alguns aos pads primeiro.
+886 ¦ {a} spor i listen. ¦ {a} pista(s) en la lista. ¦ {a} Titel in der Liste. ¦ {a} faixa(s) na lista.
+887 ¦ Ingen spor ennå. Legg til noen videoer først. ¦ Aún no hay pistas. Añade algunos videos primero. ¦ Noch keine Titel. Füge zuerst einige Videos hinzu. ¦ Ainda não há faixas. Adicione alguns vídeos primeiro.
+888 ¦ Klar for showet? ¦ ¿Listo para el show? ¦ Bereit für die Show? ¦ Pronto para o show?
+889 ¦ Sjekk denne enheten før du går live ¦ Comprueba este dispositivo antes de salir en directo ¦ Prüfe dieses Gerät, bevor du live gehst ¦ Verifique este dispositivo antes de entrar ao vivo
+890 ¦ En rask sjekk av denne enheten og nettleseren. Ingenting sendes noe sted. ¦ Una comprobación rápida de este dispositivo y navegador. No se envía nada a ninguna parte. ¦ Ein kurzer Check von Gerät und Browser. Es wird nichts irgendwohin gesendet. ¦ Uma verificação rápida deste dispositivo e navegador. Nada é enviado a lugar nenhum.
+891 ¦ Kjør sjekken på nytt ¦ Repetir la comprobación ¦ Prüfung erneut starten ¦ Refazer a verificação
+892 ¦ Vis testbilde ¦ Mostrar carta de ajuste ¦ Testbild zeigen ¦ Mostrar imagem de teste
+893 ¦ Kopier rapport ¦ Copiar informe ¦ Bericht kopieren ¦ Copiar relatório
+894 ¦ Kopiert ¦ Copiado ¦ Kopiert ¦ Copiado
+895 ¦ {a} ting som er verdt et blikk før du går på. ¦ {a} cosa(s) a revisar antes de salir. ¦ {a} Punkt(e), die du dir vor dem Auftritt ansehen solltest. ¦ {a} item(ns) que vale(m) a pena ver antes de entrar.
+896 ¦ Alt ser bra ut. Ha et flott show! ¦ Todo se ve bien. ¡Que tengas un gran show! ¦ Alles sieht gut aus. Viel Spaß bei der Show! ¦ Está tudo certo. Bom show!
+897 ¦ Testbilde ¦ Carta de ajuste ¦ Testbild ¦ Imagem de teste
+898 ¦ {a} × {b} piksler ¦ {a} × {b} píxeles ¦ {a} × {b} Pixel ¦ {a} × {b} pixels
+899 ¦ Rund sirkel, alle fire hjørner og den rosa rammen synlige: bildet passer til skjermen. ¦ Círculo redondo y las cuatro esquinas y el marco rosa visibles: la imagen encaja en la pantalla. ¦ Runder Kreis, alle vier Ecken und der pinke Rahmen sichtbar: Das Bild passt zum Bildschirm. ¦ Círculo redondo, os quatro cantos e a moldura rosa visíveis: a imagem cabe na tela.
+900 ¦ Trykk F for fullskjerm · Esc eller klikk for å lukke ¦ Pulsa F para pantalla completa · Esc o clic para cerrar ¦ F drücken für Vollbild · Esc oder Klick zum Schließen ¦ Pressione F para tela cheia · Esc ou clique para fechar

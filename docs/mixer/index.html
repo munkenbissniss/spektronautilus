@@ -31,8 +31,11 @@ details{border-top:1px solid var(--line);padding:8px 0}summary{cursor:pointer;fo
 .jr{flex:1;min-width:0}.prog{height:8px;background:var(--line);border-radius:4px;overflow:hidden;margin:2px 0}.prog i{display:block;height:100%;background:var(--b);width:0}canvas.jl{width:100%;height:44px;display:block;margin:6px 0}
 .acts{display:flex;gap:8px;flex-wrap:wrap;margin-top:6px}.fmt{font-size:.82rem;margin-top:6px}
 </style>
+<link rel="manifest" href="../manifest.webmanifest">
+<script src="../shared/sw-register.js" defer></script>
+<script src="../shared/i18n.js"></script>
 </head>
-<body><div class="wrap">
+<body><div class="wrap" role="main">
 <p style="margin:0 0 6px"><a href="../" style="color:inherit;font-size:.9rem;text-decoration:none">← Spektronautilus</a></p>
 <h1>Magic Video Mixer</h1>
 <p class="sub">Slow, soft video mixes for your music, exported as a video file. Everything runs in your browser (CPU and GPU), and your files are never uploaded. Add a rhythmic track and up to 100 seamless loops, then add one or more exports to the queue.</p>
@@ -431,7 +434,7 @@ async function vimeoUp(j){
  const err=async r=>{let t='';try{const e=await r.json();t=e.developer_message||e.error||''}catch(e){}return `Vimeo said ${r.status}${t?': '+t:''}`+(r.status==401||r.status==403?'. Check that the token has the scopes upload, edit and private.':'')};
  try{
   say('Vimeo: creating the video…');
-  const r=await fetch('https://api.vimeo.com/me/videos',{method:'POST',headers:{...H,'Content-Type':'application/json'},body:JSON.stringify({upload:{approach:'tus',size:f.size},name:j.name,description:`Made with Munken Loops. ${j.audio?j.audio.name:''}`.trim(),privacy:{view:c.privacy||'unlisted'}})});
+  const r=await fetch('https://api.vimeo.com/me/videos',{method:'POST',headers:{...H,'Content-Type':'application/json'},body:JSON.stringify({upload:{approach:'tus',size:f.size},name:j.name,description:`Made with Spektronautilus. ${j.audio?j.audio.name:''}`.trim(),privacy:{view:c.privacy||'unlisted'}})});
   if(!r.ok)throw new Error(await err(r));
   const d=await r.json(),link=d.upload.upload_link,CH=16*1024*1024;let off=0,tries=0;
   while(off<f.size){const end=Math.min(f.size,off+CH);
@@ -600,7 +603,7 @@ function renderJob(j,A,L,P){
   let lastM=0;
   const rec=new MediaRecorder(new MediaStream([...cv.captureStream(o.fps).getVideoTracks(),...dest.stream.getAudioTracks()]),{mimeType:MIME,videoBitsPerSecond:o.bitrate*1e6,audioBitsPerSecond:192000});
   rec.ondataavailable=e=>{if(e.data.size)sink.write(e.data)};
-  let ended=false;const finish=async why=>{if(ended)return;ended=true;tickW.postMessage(0);try{localStorage.removeItem('mm_beat')}catch(e){}try{src.stop()}catch(e){}pool.forEach(p=>p.el.pause());
+  let ended=false;const finish=async why=>{if(ended)return;ended=true;tickW.postMessage(0);wakeOff();try{localStorage.removeItem('mm_beat')}catch(e){}try{src.stop()}catch(e){}pool.forEach(p=>p.el.pause());
    await new Promise(r=>{rec.onstop=r;if(rec.state!='inactive')rec.stop();else r()});let f=await sink.close();
    if(EXT=='mp4'){j.status='finalizing';j.msg='Fixing duration and seeking…';upd(j);
     try{const s2=await openSink(`${j.id}-fixed-${Date.now()}.mp4`);const ok=await fixMp4(f,s2,p=>{j.msg=`Fixing duration and seeking… ${Math.round(p*100)} %`;upd(j)},useMp3?{mp3:j.audio,lead:tS-tRec,expected:why=='done'?A.dur:lastM}:null);
@@ -609,7 +612,7 @@ function renderJob(j,A,L,P){
    j.file=f;j.url=URL.createObjectURL(f);j.status=why;j.prog=why=='done'?1:j.prog;j.msg='';upd(j);if(AC.state=='suspended')AC.resume();resolve()};
   j.ctl={pause:async()=>{if(j.status!='rendering')return;j.status='paused';await AC.suspend();rec.state=='recording'&&rec.pause();pool.forEach(p=>p.el.pause());upd(j)},
    resume:async()=>{if(j.status!='paused')return;j.status='rendering';rec.state=='paused'&&rec.resume();await AC.resume();upd(j)},stop:()=>{if(j.status=='paused')AC.resume();finish('stopped')}};
-  const tS=AC.currentTime+.3,tRec=AC.currentTime;src.start(tS);rec.start(1000);j.status='rendering';j.msg='';upd(j);let lastUI=0,lastRate=0,rate=1;
+  const tS=AC.currentTime+.3,tRec=AC.currentTime;src.start(tS);rec.start(1000);wakeOn();j.status='rendering';j.msg='';upd(j);let lastUI=0,lastRate=0,rate=1;
   tickW.onmessage=()=>{if(ended||j.status!='rendering')return;const m=AC.currentTime-tS+o.sync/1000;if(m<0)return;lastM=Math.max(0,m-o.sync/1000);if(m>=A.dur){finish('done');return}
    const k=findK(m);ensure(m,k);const s=slots[k],since=m-ta[k],bo=s.kind=='drop'?1.6:1,e=eAt(m),react=1-o.reactive+o.reactive*Math.min(1.4,e*1.6),look=looks[s.cluster],pl=k>0?looks[slots[k-1].cluster]:look,
     fx=s.xf>0&&since<s.xf?(o.smooth>0?ease5(since/s.xf):ease(since/s.xf)):1;
@@ -630,6 +633,9 @@ function renderJob(j,A,L,P){
 }
 
 /* ---------------- queue ---------------- */
+// keep the screen awake while a video is being made: a sleeping screen would slow the render down
+let wake=null;const wakeOn=async()=>{try{if(navigator.wakeLock&&!wake){wake=await navigator.wakeLock.request('screen');wake.addEventListener('release',()=>wake=null)}}catch(e){}},wakeOff=()=>{try{wake&&wake.release()}catch(e){}wake=null};
+document.addEventListener('visibilitychange',()=>{if(!document.hidden&&cur&&cur.status=='rendering')wakeOn()});
 let jobs=[],jid=0,cur=null,running=false,AC=null,aCache={};
 const hueOf=i=>`hsl(${i*47%360} 65% 55%)`;
 function drawTL(j,A,P){const c=j.lctx.canvas,g=j.lctx,W=c.width,H=c.height;g.clearRect(0,0,W,H);

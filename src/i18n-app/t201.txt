@@ -1,0 +1,220 @@
+201 ¦ KANAL A · FORHÅNDSVISNING ¦ CANAL A · VISTA PREVIA ¦ KANAL A · VORSCHAU ¦ CANAL A · PRÉVIA
+202 ¦ KANAL B · FORHÅNDSVISNING ¦ CANAL B · VISTA PREVIA ¦ KANAL B · VORSCHAU ¦ CANAL B · PRÉVIA
+203 ¦ Vær forsiktig med blitz, stroboskop og invertering ved høyt tempo: blinkende lys kan utløse anfall hos noen. Hold det rolig på offentlige arrangementer. ¦ Cuidado con Destello, Estroboscopio e Invertir a tempo rápido: la luz intermitente puede provocar convulsiones en algunas personas. Mantenlo lento en eventos públicos. ¦ Vorsicht mit Blitz, Stroboskop und Invertieren bei schnellem Tempo: Flackerndes Licht kann bei manchen Menschen Anfälle auslösen. Halte es bei öffentlichen Veranstaltungen langsam. ¦ Cuidado com Flash, Estroboscópio e Inverter em andamento rápido: luz piscando pode causar convulsões em algumas pessoas. Mantenha lento em eventos públicos.
+204 ¦ Kanal {a} ¦ Canal {a} ¦ Kanal {a} ¦ Canal {a}
+205 ¦ Tøm laget ¦ Vaciar capa ¦ Ebene leeren ¦ Limpar camada
+206 ¦ Fargespinn ¦ Giro de color ¦ Farbdrehung ¦ Giro de cor
+207 ¦ Slipp filer på rutenettet for å fylle tomme pads. Loops spilles uten lyd og gjentas. ¦ Suelta archivos en la cuadrícula para llenar pads vacíos. Los loops suenan en silencio y se repiten. ¦ Ziehe Dateien auf das Raster, um leere Pads zu füllen. Loops laufen ohne Ton und wiederholen sich. ¦ Solte arquivos na grade para preencher pads vazios. Os loops tocam sem som e se repetem.
+208 ¦ Effektmengde ¦ Cantidad de efecto ¦ Effektstärke ¦ Quantidade de efeito
+209 ¦ Effekt: {a} ¦ Efecto: {a} ¦ Effekt: {a} ¦ Efeito: {a}
+210 ¦ Tom pad {a}. Legg til en loop. ¦ Pad {a} vacío. Añade un loop. ¦ Leeres Pad {a}. Loop hinzufügen. ¦ Pad {a} vazio. Adicione um loop.
+211 ¦ Beholder de 20 padene etter at du lukker siden. Lagres kun i denne nettleseren. ¦ Conserva los 20 pads al cerrar la página. Se guardan solo en este navegador. ¦ Behält die 20 Pads, nachdem du die Seite schließt. Nur in diesem Browser gespeichert. ¦ Mantém os 20 pads depois de fechar a página. Salvo apenas neste navegador.
+212 ¦ Loops ¦ Loops ¦ Loops ¦ Loops
+213 ¦ Lavere størrelser går jevnere på svakere datamaskiner. ¦ Los tamaños menores van más fluidos en ordenadores más lentos. ¦ Kleinere Größen laufen auf schwächeren Computern flüssiger. ¦ Tamanhos menores rodam mais fluidos em computadores mais fracos.
+214 ¦ Gjør dette øyeblikket til beat 1 ¦ Convertir este momento en el beat 1 ¦ Diesen Moment zum Beat 1 machen ¦ Tornar este momento o beat 1
+215 ¦ Miks til den andre kanalen (auto-overgang) ¦ Mezclar al otro canal (fundido automático) ¦ Zum anderen Kanal mischen (automatische Überblendung) ¦ Mixar para o outro canal (transição automática)
+216 ¦ Multipliser ¦ Multiplicar ¦ Multiplizieren ¦ Multiplicar
+217 ¦ Normal ¦ Normal ¦ Normal ¦ Normal
+218 ¦ På ¦ Activado ¦ An ¦ Ligado
+219 ¦ Dekning {a} ¦ Opacidad {a} ¦ Deckkraft {a} ¦ Opacidade {a}
+220 ¦ Dekning lag {a} ¦ Opacidad de la capa {a} ¦ Deckkraft Ebene {a} ¦ Opacidade da camada {a}
+221 ¦ Pad {a} ¦ Pad {a} ¦ Pad {a} ¦ Pad {a}
+222 ¦ Puls hver ¦ Pulso cada ¦ Puls alle ¦ Pulso a cada
+223 ¦ Husk loopene mine på denne datamaskinen ¦ Recordar mis loops en este ordenador ¦ Meine Loops auf diesem Computer merken ¦ Lembrar meus loops neste computador
+224 ¦ Skjerm ¦ Pantalla ¦ Negativ multiplizieren ¦ Tela
+225 ¦ Velg lag {a} ¦ Elegir capa {a} ¦ Ebene {a} wählen ¦ Selecionar camada {a}
+226 ¦ Velg dette laget. Padene du trykker på havner her. ¦ Elige esta capa. Los pads que pulses van aquí. ¦ Diese Ebene wählen. Gedrückte Pads landen hier. ¦ Selecione esta camada. Os pads que você pressionar vão para cá.
+227 ¦ Følsomhet ¦ Sensibilidad ¦ Empfindlichkeit ¦ Sensibilidade
+228 ¦ Sett beat 1 (første slag) ¦ Fijar el beat 1 (primer tiempo) ¦ Beat 1 setzen (Schlag Eins) ¦ Definir o beat 1 (primeiro tempo)
+229 ¦ Risting ¦ Temblor ¦ Wackeln ¦ Tremor
+230 ¦ Tapp ¦ Tap ¦ Tap ¦ Tap
+231 ¦ Tapp / BPM ¦ Tap / BPM ¦ Tap / BPM ¦ Tap / BPM
+232 ¦ Tapp-tempo ¦ Tap tempo ¦ Tap-Tempo ¦ Tap tempo
+233 ¦ VJ-mikser ¦ Mezclador VJ ¦ VJ-Mixer ¦ Mixer de VJ
+234 ¦ og ¦ y ¦ und ¦ e
+235 ¦ ta opp utgangsvinduet i OBS (Window Capture) eller bruk Chromes «Cast…». Hold dette kontrollvinduet åpent under showet. ¦ captura la ventana de salida en OBS (Window Capture) o usa «Transmitir…» de Chrome. Mantén abierta esta ventana de control durante el show. ¦ nimm das Ausgabefenster in OBS auf (Window Capture) oder nutze Chromes „Streamen…“. Lass dieses Steuerfenster während der Show geöffnet. ¦ capture a janela de saída no OBS (Window Capture) ou use o “Transmitir…” do Chrome. Mantenha esta janela de controle aberta durante o show.
+236 ¦ tøm valgt lag. ¦ vaciar la capa elegida. ¦ gewählte Ebene leeren. ¦ limpar a camada selecionada.
+237 ¦ tom — velg en pad ¦ vacío — elige un pad ¦ leer — wähle ein Pad ¦ vazio — escolha um pad
+238 ¦ neste lag · ¦ capa siguiente · ¦ nächste Ebene · ¦ próxima camada ·
+239 ¦ eller ¦ o ¦ oder ¦ ou
+240 ¦ tapp-tempo · ¦ tap tempo · ¦ Tap-Tempo · ¦ tap tempo ·
+241 ¦ · lag ¦ · capas ¦ · Ebenen ¦ · camadas
+242 ¦ (på beaten) ¦ (al ritmo) ¦ (im Beat) ¦ (no ritmo)
+243 ¦ 8 pads. Mp4 (H.264) fungerer overalt. ¦ 8 pads. Mp4 (H.264) funciona en todas partes. ¦ 8 Pads. Mp4 (H.264) funktioniert überall. ¦ 8 pads. Mp4 (H.264) funciona em todo lugar.
+244 ¦ Beat = nå ¦ Beat = ahora ¦ Beat = jetzt ¦ Beat = agora
+245 ¦ Miks for valgt lag ¦ Fusión de la capa elegida ¦ Mischmodus der gewählten Ebene ¦ Mescla da camada escolhida
+246 ¦ Tøm ¦ Vaciar ¦ Leeren ¦ Limpar
+247 ¦ Tøm dette laget ¦ Vaciar esta capa ¦ Diese Ebene leeren ¦ Limpar esta camada
+248 ¦ Effektstyrke ¦ Intensidad del efecto ¦ Effektintensität ¦ Intensidade do efeito
+249 ¦ Hold denne siden åpen og skjermen våken under et show. Fungerer best i nyere Chrome (Android) og Safari (iPhone). ¦ Mantén esta página abierta y la pantalla encendida durante un show. Funciona mejor en Chrome (Android) y Safari (iPhone) recientes. ¦ Lass diese Seite geöffnet und den Bildschirm wach während einer Show. Funktioniert am besten in aktuellem Chrome (Android) und Safari (iPhone). ¦ Mantenha esta página aberta e a tela ligada durante um show. Funciona melhor no Chrome (Android) e no Safari (iPhone) recentes.
+250 ¦ Lag ¦ Capas ¦ Ebenen ¦ Camadas
+251 ¦ Loop-pads ¦ Pads de loops ¦ Loop-Pads ¦ Pads de loops
+252 ¦ Dekning for valgt lag ¦ Opacidad de la capa elegida ¦ Deckkraft der gewählten Ebene ¦ Opacidade da camada escolhida
+253 ¦ Åpne den fulle VJ-mikseren for datamaskin ¦ Abrir el mezclador VJ completo para ordenador ¦ Den vollständigen VJ-Mixer für Computer öffnen ¦ Abrir o mixer de VJ completo para computador
+254 ¦ Styrke ¦ Intensidad ¦ Stärke ¦ Intensidade
+255 ¦ TAPP ¦ TAP ¦ TAP ¦ TAP
+256 ¦ velg ett, trykk så på en pad ¦ elige una y pulsa un pad ¦ eine wählen, dann auf ein Pad tippen ¦ escolha uma e toque em um pad
+257 ¦ Alle jobbene fra verktøyene og mikserne, samlet på ett sted. De kjører i siden som startet dem, så hold den siden åpen til det står ferdig. ¦ Todos los trabajos de las herramientas y los mezcladores, en un solo lugar. Se ejecutan en la página que los inició, así que mantén esa página abierta hasta que diga hecho. ¦ Alle Aufträge der Werkzeuge und Mixer an einem Ort. Sie laufen in der Seite, die sie gestartet hat. Lass diese Seite also geöffnet, bis „fertig“ dasteht. ¦ Todos os trabalhos das ferramentas e dos mixers, em um só lugar. Eles rodam na página que os iniciou, então mantenha essa página aberta até aparecer concluído.
+258 ¦ Fjern ferdige ¦ Borrar terminados ¦ Fertige entfernen ¦ Limpar concluídos
+259 ¦ Ferdige filer fra verktøyene lagres i denne nettleseren (opptil ca. 600 MB per jobb), så du kan laste dem ned her senere. Magisk mikser beholder videoene sine på sin egen side, så bruk ¦ Los archivos terminados de las herramientas se guardan en este navegador (hasta unos 600 MB por trabajo) para que puedas descargarlos aquí más tarde. El Magic Mixer guarda sus videos en su propia página, así que usa ¦ Fertige Dateien aus den Werkzeugen werden in diesem Browser gespeichert (bis etwa 600 MB pro Auftrag), damit du sie später hier herunterladen kannst. Der Magic Mixer behält seine Videos auf seiner eigenen Seite, nutze also ¦ Os arquivos concluídos das ferramentas ficam salvos neste navegador (até cerca de 600 MB por trabalho) para você baixá-los aqui depois. O Magic Mixer guarda seus vídeos na própria página, então use
+260 ¦ Magisk mikser ¦ Magic Mixer ¦ Magic Mixer ¦ Magic Mixer
+261 ¦ Ingenting her ennå. Start en jobb i ¦ Aún no hay nada aquí. Inicia un trabajo en ¦ Hier ist noch nichts. Starte einen Auftrag in ¦ Ainda não há nada aqui. Inicie um trabalho em
+262 ¦ Åpne siden ¦ Abrir página ¦ Seite öffnen ¦ Abrir página
+263 ¦ Kø ¦ Cola ¦ Warteschlange ¦ Fila
+264 ¦ Verktøy ¦ Herramientas ¦ Werkzeuge ¦ Ferramentas
+265 ¦ eller ¦ o el ¦ oder den ¦ ou o
+266 ¦ for å laste ned de. Ingenting forlater datamaskinen din. ¦ para descargarlos. Nada sale de tu ordenador. ¦ um sie herunterzuladen. Nichts verlässt deinen Computer. ¦ para baixá-los. Nada sai do seu computador.
+267 ¦ , som følger med de nedlastede filene. ¦ , que viene con tus archivos descargados. ¦ , die bei deinen heruntergeladenen Dateien dabei ist. ¦ , que acompanha seus arquivos baixados.
+268 ¦ . Nøklene lagres kun i denne nettleseren og sendes bare til Pexels / Pixabay. ¦ . Las claves se guardan solo en este navegador y se envían únicamente a Pexels / Pixabay. ¦ . Die Schlüssel werden nur in diesem Browser gespeichert und nur an Pexels / Pixabay gesendet. ¦ . As chaves ficam salvas apenas neste navegador e são enviadas somente ao Pexels / Pixabay.
+269 ¦ 1. Filer ¦ 1. Archivos ¦ 1. Dateien ¦ 1. Arquivos
+270 ¦ 1. Finn loops ¦ 1. Buscar loops ¦ 1. Loops finden ¦ 1. Encontrar loops
+271 ¦ 1080p eller mer ¦ 1080p o más ¦ 1080p oder mehr ¦ 1080p ou mais
+272 ¦ 2. Velg stiler ¦ 2. Elegir estilos ¦ 2. Looks wählen ¦ 2. Escolher estilos
+273 ¦ 2. Innstillinger ¦ 2. Ajustes ¦ 2. Einstellungen ¦ 2. Configurações
+274 ¦ 720p eller mer ¦ 720p o más ¦ 720p oder mehr ¦ 720p ou mais
+275 ¦ Legg til filer for å se de nye navnene. ¦ Añade archivos para ver los nombres nuevos. ¦ Füge Dateien hinzu, um die neuen Namen zu sehen. ¦ Adicione arquivos para ver os novos nomes.
+276 ¦ Legg til ordet «loop» i søket ¦ Añadir la palabra «loop» a la búsqueda ¦ Das Wort „loop“ zur Suche hinzufügen ¦ Adicionar a palavra “loop” à busca
+277 ¦ Legger VJ-stiler på mange loops på én gang: glød, glitch, speil, kaleidoskop og mer. ¦ Aplica estilos de VJ a muchos loops a la vez: brillo, glitch, espejo, caleidoscopio y más. ¦ Gibt vielen Loops auf einmal VJ-Looks: Glühen, Glitch, Spiegel, Kaleidoskop und mehr. ¦ Aplica estilos de VJ a vários loops de uma vez: brilho, glitch, espelho, caleidoscópio e mais.
+278 ¦ Alle former ¦ Cualquier forma ¦ Beliebige Form ¦ Qualquer formato
+279 ¦ Alle størrelser ¦ Cualquier tamaño ¦ Beliebige Größe ¦ Qualquer tamanho
+280 ¦ Bruk stiler ¦ Aplicar estilos ¦ Looks anwenden ¦ Aplicar estilos
+281 ¦ Automatisk reserveløsning ¦ Alternativa automática ¦ Automatische Ersatzlösung ¦ Alternativa automática
+282 ¦ Auto: en klipp som allerede looper røres ikke; hvis det gir en ren loop å kutte litt av slutten, gjør den det; ellers brukes reserveløsningen. ¦ Auto: un clip que ya es un loop se deja como está; si recortar un poco el final da un loop limpio, lo hace; si no, usa la alternativa. ¦ Auto: Ein Clip, der schon loopt, bleibt unverändert; wenn Abschneiden am Ende einen sauberen Loop ergibt, passiert das; sonst wird die Ersatzlösung genutzt. ¦ Auto: um clipe que já é loop fica como está; se cortar um pouco do final dá um loop limpo, ele faz isso; senão usa a alternativa.
+283 ¦ Auto: behold gode loops, fiks resten ¦ Auto: conservar los buenos loops y arreglar el resto ¦ Auto: gute Loops behalten, den Rest reparieren ¦ Auto: manter os bons loops e corrigir o resto
+284 ¦ Bakgrunn for gjennomsiktige GIF-er ¦ Fondo para GIF transparentes ¦ Hintergrund für transparente GIFs ¦ Fundo para GIFs transparentes
+285 ¦ Store grove piksler. ¦ Píxeles grandes y toscos. ¦ Große, grobe Pixel. ¦ Pixels grandes e grossos.
+286 ¦ Store filer går fint: de leses rett fra disken din. Nettleserversjonen er langsommere enn skrivebordsversjonen (omtrent 5–10 ganger), så for mange store 4K-filer bør du bruke Linux-/kommandolinjeversjonen. ¦ Los archivos grandes no son problema: se leen directamente de tu disco. La versión del navegador es más lenta que la de escritorio (unas 5–10 veces), así que para muchos archivos 4K grandes usa la versión de Linux o de línea de comandos. ¦ Große Dateien sind kein Problem: Sie werden direkt von deiner Festplatte gelesen. Die Browser-Version ist langsamer als die Desktop-Version (etwa 5–10 Mal); für viele große 4K-Dateien nimm die Linux- bzw. Kommandozeilen-Version. ¦ Arquivos grandes não são problema: eles são lidos direto do seu disco. A versão do navegador é mais lenta que a de desktop (cerca de 5 a 10 vezes), então para muitos arquivos 4K grandes use a versão para Linux ou de linha de comando.
+287 ¦ Lyse partier blomstrer til en myk glød. ¦ Las partes brillantes florecen en un suave resplandor. ¦ Helle Bereiche erblühen zu einem weichen Schimmer. ¦ As partes claras se espalham em um brilho suave.
+288 ¦ Konverter mange GIF-filer til mp4 som VJ-programvare kan spille jevnt. ¦ Convierte muchos archivos GIF a mp4 que el software de VJ reproduce con fluidez. ¦ Wandle viele GIF-Dateien in mp4 um, die VJ-Software flüssig abspielen kann. ¦ Converta vários arquivos GIF em mp4 que o software de VJ reproduz com fluidez.
+289 ¦ Konverter mange mov-, webm-, mkv-, gif-filer … til VJ-vennlig mp4, med navngiving av mange filer. Alt kjører i nettleseren din. ¦ Convierte muchos archivos mov, webm, mkv, gif … a mp4 apto para VJ, con nombres en lote. Todo se ejecuta en tu navegador. ¦ Wandle viele mov-, webm-, mkv-, gif-Dateien … in VJ-taugliches mp4 um, mit Dateinamen für alle auf einmal. Alles läuft in deinem Browser. ¦ Converta vários arquivos mov, webm, mkv, gif … em mp4 próprio para VJ, com nomes em lote. Tudo roda no seu navegador.
+290 ¦ Store/små bokstaver ¦ Mayúsculas/minúsculas ¦ Groß-/Kleinschreibung ¦ Maiúsculas/minúsculas
+291 ¦ Sjekk hvilke klipp som allerede looper ¦ Comprobar qué clips ya son loops ¦ Prüfen, welche Clips schon loopen ¦ Verificar quais clipes já são loops
+292 ¦ Bare Chrome og Edge. Sparer minne med mange eller store filer. Ellers blir resultatene liggende på siden til du laster dem ned. ¦ Solo Chrome y Edge. Ahorra memoria con muchos archivos o archivos grandes. Si no, los resultados se quedan en la página hasta que los descargues. ¦ Nur Chrome und Edge. Spart Speicher bei vielen oder großen Dateien. Sonst bleiben die Ergebnisse auf der Seite, bis du sie herunterlädst. ¦ Somente Chrome e Edge. Economiza memória com muitos arquivos ou arquivos grandes. Caso contrário, os resultados ficam na página até você baixá-los.
+293 ¦ Tøm listen ¦ Vaciar lista ¦ Liste leeren ¦ Limpar lista
+294 ¦ Klikk på stilene du vil ha. Hver fil får én ny klipp per stil. Trykk ¦ Haz clic en los estilos que quieras. Cada archivo recibe un clip nuevo por estilo. Pulsa ¦ Klicke auf die gewünschten Looks. Jede Datei bekommt pro Look einen neuen Clip. Klicke auf ¦ Clique nos estilos que quiser. Cada arquivo recebe um clipe novo por estilo. Clique em
+295 ¦ Fargesyklus ¦ Ciclo de color ¦ Farbzyklus ¦ Ciclo de cores
+296 ¦ Fargene går rundt hele fargehjulet én gang per loop. ¦ Los colores recorren toda la rueda una vez por loop. ¦ Die Farben durchlaufen pro Loop einmal das ganze Farbrad. ¦ As cores percorrem toda a roda uma vez por loop.
+297 ¦ Konverter ¦ Convertir ¦ Konvertieren ¦ Converter
+298 ¦ Konverter GIF-er ¦ Convertir GIFs ¦ GIFs konvertieren ¦ Converter GIFs
+299 ¦ Beskjær til nøyaktig boksen ¦ Recortar exactamente al cuadro ¦ Exakt auf die Box zuschneiden ¦ Cortar exatamente na caixa
+300 ¦ Kryssfade ¦ Fundido cruzado ¦ Überblenden ¦ Fusão cruzada
+301 ¦ Kryssfade slutten inn i starten ¦ Fundir el final con el inicio ¦ Ende in den Anfang überblenden ¦ Fundir o final com o início
+302 ¦ Lengde på kryssfade (s) ¦ Duración del fundido (s) ¦ Länge der Überblendung (s) ¦ Duração da fusão (s)
+303 ¦ Bindestrek - ¦ Guion - ¦ Bindestrich - ¦ Hífen -
+304 ¦ Dype blå skygger, knallrosa lys. ¦ Sombras azul profundo, luces rosa intenso. ¦ Tiefblaue Schatten, knallpinke Lichter. ¦ Sombras azul profundo, luzes rosa vivo.
+305 ¦ Ikke gjør noe (bare konverter) ¦ No hacer nada (solo convertir) ¦ Nichts tun (nur konvertieren) ¦ Não fazer nada (só converter)
+306 ¦ Last ned og konverter limte lenker ¦ Descargar y convertir los enlaces pegados ¦ Eingefügte Links herunterladen und konvertieren ¦ Baixar e converter os links colados
+307 ¦ Last ned og konverter valgte ¦ Descargar y convertir los seleccionados ¦ Ausgewählte herunterladen und konvertieren ¦ Baixar e converter os selecionados
+308 ¦ Nedlastede klipp ¦ Clips descargados ¦ Heruntergeladene Clips ¦ Clipes baixados
+309 ¦ Nedlastede klipp får navnet «leverandør_id» med mindre du endrer malen. ¦ Los clips descargados se llaman «proveedor_id» a menos que cambies la plantilla. ¦ Heruntergeladene Clips heißen „Anbieter_ID“, außer du änderst die Vorlage. ¦ Os clipes baixados se chamam “provedor_id”, a menos que você mude o modelo.
+310 ¦ Slipp GIF-filer her ¦ Suelta aquí archivos GIF ¦ GIF-Dateien hierher ziehen ¦ Solte arquivos GIF aqui
+311 ¦ Slipp videoer her ¦ Suelta aquí videos ¦ Videos hierher ziehen ¦ Solte vídeos aqui
+312 ¦ Duotone ¦ Duotono ¦ Duotone ¦ Duotone
+313 ¦ Kantglød ¦ Brillo de bordes ¦ Kantenglühen ¦ Brilho de bordas
+314 ¦ Forstørr små videoer opp til boksen ¦ Ampliar los videos pequeños hasta el cuadro ¦ Kleine Videos bis zur Box vergrößern ¦ Ampliar vídeos pequenos até a caixa
+315 ¦ Alt kjører i nettleseren din. Filene dine forlater aldri datamaskinen din. ¦ Todo se ejecuta dentro de tu navegador. Tus archivos nunca salen de tu ordenador. ¦ Alles läuft in deinem Browser. Deine Dateien verlassen nie deinen Computer. ¦ Tudo roda dentro do seu navegador. Seus arquivos nunca saem do seu computador.
+316 ¦ Filtre ¦ Filtros ¦ Filter ¦ Filtros
+317 ¦ Finn loops ¦ Buscar loops ¦ Loops finden ¦ Encontrar loops
+318 ¦ Første nummer ¦ Primer número ¦ Erste Nummer ¦ Primeiro número
+319 ¦ Tilpass ¦ Ajustar ¦ Anpassen ¦ Ajustar
+320 ¦ Forover, så bakover ¦ Adelante y luego atrás ¦ Vorwärts, dann rückwärts ¦ Para frente e depois para trás
+321 ¦ Fps ¦ Fps ¦ Fps ¦ Fps
+322 ¦ Gratis API-nøkler (Pexels, Pixabay) ¦ Claves API gratuitas (Pexels, Pixabay) ¦ Kostenlose API-Schlüssel (Pexels, Pixabay) ¦ Chaves de API gratuitas (Pexels, Pixabay)
+323 ¦ GIF → MP4 ¦ GIF → MP4 ¦ GIF → MP4 ¦ GIF → MP4
+324 ¦ Internet Archive (åpne lisenser) ¦ Internet Archive (licencias abiertas) ¦ Internet Archive (offene Lizenzen) ¦ Internet Archive (licenças abertas)
+325 ¦ Internet Archive og Wikimedia Commons fungerer uten konto. Pexels og Pixabay har mange ferdige loops og er gratis, men trenger en nøkkel (tar et minutt): ¦ Internet Archive y Wikimedia Commons funcionan sin cuenta. Pexels y Pixabay tienen muchos loops ya hechos y son gratis, pero necesitan una clave (lleva un minuto): ¦ Internet Archive und Wikimedia Commons funktionieren ohne Konto. Pexels und Pixabay haben viele fertige Loops und sind kostenlos, brauchen aber einen Schlüssel (dauert eine Minute): ¦ O Internet Archive e o Wikimedia Commons funcionam sem conta. Pexels e Pixabay têm muitos loops prontos e são gratuitos, mas precisam de uma chave (leva um minuto):
+326 ¦ Jobber ¦ Trabajos ¦ Aufträge ¦ Trabalhos
+327 ¦ Bare konverter ¦ Solo convertir ¦ Nur konvertieren ¦ Só converter
+328 ¦ Kaleidoskop ¦ Caleidoscopio ¦ Kaleidoskop ¦ Caleidoscópio
+329 ¦ Behold ¦ Mantener ¦ Beibehalten ¦ Manter
+330 ¦ Behold (rundet til 24/25/30/50/60) ¦ Mantener (ajusta a 24/25/30/50/60) ¦ Beibehalten (rastet auf 24/25/30/50/60 ein) ¦ Manter (ajusta para 24/25/30/50/60)
+331 ¦ Behold formen, bare krymp ¦ Mantener la forma, solo reducir ¦ Form beibehalten, nur verkleinern ¦ Manter a forma, só reduzir
+332 ¦ Behold lyd ¦ Conservar el sonido ¦ Ton behalten ¦ Manter o som
+333 ¦ Behold mellomrom ¦ Conservar espacios ¦ Leerzeichen behalten ¦ Manter espaços
+334 ¦ Nøkkelbilde hver (bilder) ¦ Fotograma clave cada (fotogramas) ¦ Keyframe alle (Bilder) ¦ Quadro-chave a cada (quadros)
+335 ¦ Lengde ¦ Duración ¦ Länge ¦ Duração
+336 ¦ Letterbox til nøyaktig boksen ¦ Letterbox exacto al cuadro ¦ Letterbox exakt auf die Box ¦ Letterbox exato na caixa
+337 ¦ Lisensene varierer fra klipp til klipp (Pexels og Pixabay er gratis å bruke; klipp fra Commons og Archive kan kreve navngiving). Forfatter og lisens for hver nedlasting lagres i ¦ Las licencias varían según el clip (Pexels y Pixabay son de uso gratuito; los clips de Commons y Archive pueden requerir atribución). El autor y la licencia de cada descarga se guardan en ¦ Die Lizenzen unterscheiden sich je Clip (Pexels und Pixabay sind kostenlos nutzbar; Clips von Commons und Archive können eine Namensnennung verlangen). Urheber und Lizenz jedes Downloads werden gespeichert in ¦ As licenças variam por clipe (Pexels e Pixabay são de uso gratuito; clipes do Commons e do Archive podem exigir crédito). O autor e a licença de cada download são salvos em
+338 ¦ Last flere resultater ¦ Cargar más resultados ¦ Mehr Ergebnisse laden ¦ Carregar mais resultados
+339 ¦ Lag loops ¦ Crear loops ¦ Loops erstellen ¦ Criar loops
+340 ¦ Gjør dem om til sømløse loops (auto) ¦ Convertirlos en loops sin cortes (auto) ¦ Zu nahtlosen Loops machen (auto) ¦ Transformá-los em loops perfeitos (auto)
+341 ¦ Minste høyde ¦ Altura mínima ¦ Mindesthöhe ¦ Altura mínima
+342 ¦ Modus ¦ Modo ¦ Modus ¦ Modo
+343 ¦ Ting i bevegelse etterlater et mykt spor. ¦ Lo que se mueve deja una estela suave. ¦ Bewegte Dinge ziehen eine weiche Spur hinter sich her. ¦ Coisas em movimento deixam um rastro suave.
+344 ¦ NASA (romfilm) ¦ NASA (imágenes espaciales) ¦ NASA (Weltraumaufnahmen) ¦ NASA (imagens espaciais)
+345 ¦ Navnemal ¦ Plantilla de nombre ¦ Namensvorlage ¦ Modelo de nome
+346 ¦ Navngiving ¦ Nombres ¦ Benennung ¦ Nomes
+347 ¦ Trenger en gratis API-nøkkel – se under ¦ Necesita una clave API gratuita: mira abajo ¦ Braucht einen kostenlosen API-Schlüssel – siehe unten ¦ Precisa de uma chave de API gratuita – veja abaixo
+348 ¦ Neonglød ¦ Brillo neón ¦ Neonglühen ¦ Brilho neon
+349 ¦ Ingen filer ennå. ¦ Aún no hay archivos. ¦ Noch keine Dateien. ¦ Ainda não há arquivos.
+350 ¦ Ingen jobber ennå. ¦ Aún no hay trabajos. ¦ Noch keine Aufträge. ¦ Ainda não há trabalhos.
+351 ¦ Av som standard: loops har vanligvis ikke lyd. ¦ Desactivado por defecto: los loops normalmente no llevan sonido. ¦ Standardmäßig aus: Loops haben normalerweise keinen Ton. ¦ Desligado por padrão: loops normalmente não têm som.
+352 ¦ Én direkte videolenke per linje (https://…/clip.mp4). Hvis yt-dlp er installert, fungerer også sidelenker. ¦ Un enlace directo de video por línea (https://…/clip.mp4). Si yt-dlp está instalado, también funcionan los enlaces de páginas. ¦ Ein direkter Videolink pro Zeile (https://…/clip.mp4). Wenn yt-dlp installiert ist, funktionieren auch Seitenlinks. ¦ Um link direto de vídeo por linha (https://…/clip.mp4). Se o yt-dlp estiver instalado, links de páginas também funcionam.
+353 ¦ En fjerdedel av bildet, speilet fire ganger. ¦ Un cuarto de la imagen, reflejado en cuatro direcciones. ¦ Ein Viertel des Bildes, vierfach gespiegelt. ¦ Um quarto da imagem, espelhado em quatro direções.
+354 ¦ Last bare ned ting du har rett til å bruke. Noen nettsteder tillater ikke at en nettside laster ned filene deres; bruk da «Åpne siden», last ned klippet selv og slipp det i Konverter-fanen. ¦ Descarga solo lo que tengas derecho a usar. Algunos sitios no permiten que una página web descargue sus archivos; entonces usa «Abrir página», descarga el clip tú mismo y suéltalo en la pestaña Convertir. ¦ Lade nur Dinge herunter, die du nutzen darfst. Manche Seiten erlauben es einer Webseite nicht, ihre Dateien herunterzuladen; nutze dann „Seite öffnen“, lade den Clip selbst herunter und ziehe ihn in den Reiter Konvertieren. ¦ Baixe apenas o que você tem direito de usar. Alguns sites não permitem que uma página baixe seus arquivos; nesse caso use “Abrir página”, baixe o clipe você mesmo e solte na aba Converter.
+355 ¦ Bare omrissene er igjen, i farge. ¦ Solo quedan los contornos, en color. ¦ Nur die Umrisse bleiben übrig, in Farbe. ¦ Ficam apenas os contornos, em cores.
+356 ¦ Bare med «Behold formen». Bra for bittesmå GIF-er. ¦ Solo con «Mantener la forma». Bueno para GIF diminutos. ¦ Nur mit „Form beibehalten“. Gut für winzige GIFs. ¦ Só com “Manter a forma”. Bom para GIFs minúsculos.
+357 ¦ Eller lim inn lenker ¦ O pega enlaces ¦ Oder Links einfügen ¦ Ou cole links
+358 ¦ Retning ¦ Orientación ¦ Ausrichtung ¦ Orientação
+359 ¦ Pexels ¦ Pexels ¦ Pexels ¦ Pexels
+360 ¦ Pexels-nøkkel ¦ Clave de Pexels ¦ Pexels-Schlüssel ¦ Chave do Pexels
+361 ¦ Pexels 🔑 ¦ Pexels 🔑 ¦ Pexels 🔑 ¦ Pexels 🔑
+362 ¦ Pixabay ¦ Pixabay ¦ Pixabay ¦ Pixabay
+363 ¦ Pixabay-nøkkel ¦ Clave de Pixabay ¦ Pixabay-Schlüssel ¦ Chave do Pixabay
+364 ¦ Pixabay-type ¦ Tipo de Pixabay ¦ Pixabay-Typ ¦ Tipo do Pixabay
+365 ¦ Pixabay 🔑 ¦ Pixabay 🔑 ¦ Pixabay 🔑 ¦ Pixabay 🔑
+366 ¦ Pixabay: bare animasjoner ¦ Pixabay: solo animaciones ¦ Pixabay: nur Animationen ¦ Pixabay: apenas animações
+367 ¦ Pixabay: filmer + animasjoner ¦ Pixabay: películas + animaciones ¦ Pixabay: Filme + Animationen ¦ Pixabay: filmes + animações
+368 ¦ Pixabay: bare filmer ¦ Pixabay: solo películas ¦ Pixabay: nur Filme ¦ Pixabay: apenas filmes
+369 ¦ Pikselér ¦ Pixelar ¦ Verpixeln ¦ Pixelizar
+370 ¦ Bare vanlige bokstaver (æøå → ae o a) ¦ Solo letras simples (æøå → ae o a) ¦ Nur einfache Buchstaben (æøå → ae o a) ¦ Apenas letras simples (æøå → ae o a)
+371 ¦ Prefiks ¦ Prefijo ¦ Präfix ¦ Prefixo
+372 ¦ Prelinger Archives (gamle filmer i det fri) ¦ Prelinger Archives (película antigua de dominio público) ¦ Prelinger Archives (alte gemeinfreie Filme) ¦ Prelinger Archives (filmes antigos em domínio público)
+373 ¦ Forhåndsinnstilling ¦ Ajuste preestablecido ¦ Voreinstellung ¦ Predefinição
+374 ¦ Forhåndsvisning ¦ Vista previa ¦ Vorschau ¦ Prévia
+375 ¦ Forhåndsvis på første klipp ¦ Vista previa en el primer clip ¦ Vorschau am ersten Clip ¦ Prévia no primeiro clipe
+376 ¦ Kvalitet (lavere = bedre, større) ¦ Calidad (más bajo = mejor, más grande) ¦ Qualität (niedriger = besser, größer) ¦ Qualidade (menor = melhor, maior)
+377 ¦ RGB-splitt ¦ Separación RGB ¦ RGB-Split ¦ Separação RGB
+378 ¦ Rødt og blått driver fra hverandre, som en glitchy linse. ¦ El rojo y el azul se separan, como una lente con fallos. ¦ Rot und Blau driften auseinander, wie bei einem fehlerhaften Objektiv. ¦ Vermelho e azul se afastam, como uma lente com defeito.
+379 ¦ Gjenta til minst (s) ¦ Repetir hasta al menos (s) ¦ Wiederholen bis mindestens (s) ¦ Repetir até pelo menos (s)
+380 ¦ Resultatene er vanlige mp4-filer du kan slippe rett inn i Magic Video Mixer eller annen VJ-programvare. Trenger du mer fart, HEVC-støtte (iPhone) eller HAP? Bruk ¦ Los resultados son archivos mp4 normales que puedes soltar directamente en el Magic Video Mixer o en cualquier software de VJ. ¿Necesitas más velocidad, compatibilidad con HEVC (iPhone) o HAP? Usa la ¦ Die Ergebnisse sind normale mp4-Dateien, die du direkt in den Magic Video Mixer oder jede andere VJ-Software ziehen kannst. Du brauchst mehr Tempo, HEVC-Unterstützung (iPhone) oder HAP? Nimm die ¦ Os resultados são arquivos mp4 comuns que você pode soltar direto no Magic Video Mixer ou em qualquer software de VJ. Precisa de mais velocidade, suporte a HEVC (iPhone) ou HAP? Use a
+381 ¦ Lagre hver fil rett i en mappe jeg velger ¦ Guardar cada archivo directamente en una carpeta que yo elija ¦ Jede Datei direkt in einem Ordner speichern, den ich wähle ¦ Salvar cada arquivo direto em uma pasta que eu escolher
+382 ¦ Lagre nøkler ¦ Guardar claves ¦ Schlüssel speichern ¦ Salvar chaves
+383 ¦ Lagrer ¦ Guardando ¦ Speichern ¦ Salvando
+384 ¦ Søk ¦ Buscar ¦ Suchen ¦ Buscar
+385 ¦ Søk i gratis kilder etter loops, last dem ned og konverter dem til VJ-vennlige klipp. ¦ Busca loops en fuentes gratuitas, descárgalos y conviértelos en clips aptos para VJ. ¦ Durchsuche kostenlose Quellen nach Loops, lade sie herunter und wandle sie in VJ-taugliche Clips um. ¦ Busque loops em fontes gratuitas, baixe-os e converta-os em clipes próprios para VJ.
+386 ¦ Søkeord ¦ Palabras de búsqueda ¦ Suchwörter ¦ Palavras de busca
+387 ¦ Velg alle ¦ Seleccionar todo ¦ Alle auswählen ¦ Selecionar tudo
+388 ¦ Velg filer ovenfor ¦ Selecciona archivos arriba ¦ Wähle oben Dateien aus ¦ Selecione arquivos acima
+389 ¦ Velg filer ovenfor og minst én stil ¦ Selecciona archivos arriba y al menos un estilo ¦ Wähle oben Dateien und mindestens einen Look aus ¦ Selecione arquivos acima e pelo menos um estilo
+390 ¦ Velg ingen ¦ No seleccionar ninguno ¦ Keine auswählen ¦ Selecionar nenhum
+391 ¦ Velg søkeresultater ovenfor ¦ Selecciona resultados de búsqueda arriba ¦ Wähle oben Suchergebnisse aus ¦ Selecione resultados de busca acima
+392 ¦ Kort = jevn skrubbing og looping i VJ-programvare. ¦ Corto = desplazamiento y bucles fluidos en el software de VJ. ¦ Kurz = flüssiges Scrubben und Loopen in VJ-Software. ¦ Curto = rolagem e loops fluidos no software de VJ.
+393 ¦ Kilder: ¦ Fuentes: ¦ Quellen: ¦ Fontes:
+394 ¦ Mellomrom ¦ Espacios ¦ Leerzeichen ¦ Espaços
+395 ¦ Suffiks ¦ Sufijo ¦ Suffix ¦ Sufixo
+396 ¦ Båndstøy, fargelekkasje og litt for mye metning. ¦ Ruido de cinta, sangrado de color y un poco de exceso de saturación. ¦ Bandrauschen, Farbbluten und etwas zu viel Sättigung. ¦ Ruído de fita, vazamento de cor e um pouco de saturação demais.
+397 ¦ Nettleseren er tregere enn skrivebordsversjonen. veryfast er en god balanse. ¦ El navegador es más lento que la versión de escritorio. veryfast es un buen equilibrio. ¦ Der Browser ist langsamer als die Desktop-Version. veryfast ist ein guter Kompromiss. ¦ O navegador é mais lento que a versão de desktop. veryfast é um bom equilíbrio.
+398 ¦ Venstre halvdel speiles over på høyre. ¦ La mitad izquierda se refleja sobre la derecha. ¦ Die linke Hälfte wird auf die rechte gespiegelt. ¦ A metade esquerda é espelhada na direita.
+399 ¦ Størrelsesboksen. Stående materiale snus automatisk. I nettleseren er 1920×1080 eller mindre lurt. ¦ El cuadro de tamaño. El material vertical se gira automáticamente. En el navegador conviene 1920×1080 o menos. ¦ Die Größen-Box. Hochformat-Material wird automatisch gedreht. Im Browser ist 1920×1080 oder kleiner ratsam. ¦ A caixa de tamanho. Material vertical é girado automaticamente. No navegador, 1920×1080 ou menos é o ideal.
+400 ¦ Variabler: {name} {n} {n2} {n3} {n4} {w} {h} {res} {fps} {dur} {date} ¦ Variables: {name} {n} {n2} {n3} {n4} {w} {h} {res} {fps} {dur} {date} ¦ Platzhalter: {name} {n} {n2} {n3} {n4} {w} {h} {res} {fps} {dur} {date} ¦ Variáveis: {name} {n} {n2} {n3} {n4} {w} {h} {res} {fps} {dur} {date}
+401 ¦ Spor ¦ Estelas ¦ Spuren ¦ Rastros
+402 ¦ Kutt til beste loop-punkt ¦ Recortar en el mejor punto de loop ¦ Am besten Loop-Punkt schneiden ¦ Cortar no melhor ponto de loop
+403 ¦ Gjør klipp om til sømløse loops: sjekker loop-punktet, og klipper så, spiller forover + bakover, eller kryssfader. ¦ Convierte clips en loops sin cortes: comprueba el punto de loop y luego recorta, reproduce adelante + atrás o hace un fundido cruzado. ¦ Macht aus Clips nahtlose Loops: prüft den Loop-Punkt und schneidet dann, spielt vorwärts + rückwärts oder überblendet. ¦ Transforma clipes em loops perfeitos: verifica o ponto de loop e depois corta, toca para frente + para trás ou faz fusão cruzada.
+404 ¦ STORE BOKSTAVER ¦ MAYÚSCULAS ¦ GROSSBUCHSTABEN ¦ MAIÚSCULAS
+405 ¦ Understrek _ ¦ Guion bajo _ ¦ Unterstrich _ ¦ Sublinhado _
+406 ¦ VHS-glitch ¦ Glitch de VHS ¦ VHS-Glitch ¦ Glitch de VHS
+407 ¦ VJ-verktøy ¦ Herramientas de VJ ¦ VJ-Werkzeuge ¦ Ferramentas de VJ
+408 ¦ VJ-vennlig utdata ¦ Salida apta para VJ ¦ VJ-taugliche Ausgabe ¦ Saída própria para VJ
+409 ¦ Hele loops gjentas. 0 = av. Magic Video Mixer liker 16 s og lengre. ¦ Se repiten loops enteros. 0 = desactivado. Al Magic Video Mixer le gustan 16 s o más. ¦ Ganze Loops werden wiederholt. 0 = aus. Der Magic Video Mixer mag 16 s und länger. ¦ Loops inteiros são repetidos. 0 = desligado. O Magic Video Mixer gosta de 16 s ou mais. 
+410 ¦ Wikimedia Commons ¦ Wikimedia Commons ¦ Wikimedia Commons ¦ Wikimedia Commons
+411 ¦ svart, hvit eller #rrggbb ¦ negro, blanco o #rrggbb ¦ schwarz, weiß oder #rrggbb ¦ preto, branco ou #rrggbb
+412 ¦ velg filer ¦ elegir archivos ¦ Dateien wählen ¦ escolher arquivos
+413 ¦ velg mappe ¦ elegir carpeta ¦ Ordner wählen ¦ escolher pasta
+414 ¦ credits.csv ¦ credits.csv ¦ credits.csv ¦ credits.csv
+415 ¦ skrivebordsversjonen ¦ versión de escritorio ¦ Desktop-Version ¦ versão de desktop
+416 ¦ f.eks. neontunnel, væske, ild, abstrakte partikler ¦ p. ej. túnel de neón, líquido, fuego, partículas abstractas ¦ z. B. Neon-Tunnel, Flüssigkeit, Feuer, abstrakte Partikel ¦ ex.: túnel de neon, líquido, fogo, partículas abstratas
+417 ¦ rask ¦ rápido ¦ schnell ¦ rápido
+418 ¦ raskere ¦ más rápido ¦ schneller ¦ mais rápido
+419 ¦ liggende ¦ horizontal ¦ Querformat ¦ paisagem
+420 ¦ små bokstaver ¦ minúsculas ¦ Kleinbuchstaben ¦ minúsculas

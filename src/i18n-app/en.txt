@@ -1,0 +1,970 @@
+(when not typing):
+, then
+1920 × 1080 (HD)
+24 per second
+30 per second
+60 per second
+Add files…
+Advanced
+Artist
+Auto-mix starts this many seconds before the end
+Auto-mix to the next track
+Back
+Below
+Big line (song or artist)
+Black & white
+Colour
+Crossfader
+Custom
+Custom colours
+DECK A · PREVIEW
+DECK B · PREVIEW
+Deck {a}
+Default
+Drop music videos here, or
+Drop on a deck to load it straight away. Names like “Artist - Title.mp4” become the poster text.
+Eject
+Electric blue
+Empty. Fill in a poster and press Save.
+Enable MIDI
+Fade time
+Fill the screen (crops)
+Frame rate
+Gold
+Hide
+Hide poster
+Keys
+Learn
+Left
+Level
+Linear
+Live Video DJ Mixer
+Load tracks fully into memory (safer on shows)
+Logo
+Logo image
+Logo image (PNG with transparency works best)
+Logo on / off
+Lower centre
+Lower left
+Lower right
+MIDI control
+Master
+Mint
+Mix to other deck (auto fade)
+Mix → B
+Neon pink
+Night
+No tracks yet.
+Nothing loaded
+OUTPUT
+Off
+Opacity
+Open output window
+Opens the clean output for your projector. Drag it to the projector screen and press F.
+Output size
+Picture fit
+Play
+Play / pause A
+Play / pause B
+Position
+Position deck A
+Position deck B
+Poster slot {a}
+Posters
+Projector:
+Record the mix (picture and sound) to a file
+Red alert
+Remove logo
+Restart
+Right
+Save
+Show logo (upper right)
+Show poster
+Show the track name when a track mixes in
+Show whole picture (black bars)
+Size
+Skips a track's disk reads while it plays. Files over 1.5 GB are streamed instead.
+Slides in from
+Slot {a}
+Slots (click to show,
+Small line
+Smooth (equal power)
+Soft limiter on the master sound
+Sound crossfade
+Sound follows the crossfader
+Sound output
+Space
+Stays for (seconds, 0 = until hidden)
+Stops two loud tracks from clipping when they overlap.
+Streaming or casting:
+Switch light or dark theme
+Text
+Theme
+Title or message
+Tracks
+Upper left
+Volume
+Volume A
+Volume B
+Volume deck A
+Volume deck B
+Works in Chrome and Edge on a computer. Plug in your controller, press
+capture the output window in OBS (Window Capture), or use Chrome's “Cast…” → Cast tab/window and choose the output window. Keep this control window open during the show.
+crossfader ·
+empty
+for full screen.
+hide poster ·
+logo ·
+mix ·
+next to a function and move or press the control you want.
+open the output window, drag it to the projector screen, press
+output window.
+play/pause A ·
+play/pause B ·
+show poster ·
+stores the current poster in the selected slot):
+← Spektronautilus
+● Record
+(hold)
+1. Make a code
+2. Open the link on the other screen (send it to yourself), or copy the code to
+3. The other screen shows an answer code. Paste it here:
+Add videos…
+Answer code from the other screen
+Artist or event
+Big line
+Clips
+Close
+Code to send
+Connect
+Copy link
+Effects
+Flash
+Full screen
+Invert
+Keep this page open and the screen awake during a show. Works best in recent Chrome (Android) and Safari (iPhone), with videos in mp4 (H.264).
+Light or dark theme
+Live Mixer
+Load videos into memory (safer, uses more memory)
+Loop
+Message
+Mirror
+No videos yet.
+Other screen only
+Other ways: use your phone's own Screen Cast / AirPlay mirroring with
+Paste the answer code
+Phone and other screen
+Phone only
+Pick…
+Picture size (smaller = smoother)
+Poster
+Remove
+Repeat this video
+Send to another screen
+Settings
+Share link
+Show
+Show (upper right)
+Show the output on a laptop, a TV browser or a projector computer on the same Wi-Fi. It needs one-time codes, because nothing goes through a server.
+Show track name on mix
+Show whole picture
+Sound follows
+Sound plays on
+Stop
+Strobe
+Then tap → A or → B.
+Zoom
+on, or capture the picture on a laptop.
+phone
+there.
+…/live-mobile/receiver.html
+(20 pads — click a pad to play it on the selected layer, or press its key)
+(channel A) and
+(channel B) · effects
+(when not typing): pads
+1 beat
+1280 × 720 (HD)
+1920 × 1080 (Full HD)
+2 beats
+4 beats
+960 × 540 (light)
+Add
+Add loops…
+Audio input (kick drum)
+BPM
+Beat
+Beat 1 now
+Beat from
+Beats per minute
+Blend {a}
+Blur
+CHANNEL A · PREVIEW
+CHANNEL B · PREVIEW
+Careful with Flash, Strobe and Invert at a fast tempo: flashing light can trigger seizures in some people. Keep it slow at public events.
+Channel {a}
+Clear layer
+Colour spin
+Drop files on the grid to fill empty pads. Loops play muted and repeat.
+Effect amount
+Effect: {a}
+Empty pad {a}. Add a loop.
+Keeps the 20 pads after you close the page. Stored in this browser only.
+Loops
+Lower sizes run smoother on weaker computers.
+Make this moment beat 1
+Mix to other channel (auto fade)
+Multiply
+Normal
+On
+Opacity {a}
+Opacity layer {a}
+Pad {a}
+Pulse every
+Remember my loops on this computer
+Screen
+Select layer {a}
+Select this layer. Pads you press go here.
+Sensitivity
+Set beat 1 (downbeat)
+Shake
+Tap
+Tap / BPM
+Tap tempo
+VJ Mixer
+and
+capture the output window in OBS (Window Capture) or use Chrome's “Cast…”. Keep this control window open during the show.
+clear selected layer.
+empty — pick a pad
+next layer ·
+or
+tap tempo ·
+· layers
+(on the beat)
+8 pads. Mp4 (H.264) works everywhere.
+Beat = now
+Blend of the picked layer
+Clear
+Clear this layer
+Effect strength
+Keep this page open and the screen awake during a show. Works best in recent Chrome (Android) and Safari (iPhone).
+Layers
+Loop pads
+Opacity of the picked layer
+Open the full desktop VJ Mixer
+Strength
+TAP
+pick one, then tap a pad
+All the jobs from the tools and the mixers, in one place. They run in whatever page started them, so keep that page open until it says done.
+Clear finished
+Finished files from the tools are kept in this browser (up to about 600 MB per job) so you can download them here later. The Magic Mixer keeps its own videos on its own page, so use
+Magic Mixer
+Nothing here yet. Start a job in
+Open page
+Queue
+Tools
+or the
+to download those. Nothing leaves your computer.
+, which comes with your downloaded files.
+. Keys are saved in this browser only and are sent only to Pexels / Pixabay.
+1. Files
+1. Find loops
+1080p or more
+2. Pick looks
+2. Settings
+720p or more
+Add files to see the new names.
+Add the word "loop" to the search
+Adds VJ-style looks to many loops at once: glow, glitch, mirror, kaleidoscope and more.
+Any shape
+Any size
+Apply looks
+Auto fallback
+Auto: a clip that already loops is left alone; if cutting a bit off the end gives a clean loop it does that; otherwise it uses the fallback.
+Auto: keep good loops, otherwise fix them
+Background for transparent GIFs
+Big chunky pixels.
+Big files are fine: they are read straight from your disk. The browser version is slower than the desktop version (about 5-10 times), so for lots of large 4K files use the Linux/command-line version.
+Bright parts bloom into a soft glow.
+Bulk convert GIF files to mp4 that VJ software can play smoothly.
+Bulk convert mov, webm, mkv, gif … to VJ-friendly mp4, with bulk file naming. Everything runs in your browser.
+Case
+Check which clips already loop
+Chrome and Edge only. Saves memory with many or big files. Otherwise results stay in the page until you download them.
+Clear list
+Click the looks you want. Every file gets one new clip per look. Press
+Colour cycle
+Colours go round the whole wheel once per loop.
+Convert
+Convert GIFs
+Crop to exactly the box
+Crossfade
+Crossfade end into start
+Crossfade length (s)
+Dash -
+Deep blue shadows, hot pink highlights.
+Do nothing (just convert)
+Download and convert pasted links
+Download and convert selected
+Downloaded clips
+Downloaded clips are named “provider_id” unless you change the template.
+Drop GIF files here
+Drop videos here
+Duotone
+Edge glow
+Enlarge small videos up to the box
+Everything runs inside your browser. Your files never leave your computer.
+Filters
+Find loops
+First number
+Fit
+Forward, then backward
+Fps
+Free API keys (Pexels, Pixabay)
+GIF → MP4
+Internet Archive (open licences)
+Internet Archive and Wikimedia Commons work without an account. Pexels and Pixabay have a lot of ready-made loops and are free, but need a key (takes a minute):
+Jobs
+Just convert
+Kaleidoscope
+Keep
+Keep (snapped to 24/25/30/50/60)
+Keep shape, only shrink
+Keep sound
+Keep spaces
+Keyframe every (frames)
+Length
+Letterbox to exactly the box
+Licences differ per clip (Pexels and Pixabay are free to use; Commons and Archive clips may need credit). The author and licence of every download are saved in
+Load more results
+Make loops
+Make them seamless loops (auto)
+Minimum height
+Mode
+Moving things leave a soft trail behind.
+NASA (space footage)
+Name template
+Naming
+Needs a free API key – see below
+Neon glow
+No files yet.
+No jobs yet.
+Off by default: loops normally have no sound.
+One direct video link per line (https://…/clip.mp4). If yt-dlp is installed, page links also work.
+One quarter of the picture, mirrored four ways.
+Only download things you have the right to use. Some sites do not allow a web page to download their files; then use “Open page”, download the clip yourself and drop it into the Convert tab.
+Only the outlines are left, in colour.
+Only with “Keep shape”. Good for tiny GIFs.
+Or paste links
+Orientation
+Pexels
+Pexels key
+Pexels 🔑
+Pixabay
+Pixabay key
+Pixabay type
+Pixabay 🔑
+Pixabay: animations only
+Pixabay: films + animations
+Pixabay: films only
+Pixelate
+Plain letters only (æøå → ae o a)
+Prefix
+Prelinger Archives (vintage public-domain film)
+Preset
+Preview
+Preview on first clip
+Quality (lower = better, larger)
+RGB split
+Red and blue drift apart, like a glitchy lens.
+Repeat until at least (s)
+Results are plain mp4 files you can drop straight into the Magic Video Mixer or any VJ software. Need more speed, HEVC (iPhone) support or HAP? Use the
+Save each file straight into a folder I choose
+Save keys
+Saving
+Search
+Search free sources for loops, download them and convert them to VJ-friendly clips.
+Search words
+Select all
+Select files above
+Select files above and pick at least one look
+Select none
+Select search results above
+Short = smooth scrubbing and looping in VJ software.
+Sources:
+Spaces
+Suffix
+Tape noise, colour bleed and a bit too much saturation.
+The browser is slower than the desktop version. veryfast is a good balance.
+The left half is mirrored onto the right.
+The size box. Portrait material is turned automatically. In the browser, 1920×1080 or smaller is wise.
+Tokens: {name} {n} {n2} {n3} {n4} {w} {h} {res} {fps} {dur} {date}
+Trails
+Trim to the best loop point
+Turns clips into seamless loops: checks the loop point, then trims, plays forward + backward, or crossfades.
+UPPERCASE
+Underscore _
+VHS glitch
+VJ Tools
+VJ-friendly output
+Whole loops are repeated. 0 = off. The Magic Video Mixer likes 16 s and longer.
+Wikimedia Commons
+black, white or #rrggbb
+choose files
+choose folder
+credits.csv
+desktop version
+e.g. neon tunnel, liquid, fire, abstract particles
+fast
+faster
+landscape
+lowercase
+max s
+medium
+min s
+no preview yet
+portrait
+square
+superfast
+to see each look on the first selected clip.
+ultrafast
+veryfast
+(track name)
+). It is stored only in this browser and sent only to Vimeo. Each finished video gets an
+0 = every shot has the typical length. Higher = calm parts get longer shots and intense parts shorter ones.
+1. Music
+2. Video loops
+3. Mix settings
+4. Export
+A quick camera shake on each trigger. 0.005 is subtle.
+A short zoom pulse on every beat, bar or kick (see next setting). 0.03 is subtle.
+A slow, constant zoom in and out, like the picture is breathing. 0.03 = 3 %.
+Access token
+Adaptive transitions
+Add to export queue
+Advanced ({a})
+Ambient
+Analyze loops now (shows thumbnails)
+At 120 BPM (assumed until the music is analysed): a typical shot lasts about 16 s, and each crossfade about 4.0 s.
+Beat = every beat, bar = the first beat of each bar, kick = detected bass drums.
+Beat zoom
+Breathing cycle (bars)
+Breathing zoom
+Brightness pulse
+Chance that a shot is one step longer or shorter than planned, so changes do not feel mechanical.
+Chill
+Chill is set. You can still adjust everything below.
+Clip sets
+Colour tint
+Create the token at developer.vimeo.com (Create an app, then Generate an access token with the scopes
+Crossfade length (beats)
+Delete all stored videos
+Delete the AI model
+Done:
+Draw a new selection of 100
+Drift
+Drop an audio file or
+Drop videos or a folder, or
+Each part of the song gets a small set of similar loops that take turns, like two to four decks being crossfaded.
+Each version gets its own random seed (or the seed you set, plus 1, 2, …). Settings are saved with each job, so you can change them and queue more.
+Echo trails
+Every N bars one loop in the current set is swapped for a similar one, so long sections slowly change. 0 = off.
+Everyone (public)
+Evolve every (bars)
+Export format:
+Export runs in real time, so a 10-minute track takes about 10 minutes. Keep this tab open while exporting. No sound plays. Finished files stay in this browser until you download or remove them.
+Fades are made longer and softer between clips that look different or differ in brightness, and shorter between clips that are alike. The fade also uses a gentler curve. 0 = every fade has the same length.
+Finished videos are kept inside this page until you press
+Follow the music's energy
+For example: dark forest, slow water, neon city. Needs CLIP. Loops that match the text are preferred.
+Gentle by default. Set to 0 to switch off.
+Groove
+Higher = better picture and a larger file. 8 Mbit/s is about 600 MB for 10 minutes.
+How alike the loops in one set must be in colour, brightness, texture and motion. High = a consistent look. Low = more contrast.
+How different each part of the song looks (colour tint, blend style). 0 = the same look everywhere.
+How layers mix with the picture. Screen and add make dark areas see-through, overlay and soft-light add texture, difference is wild. Auto picks a soft one per section.
+How long each clip stays on screen. One bar is 4 beats.
+How long each layer stays, relative to a normal one.
+How long one in-and-out breath takes.
+How many loops share one section of the song. 2 gives a calm A-B-A-B. 3–4 gives more variation but still one feeling.
+How much layers, tint and breathing swell with the loudness of the music. 0 = constant.
+How much the theme steers which loops are chosen.
+How often a second clip is blended on top of the main one. 0 = never. Layers are also how "Use every loop" fits all loops in.
+How softly one clip melts into the next. The fade is centred on the bar line. 0 = hard cut. Breaks and calm parts get fades up to 1.5 times longer.
+How strongly loops are chosen to suit the energy of the music. 0 ignores it.
+How strongly the next clip is chosen to look and feel like the one before it (colour, brightness, texture and motion), so the mix flows instead of jumping. 0 = only the normal rotation. Every loop is still used.
+How visible the blended layer is.
+If the picture feels slightly early or late compared with the music, shift it here.
+Inspired by VJ software: a second clip is blended on top for a while, and each part of the song gets its own colour tint.
+Irregularity
+Larger is sharper but needs a stronger computer. If the export stutters, choose a smaller size.
+Layer blend mode
+Layer length
+Layer opacity
+Layers & looks
+Leaves soft trails behind moving things by blending frames. 0 = off.
+Lets an AI model look at your loops and judge how similar they really are. The first time, a model (about 100–150 MB) is downloaded from huggingface.co and cached in your browser. After that it works offline.
+Light = flash brighter, dark = dip darker.
+Longest shot (bars)
+Look variation
+Loops per section
+MP4 (H.264)
+Magic Video Mixer
+Match the music's intensity
+Mirrors the left half of the picture to the right in some sections (kaleidoscope-like).
+Mood:
+Motion & effects
+Music reactivity
+Name
+No file chosen
+No shot will be shorter than this (except where a section ends).
+Only me (private)
+Only with the link (unlisted)
+Output
+Pace
+Parts of the song that sound alike get the same loops, so the form of the music is recognisable. Turn off to give every section its own loops.
+Paste your personal Vimeo access token
+Pause
+Picture flashes lighter or darker on each trigger. 0.05 is subtle.
+Picture size
+Plays loops slower when the music is calm (down to half speed). 0 = always normal speed.
+Pulse on
+Pulse type
+Quality (Mbit/s)
+Randomness when choosing loops. Low = always the best match. High = more surprising choices.
+Recommended
+Rendering:
+Reuse loops in similar sections
+Roughly how long the music may stay in one scene with the same set of loops. Longer = fewer scene changes.
+Section length (s)
+Seed (empty = random)
+Shake on
+Shortest shot (bars)
+Showcase number (optional)
+Slow motion in calm parts
+Slow, soft video mixes for your music, exported as a video file. Everything runs in your browser (CPU and GPU), and your files are never uploaded. Add a rhythmic track and up to 100 seamless loops, then add one or more exports to the queue.
+Smooth flow between clips
+Start a new clip on drops
+Stop current
+Stopped/failed:
+Storage in this browser
+Strength of the colour tint of each section (needs Look variation above 0).
+Style match
+Sync offset (ms)
+The normal time a clip stays on screen. 4 bars is relaxed, 8 bars is slow (about 16 s at 120 BPM), 16–32 bars is very slow and ambient.
+The queue is empty.
+The same seed and settings give the same mix. The seed of every job is shown in the queue.
+Theme (optional, English)
+Theme strength
+This page uses 0 MB in this browser.
+Transitions
+Tries to show all your loops at least once, by giving the ones not yet used priority and adding them as short layers on top of longer shots. The queue shows how many were used.
+Typical shot length (bars)
+Upload to Vimeo
+Upload to Vimeo (optional)
+Upper limit for how long one clip can stay on screen.
+Use CLIP (AI image understanding)
+Use every loop
+Variety
+Versions
+Waiting:
+When the music has a big drop, a new clip begins exactly on it, with a faster fade (only if that does not make a very short shot).
+Who can watch
+Zoom on
+add
+always
+auto
+bar
+beat
+button.
+choose file
+dark
+difference
+edit
+for example 12463997
+kick
+light
+lighten
+off
+on them, so download first. Videos left behind by an interrupted run are deleted automatically the next time the page opens.
+overlay
+private
+screen
+soft-light
+sometimes
+upload
+2 alternates calmly between two clips (A-B-A-B). 3 adds a little more variety.
+3. Style
+60 (the default) gives the smoothest motion and fades, but needs more from the phone, takes more memory and makes larger files. If the phone struggles or the page reloads, choose 30 or 24.
+A video was interrupted
+An AI model (CLIP) looks at what is in your loops and groups similar ones, which gives smoother sets. It downloads about 90 MB the first time (about 150 MB with a theme), so use Wi-Fi. It takes a little longer before the video starts. It is heavy for the phone: if the page reloads on its own, the phone ran out of memory, so switch it off or use fewer loops. If the AI cannot start, the app carries on without it.
+Checking…
+Choose music file
+Choose track
+Choose video files
+Choose videos
+Crossfade between clips
+Discard it
+Each clip stays about 16 seconds at 120 BPM (8 bars).
+Exports
+Fast
+Higher is sharper but needs more from the phone and makes bigger files. 720p is a good start.
+How long each clip stays
+How softly one clip melts into the next. Long = dreamy.
+Keep this page open and the screen on while a video is made. It runs in real time, so a 4-minute track takes about 4 minutes. If you switch app, it pauses until you come back. On an iPhone, turn off Low Power Mode first, because it stops videos from playing.
+Landscape
+Long
+Loops per part of the song
+Loops that match the theme are preferred. Needs smarter matching switched on.
+Make video
+Medium
+Mobile. Soft video mixes for your music, made right on your phone. Nothing is uploaded.
+Mood
+More options
+Nothing yet. Press "Make video" below.
+Pick the same MP3 again to get the original sound (optional)
+Portrait
+Portrait is for vertical video (stories, phone screens).
+Relaxed and soft. A good default.
+Save what was recorded
+Seamless loops work best. Up to 24 are used, which keeps the phone happy.
+Seed (optional)
+Short
+Slow
+Smarter matching (AI)
+Storage on this phone
+The same seed and settings give the same mix. The seed of each export is shown on its card.
+Theme (optional), e.g. dark forest
+random
+Choosing the sound device needs a recent Chrome or Edge. The system default is used.
+Deck {a} can't play “{b}”. The format may not be supported here. Convert it to mp4 (H.264) with the Tools.
+Not enough memory to preload this file. It will be streamed from disk.
+Load a track on deck {a} first.
+Deck {a} could not start: {b}
+Mix → A
+Pad {a}: can't play “{b}”. Convert it to mp4 (H.264) with the Tools.
+All 20 pads are full. Remove one with ✕ first.
+Pad {a}: {b}
+Pad {a} is empty.
+{a}<small>{b}</small>
+Listening… the beat follows the kick drum.
+Could not use the audio input:
+Output window open
+Type some text for the poster first.
+Poster slot {a} is empty.
+Saved to slot {a}.
+That file is not an image the browser can read.
+The browser blocked the pop-up. Allow pop-ups for this site and try again.
+Output window open. Drag it to the projector and press F.
+Could not remember the loops:
+This browser has no MIDI support. Use Chrome or Edge on a computer.
+On, but no device found. Plug one in.
+MIDI was not allowed:
+Deck {c}
+Deck {a} can't play “{b}”. Use an mp4 (H.264) video.
+Load a video on deck {a} first.
+Deck {a}: {b}
+Type some text first.
+That is not an image I can read.
+This browser can not show the picture full screen here. Use your phone's screen cast instead.
+This browser can not send video to another screen.
+Making code…
+Connected ✓
+1. Make a new code
+Could not make a code:
+Link copied.
+Select and copy the code by hand.
+Spektronautilus receiver
+Make a code first.
+Pad {a}: can't play “{b}”. Try an mp4 (H.264) file.
+All 8 pads are full. Remove one with ✕ first.
+Remove loop
+{a} file(s) × {b} look(s) = {c} new clip(s)
+Fast mode: using ffmpeg on this computer ({a} cores{b}).
+Checking {a}/{b}…
+Done. Hover a label for details.
+Saved in this browser.
+Type what you are looking for.
+Nothing found. Try other words.
+Add and select a clip first.
+Preview {a}/{b}: {c}…
+Done. Click the looks you like.
+No picture found in this file
+Could not apply this look (
+Could not convert this file (unsupported format?
+Select search results first.
+Paste at least one link.
+Add and select some files first.
+Pick at least one look first.
+No video stream found
+Could not read this video
+; a better loop point exists after frame {a} (keeps {b} %)
+Clip is too short to make a loop of
+Reversing failed (not enough memory? try a smaller size)
+Joining the loop failed
+Clip is too short for a crossfaded loop
+Crossfade failed
+Encoding failed
+Unknown loop mode
+{a}; before: {b}
+{a}: HTTP {b}
+Open licence
+Pexels needs a free API key
+Pexels License
+Pixabay needs a free API key
+Pixabay video
+Pixabay Content License
+Public domain (Prelinger Archives)
+Open licence (see page)
+NASA media (public domain unless marked)
+No video file in this archive item
+No mp4 file for this NASA item
+No download link
+This site does not let a web page download its files. Use "Open page", download the clip yourself and drop it into the Convert tab.
+Download failed (HTTP {a})
+File is too large for the browser
+The code is empty.
+That code does not look right. Copy all of it, with nothing added.
+Loading the video engine (about 30 MB, only the first time)…
+The video engine files are missing. Run python3 get-ffmpeg.py in the repository once (it downloads ffmpeg.wasm into docs/tools/vendor), then reload this page. (Using the Linux version? Install ffmpeg instead, for example sudo apt install ffmpeg , and start Spektronautilus again.)
+The local engine could not store a file (
+The local engine did not start (
+The local engine stopped. If you pressed Stop this is normal.
+Could not read
+{a} running or waiting · {b} finished
+This file is no longer stored. Run the job again.
+These files are no longer stored.
+Analyzing music… {a} %
+Finding the beat…
+Too few beats found. Is the music rhythmic enough?
+Finding song sections…
+At {a} BPM{b}: a typical shot lasts about {c} s, and each crossfade about {d} s.
+Tempo {a} BPM with a {b} beat and {c} kick drums per second.
+Your loops are {a} and {b} in style, so shots last {c} bars (about {d} s) with {e} loops per section and style match {f}.
+Crossfades are {a} beats (about {b} s) and the music is cut into sections of about {c} s.
+Add music and loops first, then choose Recommended.
+Recommended is set (it feels {a}). You can still adjust everything below.
+{a} is set. You can still adjust everything below.
+This video does not seek or decode in this browser
+Loading the CLIP model (first time: about 100–150 MB download)…
+Analyzing loops 0/{a}…
+Analyzing loops {a}/{b}…
+None of the videos could be read by this browser (try H.264 mp4).
+CLIP: looking at loop {a}/{b}…
+{a} BPM · {b} shots · {c} sections · {d}/{e} loops used{f}{g}
+Paste your Vimeo access token under "Upload to Vimeo (optional)" first.
+Vimeo said {a}{b}
+Vimeo: creating the video…
+Made with Spektronautilus. {a}
+Upload part failed (
+Vimeo: uploading {a} % ({b} of {c} MB)…
+Added to your showcase.
+It could not be added to the showcase (
+It could not be added to the showcase.
+Uploaded to Vimeo. Vimeo is now processing it, which can take a few minutes.
+Vimeo upload failed:
+This is not an MP3 file
+No MP3 audio frames found
+Very slow and dreamy. Long shots, long fades.
+A little more movement, with a gentle zoom on the bar.
+Each clip stays about 30 seconds at 120 BPM (16 bars).
+Each clip stays about 8 seconds at 120 BPM (4 bars).
+This does not look like an audio file. The app will still try to read it.
+This is a large track. Very long tracks can be too much for some phones.
+Looking at your loops 0/{a}…
+Looking at your loops {a}/{b}{c}…
+This phone could not open your videos for analysis. Turn off Low Power Mode, try fewer or shorter H.264 mp4 loops, and try again.
+This phone could not read any of the videos. H.264 mp4 files work best. Try fewer or shorter loops.
+The AI worker could not start
+The AI is looking at loop {a}/{b}…
+The AI returned no result
+Loading the first clips…
+Fixing duration and seeking…
+Fixing duration and seeking… {a} %
+The original MP3 could not be attached, so the sound is a lower-quality recording.
+The original MP3 is attached as the sound (not re-encoded), lined up with the picture.
+Could not fix the MP4 index. The original file is kept.
+The phone is not letting the videos play. Turn off Low Power Mode, then tap Resume.
+Making video
+{a} · {b}-bar clips · seed {c}
+Download{d}
+Open on Vimeo
+Share / save
+Make another
+Choose a music track first.
+Choose some video loops first.
+This browser cannot record video.
+Reading the music…
+This phone could not read the audio file. MP3, M4A and WAV usually work.
+Tempo {a} BPM, {b} beat. {c} energy, {d} drop{e}, so it feels {f}.
+Your loops are {a} and {b}.
+Clips last about {a} s ({b} bars), crossfade {c} beats (about {d} s), {e} loops per section.
+Add a track and some videos first, then choose Recommended.
+Analyzing your music and loops…
+{a} loop{b} very heavy for a phone (over 10 Mbit/s: {c}{d}). Heavy loops are the most likely reason for hangs and reloads. Converting them to 720p H.264 (about 3 Mbit/s) makes it much steadier.
+AI matching could not run on this phone, so standard matching was used.
+{a} BPM · {b} clips{c}{d}
+Paused because the page was hidden. Come back and press Resume.
+This page uses {a} on the phone.
+Your browser does not report how much storage this page uses.
+Wait until the video that is being made is finished, or stop it first.
+Delete all videos stored by this page? Download the ones you want first.
+The AI model will be downloaded again the next time it is used (about 90 MB).
+The page reloaded while the AI (CLIP) was running. The phone probably ran out of memory. Switch Smarter matching off, or try fewer loops and a smaller picture size.
+It stopped at {a} of {b}.
+The page reloaded while a video was being made. That usually means the phone ran out of memory or the screen locked. Try 480p, fewer loops or a shorter track, and keep the screen on.
+Part of the video was saved ({a} MB{b}). You can still get it as a video file.
+Download recovered video
+Preparing the video… {a} %
+This recording could not be repaired.
+Download recovered video ({b} MB)
+Could not save it:
+Magic Mixer (phone)
+already loops ({a})
+trimmed to the best loop point (frame {a})
+{a}: the browser could not reach it (blocked or offline)
+({a}) AND mediatype:movies AND {b}
+A new version is ready.
+Update now
+En ny versjon er klar.
+Oppdater nå
+Hay una versión nueva.
+Eine neue Version ist bereit.
+Jetzt aktualisieren
+Uma nova versão está pronta.
+Atualizar agora
+. Check that the token has the scopes upload, edit and private.
+Made with Spektronautilus. {a}
+. Press the button to try again.
+Could not apply this look ({a})
+Could not convert this file (unsupported format? {a})
+Could not read {a} from the local engine.
+Video format
+Works without internet
+Screen stays awake
+Pop-up windows
+Second screen
+MIDI controller
+Sound
+Battery
+Speed
+Free space
+Output window
+OK
+Check
+Problem
+Info
+This browser plays mp4 (H.264), the format the mixers like best.
+This browser can't play mp4 (H.264). Use Chrome, Edge or Safari, or convert your loops with the Tools.
+The site is saved in this browser and also works without internet.
+Not saved for offline use yet. Open the site once with internet and wait a minute, then it also works without Wi-Fi at the venue.
+The screen can be kept awake during the show.
+This browser can't keep the screen awake. Turn off the screen saver and sleep in your system settings.
+Pop-up windows are allowed (needed for the output window).
+The browser blocked a pop-up. Allow pop-ups for this site, or the output window cannot open.
+A second screen is connected.
+Only one screen found. Connect the projector, then press “Run the check again”.
+This browser cannot tell if a second screen is connected. Open the output window and see.
+Full screen is available.
+Full screen is not available in this browser.
+This browser has no MIDI. Use Chrome or Edge if you want to use a controller.
+{a} MIDI controller(s) connected.
+No MIDI controller found. That is fine if you use the mouse or touch.
+MIDI is not switched on yet. Press “Enable MIDI” if you use a controller.
+Sound is ready.
+Sound is not available in this browser.
+Charging ({a} %).
+The battery is low ({a} %). Plug in before the show.
+Battery {a} %.
+Smooth: about {a} frames per second on this screen ({b} Hz).
+Slow: only about {a} frames per second. Close other tabs and programs, and use a smaller picture size.
+{a} GB free space in this browser.
+Little free space ({a} GB). Free up disk space before you record.
+The output window is open.
+The output window is not open yet. Press “Open output window”.
+{a} loop(s) loaded.
+No loops yet. Add some to the pads first.
+{a} track(s) in the list.
+No tracks yet. Add some videos first.
+Ready for the show?
+Check this device before you go live
+A quick check of this device and browser. Nothing is sent anywhere.
+Run the check again
+Show test card
+Copy report
+Copied
+{a} thing(s) worth a look before you go on.
+Everything looks good. Have a great show!
+Test card
+{a} × {b} pixels
+Round circle, all four corners and the pink frame visible: the picture fits the screen.
+Press F for full screen · Esc or click to close
+Cut clips to the shape you need (widescreen, vertical, square) and trim the start and the end.
+Crop & trim
+Sizes
+HAP / ProRes
+Catalogue
+Loop pack
+2. Pick sizes
+Every file gets one new clip per size. A size bigger than the clip itself is skipped. Use the small proxy for editing on a slow computer, and the big ones for the show.
+480p (small proxy)
+This tool needs the Linux (local) version.
+HAP and ProRes cannot be made in the web version. Everything else here works in the browser.
+Crop and trim
+Cut to the shape
+Widescreen 16:9
+Vertical 9:16 (phone, stories)
+Square 1:1
+Ultra-wide 21:9
+Keep the shape (only trim)
+The picture is cut, not squeezed. The size box above sets the largest size.
+Keep which part
+The middle
+The start (left or top)
+The end (right or bottom)
+Start at (seconds)
+Cuts this much off the beginning.
+Length (seconds)
+0 = until the end of the clip.
+Format
+HAP (fast to play, big files)
+HAP Q (better colour, bigger)
+HAP Alpha (keeps transparency)
+ProRes 422 Proxy (small)
+ProRes 422 LT
+ProRes 422
+ProRes 422 HQ (best for editing)
+ProRes 4444 (keeps transparency)
+HAP plays smoothly in Resolume, VDMX, Millumin and others, because the graphics card does the work. ProRes is for editors like Final Cut and DaVinci Resolve. Files are .mov and much bigger than mp4.
+Title
+Shown at the top of the catalogue.
+Check which clips loop seamlessly
+Takes a little longer. Clips over a minute are not checked.
+Pack details
+Name of the pack
+Made by
+Licence
+CC0: public domain, anything goes
+CC BY 4.0: free to use, credit the author
+Free for personal and commercial use, no reselling of the loops
+Personal use only
+Custom (describe it in the notes)
+Notes (shown in the info file)
+For example where to buy more, a website or how to credit you.
+Adds a loop mark in the catalogue inside the pack.
+Make several sizes of every clip at once: a small proxy for editing, 720p, 1080p, 4K.
+Make sizes
+Select files above and pick at least one size
+Professional formats for Resolume, VDMX, Millumin and video editors. Needs the Linux (local) version.
+Export
+A list of all your loops with picture, length, size and loop quality, as a web page and a spreadsheet file.
+Make catalogue
+Bundle loops into one zip that is ready to share: preview picture, info file, credits and licence.
+Build pack
+Pick at least one size first.
+HAP and ProRes need the Linux (local) version of Spektronautilus, because the web version cannot make them. Everything else on this page works in the browser.
+{a} file(s) × {b} size(s)
+The start time is after the end of this clip
+Could not crop this file ({a})
+Could not export this file ({a})
+Packing the zip…
+Building the files…

@@ -21,6 +21,8 @@ const S = {
 window.SPK = { S, cfg };
 
 const toastEl = $('#toast'); let toastT;
+window.SPK_CHECK_EXTRA = () => [S.out && !S.out.closed ? { name: 'Output window', state: 'ok', msg: 'The output window is open.' } : { name: 'Output window', state: 'warn', msg: 'The output window is not open yet. Press “Open output window”.' },
+  S.lib.length ? { name: 'Tracks', state: 'ok', msg: '{a} track(s) in the list.', a: S.lib.length } : { name: 'Tracks', state: 'warn', msg: 'No tracks yet. Add some videos first.' }];
 function toast(msg, ms = 3500) { toastEl.textContent = msg; toastEl.classList.add('show'); clearTimeout(toastT); toastT = setTimeout(() => toastEl.classList.remove('show'), ms); S.log.push(msg); }
 const safe = (fn, label) => (...a) => { try { return fn(...a); } catch (e) { console.error(label || fn.name, e); S.log.push('ERR ' + (label || fn.name) + ': ' + e.message); } };
 

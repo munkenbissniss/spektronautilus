@@ -14,7 +14,7 @@
 body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.4 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;touch-action:manipulation;padding:env(safe-area-inset-top) env(safe-area-inset-right) env(safe-area-inset-bottom) env(safe-area-inset-left)}
 .wrap{max-width:600px;margin:0 auto;padding:10px 12px 40px}
 a{color:inherit}h1{font-size:1.25rem;margin:0;letter-spacing:-.02em}h2{font-size:1rem;margin:0 0 6px}
-.top{display:flex;align-items:center;gap:8px;flex-wrap:wrap;margin-bottom:8px}.top .sp{flex:1}.back{font-size:.8rem;color:var(--mute);text-decoration:none}
+.top{display:flex;align-items:center;gap:8px;flex-wrap:wrap;margin-bottom:8px}.top .sp{flex:1}.back{display:inline-block;padding:10px 0;font-size:.8rem;color:var(--mute);text-decoration:none}
 button{font:inherit;cursor:pointer;border:2px solid var(--ink);background:transparent;color:var(--ink);padding:8px 14px;border-radius:999px;font-weight:700;min-height:44px}
 button.main,button.on{background:var(--ink);color:var(--bg)}button.sm{min-height:36px;padding:3px 12px;font-size:.9rem}button:disabled{opacity:.4}
 button:focus-visible,input:focus-visible,select:focus-visible,summary:focus-visible{outline:3px solid var(--b);outline-offset:2px}
@@ -47,9 +47,13 @@ textarea{width:100%;font:.75rem ui-monospace,monospace;min-height:90px;border:1p
 .dots{display:flex;gap:6px}.dots i{width:12px;height:12px;border-radius:50%;background:var(--line)}.dots i.on{background:var(--b)}
 .fx{grid-template-columns:repeat(4,1fr)}.fx button.on{background:var(--b);border-color:var(--b);color:#fff}
 </style>
+<link rel="manifest" href="../manifest.webmanifest">
+<script src="../shared/sw-register.js" defer></script>
+<script src="../shared/i18n.js"></script>
+<script src="../shared/check.js"></script>
 </head>
 <body>
-<div class="wrap">
+<div class="wrap" role="main">
 <div class="top"><div><a class="back" href="../">← Spektronautilus</a><h1>VJ Mixer <span class="chip">phone</span></h1></div><div class="sp"></div><button id="fs" class="sm">Full screen</button><button id="theme" class="sm" aria-label="Light or dark theme">Theme</button></div>
 
 <div id="stage"><canvas id="prog" width="960" height="540"></canvas><button class="sm fsx" id="fsx">Close</button></div>
@@ -76,6 +80,7 @@ textarea{width:100%;font:.75rem ui-monospace,monospace;min-height:90px;border:1p
   <div class="row" style="margin-top:8px"><button class="sm" id="half">÷2</button><button class="sm" id="dbl">×2</button><button class="sm" id="beat1">Beat = now</button><span class="grow"></span><div class="dots" id="dots"><i></i><i></i><i></i><i></i></div></div>
   <h2 style="margin-top:12px">Effects <span class="hint" style="font-weight:400">(on the beat)</span></h2>
   <div class="fx" id="fx"></div>
+  <p class="hint" style="margin:6px 0 0">Careful with Flash, Strobe and Invert at a fast tempo: flashing light can trigger seizures in some people. Keep it slow at public events.</p>
   <div class="row" style="margin-top:8px"><label class="hint" for="fxAmt">Strength</label><input type="range" id="fxAmt" min="0" max="100" value="60" class="grow" aria-label="Effect strength"></div>
 </div>
 
@@ -87,7 +92,7 @@ textarea{width:100%;font:.75rem ui-monospace,monospace;min-height:90px;border:1p
 </details>
 
 <details class="card"><summary>Logo</summary>
-  <input type="file" id="logoFile" accept="image/*"><label class="f" for="logoSize">Size</label><input type="range" id="logoSize" min="4" max="30" value="12">
+  <input type="file" id="logoFile" accept="image/*" aria-label="Logo image"><label class="f" for="logoSize">Size</label><input type="range" id="logoSize" min="4" max="30" value="12">
   <div class="row" style="margin-top:6px"><label class="hint row" style="gap:6px"><input type="checkbox" id="logoOn" checked style="width:22px;height:22px"> Show (upper right)</label><button class="sm" id="logoClear">Remove</button></div>
 </details>
 

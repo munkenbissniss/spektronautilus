@@ -1,0 +1,200 @@
+1 ¦ (når du ikke skriver): ¦ (cuando no estás escribiendo): ¦ (wenn du nicht tippst): ¦ (quando você não está digitando):
+2 ¦ , deretter ¦ , luego ¦ , dann ¦ , depois
+3 ¦ 1920 × 1080 (HD) ¦ 1920 × 1080 (HD) ¦ 1920 × 1080 (HD) ¦ 1920 × 1080 (HD)
+4 ¦ 24 per sekund ¦ 24 por segundo ¦ 24 pro Sekunde ¦ 24 por segundo
+5 ¦ 30 per sekund ¦ 30 por segundo ¦ 30 pro Sekunde ¦ 30 por segundo
+6 ¦ 60 per sekund ¦ 60 por segundo ¦ 60 pro Sekunde ¦ 60 por segundo
+7 ¦ Legg til filer… ¦ Añadir archivos… ¦ Dateien hinzufügen… ¦ Adicionar arquivos…
+8 ¦ Avansert ¦ Avanzado ¦ Erweitert ¦ Avançado
+9 ¦ Artist ¦ Artista ¦ Künstler ¦ Artista
+10 ¦ Auto-miksen starter så mange sekunder før slutten ¦ La mezcla automática empieza estos segundos antes del final ¦ Die Auto-Mischung startet so viele Sekunden vor dem Ende ¦ A mixagem automática começa estes segundos antes do fim
+11 ¦ Auto-miks til neste låt ¦ Mezcla automática a la siguiente pista ¦ Auto-Mix zum nächsten Titel ¦ Mixagem automática para a próxima faixa
+12 ¦ Tilbake ¦ Atrás ¦ Zurück ¦ Voltar
+13 ¦ Under ¦ Abajo ¦ Unten ¦ Embaixo
+14 ¦ Stor linje (låt eller artist) ¦ Línea grande (canción o artista) ¦ Große Zeile (Song oder Künstler) ¦ Linha grande (música ou artista)
+15 ¦ Svart-hvitt ¦ Blanco y negro ¦ Schwarzweiß ¦ Preto e branco
+16 ¦ Farge ¦ Color ¦ Farbe ¦ Cor
+17 ¦ Crossfader ¦ Crossfader ¦ Crossfader ¦ Crossfader
+18 ¦ Egendefinert ¦ Personalizado ¦ Benutzerdefiniert ¦ Personalizado
+19 ¦ Egne farger ¦ Colores personalizados ¦ Eigene Farben ¦ Cores personalizadas
+20 ¦ DECK A · FORHÅNDSVISNING ¦ DECK A · VISTA PREVIA ¦ DECK A · VORSCHAU ¦ DECK A · PRÉVIA
+21 ¦ DECK B · FORHÅNDSVISNING ¦ DECK B · VISTA PREVIA ¦ DECK B · VORSCHAU ¦ DECK B · PRÉVIA
+22 ¦ Deck {a} ¦ Deck {a} ¦ Deck {a} ¦ Deck {a}
+23 ¦ Standard ¦ Predeterminado ¦ Standard ¦ Padrão
+24 ¦ Slipp musikkvideoer her, eller ¦ Suelta aquí videos musicales, o ¦ Musikvideos hierher ziehen, oder ¦ Solte videoclipes aqui, ou
+25 ¦ Slipp på en deck for å laste den med en gang. Navn som «Artist - Tittel.mp4» blir plakatteksten. ¦ Suéltalo sobre un deck para cargarlo al instante. Nombres como «Artista - Título.mp4» se convierten en el texto del cartel. ¦ Auf ein Deck ziehen, um es sofort zu laden. Namen wie „Künstler - Titel.mp4“ werden zum Plakattext. ¦ Solte sobre um deck para carregar na hora. Nomes como “Artista - Título.mp4” viram o texto do cartaz.
+26 ¦ Løs ut ¦ Expulsar ¦ Auswerfen ¦ Ejetar
+27 ¦ Elektrisk blå ¦ Azul eléctrico ¦ Elektrisches Blau ¦ Azul elétrico
+28 ¦ Tom. Fyll inn en plakat og trykk Lagre. ¦ Vacío. Rellena un cartel y pulsa Guardar. ¦ Leer. Plakat ausfüllen und auf Speichern klicken. ¦ Vazio. Preencha um cartaz e clique em Salvar.
+29 ¦ Slå på MIDI ¦ Activar MIDI ¦ MIDI aktivieren ¦ Ativar MIDI
+30 ¦ Overgangstid ¦ Tiempo de fundido ¦ Überblendzeit ¦ Tempo de transição
+31 ¦ Fyll skjermen (beskjærer) ¦ Llenar la pantalla (recorta) ¦ Bildschirm füllen (beschneidet) ¦ Preencher a tela (corta)
+32 ¦ Bildefrekvens ¦ Fotogramas por segundo ¦ Bildrate ¦ Taxa de quadros
+33 ¦ Gull ¦ Oro ¦ Gold ¦ Ouro
+34 ¦ Skjul ¦ Ocultar ¦ Ausblenden ¦ Ocultar
+35 ¦ Skjul plakat ¦ Ocultar cartel ¦ Plakat ausblenden ¦ Ocultar cartaz
+36 ¦ Taster ¦ Teclas ¦ Tasten ¦ Teclas
+37 ¦ Lær ¦ Aprender ¦ Lernen ¦ Aprender
+38 ¦ Venstre ¦ Izquierda ¦ Links ¦ Esquerda
+39 ¦ Nivå ¦ Nivel ¦ Pegel ¦ Nível
+40 ¦ Lineær ¦ Lineal ¦ Linear ¦ Linear
+41 ¦ Live Video DJ-mikser ¦ Mezclador de video DJ en vivo ¦ Live-Video-DJ-Mixer ¦ Mixer de vídeo DJ ao vivo
+42 ¦ Last sporene helt inn i minnet (tryggere på show) ¦ Cargar las pistas completas en memoria (más seguro en shows) ¦ Titel komplett in den Speicher laden (sicherer bei Shows) ¦ Carregar as faixas inteiras na memória (mais seguro em shows)
+43 ¦ Logo ¦ Logotipo ¦ Logo ¦ Logo
+44 ¦ Logobilde ¦ Imagen del logotipo ¦ Logo-Bild ¦ Imagem do logo
+45 ¦ Logobilde (PNG med gjennomsiktighet fungerer best) ¦ Imagen del logotipo (un PNG con transparencia funciona mejor) ¦ Logo-Bild (PNG mit Transparenz funktioniert am besten) ¦ Imagem do logo (PNG com transparência funciona melhor)
+46 ¦ Logo av / på ¦ Logotipo sí / no ¦ Logo an / aus ¦ Logo ligado / desligado
+47 ¦ Nederst i midten ¦ Abajo al centro ¦ Unten mittig ¦ Embaixo no centro
+48 ¦ Nederst til venstre ¦ Abajo a la izquierda ¦ Unten links ¦ Embaixo à esquerda
+49 ¦ Nederst til høyre ¦ Abajo a la derecha ¦ Unten rechts ¦ Embaixo à direita
+50 ¦ MIDI-kontroll ¦ Control MIDI ¦ MIDI-Steuerung ¦ Controle MIDI
+51 ¦ Master ¦ Master ¦ Master ¦ Master
+52 ¦ Mint ¦ Menta ¦ Mint ¦ Menta
+53 ¦ Miks til den andre decken (auto-overgang) ¦ Mezclar al otro deck (fundido automático) ¦ Zum anderen Deck mischen (automatische Überblendung) ¦ Mixar para o outro deck (transição automática)
+54 ¦ Miks → B ¦ Mezclar → B ¦ Mischen → B ¦ Mixar → B
+55 ¦ Neonrosa ¦ Rosa neón ¦ Neonpink ¦ Rosa neon
+56 ¦ Natt ¦ Noche ¦ Nacht ¦ Noite
+57 ¦ Ingen spor ennå. ¦ Aún no hay pistas. ¦ Noch keine Titel. ¦ Ainda não há faixas.
+58 ¦ Ingenting lastet ¦ Nada cargado ¦ Nichts geladen ¦ Nada carregado
+59 ¦ UTGANG ¦ SALIDA ¦ AUSGABE ¦ SAÍDA
+60 ¦ Av ¦ Desactivado ¦ Aus ¦ Desligado
+61 ¦ Dekningsgrad ¦ Opacidad ¦ Deckkraft ¦ Opacidade
+62 ¦ Åpne utgangsvindu ¦ Abrir ventana de salida ¦ Ausgabefenster öffnen ¦ Abrir janela de saída
+63 ¦ Åpner den rene utgangen for projektoren din. Dra den til projektorskjermen og trykk F. ¦ Abre la salida limpia para tu proyector. Arrástrala a la pantalla del proyector y pulsa F. ¦ Öffnet die saubere Ausgabe für deinen Beamer. Ziehe das Fenster auf den Beamer-Bildschirm und drücke F. ¦ Abre a saída limpa para o seu projetor. Arraste para a tela do projetor e pressione F.
+64 ¦ Utgangsstørrelse ¦ Tamaño de salida ¦ Ausgabegröße ¦ Tamanho da saída
+65 ¦ Bildetilpasning ¦ Ajuste de la imagen ¦ Bildanpassung ¦ Ajuste da imagem
+66 ¦ Spill ¦ Reproducir ¦ Abspielen ¦ Reproduzir
+67 ¦ Spill / pause A ¦ Reproducir / pausa A ¦ Abspielen / Pause A ¦ Reproduzir / pausar A
+68 ¦ Spill / pause B ¦ Reproducir / pausa B ¦ Abspielen / Pause B ¦ Reproduzir / pausar B
+69 ¦ Posisjon ¦ Posición ¦ Position ¦ Posição
+70 ¦ Posisjon deck A ¦ Posición del deck A ¦ Position Deck A ¦ Posição do deck A
+71 ¦ Posisjon deck B ¦ Posición del deck B ¦ Position Deck B ¦ Posição do deck B
+72 ¦ Plakatplass {a} ¦ Cartel {a} ¦ Plakat-Platz {a} ¦ Cartaz {a}
+73 ¦ Plakater ¦ Carteles ¦ Plakate ¦ Cartazes
+74 ¦ Projektor: ¦ Proyector: ¦ Beamer: ¦ Projetor:
+75 ¦ Ta opp miksen (bilde og lyd) til en fil ¦ Grabar la mezcla (imagen y sonido) en un archivo ¦ Die Mischung (Bild und Ton) in eine Datei aufnehmen ¦ Gravar a mixagem (imagem e som) em um arquivo
+76 ¦ Rødt alarm ¦ Alerta roja ¦ Roter Alarm ¦ Alerta vermelho
+77 ¦ Fjern logo ¦ Quitar logotipo ¦ Logo entfernen ¦ Remover logo
+78 ¦ Start på nytt ¦ Reiniciar ¦ Neu starten ¦ Reiniciar
+79 ¦ Høyre ¦ Derecha ¦ Rechts ¦ Direita
+80 ¦ Lagre ¦ Guardar ¦ Speichern ¦ Salvar
+81 ¦ Vis logo (øverst til høyre) ¦ Mostrar logotipo (arriba a la derecha) ¦ Logo anzeigen (oben rechts) ¦ Mostrar logo (no alto à direita)
+82 ¦ Vis plakat ¦ Mostrar cartel ¦ Plakat anzeigen ¦ Mostrar cartaz
+83 ¦ Vis sportittelen når et spor mikses inn ¦ Mostrar el nombre de la pista cuando entra en la mezcla ¦ Titel einblenden, wenn ein Titel eingemischt wird ¦ Mostrar o nome da faixa quando ela entra na mixagem
+84 ¦ Vis hele bildet (sorte striper) ¦ Mostrar la imagen entera (barras negras) ¦ Ganzes Bild zeigen (schwarze Balken) ¦ Mostrar a imagem inteira (faixas pretas)
+85 ¦ Størrelse ¦ Tamaño ¦ Größe ¦ Tamanho
+86 ¦ Hopper over diskleser mens sporet spilles. Filer over 1,5 GB strømmes i stedet. ¦ Evita leer del disco mientras suena la pista. Los archivos de más de 1,5 GB se leen en streaming. ¦ Spart Festplattenzugriffe, während ein Titel läuft. Dateien über 1,5 GB werden stattdessen gestreamt. ¦ Evita ler o disco enquanto a faixa toca. Arquivos acima de 1,5 GB são transmitidos em streaming.
+87 ¦ Glir inn fra ¦ Entra desde ¦ Gleitet herein von ¦ Entra deslizando de
+88 ¦ Plass {a} ¦ Posición {a} ¦ Platz {a} ¦ Posição {a}
+89 ¦ Plasser (klikk for å vise, ¦ Posiciones (clic para mostrar, ¦ Plätze (Klick zum Anzeigen, ¦ Posições (clique para mostrar,
+90 ¦ Liten linje ¦ Línea pequeña ¦ Kleine Zeile ¦ Linha pequena
+91 ¦ Myk (lik effekt) ¦ Suave (potencia igual) ¦ Weich (gleiche Leistung) ¦ Suave (potência igual)
+92 ¦ Myk begrenser på hovedlyden ¦ Limitador suave en el sonido master ¦ Weicher Limiter auf dem Master-Ton ¦ Limitador suave no som master
+93 ¦ Lydovergang ¦ Fundido de sonido ¦ Ton-Überblendung ¦ Transição de som
+94 ¦ Lyden følger crossfaderen ¦ El sonido sigue al crossfader ¦ Der Ton folgt dem Crossfader ¦ O som acompanha o crossfader
+95 ¦ Lydutgang ¦ Salida de sonido ¦ Tonausgang ¦ Saída de som
+96 ¦ Mellomrom ¦ Espacio ¦ Leertaste ¦ Espaço
+97 ¦ Vises i (sekunder, 0 = til den skjules) ¦ Se muestra durante (segundos, 0 = hasta ocultarlo) ¦ Anzeigedauer (Sekunden, 0 = bis zum Ausblenden) ¦ Fica por (segundos, 0 = até ocultar)
+98 ¦ Hindrer at to høye spor klipper når de overlapper. ¦ Evita que dos pistas fuertes saturen cuando se superponen. ¦ Verhindert, dass zwei laute Titel übersteuern, wenn sie sich überlappen. ¦ Evita que duas faixas altas distorçam quando se sobrepõem.
+99 ¦ Strømming eller casting: ¦ Streaming o transmisión: ¦ Streaming oder Casting: ¦ Streaming ou transmissão:
+100 ¦ Bytt mellom lyst og mørkt tema ¦ Cambiar entre tema claro y oscuro ¦ Zwischen hellem und dunklem Design wechseln ¦ Alternar entre tema claro e escuro
+101 ¦ Tekst ¦ Texto ¦ Text ¦ Texto
+102 ¦ Tema ¦ Tema ¦ Design ¦ Tema
+103 ¦ Tittel eller melding ¦ Título o mensaje ¦ Titel oder Nachricht ¦ Título ou mensagem
+104 ¦ Spor ¦ Pistas ¦ Titel ¦ Faixas
+105 ¦ Øverst til venstre ¦ Arriba a la izquierda ¦ Oben links ¦ No alto à esquerda
+106 ¦ Volum ¦ Volumen ¦ Lautstärke ¦ Volume
+107 ¦ Volum A ¦ Volumen A ¦ Lautstärke A ¦ Volume A
+108 ¦ Volum B ¦ Volumen B ¦ Lautstärke B ¦ Volume B
+109 ¦ Volum deck A ¦ Volumen del deck A ¦ Lautstärke Deck A ¦ Volume do deck A
+110 ¦ Volum deck B ¦ Volumen del deck B ¦ Lautstärke Deck B ¦ Volume do deck B
+111 ¦ Fungerer i Chrome og Edge på en datamaskin. Koble til kontrolleren din, trykk ¦ Funciona en Chrome y Edge en un ordenador. Conecta tu controlador y pulsa ¦ Funktioniert in Chrome und Edge am Computer. Schließe deinen Controller an und klicke auf ¦ Funciona no Chrome e no Edge em um computador. Conecte seu controlador e clique em
+112 ¦ ta opp utgangsvinduet i OBS (Window Capture), eller bruk Chromes «Cast…» → Cast tab/window og velg utgangsvinduet. Hold dette kontrollvinduet åpent under showet. ¦ captura la ventana de salida en OBS (Window Capture) o usa «Transmitir…» de Chrome → pestaña/ventana y elige la ventana de salida. Mantén abierta esta ventana de control durante el show. ¦ nimm das Ausgabefenster in OBS auf (Window Capture) oder nutze Chromes „Streamen…“ → Tab/Fenster und wähle das Ausgabefenster. Lass dieses Steuerfenster während der Show geöffnet. ¦ capture a janela de saída no OBS (Window Capture) ou use o “Transmitir…” do Chrome → guia/janela e escolha a janela de saída. Mantenha esta janela de controle aberta durante o show.
+113 ¦ crossfader · ¦ crossfader · ¦ Crossfader · ¦ crossfader ·
+114 ¦ tom ¦ vacío ¦ leer ¦ vazio
+115 ¦ for fullskjerm. ¦ para pantalla completa. ¦ für Vollbild. ¦ para tela cheia.
+116 ¦ skjul plakat · ¦ ocultar cartel · ¦ Plakat ausblenden · ¦ ocultar cartaz ·
+117 ¦ logo · ¦ logotipo · ¦ Logo · ¦ logo ·
+118 ¦ miks · ¦ mezclar · ¦ mischen · ¦ mixar ·
+119 ¦ ved siden av en funksjon og beveg eller trykk på kontrollen du vil bruke. ¦ junto a una función y mueve o pulsa el control que quieras usar. ¦ bei einer Funktion und bewege oder drücke den gewünschten Regler. ¦ ao lado de uma função e mova ou pressione o controle que quiser usar.
+120 ¦ åpne utgangsvinduet, dra det til projektorskjermen, trykk ¦ abre la ventana de salida, arrástrala a la pantalla del proyector y pulsa ¦ öffne das Ausgabefenster, ziehe es auf den Beamer-Bildschirm und drücke ¦ abra a janela de saída, arraste para a tela do projetor e pressione
+121 ¦ utgangsvindu. ¦ ventana de salida. ¦ Ausgabefenster. ¦ janela de saída.
+122 ¦ spill/pause A · ¦ reproducir/pausa A · ¦ Abspielen/Pause A · ¦ reproduzir/pausar A ·
+123 ¦ spill/pause B · ¦ reproducir/pausa B · ¦ Abspielen/Pause B · ¦ reproduzir/pausar B ·
+124 ¦ vis plakat · ¦ mostrar cartel · ¦ Plakat anzeigen · ¦ mostrar cartaz ·
+125 ¦ lagrer den gjeldende plakaten på valgt plass): ¦ guarda el cartel actual en la posición elegida): ¦ speichert das aktuelle Plakat im gewählten Platz): ¦ salva o cartaz atual na posição escolhida):
+126 ¦ ← Spektronautilus ¦ ← Spektronautilus ¦ ← Spektronautilus ¦ ← Spektronautilus
+127 ¦ ● Ta opp ¦ ● Grabar ¦ ● Aufnehmen ¦ ● Gravar
+128 ¦ (hold inne) ¦ (mantener pulsado) ¦ (gedrückt halten) ¦ (segurar)
+129 ¦ 1. Lag en kode ¦ 1. Crear un código ¦ 1. Code erzeugen ¦ 1. Criar um código
+130 ¦ 2. Åpne lenken på den andre skjermen (send den til deg selv), eller kopier koden til ¦ 2. Abre el enlace en la otra pantalla (envíatelo a ti mismo) o copia el código en ¦ 2. Öffne den Link auf dem anderen Bildschirm (schick ihn dir selbst) oder kopiere den Code nach ¦ 2. Abra o link na outra tela (envie para você mesmo) ou copie o código para
+131 ¦ 3. Den andre skjermen viser en svarkode. Lim den inn her: ¦ 3. La otra pantalla muestra un código de respuesta. Pégalo aquí: ¦ 3. Der andere Bildschirm zeigt einen Antwortcode. Füge ihn hier ein: ¦ 3. A outra tela mostra um código de resposta. Cole-o aqui:
+132 ¦ Legg til videoer… ¦ Añadir videos… ¦ Videos hinzufügen… ¦ Adicionar vídeos…
+133 ¦ Svarkode fra den andre skjermen ¦ Código de respuesta de la otra pantalla ¦ Antwortcode vom anderen Bildschirm ¦ Código de resposta da outra tela
+134 ¦ Artist eller arrangement ¦ Artista o evento ¦ Künstler oder Veranstaltung ¦ Artista ou evento
+135 ¦ Stor linje ¦ Línea grande ¦ Große Zeile ¦ Linha grande
+136 ¦ Klipp ¦ Clips ¦ Clips ¦ Clipes
+137 ¦ Lukk ¦ Cerrar ¦ Schließen ¦ Fechar
+138 ¦ Kode som skal sendes ¦ Código para enviar ¦ Zu sendender Code ¦ Código a enviar
+139 ¦ Koble til ¦ Conectar ¦ Verbinden ¦ Conectar
+140 ¦ Kopier lenke ¦ Copiar enlace ¦ Link kopieren ¦ Copiar link
+141 ¦ Effekter ¦ Efectos ¦ Effekte ¦ Efeitos
+142 ¦ Blitz ¦ Destello ¦ Blitz ¦ Flash
+143 ¦ Fullskjerm ¦ Pantalla completa ¦ Vollbild ¦ Tela cheia
+144 ¦ Inverter ¦ Invertir ¦ Invertieren ¦ Inverter
+145 ¦ Hold denne siden åpen og skjermen våken under et show. Fungerer best i nyere Chrome (Android) og Safari (iPhone), med videoer i mp4 (H.264). ¦ Mantén esta página abierta y la pantalla encendida durante un show. Funciona mejor en Chrome (Android) y Safari (iPhone) recientes, con videos en mp4 (H.264). ¦ Lass diese Seite geöffnet und den Bildschirm wach während einer Show. Funktioniert am besten in aktuellem Chrome (Android) und Safari (iPhone) mit Videos als mp4 (H.264). ¦ Mantenha esta página aberta e a tela ligada durante um show. Funciona melhor no Chrome (Android) e no Safari (iPhone) recentes, com vídeos em mp4 (H.264).
+146 ¦ Lyst eller mørkt tema ¦ Tema claro u oscuro ¦ Helles oder dunkles Design ¦ Tema claro ou escuro
+147 ¦ Live-mikser ¦ Mezclador en vivo ¦ Live-Mixer ¦ Mixer ao vivo
+148 ¦ Last videoer inn i minnet (tryggere, bruker mer minne) ¦ Cargar los videos en memoria (más seguro, usa más memoria) ¦ Videos in den Speicher laden (sicherer, braucht mehr Speicher) ¦ Carregar os vídeos na memória (mais seguro, usa mais memória)
+149 ¦ Gjenta ¦ Bucle ¦ Wiederholen ¦ Repetir
+150 ¦ Melding ¦ Mensaje ¦ Nachricht ¦ Mensagem
+151 ¦ Speil ¦ Espejo ¦ Spiegeln ¦ Espelho
+152 ¦ Ingen videoer ennå. ¦ Aún no hay videos. ¦ Noch keine Videos. ¦ Ainda não há vídeos.
+153 ¦ Bare den andre skjermen ¦ Solo la otra pantalla ¦ Nur der andere Bildschirm ¦ Somente a outra tela
+154 ¦ Andre måter: bruk telefonens egen skjermdeling / AirPlay-speiling med ¦ Otras formas: usa la función de transmisión de pantalla / duplicación AirPlay de tu teléfono con ¦ Andere Möglichkeiten: nutze die eigene Bildschirmübertragung / AirPlay-Spiegelung deines Telefons mit ¦ Outras formas: use o espelhamento de tela / AirPlay do seu telefone com
+155 ¦ Lim inn svarkoden ¦ Pega el código de respuesta ¦ Antwortcode einfügen ¦ Cole o código de resposta
+156 ¦ Telefonen og den andre skjermen ¦ El teléfono y la otra pantalla ¦ Telefon und anderer Bildschirm ¦ Telefone e a outra tela
+157 ¦ Bare telefonen ¦ Solo el teléfono ¦ Nur das Telefon ¦ Somente o telefone
+158 ¦ Velg… ¦ Elegir… ¦ Wählen… ¦ Escolher…
+159 ¦ Bildestørrelse (mindre = jevnere) ¦ Tamaño de imagen (más pequeño = más fluido) ¦ Bildgröße (kleiner = flüssiger) ¦ Tamanho da imagem (menor = mais fluido)
+160 ¦ Plakat ¦ Cartel ¦ Plakat ¦ Cartaz
+161 ¦ Fjern ¦ Quitar ¦ Entfernen ¦ Remover
+162 ¦ Gjenta denne videoen ¦ Repetir este video ¦ Dieses Video wiederholen ¦ Repetir este vídeo
+163 ¦ Send til en annen skjerm ¦ Enviar a otra pantalla ¦ An einen anderen Bildschirm senden ¦ Enviar para outra tela
+164 ¦ Innstillinger ¦ Ajustes ¦ Einstellungen ¦ Configurações
+165 ¦ Del lenke ¦ Compartir enlace ¦ Link teilen ¦ Compartilhar link
+166 ¦ Vis ¦ Mostrar ¦ Anzeigen ¦ Mostrar
+167 ¦ Vis (øverst til høyre) ¦ Mostrar (arriba a la derecha) ¦ Anzeigen (oben rechts) ¦ Mostrar (no alto à direita)
+168 ¦ Vis utgangen på en laptop, en TV-nettleser eller en projektormaskin på samme Wi-Fi. Det trenger engangskoder, fordi ingenting går via en server. ¦ Muestra la salida en un portátil, el navegador de un televisor o un ordenador con proyector en la misma red Wi-Fi. Necesita códigos de un solo uso, porque nada pasa por un servidor. ¦ Zeige die Ausgabe auf einem Laptop, einem TV-Browser oder einem Beamer-Rechner im selben WLAN. Dafür braucht es Einmal-Codes, weil nichts über einen Server läuft. ¦ Mostre a saída em um notebook, no navegador de uma TV ou em um computador com projetor na mesma rede Wi-Fi. São necessários códigos de uso único, porque nada passa por um servidor.
+169 ¦ Vis sportittel ved miks ¦ Mostrar nombre de la pista al mezclar ¦ Titel beim Mischen anzeigen ¦ Mostrar nome da faixa ao mixar
+170 ¦ Vis hele bildet ¦ Mostrar la imagen entera ¦ Ganzes Bild zeigen ¦ Mostrar a imagem inteira
+171 ¦ Lyden følger ¦ El sonido sigue ¦ Ton folgt ¦ O som acompanha
+172 ¦ Lyden spilles på ¦ El sonido suena en ¦ Ton läuft auf ¦ O som toca em
+173 ¦ Stopp ¦ Detener ¦ Stopp ¦ Parar
+174 ¦ Stroboskop ¦ Estroboscopio ¦ Stroboskop ¦ Estroboscópio
+175 ¦ Trykk så → A eller → B. ¦ Luego pulsa → A o → B. ¦ Dann auf → A oder → B tippen. ¦ Depois toque em → A ou → B.
+176 ¦ Zoom ¦ Zoom ¦ Zoom ¦ Zoom
+177 ¦ på, eller ta opp bildet på en laptop. ¦ activada, o captura la imagen en un portátil. ¦ an oder nimm das Bild an einem Laptop auf. ¦ ligado, ou capture a imagem em um notebook.
+178 ¦ telefon ¦ teléfono ¦ Telefon ¦ telefone
+179 ¦ der. ¦ allí. ¦ dort. ¦ lá.
+180 ¦ …/live-mobile/receiver.html ¦ …/live-mobile/receiver.html ¦ …/live-mobile/receiver.html ¦ …/live-mobile/receiver.html
+181 ¦ (20 pads — klikk på en pad for å spille den på valgt lag, eller trykk tasten) ¦ (20 pads — haz clic en un pad para reproducirlo en la capa elegida, o pulsa su tecla) ¦ (20 Pads — auf ein Pad klicken, um es auf der gewählten Ebene abzuspielen, oder seine Taste drücken) ¦ (20 pads — clique em um pad para tocá-lo na camada escolhida, ou pressione a tecla dele)
+182 ¦ (kanal A) og ¦ (canal A) y ¦ (Kanal A) und ¦ (canal A) e
+183 ¦ (kanal B) · effekter ¦ (canal B) · efectos ¦ (Kanal B) · Effekte ¦ (canal B) · efeitos
+184 ¦ (når du ikke skriver): pads ¦ (cuando no estás escribiendo): pads ¦ (wenn du nicht tippst): Pads ¦ (quando você não está digitando): pads
+185 ¦ 1 beat ¦ 1 beat ¦ 1 Beat ¦ 1 beat
+186 ¦ 1280 × 720 (HD) ¦ 1280 × 720 (HD) ¦ 1280 × 720 (HD) ¦ 1280 × 720 (HD)
+187 ¦ 1920 × 1080 (Full HD) ¦ 1920 × 1080 (Full HD) ¦ 1920 × 1080 (Full HD) ¦ 1920 × 1080 (Full HD)
+188 ¦ 2 beats ¦ 2 beats ¦ 2 Beats ¦ 2 beats
+189 ¦ 4 beats ¦ 4 beats ¦ 4 Beats ¦ 4 beats
+190 ¦ 960 × 540 (lett) ¦ 960 × 540 (ligero) ¦ 960 × 540 (leicht) ¦ 960 × 540 (leve)
+191 ¦ Legg til ¦ Añadir ¦ Hinzufügen ¦ Adicionar
+192 ¦ Legg til loops… ¦ Añadir loops… ¦ Loops hinzufügen… ¦ Adicionar loops…
+193 ¦ Lydinngang (bassdrum) ¦ Entrada de audio (bombo) ¦ Audioeingang (Bassdrum) ¦ Entrada de áudio (bumbo)
+194 ¦ BPM ¦ BPM ¦ BPM ¦ BPM
+195 ¦ Beat ¦ Beat ¦ Beat ¦ Beat
+196 ¦ Beat 1 nå ¦ Beat 1 ahora ¦ Beat 1 jetzt ¦ Beat 1 agora
+197 ¦ Beat fra ¦ Beat desde ¦ Beat von ¦ Beat de
+198 ¦ Slag per minutt ¦ Pulsaciones por minuto ¦ Schläge pro Minute ¦ Batidas por minuto
+199 ¦ Blanding {a} ¦ Fusión {a} ¦ Mischen {a} ¦ Mescla {a}
+200 ¦ Uskarphet ¦ Desenfoque ¦ Unschärfe ¦ Desfoque

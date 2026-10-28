@@ -30,8 +30,11 @@ input[type=text],input[type=number],select{font:inherit;width:100%;min-height:44
 .bar{position:fixed;left:0;right:0;bottom:0;padding:10px 14px calc(10px + env(safe-area-inset-bottom));background:linear-gradient(transparent,var(--bg) 30%);}.bar button{width:100%;max-width:560px;display:flex;margin:0 auto;min-height:52px;font-size:1.05rem}
 #st{min-height:1.3em}.vh{position:absolute;width:1px;height:1px;opacity:0;pointer-events:none;overflow:hidden}#st.err{color:var(--bad)}.note{color:var(--warn);font-size:.85rem}
 </style>
+<link rel="manifest" href="../manifest.webmanifest">
+<script src="../shared/sw-register.js" defer></script>
+<script src="../shared/i18n.js"></script>
 </head>
-<body><div class="wrap">
+<body><div class="wrap" role="main">
 <p style="margin:0 0 6px"><a href="../" style="color:inherit;font-size:.9rem;text-decoration:none">← Spektronautilus</a></p>
 <h1>Magic Video Mixer</h1>
 <p class="mute" style="margin:2px 0 0">Mobile. Soft video mixes for your music, made right on your phone. Nothing is uploaded.</p>
@@ -229,7 +232,7 @@ async function vimeoUp(j){
  const err=async r=>{let t='';try{const e=await r.json();t=e.developer_message||e.error||''}catch(e){}return `Vimeo said ${r.status}${t?': '+t:''}`+(r.status==401||r.status==403?'. Check that the token has the scopes upload, edit and private.':'')};
  try{
   say('Vimeo: creating the video…');
-  const r=await fetch('https://api.vimeo.com/me/videos',{method:'POST',headers:{...H,'Content-Type':'application/json'},body:JSON.stringify({upload:{approach:'tus',size:f.size},name:j.name,description:`Made with Munken Loops. ${j.audio?j.audio.name:''}`.trim(),privacy:{view:c.privacy||'unlisted'}})});
+  const r=await fetch('https://api.vimeo.com/me/videos',{method:'POST',headers:{...H,'Content-Type':'application/json'},body:JSON.stringify({upload:{approach:'tus',size:f.size},name:j.name,description:`Made with Spektronautilus. ${j.audio?j.audio.name:''}`.trim(),privacy:{view:c.privacy||'unlisted'}})});
   if(!r.ok)throw new Error(await err(r));
   const d=await r.json(),link=d.upload.upload_link,CH=16*1024*1024;let off=0,tries=0;
   while(off<f.size){const end=Math.min(f.size,off+CH);

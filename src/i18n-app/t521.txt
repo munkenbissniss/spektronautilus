@@ -1,0 +1,160 @@
+521 ¦ Bare med lenken (ikke oppført) ¦ Solo con el enlace (no listado) ¦ Nur mit dem Link (nicht gelistet) ¦ Somente com o link (não listado)
+522 ¦ Utdata ¦ Salida ¦ Ausgabe ¦ Saída
+523 ¦ Tempo ¦ Ritmo ¦ Tempo ¦ Ritmo
+524 ¦ Deler av sangen som høres like ut får de samme loopene, så musikkens form er gjenkjennelig. Slå av for å gi hver del sine egne loops. ¦ Las partes de la canción que suenan parecido reciben los mismos loops, así que se reconoce la forma de la música. Desactívalo para dar a cada sección sus propios loops. ¦ Teile des Songs, die ähnlich klingen, bekommen dieselben Loops, damit die Form der Musik erkennbar bleibt. Ausschalten, damit jeder Abschnitt eigene Loops bekommt. ¦ Partes da música que soam parecidas recebem os mesmos loops, para que a forma da música seja reconhecível. Desligue para dar a cada seção seus próprios loops.
+525 ¦ Lim inn ditt personlige Vimeo-tilgangstoken ¦ Pega tu token de acceso personal de Vimeo ¦ Füge dein persönliches Vimeo-Zugriffstoken ein ¦ Cole seu token de acesso pessoal do Vimeo
+526 ¦ Pause ¦ Pausa ¦ Pause ¦ Pausa
+527 ¦ Bildet blinker lysere eller mørkere på hver trigger. 0,05 er subtilt. ¦ La imagen destella más clara u oscura en cada disparo. 0,05 es sutil. ¦ Das Bild blitzt bei jedem Trigger heller oder dunkler auf. 0,05 ist dezent. ¦ A imagem pisca mais clara ou mais escura a cada disparo. 0,05 é sutil.
+528 ¦ Bildestørrelse ¦ Tamaño de imagen ¦ Bildgröße ¦ Tamanho da imagem
+529 ¦ Spiller loops saktere når musikken er rolig (ned til halv fart). 0 = alltid normal fart. ¦ Reproduce los loops más despacio cuando la música es tranquila (hasta la mitad de velocidad). 0 = siempre velocidad normal. ¦ Spielt Loops langsamer ab, wenn die Musik ruhig ist (bis auf halbe Geschwindigkeit). 0 = immer normale Geschwindigkeit. ¦ Toca os loops mais devagar quando a música está calma (até metade da velocidade). 0 = sempre velocidade normal.
+530 ¦ Puls på ¦ Pulso en ¦ Puls bei ¦ Pulso em
+531 ¦ Pulstype ¦ Tipo de pulso ¦ Pulsart ¦ Tipo de pulso
+532 ¦ Kvalitet (Mbit/s) ¦ Calidad (Mbit/s) ¦ Qualität (Mbit/s) ¦ Qualidade (Mbit/s)
+533 ¦ Tilfeldighet ved valg av loops. Lav = alltid best treff. Høy = mer overraskende valg. ¦ Aleatoriedad al elegir loops. Bajo = siempre la mejor coincidencia. Alto = elecciones más sorprendentes. ¦ Zufall bei der Auswahl der Loops. Niedrig = immer der beste Treffer. Hoch = überraschendere Wahl. ¦ Aleatoriedade ao escolher loops. Baixo = sempre a melhor combinação. Alto = escolhas mais surpreendentes.
+534 ¦ Anbefalt ¦ Recomendado ¦ Empfohlen ¦ Recomendado
+535 ¦ Rendrer: ¦ Renderizando: ¦ Rendern: ¦ Renderizando:
+536 ¦ Gjenbruk loops i like deler ¦ Reutilizar loops en secciones parecidas ¦ Loops in ähnlichen Abschnitten wiederverwenden ¦ Reutilizar loops em seções parecidas
+537 ¦ Omtrent hvor lenge musikken kan bli i én scene med samme sett loops. Lengre = færre sceneskift. ¦ Aproximadamente cuánto puede quedarse la música en una escena con el mismo conjunto de loops. Más largo = menos cambios de escena. ¦ Ungefähr wie lange die Musik in einer Szene mit demselben Loop-Set bleiben darf. Länger = weniger Szenenwechsel. ¦ Aproximadamente quanto tempo a música pode ficar em uma cena com o mesmo conjunto de loops. Mais longo = menos trocas de cena.
+538 ¦ Lengde på del (s) ¦ Duración de la sección (s) ¦ Abschnittslänge (s) ¦ Duração da seção (s)
+539 ¦ Seed (tom = tilfeldig) ¦ Semilla (vacío = aleatoria) ¦ Seed (leer = zufällig) ¦ Semente (vazio = aleatória)
+540 ¦ Risting på ¦ Sacudida en ¦ Wackeln bei ¦ Tremor em
+541 ¦ Korteste klipp (takter) ¦ Plano más corto (compases) ¦ Kürzeste Einstellung (Takte) ¦ Plano mais curto (compassos)
+542 ¦ Showcase-nummer (valgfritt) ¦ Número de Showcase (opcional) ¦ Showcase-Nummer (optional) ¦ Número do Showcase (opcional)
+543 ¦ Sakte film i rolige deler ¦ Cámara lenta en partes tranquilas ¦ Zeitlupe in ruhigen Teilen ¦ Câmera lenta em partes calmas
+544 ¦ Rolige, myke videomikser til musikken din, eksportert som videofil. Alt kjører i nettleseren din (CPU og GPU), og filene dine lastes aldri opp. Legg til et rytmisk spor og opptil 100 sømløse loops, og legg så til én eller flere eksporter i køen. ¦ Mezclas de video lentas y suaves para tu música, exportadas como archivo de video. Todo se ejecuta en tu navegador (CPU y GPU) y tus archivos nunca se suben. Añade una pista rítmica y hasta 100 loops sin cortes, y luego añade una o más exportaciones a la cola. ¦ Langsame, sanfte Video-Mixe für deine Musik, exportiert als Videodatei. Alles läuft in deinem Browser (CPU und GPU), und deine Dateien werden nie hochgeladen. Füge einen rhythmischen Titel und bis zu 100 nahtlose Loops hinzu und stelle dann einen oder mehrere Exporte in die Warteschlange. ¦ Mixagens de vídeo lentas e suaves para a sua música, exportadas como arquivo de vídeo. Tudo roda no seu navegador (CPU e GPU) e seus arquivos nunca são enviados. Adicione uma faixa rítmica e até 100 loops perfeitos e depois coloque uma ou mais exportações na fila.
+545 ¦ Jevn flyt mellom klipp ¦ Flujo suave entre clips ¦ Sanfter Fluss zwischen Clips ¦ Fluxo suave entre clipes
+546 ¦ Start et nytt klipp på drops ¦ Iniciar un clip nuevo en los drops ¦ Neuen Clip bei Drops starten ¦ Iniciar um clipe novo nos drops
+547 ¦ Stopp gjeldende ¦ Detener el actual ¦ Aktuellen stoppen ¦ Parar o atual
+548 ¦ Stoppet/feilet: ¦ Detenidos/fallidos: ¦ Gestoppt/fehlgeschlagen: ¦ Parados/com falha:
+549 ¦ Lagring i denne nettleseren ¦ Almacenamiento en este navegador ¦ Speicher in diesem Browser ¦ Armazenamento neste navegador
+550 ¦ Styrken på fargetonen i hver del (krever Variasjon i uttrykk over 0). ¦ Intensidad del tinte de color de cada sección (requiere Variación de estilo por encima de 0). ¦ Stärke der Farbtönung jedes Abschnitts (braucht Look-Variation über 0). ¦ Intensidade do matiz de cor de cada seção (requer Variação de visual acima de 0).
+551 ¦ Stilmatch ¦ Coincidencia de estilo ¦ Stil-Übereinstimmung ¦ Combinação de estilo
+552 ¦ Synkroniseringsforskyvning (ms) ¦ Desfase de sincronización (ms) ¦ Sync-Versatz (ms) ¦ Deslocamento de sincronia (ms)
+553 ¦ Normal tid et klipp blir stående. 4 takter er avslappet, 8 takter er sakte (ca. 16 s ved 120 BPM), 16–32 takter er veldig sakte og ambient. ¦ El tiempo normal que un clip permanece en pantalla. 4 compases es relajado, 8 compases es lento (unos 16 s a 120 BPM), 16–32 compases es muy lento y ambient. ¦ Die normale Dauer, die ein Clip auf dem Bildschirm bleibt. 4 Takte sind entspannt, 8 Takte langsam (etwa 16 s bei 120 BPM), 16–32 Takte sehr langsam und ambient. ¦ O tempo normal que um clipe fica na tela. 4 compassos é relaxado, 8 compassos é lento (cerca de 16 s a 120 BPM), 16–32 compassos é muito lento e ambient.
+554 ¦ Køen er tom. ¦ La cola está vacía. ¦ Die Warteschlange ist leer. ¦ A fila está vazia.
+555 ¦ Samme seed og innstillinger gir samme miks. Seeden til hver jobb vises i køen. ¦ La misma semilla y los mismos ajustes dan la misma mezcla. La semilla de cada trabajo se muestra en la cola. ¦ Derselbe Seed und dieselben Einstellungen ergeben denselben Mix. Der Seed jedes Auftrags steht in der Warteschlange. ¦ A mesma semente e as mesmas configurações dão a mesma mixagem. A semente de cada trabalho aparece na fila.
+556 ¦ Tema (valgfritt, engelsk) ¦ Tema (opcional, en inglés) ¦ Thema (optional, Englisch) ¦ Tema (opcional, em inglês)
+557 ¦ Temastyrke ¦ Intensidad del tema ¦ Themenstärke ¦ Intensidade do tema
+558 ¦ Denne siden bruker 0 MB i denne nettleseren. ¦ Esta página usa 0 MB en este navegador. ¦ Diese Seite belegt 0 MB in diesem Browser. ¦ Esta página usa 0 MB neste navegador.
+559 ¦ Overganger ¦ Transiciones ¦ Übergänge ¦ Transições
+560 ¦ Prøver å vise alle loopene dine minst én gang ved å prioritere de som ikke er brukt og legge dem til som korte lag oppå lengre klipp. Køen viser hvor mange som ble brukt. ¦ Intenta mostrar todos tus loops al menos una vez, dando prioridad a los que aún no se usaron y añadiéndolos como capas cortas sobre clips más largos. La cola muestra cuántos se usaron. ¦ Versucht, alle deine Loops mindestens einmal zu zeigen, indem noch nicht verwendete bevorzugt und als kurze Ebenen über längeren Einstellungen eingefügt werden. Die Warteschlange zeigt, wie viele verwendet wurden. ¦ Tenta mostrar todos os seus loops pelo menos uma vez, dando prioridade aos ainda não usados e adicionando-os como camadas curtas sobre planos mais longos. A fila mostra quantos foram usados.
+561 ¦ Typisk klipplengde (takter) ¦ Duración típica del plano (compases) ¦ Typische Einstellungslänge (Takte) ¦ Duração típica do plano (compassos)
+562 ¦ Last opp til Vimeo ¦ Subir a Vimeo ¦ Zu Vimeo hochladen ¦ Enviar ao Vimeo
+563 ¦ Last opp til Vimeo (valgfritt) ¦ Subir a Vimeo (opcional) ¦ Zu Vimeo hochladen (optional) ¦ Enviar ao Vimeo (opcional)
+564 ¦ Øvre grense for hvor lenge ett klipp kan bli stående. ¦ Límite máximo de cuánto puede permanecer un clip en pantalla. ¦ Obergrenze dafür, wie lange ein Clip auf dem Bildschirm bleiben kann. ¦ Limite máximo de quanto tempo um clipe pode ficar na tela.
+565 ¦ Bruk CLIP (AI-bildeforståelse) ¦ Usar CLIP (comprensión de imágenes con IA) ¦ CLIP verwenden (KI-Bildverständnis) ¦ Usar CLIP (compreensão de imagens por IA)
+566 ¦ Bruk alle loops ¦ Usar todos los loops ¦ Jeden Loop verwenden ¦ Usar todos os loops
+567 ¦ Variasjon ¦ Variedad ¦ Abwechslung ¦ Variedade
+568 ¦ Versjoner ¦ Versiones ¦ Versionen ¦ Versões
+569 ¦ Venter: ¦ En espera: ¦ Wartend: ¦ Aguardando:
+570 ¦ Når musikken har en stor drop, begynner et nytt klipp akkurat der, med en raskere fade (bare hvis det ikke gir et veldig kort klipp). ¦ Cuando la música tiene un drop grande, un clip nuevo empieza justo ahí, con un fundido más rápido (solo si eso no produce un clip muy corto). ¦ Wenn die Musik einen großen Drop hat, beginnt genau dort ein neuer Clip mit schnellerer Überblendung (nur wenn das keine sehr kurze Einstellung ergibt). ¦ Quando a música tem um drop grande, um clipe novo começa exatamente nele, com uma fusão mais rápida (só se isso não gerar um plano muito curto).
+571 ¦ Hvem kan se ¦ Quién puede verlo ¦ Wer zuschauen kann ¦ Quem pode assistir
+572 ¦ Zoom på ¦ Zoom en ¦ Zoom bei ¦ Zoom em
+573 ¦ add ¦ add ¦ add ¦ add
+574 ¦ alltid ¦ siempre ¦ immer ¦ sempre
+575 ¦ auto ¦ auto ¦ auto ¦ auto
+576 ¦ takt ¦ compás ¦ Takt ¦ compasso
+577 ¦ beat ¦ beat ¦ Beat ¦ beat
+578 ¦ -knappen. ¦ . ¦ -Button. ¦ .
+579 ¦ velg fil ¦ elegir archivo ¦ Datei wählen ¦ escolher arquivo
+580 ¦ mørk ¦ oscuro ¦ dunkel ¦ escuro
+581 ¦ difference ¦ difference ¦ difference ¦ difference
+582 ¦ rediger ¦ editar ¦ bearbeiten ¦ editar
+583 ¦ for eksempel 12463997 ¦ por ejemplo 12463997 ¦ zum Beispiel 12463997 ¦ por exemplo 12463997
+584 ¦ kick ¦ bombo ¦ Kick ¦ bumbo
+585 ¦ lys ¦ claro ¦ hell ¦ claro
+586 ¦ lighten ¦ lighten ¦ lighten ¦ lighten
+587 ¦ av ¦ desactivado ¦ aus ¦ desligado
+588 ¦ på dem, så last ned først. Videoer som er igjen etter en avbrutt kjøring slettes automatisk neste gang siden åpnes. ¦ en ellos, así que descarga primero. Los videos que queden de una ejecución interrumpida se borran automáticamente la próxima vez que se abra la página. ¦ darauf, lade also zuerst herunter. Videos, die von einem unterbrochenen Lauf übrig sind, werden beim nächsten Öffnen der Seite automatisch gelöscht. ¦ neles, então baixe primeiro. Vídeos deixados por uma execução interrompida são apagados automaticamente na próxima vez que a página for aberta.
+589 ¦ overlay ¦ overlay ¦ overlay ¦ overlay
+590 ¦ privat ¦ privado ¦ privat ¦ privado
+591 ¦ skjerm ¦ trama ¦ Negativ multiplizieren ¦ tela
+592 ¦ soft-light ¦ soft-light ¦ soft-light ¦ soft-light
+593 ¦ noen ganger ¦ a veces ¦ manchmal ¦ às vezes
+594 ¦ last opp ¦ subir ¦ hochladen ¦ enviar
+595 ¦ 2 veksler rolig mellom to klipp (A-B-A-B). 3 gir litt mer variasjon. ¦ 2 alterna con calma entre dos clips (A-B-A-B). 3 añade algo más de variedad. ¦ 2 wechselt ruhig zwischen zwei Clips (A-B-A-B). 3 bringt etwas mehr Abwechslung. ¦ 2 alterna com calma entre dois clipes (A-B-A-B). 3 traz um pouco mais de variedade.
+596 ¦ 3. Stil ¦ 3. Estilo ¦ 3. Stil ¦ 3. Estilo
+597 ¦ 60 (standard) gir den jevneste bevegelsen og fadene, men krever mer av telefonen, bruker mer minne og lager større filer. Hvis telefonen sliter eller siden laster seg på nytt, velg 30 eller 24. ¦ 60 (el valor por defecto) da el movimiento y los fundidos más suaves, pero exige más al teléfono, usa más memoria y genera archivos más grandes. Si el teléfono se atasca o la página se recarga, elige 30 o 24. ¦ 60 (Standard) ergibt die flüssigste Bewegung und Überblendungen, verlangt aber mehr vom Handy, braucht mehr Speicher und erzeugt größere Dateien. Wenn das Handy ins Stocken gerät oder die Seite neu lädt, wähle 30 oder 24. ¦ 60 (o padrão) dá o movimento e as fusões mais suaves, mas exige mais do celular, usa mais memória e gera arquivos maiores. Se o celular travar ou a página recarregar, escolha 30 ou 24.
+598 ¦ En video ble avbrutt ¦ Se interrumpió un video ¦ Ein Video wurde unterbrochen ¦ Um vídeo foi interrompido
+599 ¦ En AI-modell (CLIP) ser hva som er i loopene dine og grupperer lignende, noe som gir jevnere sett. Den laster ned ca. 90 MB første gang (ca. 150 MB med tema), så bruk Wi-Fi. Det tar litt lengre tid før videoen starter. Det er tungt for telefonen: hvis siden laster seg på nytt av seg selv, gikk telefonen tom for minne, så slå det av eller bruk færre loops. Hvis AI-en ikke kan starte, fortsetter appen uten den. ¦ Un modelo de IA (CLIP) mira lo que hay en tus loops y agrupa los parecidos, lo que da conjuntos más fluidos. Descarga unos 90 MB la primera vez (unos 150 MB con un tema), así que usa Wi-Fi. Tarda un poco más en empezar el video. Es pesado para el teléfono: si la página se recarga sola, el teléfono se quedó sin memoria, así que desactívalo o usa menos loops. Si la IA no puede iniciarse, la app sigue sin ella. ¦ Ein KI-Modell (CLIP) schaut sich an, was in deinen Loops zu sehen ist, und gruppiert ähnliche, was flüssigere Sets ergibt. Beim ersten Mal lädt es etwa 90 MB herunter (etwa 150 MB mit Thema), nutze also WLAN. Es dauert etwas länger, bis das Video startet. Für das Handy ist das schwer: Wenn die Seite von selbst neu lädt, ist dem Handy der Speicher ausgegangen, schalte es dann aus oder nimm weniger Loops. Wenn die KI nicht starten kann, läuft die App ohne sie weiter. ¦ Um modelo de IA (CLIP) olha o que há nos seus loops e agrupa os parecidos, o que dá conjuntos mais fluidos. Ele baixa cerca de 90 MB na primeira vez (cerca de 150 MB com um tema), então use Wi-Fi. Demora um pouco mais até o vídeo começar. É pesado para o celular: se a página recarregar sozinha, o celular ficou sem memória, então desligue ou use menos loops. Se a IA não conseguir iniciar, o app segue sem ela.
+600 ¦ Sjekker… ¦ Comprobando… ¦ Prüfe… ¦ Verificando…
+601 ¦ Velg musikkfil ¦ Elegir archivo de música ¦ Musikdatei wählen ¦ Escolher arquivo de música
+602 ¦ Velg spor ¦ Elegir pista ¦ Titel wählen ¦ Escolher faixa
+603 ¦ Velg videofiler ¦ Elegir archivos de video ¦ Videodateien wählen ¦ Escolher arquivos de vídeo
+604 ¦ Velg videoer ¦ Elegir videos ¦ Videos wählen ¦ Escolher vídeos
+605 ¦ Kryssfade mellom klipp ¦ Fundido cruzado entre clips ¦ Überblendung zwischen Clips ¦ Fusão cruzada entre clipes
+606 ¦ Forkast ¦ Descartarlo ¦ Verwerfen ¦ Descartar
+607 ¦ Hvert klipp blir stående i ca. 16 sekunder ved 120 BPM (8 takter). ¦ Cada clip permanece unos 16 segundos a 120 BPM (8 compases). ¦ Jeder Clip bleibt etwa 16 Sekunden bei 120 BPM (8 Takte). ¦ Cada clipe fica cerca de 16 segundos a 120 BPM (8 compassos).
+608 ¦ Eksporter ¦ Exportaciones ¦ Exporte ¦ Exportações
+609 ¦ Rask ¦ Rápido ¦ Schnell ¦ Rápido
+610 ¦ Høyere er skarpere, men krever mer av telefonen og gir større filer. 720p er en god start. ¦ Más alto es más nítido, pero exige más al teléfono y genera archivos más grandes. 720p es un buen comienzo. ¦ Höher ist schärfer, verlangt aber mehr vom Handy und erzeugt größere Dateien. 720p ist ein guter Start. ¦ Mais alto é mais nítido, mas exige mais do celular e gera arquivos maiores. 720p é um bom começo.
+611 ¦ Hvor lenge hvert klipp blir stående ¦ Cuánto tiempo permanece cada clip ¦ Wie lange jeder Clip bleibt ¦ Quanto tempo cada clipe fica
+612 ¦ Hvor mykt ett klipp smelter inn i det neste. Lang = drømmende. ¦ Con qué suavidad un clip se funde con el siguiente. Largo = onírico. ¦ Wie weich ein Clip in den nächsten übergeht. Lang = verträumt. ¦ Com que suavidade um clipe se funde ao próximo. Longo = sonhador.
+613 ¦ Hold denne siden åpen og skjermen på mens en video lages. Den kjører i sanntid, så et spor på 4 minutter tar omtrent 4 minutter. Hvis du bytter app, pauser den til du er tilbake. På en iPhone, slå av Strømsparing først, fordi den stopper videoer fra å spille. ¦ Mantén esta página abierta y la pantalla encendida mientras se crea un video. Se hace en tiempo real, así que una pista de 4 minutos tarda unos 4 minutos. Si cambias de app, se pausa hasta que vuelvas. En un iPhone, desactiva primero el modo de bajo consumo, porque impide que se reproduzcan los videos. ¦ Lass diese Seite geöffnet und den Bildschirm an, während ein Video erstellt wird. Es läuft in Echtzeit, ein Titel von 4 Minuten dauert also etwa 4 Minuten. Wenn du die App wechselst, pausiert es, bis du zurückkommst. Schalte auf dem iPhone zuerst den Energiesparmodus aus, weil er die Wiedergabe von Videos stoppt. ¦ Mantenha esta página aberta e a tela ligada enquanto um vídeo é criado. Ele roda em tempo real, então uma faixa de 4 minutos leva cerca de 4 minutos. Se você trocar de app, ele pausa até você voltar. No iPhone, desative primeiro o Modo de Pouca Energia, porque ele impede a reprodução de vídeos.
+614 ¦ Liggende ¦ Horizontal ¦ Querformat ¦ Paisagem
+615 ¦ Lang ¦ Largo ¦ Lang ¦ Longo
+616 ¦ Loops per del av sangen ¦ Loops por parte de la canción ¦ Loops pro Teil des Songs ¦ Loops por parte da música
+617 ¦ Loops som passer til temaet foretrekkes. Krever at smartere matching er slått på. ¦ Se prefieren los loops que coinciden con el tema. Requiere activar la coincidencia más inteligente. ¦ Loops, die zum Thema passen, werden bevorzugt. Braucht eingeschaltetes intelligenteres Matching. ¦ Loops que combinam com o tema são preferidos. Requer a combinação mais inteligente ligada.
+618 ¦ Lag video ¦ Crear video ¦ Video erstellen ¦ Criar vídeo
+619 ¦ Medium ¦ Medio ¦ Mittel ¦ Médio
+620 ¦ Mobil. Myke videomikser til musikken din, laget rett på telefonen. Ingenting lastes opp. ¦ Móvil. Mezclas de video suaves para tu música, hechas en tu propio teléfono. No se sube nada. ¦ Mobil. Sanfte Video-Mixe für deine Musik, direkt auf dem Handy erstellt. Nichts wird hochgeladen. ¦ Celular. Mixagens de vídeo suaves para a sua música, feitas direto no seu celular. Nada é enviado.
+621 ¦ Stemning ¦ Ambiente ¦ Stimmung ¦ Clima
+622 ¦ Flere valg ¦ Más opciones ¦ Mehr Optionen ¦ Mais opções
+623 ¦ Ingenting ennå. Trykk «Lag video» under. ¦ Aún no hay nada. Pulsa «Crear video» abajo. ¦ Noch nichts. Tippe unten auf „Video erstellen“. ¦ Ainda nada. Toque em “Criar vídeo” abaixo.
+624 ¦ Velg den samme MP3-en igjen for å få originallyden (valgfritt) ¦ Elige de nuevo el mismo MP3 para obtener el sonido original (opcional) ¦ Wähle dieselbe MP3 erneut, um den Originalton zu erhalten (optional) ¦ Escolha o mesmo MP3 de novo para obter o som original (opcional)
+625 ¦ Stående ¦ Vertical ¦ Hochformat ¦ Retrato
+626 ¦ Stående er for vertikal video (stories, telefonskjermer). ¦ Vertical es para video vertical (historias, pantallas de teléfono). ¦ Hochformat ist für vertikale Videos (Stories, Handybildschirme). ¦ Retrato é para vídeo vertical (stories, telas de celular).
+627 ¦ Avslappet og myk. En god standard. ¦ Relajado y suave. Un buen valor por defecto. ¦ Entspannt und sanft. Eine gute Standardeinstellung. ¦ Relaxado e suave. Um bom padrão.
+628 ¦ Lagre det som ble tatt opp ¦ Guardar lo grabado ¦ Aufgenommenes speichern ¦ Salvar o que foi gravado
+629 ¦ Sømløse loops fungerer best. Opptil 24 brukes, noe som holder telefonen fornøyd. ¦ Los loops sin cortes funcionan mejor. Se usan hasta 24, lo que mantiene contento al teléfono. ¦ Nahtlose Loops funktionieren am besten. Bis zu 24 werden genutzt, was das Handy bei Laune hält. ¦ Loops perfeitos funcionam melhor. São usados até 24, o que deixa o celular feliz.
+630 ¦ Seed (valgfritt) ¦ Semilla (opcional) ¦ Seed (optional) ¦ Semente (opcional)
+631 ¦ Kort ¦ Corto ¦ Kurz ¦ Curto
+632 ¦ Sakte ¦ Lento ¦ Langsam ¦ Lento
+633 ¦ Smartere matching (AI) ¦ Coincidencia más inteligente (IA) ¦ Intelligenteres Matching (KI) ¦ Combinação mais inteligente (IA)
+634 ¦ Lagring på denne telefonen ¦ Almacenamiento en este teléfono ¦ Speicher auf diesem Handy ¦ Armazenamento neste celular
+635 ¦ Samme seed og innstillinger gir samme miks. Seeden til hver eksport vises på kortet. ¦ La misma semilla y los mismos ajustes dan la misma mezcla. La semilla de cada exportación se muestra en su tarjeta. ¦ Derselbe Seed und dieselben Einstellungen ergeben denselben Mix. Der Seed jedes Exports steht auf seiner Karte. ¦ A mesma semente e as mesmas configurações dão a mesma mixagem. A semente de cada exportação aparece no seu cartão.
+636 ¦ Tema (valgfritt), f.eks. mørk skog ¦ Tema (opcional), p. ej. bosque oscuro ¦ Thema (optional), z. B. dunkler Wald ¦ Tema (opcional), ex.: floresta escura
+637 ¦ tilfeldig ¦ aleatorio ¦ zufällig ¦ aleatório
+638 ¦ For å velge lydenhet trengs en nyere Chrome eller Edge. Systemstandarden brukes. ¦ Elegir el dispositivo de sonido requiere un Chrome o Edge reciente. Se usa el predeterminado del sistema. ¦ Für die Wahl des Audiogeräts braucht es ein aktuelles Chrome oder Edge. Der Systemstandard wird verwendet. ¦ Escolher o dispositivo de som requer um Chrome ou Edge recente. O padrão do sistema é usado.
+639 ¦ Deck {a} kan ikke spille «{b}». Formatet støttes kanskje ikke her. Konverter den til mp4 (H.264) med verktøyene. ¦ El deck {a} no puede reproducir «{b}». Puede que el formato no sea compatible aquí. Conviértelo a mp4 (H.264) con las Herramientas. ¦ Deck {a} kann „{b}“ nicht abspielen. Das Format wird hier vielleicht nicht unterstützt. Wandle es mit den Werkzeugen in mp4 (H.264) um. ¦ O deck {a} não consegue tocar “{b}”. O formato pode não ser compatível aqui. Converta para mp4 (H.264) com as Ferramentas.
+640 ¦ Ikke nok minne til å forhåndslaste denne filen. Den strømmes fra disken. ¦ No hay memoria suficiente para precargar este archivo. Se leerá en streaming desde el disco. ¦ Nicht genug Speicher, um diese Datei vorzuladen. Sie wird von der Festplatte gestreamt. ¦ Memória insuficiente para pré-carregar este arquivo. Ele será transmitido do disco.
+641 ¦ Last først inn et spor på deck {a}. ¦ Carga primero una pista en el deck {a}. ¦ Lade zuerst einen Titel auf Deck {a}. ¦ Carregue primeiro uma faixa no deck {a}.
+642 ¦ Deck {a} kunne ikke starte: {b} ¦ El deck {a} no pudo iniciar: {b} ¦ Deck {a} konnte nicht starten: {b} ¦ O deck {a} não conseguiu iniciar: {b}
+643 ¦ Miks → A ¦ Mezclar → A ¦ Mix → A ¦ Mixar → A
+644 ¦ Pad {a}: kan ikke spille «{b}». Konverter den til mp4 (H.264) med verktøyene. ¦ Pad {a}: no puede reproducir «{b}». Conviértelo a mp4 (H.264) con las Herramientas. ¦ Pad {a}: kann „{b}“ nicht abspielen. Wandle es mit den Werkzeugen in mp4 (H.264) um. ¦ Pad {a}: não consegue tocar “{b}”. Converta para mp4 (H.264) com as Ferramentas.
+645 ¦ Alle 20 pads er fulle. Fjern en med ✕ først. ¦ Los 20 pads están llenos. Quita uno con ✕ primero. ¦ Alle 20 Pads sind belegt. Entferne zuerst eines mit ✕. ¦ Os 20 pads estão cheios. Remova um com ✕ primeiro.
+646 ¦ Pad {a}: {b} ¦ Pad {a}: {b} ¦ Pad {a}: {b} ¦ Pad {a}: {b}
+647 ¦ Pad {a} er tom. ¦ El pad {a} está vacío. ¦ Pad {a} ist leer. ¦ O pad {a} está vazio.
+648 ¦ {a}<small>{b}</small> ¦ {a}<small>{b}</small> ¦ {a}<small>{b}</small> ¦ {a}<small>{b}</small>
+649 ¦ Lytter… beaten følger bassdrummen. ¦ Escuchando… el beat sigue al bombo. ¦ Höre zu… der Beat folgt der Bassdrum. ¦ Ouvindo… o beat segue o bumbo.
+650 ¦ Kunne ikke bruke lydinngangen: ¦ No se pudo usar la entrada de audio: ¦ Der Audioeingang konnte nicht verwendet werden: ¦ Não foi possível usar a entrada de áudio:
+651 ¦ Utgangsvindu åpent ¦ Ventana de salida abierta ¦ Ausgabefenster geöffnet ¦ Janela de saída aberta
+652 ¦ Skriv litt tekst til plakaten først. ¦ Escribe primero un texto para el cartel. ¦ Gib zuerst Text für das Plakat ein. ¦ Digite primeiro um texto para o cartaz.
+653 ¦ Plakatplass {a} er tom. ¦ La posición {a} del cartel está vacía. ¦ Plakatplatz {a} ist leer. ¦ A posição {a} do cartaz está vazia.
+654 ¦ Lagret på plass {a}. ¦ Guardado en la posición {a}. ¦ Auf Platz {a} gespeichert. ¦ Salvo na posição {a}.
+655 ¦ Den filen er ikke et bilde nettleseren kan lese. ¦ Ese archivo no es una imagen que el navegador pueda leer. ¦ Diese Datei ist kein Bild, das der Browser lesen kann. ¦ Esse arquivo não é uma imagem que o navegador consiga ler.
+656 ¦ Nettleseren blokkerte popup-vinduet. Tillat popup-vinduer for dette nettstedet og prøv igjen. ¦ El navegador bloqueó la ventana emergente. Permite las ventanas emergentes para este sitio e inténtalo de nuevo. ¦ Der Browser hat das Pop-up blockiert. Erlaube Pop-ups für diese Website und versuche es erneut. ¦ O navegador bloqueou o pop-up. Permita pop-ups para este site e tente de novo.
+657 ¦ Utgangsvindu åpent. Dra det til projektoren og trykk F. ¦ Ventana de salida abierta. Arrástrala al proyector y pulsa F. ¦ Ausgabefenster geöffnet. Ziehe es auf den Projektor und drücke F. ¦ Janela de saída aberta. Arraste-a para o projetor e pressione F.
+658 ¦ Kunne ikke huske loopene: ¦ No se pudieron recordar los loops: ¦ Loops konnten nicht gemerkt werden: ¦ Não foi possível lembrar os loops:
+659 ¦ Denne nettleseren har ikke MIDI-støtte. Bruk Chrome eller Edge på en datamaskin. ¦ Este navegador no admite MIDI. Usa Chrome o Edge en un ordenador. ¦ Dieser Browser unterstützt kein MIDI. Nutze Chrome oder Edge auf einem Computer. ¦ Este navegador não tem suporte a MIDI. Use Chrome ou Edge em um computador.
+660 ¦ På, men ingen enhet funnet. Koble til en. ¦ Activado, pero no se encontró ningún dispositivo. Conecta uno. ¦ An, aber kein Gerät gefunden. Schließe eines an. ¦ Ligado, mas nenhum dispositivo encontrado. Conecte um.
+661 ¦ MIDI ble ikke tillatt: ¦ No se permitió MIDI: ¦ MIDI wurde nicht erlaubt: ¦ O MIDI não foi permitido:
+662 ¦ Deck {c} ¦ Deck {c} ¦ Deck {c} ¦ Deck {c}
+663 ¦ Deck {a} kan ikke spille «{b}». Bruk en mp4-video (H.264). ¦ El deck {a} no puede reproducir «{b}». Usa un video mp4 (H.264). ¦ Deck {a} kann „{b}“ nicht abspielen. Nutze ein mp4-Video (H.264). ¦ O deck {a} não consegue tocar “{b}”. Use um vídeo mp4 (H.264).
+664 ¦ Last først inn en video på deck {a}. ¦ Carga primero un video en el deck {a}. ¦ Lade zuerst ein Video auf Deck {a}. ¦ Carregue primeiro um vídeo no deck {a}.
+665 ¦ Deck {a}: {b} ¦ Deck {a}: {b} ¦ Deck {a}: {b} ¦ Deck {a}: {b}
+666 ¦ Skriv litt tekst først. ¦ Escribe primero un texto. ¦ Gib zuerst Text ein. ¦ Digite primeiro um texto.
+667 ¦ Det er ikke et bilde jeg kan lese. ¦ Eso no es una imagen que pueda leer. ¦ Das ist kein Bild, das ich lesen kann. ¦ Isso não é uma imagem que eu consiga ler.
+668 ¦ Denne nettleseren kan ikke vise bildet i fullskjerm her. Bruk telefonens skjermspeiling i stedet. ¦ Este navegador no puede mostrar la imagen a pantalla completa aquí. Usa la transmisión de pantalla de tu teléfono. ¦ Dieser Browser kann das Bild hier nicht im Vollbild zeigen. Nutze stattdessen die Bildschirmübertragung deines Handys. ¦ Este navegador não consegue mostrar a imagem em tela cheia aqui. Use o espelhamento de tela do seu celular.
+669 ¦ Denne nettleseren kan ikke sende video til en annen skjerm. ¦ Este navegador no puede enviar video a otra pantalla. ¦ Dieser Browser kann kein Video an einen anderen Bildschirm senden. ¦ Este navegador não consegue enviar vídeo para outra tela.
+670 ¦ Lager kode… ¦ Creando código… ¦ Code wird erstellt… ¦ Criando código…
+671 ¦ Tilkoblet ✓ ¦ Conectado ✓ ¦ Verbunden ✓ ¦ Conectado ✓
+672 ¦ 1. Lag en ny kode ¦ 1. Crear un código nuevo ¦ 1. Neuen Code erstellen ¦ 1. Criar um código novo
+673 ¦ Kunne ikke lage en kode: ¦ No se pudo crear un código: ¦ Code konnte nicht erstellt werden: ¦ Não foi possível criar um código:
+674 ¦ Lenke kopiert. ¦ Enlace copiado. ¦ Link kopiert. ¦ Link copiado.
+675 ¦ Marker og kopier koden for hånd. ¦ Selecciona y copia el código a mano. ¦ Markiere den Code und kopiere ihn von Hand. ¦ Selecione e copie o código manualmente.
+676 ¦ Spektronautilus-mottaker ¦ Receptor de Spektronautilus ¦ Spektronautilus-Empfänger ¦ Receptor do Spektronautilus
+677 ¦ Lag en kode først. ¦ Crea primero un código. ¦ Erstelle zuerst einen Code. ¦ Crie primeiro um código.
+678 ¦ Pad {a}: kan ikke spille «{b}». Prøv en mp4-fil (H.264). ¦ Pad {a}: no puede reproducir «{b}». Prueba con un archivo mp4 (H.264). ¦ Pad {a}: kann „{b}“ nicht abspielen. Probiere eine mp4-Datei (H.264). ¦ Pad {a}: não consegue tocar “{b}”. Tente um arquivo mp4 (H.264).
+679 ¦ Alle 8 pads er fulle. Fjern en med ✕ først. ¦ Los 8 pads están llenos. Quita uno con ✕ primero. ¦ Alle 8 Pads sind belegt. Entferne zuerst eines mit ✕. ¦ Os 8 pads estão cheios. Remova um com ✕ primeiro.
+680 ¦ Fjern loop ¦ Quitar loop ¦ Loop entfernen ¦ Remover loop
