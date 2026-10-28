@@ -65,6 +65,7 @@ T = {
 <a class="card" href="{r}tools/app/#crop"><h3>Crop &amp; trim <span class="badge live">Available</span></h3><p>Cut clips to widescreen, vertical or square and trim the start and end, for a whole folder at once.</p></a>
 <a class="card" href="{r}tools/app/#sizes"><h3>Sizes <span class="badge live">Available</span></h3><p>Make a small proxy, 720p, 1080p and 4K of every clip in one go.</p></a>
 <a class="card" href="{r}tools/app/#pro"><h3>HAP / ProRes <span class="badge live">Linux version</span></h3><p>Professional formats for Resolume, VDMX, Millumin and video editors. Needs the local Linux version.</p></a>
+<a class="card" href="{r}tools/app/#ai"><h3>AI upscale <span class="badge live">Linux version</span></h3><p>Make video clips sharper and larger with AI. Needs the local Linux version and Video2X.</p></a>
 <a class="card" href="{r}tools/app/#catalog"><h3>Catalogue <span class="badge live">Available</span></h3><p>A web page and a spreadsheet file with a picture, length, size and loop quality for every loop.</p></a>
 <a class="card" href="{r}tools/app/#pack"><h3>Loop pack <span class="badge live">Available</span></h3><p>Bundle loops into a ready-to-share zip with preview picture, info file and licence.</p></a>
 </div>

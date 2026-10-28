@@ -66,6 +66,7 @@ T = {
 <a class="card" href="{r}tools/app/#crop"><h3>Beskjær og trim <span class="badge live">Tilgjengelig</span></h3><p>Kutt klipp til bredformat, stående eller kvadrat og trim start og slutt, for en hel mappe samtidig.</p></a>
 <a class="card" href="{r}tools/app/#sizes"><h3>Størrelser <span class="badge live">Tilgjengelig</span></h3><p>Lag en liten proxy, 720p, 1080p og 4K av hvert klipp i én operasjon.</p></a>
 <a class="card" href="{r}tools/app/#pro"><h3>HAP / ProRes <span class="badge live">Linux-versjonen</span></h3><p>Profesjonelle formater for Resolume, VDMX, Millumin og videoredigering. Krever den lokale Linux-versjonen.</p></a>
+<a class="card" href="{r}tools/app/#ai"><h3>KI-oppskalering <span class="badge live">Linux-versjonen</span></h3><p>Gjør videoklipp skarpere og større med KI. Krever den lokale Linux-versjonen og Video2X.</p></a>
 <a class="card" href="{r}tools/app/#catalog"><h3>Katalog <span class="badge live">Tilgjengelig</span></h3><p>En nettside og en regnearkfil med bilde, lengde, størrelse og loop-kvalitet for hver loop.</p></a>
 <a class="card" href="{r}tools/app/#pack"><h3>Loop-pakke <span class="badge live">Tilgjengelig</span></h3><p>Pakk loops i en delingsklar zip med forhåndsbilde, infofil og lisens.</p></a>
 </div>

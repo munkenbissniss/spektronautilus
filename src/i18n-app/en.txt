@@ -968,3 +968,27 @@ Could not crop this file ({a})
 Could not export this file ({a})
 Packing the zip…
 Building the files…
+AI upscale
+Make video clips sharper and larger with AI (Video2X). Needs the Linux (local) version, a graphics card with Vulkan and the free program Video2X.
+Upscale
+Kind of picture
+Cartoons and animation
+Photos and real film (always 4×)
+Fast, for animation (Anime4K)
+Make it this much bigger
+2× (double)
+3× (triple)
+4× (four times)
+Graphics card number
+Leave on 0 unless you have more than one graphics card.
+Check my graphics card
+Asking Video2X…
+Could not ask Video2X about the graphics cards.
+Video2X found: {a}
+Video2X was not found on this computer. Install it (AppImage, AUR or your own build), or set SPEKTRO_VIDEO2X to its path, then start Spektronautilus again.
+AI upscaling needs the Linux (local) version of Spektronautilus. The web version cannot do it. Everything else on this page works in the browser.
+AI upscaling needs Video2X. Read the note above the settings.
+Could not upscale this file ({a})
+The result would be larger than 8K. Choose a smaller scale or a smaller clip.
+AI upscaling… {a}
+Open the guide

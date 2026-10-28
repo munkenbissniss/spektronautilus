@@ -155,7 +155,7 @@ document.addEventListener('DOMContentLoaded',function(){document.querySelectorAl
 
 
 # shows how many jobs are running in the Queue link (the tools and mixers write the count to localStorage)
-DD_JS = """document.addEventListener('DOMContentLoaded',function(){var d=document.querySelector('.dd');if(!d)return;var b=d.querySelector('.ddb'),m=d.querySelector('.ddm');function set(o){m.hidden=!o;b.setAttribute('aria-expanded',o?'true':'false')}b.addEventListener('click',function(e){e.stopPropagation();set(m.hidden)});document.addEventListener('click',function(e){if(!d.contains(e.target))set(false)});document.addEventListener('keydown',function(e){if(e.key==='Escape'&&!m.hidden){set(false);b.focus()}});d.addEventListener('focusout',function(e){if(!d.contains(e.relatedTarget))set(false)})});"""
+DD_JS = """document.addEventListener('DOMContentLoaded',function(){document.querySelectorAll('.dd,.ld').forEach(function(d){var b=d.querySelector('.ddb'),m=d.querySelector('.ddm');function set(o){m.hidden=!o;b.setAttribute('aria-expanded',o?'true':'false')}b.addEventListener('click',function(e){e.stopPropagation();var o=m.hidden;document.querySelectorAll('.ddm').forEach(function(x){x.hidden=true});set(o)});document.addEventListener('click',function(e){if(!d.contains(e.target))set(false)});document.addEventListener('keydown',function(e){if(e.key==='Escape'&&!m.hidden){set(false);b.focus()}});d.addEventListener('focusout',function(e){if(!d.contains(e.relatedTarget))set(false)})})});"""
 QBADGE_JS = """document.addEventListener('DOMContentLoaded',function(){function u(){try{var o=JSON.parse(localStorage.getItem('spk_q')||'{}'),n=Date.now()-(o.t||0)<30000?o.n||0:0;document.querySelectorAll('.qn').forEach(function(b){b.hidden=!n;b.textContent=n})}catch(e){}}u();addEventListener('storage',u);setInterval(u,4000)});"""
 
 
@@ -172,6 +172,8 @@ def render(lang, L, key, body_html, title, desc, extra_ld=None, path=None, alt=N
             f'<div><div class="dgt">{e(L["ui"]["f_more"])}</div>{link("about")}<a href="{r}queue/">{e(L["nav"]["queue"])}<span class="qn" hidden></span></a></div></div>')
     alts = alt if alt is not None else {lg: path for lg in LANGS}
     sw = "".join(f'<a href="{r}{prefix(lg)}{p}" hreflang="{lg}" lang="{lg}"{" aria-current=true" if lg == lang else ""}>{e(LANGS[lg]["label"])}</a>' for lg, p in alts.items()) if len(alts) > 1 else ""
+    lang_dd = (f'<div class="ld" role="navigation" aria-label="{e(L["ui"]["lang"])}"><button type="button" class="ddb" aria-expanded="false" aria-haspopup="true" aria-label="{e(L["ui"]["lang"])}">🌐 {lang.upper()} <span aria-hidden="true">▾</span></button>'
+               f'<div class="ddm" hidden>{sw}</div></div>') if sw else ""
     hre = "".join(f'<link rel="alternate" hreflang="{lg}" href="{url(lg, p)}">' for lg, p in alts.items())
     if "en" in alts: hre += f'<link rel="alternate" hreflang="x-default" href="{url("en", alts["en"])}">'
     canon = url(lang, path)
@@ -204,7 +206,7 @@ def render(lang, L, key, body_html, title, desc, extra_ld=None, path=None, alt=N
 <header class="top"><div class="wrap">
 <a class="brand" href="{rl}">{LOGO}<span>Spektronautilus</span></a>
 <nav class="main" aria-label="Main">{nav}</nav>
-<div class="lang" role="navigation" aria-label="{e(L['ui']['lang'])}">{sw}</div>
+{lang_dd}
 </div></header>
 <main id="main"><div class="wrap">
 {body_html}

@@ -1,0 +1,24 @@
+971 ¦ KI-oppskalering ¦ Escalado con IA ¦ KI-Hochskalierung ¦ Ampliação com IA
+972 ¦ Gjør videoklipp skarpere og større med KI (Video2X). Krever Linux-versjonen (lokal), et grafikkort med Vulkan og det gratis programmet Video2X. ¦ Hace los clips de video más nítidos y grandes con IA (Video2X). Necesita la versión para Linux (local), una tarjeta gráfica con Vulkan y el programa gratuito Video2X. ¦ Macht Videoclips mit KI schärfer und größer (Video2X). Braucht die Linux-Version (lokal), eine Grafikkarte mit Vulkan und das kostenlose Programm Video2X. ¦ Torna os clipes de vídeo mais nítidos e maiores com IA (Video2X). Precisa da versão para Linux (local), de uma placa gráfica com Vulkan e do programa gratuito Video2X.
+973 ¦ Skaler opp ¦ Escalar ¦ Hochskalieren ¦ Ampliar
+974 ¦ Type bilde ¦ Tipo de imagen ¦ Art des Bildes ¦ Tipo de imagem
+975 ¦ Tegnefilm og animasjon ¦ Dibujos animados y animación ¦ Zeichentrick und Animation ¦ Desenhos animados e animação
+976 ¦ Foto og ekte film (alltid 4×) ¦ Fotos y película real (siempre 4×) ¦ Fotos und echter Film (immer 4×) ¦ Fotos e filme real (sempre 4×)
+977 ¦ Raskt, for animasjon (Anime4K) ¦ Rápido, para animación (Anime4K) ¦ Schnell, für Animation (Anime4K) ¦ Rápido, para animação (Anime4K)
+978 ¦ Gjør det så mye større ¦ Hacerlo tanto más grande ¦ So viel größer machen ¦ Tornar tantas vezes maior
+979 ¦ 2× (dobbelt) ¦ 2× (el doble) ¦ 2× (doppelt) ¦ 2× (o dobro)
+980 ¦ 3× (tre ganger) ¦ 3× (el triple) ¦ 3× (dreifach) ¦ 3× (o triplo)
+981 ¦ 4× (fire ganger) ¦ 4× (cuatro veces) ¦ 4× (vierfach) ¦ 4× (quatro vezes)
+982 ¦ Grafikkortnummer ¦ Número de la tarjeta gráfica ¦ Nummer der Grafikkarte ¦ Número da placa gráfica
+983 ¦ La stå på 0 med mindre du har mer enn ett grafikkort. ¦ Déjalo en 0 salvo que tengas más de una tarjeta gráfica. ¦ Lass es auf 0, außer du hast mehr als eine Grafikkarte. ¦ Deixe em 0, a menos que tenha mais de uma placa gráfica.
+984 ¦ Sjekk grafikkortet mitt ¦ Comprobar mi tarjeta gráfica ¦ Meine Grafikkarte prüfen ¦ Verificar a minha placa gráfica
+985 ¦ Spør Video2X … ¦ Preguntando a Video2X… ¦ Frage Video2X … ¦ A perguntar ao Video2X…
+986 ¦ Kunne ikke spørre Video2X om grafikkortene. ¦ No se pudo preguntar a Video2X por las tarjetas gráficas. ¦ Video2X konnte nicht nach den Grafikkarten gefragt werden. ¦ Não foi possível perguntar ao Video2X pelas placas gráficas.
+987 ¦ Video2X funnet: {a} ¦ Video2X encontrado: {a} ¦ Video2X gefunden: {a} ¦ Video2X encontrado: {a}
+988 ¦ Video2X ble ikke funnet på denne datamaskinen. Installer det (AppImage, AUR eller egen bygging), eller sett SPEKTRO_VIDEO2X til stien, og start Spektronautilus på nytt. ¦ Video2X no se encontró en este ordenador. Instálalo (AppImage, AUR o tu propia compilación), o define SPEKTRO_VIDEO2X con su ruta, y vuelve a iniciar Spektronautilus. ¦ Video2X wurde auf diesem Computer nicht gefunden. Installiere es (AppImage, AUR oder eigener Build) oder setze SPEKTRO_VIDEO2X auf den Pfad und starte Spektronautilus neu. ¦ O Video2X não foi encontrado neste computador. Instale-o (AppImage, AUR ou a sua própria compilação) ou defina SPEKTRO_VIDEO2X com o caminho e inicie o Spektronautilus de novo.
+989 ¦ KI-oppskalering krever Linux-versjonen (lokal) av Spektronautilus. Nettversjonen kan ikke gjøre det. Alt annet på denne siden fungerer i nettleseren. ¦ El escalado con IA necesita la versión para Linux (local) de Spektronautilus. La versión web no puede hacerlo. Todo lo demás de esta página funciona en el navegador. ¦ Die KI-Hochskalierung braucht die Linux-Version (lokal) von Spektronautilus. Die Web-Version kann das nicht. Alles andere auf dieser Seite funktioniert im Browser. ¦ A ampliação com IA precisa da versão para Linux (local) do Spektronautilus. A versão web não consegue. Tudo o resto nesta página funciona no navegador.
+990 ¦ KI-oppskalering krever Video2X. Les merknaden over innstillingene. ¦ El escalado con IA necesita Video2X. Lee la nota sobre los ajustes. ¦ Die KI-Hochskalierung braucht Video2X. Lies den Hinweis über den Einstellungen. ¦ A ampliação com IA precisa do Video2X. Leia a nota acima das definições.
+991 ¦ Kunne ikke skalere opp denne filen ({a}) ¦ No se pudo escalar este archivo ({a}) ¦ Diese Datei konnte nicht hochskaliert werden ({a}) ¦ Não foi possível ampliar este ficheiro ({a})
+992 ¦ Resultatet ville blitt større enn 8K. Velg en mindre skala eller et mindre klipp. ¦ El resultado sería mayor que 8K. Elige una escala menor o un clip más pequeño. ¦ Das Ergebnis wäre größer als 8K. Wähle einen kleineren Faktor oder einen kleineren Clip. ¦ O resultado seria maior do que 8K. Escolha uma escala menor ou um clipe mais pequeno.
+993 ¦ KI-oppskalering … {a} ¦ Escalando con IA… {a} ¦ KI-Hochskalierung … {a} ¦ Ampliação com IA… {a}
+994 ¦ Åpne guiden ¦ Abrir la guía ¦ Anleitung öffnen ¦ Abrir o guia

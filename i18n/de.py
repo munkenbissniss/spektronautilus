@@ -66,6 +66,7 @@ T = {
 <a class="card" href="{r}tools/app/#crop"><h3>Zuschneiden &amp; kürzen <span class="badge live">Verfügbar</span></h3><p>Schneide Clips auf Breitbild, Hochformat oder quadratisch zu und kürze Anfang und Ende, für einen ganzen Ordner auf einmal.</p></a>
 <a class="card" href="{r}tools/app/#sizes"><h3>Größen <span class="badge live">Verfügbar</span></h3><p>Erzeuge von jedem Clip in einem Rutsch einen kleinen Proxy, 720p, 1080p und 4K.</p></a>
 <a class="card" href="{r}tools/app/#pro"><h3>HAP / ProRes <span class="badge live">Linux-Version</span></h3><p>Profi-Formate für Resolume, VDMX, Millumin und Videoschnitt. Braucht die lokale Linux-Version.</p></a>
+<a class="card" href="{r}tools/app/#ai"><h3>KI-Hochskalierung <span class="badge live">Linux-Version</span></h3><p>Macht Videoclips mit KI schärfer und größer. Braucht die lokale Linux-Version und Video2X.</p></a>
 <a class="card" href="{r}tools/app/#catalog"><h3>Katalog <span class="badge live">Verfügbar</span></h3><p>Eine Webseite und eine Tabellendatei mit Bild, Länge, Größe und Loop-Qualität für jeden Loop.</p></a>
 <a class="card" href="{r}tools/app/#pack"><h3>Loop-Paket <span class="badge live">Verfügbar</span></h3><p>Packe Loops in eine zip-Datei, die bereit zum Teilen ist, mit Vorschaubild, Infodatei und Lizenz.</p></a>
 </div>

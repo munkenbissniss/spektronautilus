@@ -213,6 +213,19 @@ Cria um proxy pequeno, 720p, 1080p e 4K de cada clipe de uma vez. Tamanhos maior
 ## HAP / ProRes {#pro}
 Cria formatos profissionais para Resolume, VDMX, Millumin e editores de vídeo. Precisa da [versão local para Linux](@guides/offline-linux/#linux), porque usa o ffmpeg no seu próprio computador. [Abrir esta ferramenta](@@tools/app/#pro).
 
+## Ampliação com IA {#ai}
+Torna os clipes de vídeo mais nítidos e maiores com IA, usando o programa gratuito Video2X. Só funciona na [versão local para Linux](@guides/offline-linux/#linux) e precisa de uma placa gráfica com suporte a Vulkan. Os seus ficheiros nunca saem do seu computador.
+
+Como usar:
+1. Instale o Video2X por si (um AppImage, o pacote do AUR ou a sua própria compilação). O Spektronautilus encontra-o sozinho. Se não, indique o caminho na variável `SPEKTRO_VIDEO2X` e inicie o Spektronautilus de novo.
+2. Abra a ferramenta e adicione os seus clipes. A nota acima das definições mostra se o Video2X foi encontrado.
+3. Escolha [[Kind of picture]] e [[Make it this much bigger]] e carregue em [[Upscale]].
+
+Bom saber:
+- É lento. Um clipe curto pode demorar muitos minutos, por isso use a [fila](@guides/queue/) e deixe correr.
+- Fotos e filme real são sempre ampliados 4×. O resultado não pode ser maior do que 8K.
+- Tem mais de uma placa gráfica? Carregue em [[Check my graphics card]] e defina [[Graphics card number]].
+
 ## Catalogue {#catalog}
 Cria uma página web e um ficheiro de folha de cálculo com uma imagem, a duração, o tamanho e a qualidade de loop de cada loop. Útil para coleções grandes. [Abrir esta ferramenta](@@tools/app/#catalog).
 
@@ -306,6 +319,7 @@ Porquê usá-la:
 - **Velocidade.** Se o `ffmpeg` estiver instalado, as ferramentas usam-no em vez do motor mais lento do navegador. A página diz então «Fast mode».
 - **Sem limite de memória** para ficheiros grandes, e não é preciso internet (só [[Find loops]] precisa).
 - **HAP e ProRes.** A [ferramenta HAP / ProRes](@guides/tools/#pro) funciona na versão para Linux.
+- **Ampliação com IA.** A [ferramenta de ampliação com IA](@guides/tools/#ai) usa o Video2X, se o tiver instalado.
 
 Como instalar:
 1. Descarregue o pacote para Linux (`spektronautilus-linux.tar.gz`) e descomprima-o: `tar xzf spektronautilus-linux.tar.gz`.

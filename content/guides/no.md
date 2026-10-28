@@ -213,6 +213,19 @@ Lager en liten proxy, 720p, 1080p og 4K av hvert klipp på en gang. Størrelser 
 ## HAP / ProRes {#pro}
 Lager profesjonelle formater for Resolume, VDMX, Millumin og videoredigering. Dette krever den lokale [Linux-versjonen](@guides/offline-linux/#linux), fordi den bruker ffmpeg på din egen datamaskin. [Åpne dette verktøyet](@@tools/app/#pro).
 
+## KI-oppskalering {#ai}
+Gjør videoklipp skarpere og større med KI, ved hjelp av det gratis programmet Video2X. Det fungerer bare i den lokale [Linux-versjonen](@guides/offline-linux/#linux) og krever et grafikkort med Vulkan-støtte. Filene dine forlater aldri datamaskinen din.
+
+Slik gjør du:
+1. Installer Video2X selv (en AppImage, AUR-pakken eller din egen bygging). Spektronautilus finner det selv. Hvis ikke, setter du stien i variabelen `SPEKTRO_VIDEO2X` og starter Spektronautilus på nytt.
+2. Åpne verktøyet og legg til klippene dine. Merknaden over innstillingene viser om Video2X ble funnet.
+3. Velg [[Kind of picture]] og [[Make it this much bigger]], og trykk [[Upscale]].
+
+Greit å vite:
+- Det er tregt. Et kort klipp kan ta mange minutter, så bruk [køen](@guides/queue/) og la det gå.
+- Foto og ekte film blir alltid gjort 4× større. Resultatet kan ikke bli større enn 8K.
+- Har du mer enn ett grafikkort? Trykk [[Check my graphics card]] og sett [[Graphics card number]].
+
 ## Catalogue {#catalog}
 Lager en nettside og en regnearkfil med bilde, lengde, størrelse og loop-kvalitet for hver loop. Praktisk for store samlinger. [Åpne dette verktøyet](@@tools/app/#catalog).
 
@@ -306,6 +319,7 @@ Hvorfor bruke den:
 - **Fart.** Hvis `ffmpeg` er installert, bruker verktøyene den i stedet for den tregere nettlesermotoren. Siden viser da «Fast mode».
 - **Ingen minnegrense** for store filer, og du trenger ikke internett (bare [[Find loops]] trenger det).
 - **HAP og ProRes.** [HAP / ProRes-verktøyet](@guides/tools/#pro) virker i Linux-versjonen.
+- **KI-oppskalering.** [KI-oppskalering-verktøyet](@guides/tools/#ai) bruker Video2X, hvis du har installert det.
 
 Slik installerer du:
 1. Last ned Linux-pakken (`spektronautilus-linux.tar.gz`) og pakk den ut: `tar xzf spektronautilus-linux.tar.gz`.

@@ -13,7 +13,7 @@ The site is static (GitHub Pages: publish the `docs/` folder). English is at the
 | `docs/live-dj/` | Video DJ (`index.html` control window, `output.html` projector window, `app.js`, pure logic in `core.js`) |
 | `docs/live-mobile/` | Phone Video DJ (`index.html`) and the receiver page for sending the picture to another screen (`receiver.html`, `cast.js`) |
 | `docs/vj-pad/` | VJ Mixer (same layout as the Video DJ; shares `../live-dj/core.js`) |
-| `docs/tools/app/` | The loop tools (convert, GIF→MP4, make loops, filters, find loops, crop & trim, sizes, HAP/ProRes, catalogue, loop pack). Needs the engine files, see below. |
+| `docs/tools/app/` | The loop tools (convert, GIF→MP4, make loops, filters, find loops, crop & trim, sizes, HAP/ProRes, AI upscale (Linux version + your own Video2X), catalogue, loop pack). Needs the engine files, see below. |
 | `docs/shared/` | Shared scripts: queue, offline (service worker registration), language (`i18n.js` + `lang/`, generated), the "Ready for the show?" check (`check.js`, `testcard.html`) |
 | `src/i18n-app/` | The texts of the apps and their translations (`en.txt` is the master, one string per line; `t*.txt` hold `ID ¦ no ¦ es ¦ de ¦ pt`). `build_i18n.py` turns them into `docs/shared/lang/*.js` and checks that nothing is missing. |
 | `build.py`, `i18n/`, `content/`, `data/`, `src/` | Generator for the pages around the apps (home, landing pages, guides, packs, sitemap) |
@@ -33,6 +33,7 @@ python3 tests_queue.py         # shared queue page
 python3 tests_offline.py       # offline mode and updates
 python3 tests_i18n.py          # every app in every language: nothing left in English, language button
 python3 tests_check.py         # the "Ready for the show?" check and the test card
+python3 tests_v2x.py           # AI upscale with Video2X, tested with a stand-in program (real Video2X needs a Vulkan GPU)
 python3 tests_newtools.py      # crop & trim, sizes, HAP/ProRes, catalogue, loop pack (real ffmpeg)
 node --test tests_filters.mjs   # runs all ten filters with the computer's own ffmpeg
 node --test tests_live_core.mjs tests_vj_core.mjs
@@ -72,5 +73,5 @@ Every page has its own title and description, a canonical URL, `hreflang` links 
 - Safety: the server refuses other Host names and requests without its custom header (stops other websites from using it), only lets ffmpeg touch its own temporary folder, and deletes that folder on exit.
 
 ## Status
-- Available: Magic Video Mixer (desktop and phone), Video DJ (desktop and phone), VJ Mixer (desktop and phone), tools (crop & trim, sizes, HAP/ProRes (Linux version), catalogue and loop pack on top of the first five), a "Ready for the show?" check in the live mixers, offline mode (installable), five languages, a shared queue page (`/queue/`) that shows jobs from the tools and both Magic Mixers.
+- Available: Magic Video Mixer (desktop and phone), Video DJ (desktop and phone), VJ Mixer (desktop and phone), tools (crop & trim, sizes, HAP/ProRes (Linux version), AI upscale (Linux version, needs Video2X installed by the user, never bundled), catalogue and loop pack on top of the first five), a "Ready for the show?" check in the live mixers, offline mode (installable), five languages, a shared queue page (`/queue/`) that shows jobs from the tools and both Magic Mixers.
 - Not yet set up: loop packs (waiting for the Jottacloud links), donations.

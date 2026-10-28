@@ -65,8 +65,8 @@ with sync_playwright() as pw:
     # menu: mixers in a dropdown, About and Queue in the footer, queue panel and to-top button
     pg.goto(B + "/"); nav = pg.inner_text("nav.main")
     check("About" not in nav and "Queue" not in nav and pg.locator("nav.main > a").count() == 4, f"main menu is short: {nav!r}")
-    check(pg.locator(".ddm").is_hidden(), "the Mixers menu starts closed"); pg.click(".ddb"); check(pg.locator(".ddm a").count() == 3 and pg.locator(".ddm").is_visible(), "the Mixers menu opens with three mixers")
-    pg.keyboard.press("Escape"); check(pg.locator(".ddm").is_hidden(), "Escape closes the menu")
+    check(pg.locator(".dd .ddm").is_hidden(), "the Mixers menu starts closed"); pg.click(".dd .ddb"); check(pg.locator(".dd .ddm a").count() == 3 and pg.locator(".dd .ddm").is_visible(), "the Mixers menu opens with three mixers")
+    pg.keyboard.press("Escape"); check(pg.locator(".dd .ddm").is_hidden(), "Escape closes the menu")
     check(pg.locator("footer .fcols a", has_text="About").count() == 1 and pg.locator("footer .fcols a", has_text="Queue").count() == 1, "About and Queue are in the footer")
     pg.goto(B + "/guides/tools/"); check(not pg.locator(".spkdock .up").is_visible(), "no to-top button at the top")
     pg.evaluate("window.scrollTo(0, 1500)"); pg.wait_for_timeout(500); check(pg.locator(".spkdock .up").is_visible(), "to-top button appears after scrolling")

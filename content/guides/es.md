@@ -213,6 +213,19 @@ Crea un proxy pequeño, 720p, 1080p y 4K de cada clip de una vez. Los tamaños m
 ## HAP / ProRes {#pro}
 Crea formatos profesionales para Resolume, VDMX, Millumin y editores de video. Necesita la [versión local para Linux](@guides/offline-linux/#linux), porque usa ffmpeg en tu propio ordenador. [Abrir esta herramienta](@@tools/app/#pro).
 
+## Escalado con IA {#ai}
+Hace los clips de video más nítidos y grandes con IA, usando el programa gratuito Video2X. Solo funciona en la [versión local para Linux](@guides/offline-linux/#linux) y necesita una tarjeta gráfica compatible con Vulkan. Tus archivos nunca salen de tu ordenador.
+
+Cómo usarlo:
+1. Instala Video2X tú mismo (un AppImage, el paquete del AUR o tu propia compilación). Spektronautilus lo encuentra solo. Si no, indica la ruta en la variable `SPEKTRO_VIDEO2X` y vuelve a iniciar Spektronautilus.
+2. Abre la herramienta y añade tus clips. La nota sobre los ajustes indica si se encontró Video2X.
+3. Elige [[Kind of picture]] y [[Make it this much bigger]], y pulsa [[Upscale]].
+
+Conviene saber:
+- Es lento. Un clip corto puede tardar muchos minutos, así que usa la [cola](@guides/queue/) y déjalo trabajar.
+- Las fotos y la película real siempre se agrandan 4×. El resultado no puede superar 8K.
+- ¿Tienes más de una tarjeta gráfica? Pulsa [[Check my graphics card]] y ajusta [[Graphics card number]].
+
 ## Catalogue {#catalog}
 Crea una página web y un archivo de hoja de cálculo con una imagen, la duración, el tamaño y la calidad de enlace de cada loop. Útil para colecciones grandes. [Abrir esta herramienta](@@tools/app/#catalog).
 
@@ -306,6 +319,7 @@ Por qué usarla:
 - **Velocidad.** Si `ffmpeg` está instalado, las herramientas lo usan en lugar del motor más lento del navegador. La página dice entonces «Fast mode».
 - **Sin límite de memoria** para archivos grandes, y no hace falta internet (solo [[Find loops]] lo necesita).
 - **HAP y ProRes.** La [herramienta HAP / ProRes](@guides/tools/#pro) funciona en la versión para Linux.
+- **Escalado con IA.** La [herramienta de escalado con IA](@guides/tools/#ai) usa Video2X, si lo has instalado.
 
 Cómo instalarla:
 1. Descarga el paquete para Linux (`spektronautilus-linux.tar.gz`) y descomprímelo: `tar xzf spektronautilus-linux.tar.gz`.

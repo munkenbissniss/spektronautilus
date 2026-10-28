@@ -213,6 +213,19 @@ Erzeugt von jedem Clip auf einmal einen kleinen Proxy, 720p, 1080p und 4K. Grö�
 ## HAP / ProRes {#pro}
 Erzeugt professionelle Formate für Resolume, VDMX, Millumin und Videoschnitt. Dafür brauchst du die lokale [Linux-Version](@guides/offline-linux/#linux), weil sie ffmpeg auf deinem eigenen Computer nutzt. [Dieses Werkzeug öffnen](@@tools/app/#pro).
 
+## KI-Hochskalierung {#ai}
+Macht Videoclips mit KI schärfer und größer, mit dem kostenlosen Programm Video2X. Es funktioniert nur in der lokalen [Linux-Version](@guides/offline-linux/#linux) und braucht eine Grafikkarte mit Vulkan-Unterstützung. Deine Dateien verlassen nie deinen Computer.
+
+So geht's:
+1. Installiere Video2X selbst (ein AppImage, das AUR-Paket oder ein eigener Build). Spektronautilus findet es selbst. Wenn nicht, setze den Pfad in der Variable `SPEKTRO_VIDEO2X` und starte Spektronautilus neu.
+2. Öffne das Werkzeug und füge deine Clips hinzu. Der Hinweis über den Einstellungen zeigt, ob Video2X gefunden wurde.
+3. Wähle [[Kind of picture]] und [[Make it this much bigger]] und drücke [[Upscale]].
+
+Gut zu wissen:
+- Es ist langsam. Ein kurzer Clip kann viele Minuten dauern, nutze also die [Warteschlange](@guides/queue/) und lass es laufen.
+- Fotos und echter Film werden immer 4× größer. Das Ergebnis darf nicht größer als 8K sein.
+- Mehr als eine Grafikkarte? Drücke [[Check my graphics card]] und stelle [[Graphics card number]] ein.
+
 ## Catalogue {#catalog}
 Erstellt eine Webseite und eine Tabellendatei mit Bild, Länge, Größe und Loop-Qualität jedes Loops. Praktisch für große Sammlungen. [Dieses Werkzeug öffnen](@@tools/app/#catalog).
 
@@ -306,6 +319,7 @@ Warum sie nutzen:
 - **Tempo.** Ist `ffmpeg` installiert, nutzen die Werkzeuge es statt der langsameren Browser-Engine. Die Seite zeigt dann „Fast mode“.
 - **Keine Speichergrenze** für große Dateien, und kein Internet nötig (nur [[Find loops]] braucht es).
 - **HAP und ProRes.** Das [HAP / ProRes-Werkzeug](@guides/tools/#pro) funktioniert in der Linux-Version.
+- **KI-Hochskalierung.** Das [KI-Hochskalierungs-Werkzeug](@guides/tools/#ai) nutzt Video2X, wenn du es installiert hast.
 
 So installierst du sie:
 1. Lade das Linux-Paket (`spektronautilus-linux.tar.gz`) herunter und entpacke es: `tar xzf spektronautilus-linux.tar.gz`.

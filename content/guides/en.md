@@ -213,6 +213,19 @@ Makes a small proxy, 720p, 1080p and 4K of every clip in one go. Sizes larger th
 ## HAP / ProRes {#pro}
 Makes professional formats for Resolume, VDMX, Millumin and video editors. This needs the local [Linux version](@guides/offline-linux/#linux), because it uses ffmpeg on your own computer. [Open this tool](@@tools/app/#pro).
 
+## AI upscale {#ai}
+Makes video clips sharper and larger with AI, using the free program Video2X. It works only in the local [Linux version](@guides/offline-linux/#linux) and needs a graphics card with Vulkan support. Your files never leave your computer.
+
+How to use it:
+1. Install Video2X yourself (an AppImage, the AUR package, or your own build). Spektronautilus finds it by itself. If it does not, set the path in the `SPEKTRO_VIDEO2X` variable and start Spektronautilus again.
+2. Open the tool and add your clips. The note above the settings says whether Video2X was found.
+3. Choose [[Kind of picture]] and [[Make it this much bigger]], then press [[Upscale]].
+
+Good to know:
+- It is slow. A short clip can take many minutes, so use the [Queue](@guides/queue/) and let it run.
+- Photos and real film are always made 4× bigger. The result may not be larger than 8K.
+- Have more than one graphics card? Press [[Check my graphics card]] and set [[Graphics card number]].
+
 ## Catalogue {#catalog}
 Makes a web page and a spreadsheet file with a picture, the length, the size and the loop quality of every loop. Good for big collections. [Open this tool](@@tools/app/#catalog).
 
@@ -306,6 +319,7 @@ Why use it:
 - **Speed.** If `ffmpeg` is installed, the tools use it instead of the slower browser engine. The page then says “Fast mode”.
 - **No memory limit** for big files, and no internet is needed (only [[Find loops]] needs it).
 - **HAP and ProRes.** The [HAP / ProRes tool](@guides/tools/#pro) works in the Linux version.
+- **AI upscaling.** The [AI upscale tool](@guides/tools/#ai) uses Video2X, if you have installed it.
 
 How to install:
 1. Download the Linux package (`spektronautilus-linux.tar.gz`) and unpack it: `tar xzf spektronautilus-linux.tar.gz`.

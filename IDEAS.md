@@ -36,6 +36,7 @@ Sorted by how much they would help, with a rough size: S = hours, M = a day or t
 - ✅ **Done: Crop & trim** (16:9, 9:16, 1:1, 4:3, 21:9, start and length).
 - ✅ **Done: Sizes** (480p proxy, 720p, 1080p, 1440p, 4K; sizes bigger than the clip are skipped).
 - ✅ **Done: HAP, HAP Q, HAP Alpha, ProRes 422 (4 levels), ProRes 4444** in the Linux version. DXV is not possible with ffmpeg (closed format).
+- ✅ **Done: AI upscale** with Video2X in the Linux version. Video2X is detected, never bundled (licence). Tested with a stand-in only; real runs need a Vulkan GPU, so the exact flags and progress output still need checking on a real machine.
 - **Alpha loops** (transparent overlays) end to end, M.
 - **Speed and retime**: half speed, double speed, smooth slow-motion, S–M.
 - **Colour looks / LUT** in bulk, S.

@@ -66,6 +66,7 @@ T = {
 <a class="card" href="{r}tools/app/#crop"><h3>Cortar e aparar <span class="badge live">Disponível</span></h3><p>Corte clipes em widescreen, vertical ou quadrado e apare o início e o fim, de uma pasta inteira de uma vez.</p></a>
 <a class="card" href="{r}tools/app/#sizes"><h3>Tamanhos <span class="badge live">Disponível</span></h3><p>Crie um proxy pequeno, 720p, 1080p e 4K de cada clipe de uma só vez.</p></a>
 <a class="card" href="{r}tools/app/#pro"><h3>HAP / ProRes <span class="badge live">Versão para Linux</span></h3><p>Formatos profissionais para Resolume, VDMX, Millumin e editores de vídeo. Precisa da versão local para Linux.</p></a>
+<a class="card" href="{r}tools/app/#ai"><h3>Ampliação com IA <span class="badge live">Versão para Linux</span></h3><p>Torna os clipes de vídeo mais nítidos e maiores com IA. Precisa da versão local para Linux e do Video2X.</p></a>
 <a class="card" href="{r}tools/app/#catalog"><h3>Catálogo <span class="badge live">Disponível</span></h3><p>Uma página web e um arquivo de planilha com imagem, duração, tamanho e qualidade de loop de cada loop.</p></a>
 <a class="card" href="{r}tools/app/#pack"><h3>Pacote de loops <span class="badge live">Disponível</span></h3><p>Reúna loops em um zip pronto para compartilhar, com imagem de prévia, arquivo de informações e licença.</p></a>
 </div>
