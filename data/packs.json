@@ -1,0 +1,4 @@
+{
+  "_help": "Add one object per loop pack. 'url' is the Jottacloud share link (a zip download). Optional: 'size', 'clips', 'preview' (image path under docs/, e.g. packs/neon.jpg), and 'desc_no' etc. for other languages.",
+  "packs": []
+}
