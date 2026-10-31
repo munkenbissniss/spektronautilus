@@ -195,6 +195,7 @@ Converte mov, webm, mkv, gif e outros formatos em mp4 adequado a VJ. Escolha tam
 
 ## Find loops {#search}
 Pesquise loops em fontes gratuitas e descarregue-os e converta-os de uma vez. Internet Archive, Wikimedia Commons, NASA e os Prelinger Archives funcionam sem conta. Pexels e Pixabay têm muitos loops prontos, mas precisam de uma chave gratuita, que se obtém em um minuto. A chave fica guardada só no seu navegador e é enviada só para esse site.
+- Por predefinição, a pesquisa mostra só clipes curtos (menos de 60 segundos), oculta material governamental e militar (US Army, NASA e semelhantes) e põe primeiro os loops e as animações GIF. Os GIFs muitas vezes já fazem loop e são convertidos para mp4 ao descarregar. A NASA está desligada por predefinição: marque-a se quiser imagens do espaço. Cada filtro tem uma caixa, e a mensagem por baixo da pesquisa diz quantos resultados foram ocultados.
 - O autor e a licença de cada descarga ficam guardados num ficheiro chamado `credits.csv`. As licenças variam de clipe para clipe, por isso confirme-as antes de usar um clipe em público.
 - Alguns sites não deixam uma página web descarregar os seus ficheiros. Nesse caso use [[Open page]], descarregue o clipe você mesmo e largue-o em [[Convert]].
 - Descarregue só o que tem direito de usar.
@@ -202,7 +203,7 @@ Pesquise loops em fontes gratuitas e descarregue-os e converta-os de uma vez. In
 [Abrir esta ferramenta](@@tools/app/#search).
 
 ## Filters {#filters}
-Acrescenta looks ao estilo VJ a uma pasta inteira de loops: brilho, glitch, espelho, caleidoscópio, VHS, duotone, pixelização, rastos e mais. Carregue em [[Preview on first clip]] para ver cada look antes de os aplicar. Cada ficheiro recebe um clipe novo por cada look que escolher. [Abrir esta ferramenta](@@tools/app/#filters).
+Acrescenta looks ao estilo VJ a uma pasta inteira de loops: brilho, glitch, espelho, caleidoscópio, VHS, duotone, pixelização e rastos. Há também seis estilos de cor: Blue Dream, Pink Dream, Dark Future, Sepia, The Matrix e Las Vegas. Coloque o controlo [[Strength]] em 50 para o aspeto de referência; mais baixo é um toque leve, mais alto leva as cores mais longe. Carregue em [[Preview on first clip]] para ver cada look antes de os aplicar. Cada ficheiro recebe um clipe novo por cada look que escolher. [Abrir esta ferramenta](@@tools/app/#filters).
 
 ## Crop & trim {#crop}
 Corta clipes para panorâmico, vertical ou quadrado e apara o início e o fim, para uma pasta inteira de uma vez. Escolha como ajustar: cortar exatamente à moldura ou acrescentar barras pretas. [Abrir esta ferramenta](@@tools/app/#crop).
@@ -214,10 +215,10 @@ Cria um proxy pequeno, 720p, 1080p e 4K de cada clipe de uma vez. Tamanhos maior
 Cria formatos profissionais para Resolume, VDMX, Millumin e editores de vídeo. Precisa da [versão local para Linux](@guides/offline-linux/#linux), porque usa o ffmpeg no seu próprio computador. [Abrir esta ferramenta](@@tools/app/#pro).
 
 ## Ampliação com IA {#ai}
-Torna os clipes de vídeo mais nítidos e maiores com IA, usando o programa gratuito Video2X. Só funciona na [versão local para Linux](@guides/offline-linux/#linux) e precisa de uma placa gráfica com suporte a Vulkan. Os seus ficheiros nunca saem do seu computador.
+Torna os clipes de vídeo mais nítidos e maiores com IA, usando o programa gratuito Video2X. Só funciona na versão local, em [Linux](@guides/offline-linux/#linux) ou Windows, e precisa de uma placa gráfica com suporte a Vulkan. Os seus ficheiros nunca saem do seu computador.
 
 Como usar:
-1. Instale o Video2X por si (um AppImage, o pacote do AUR ou a sua própria compilação). O Spektronautilus encontra-o sozinho. Se não, indique o caminho na variável `SPEKTRO_VIDEO2X` e inicie o Spektronautilus de novo.
+1. Instale o Video2X por si (no Linux um AppImage, o pacote do AUR ou a sua própria compilação; no Windows a versão oficial). O Spektronautilus encontra-o sozinho. Se não, escreva o caminho completo do programa numa linha de um ficheiro de texto chamado `video2x.txt` na pasta das definições (`~/.config/spektronautilus` no Linux, `%APPDATA%\spektronautilus` no Windows), ou defina a variável `SPEKTRO_VIDEO2X`, e inicie o Spektronautilus de novo.
 2. Abra a ferramenta e adicione os seus clipes. A nota acima das definições mostra se o Video2X foi encontrado.
 3. Escolha [[Kind of picture]] e [[Make it this much bigger]] e carregue em [[Upscale]].
 
@@ -225,6 +226,19 @@ Bom saber:
 - É lento. Um clipe curto pode demorar muitos minutos, por isso use a [fila](@guides/queue/) e deixe correr.
 - Fotos e filme real são sempre ampliados 4×. O resultado não pode ser maior do que 8K.
 - Tem mais de uma placa gráfica? Carregue em [[Check my graphics card]] e defina [[Graphics card number]].
+
+## Câmara lenta com IA {#slowmo}
+Torna os clipes mais lentos e suaves com IA. A IA (RIFE, executada pelo Video2X) inventa os fotogramas entre os seus fotogramas, para que a câmara lenta pareça fluida e não aos soluços. Precisa do mesmo que a [ampliação com IA](@guides/tools/#ai): a versão local, uma placa gráfica com suporte a Vulkan e o Video2X.
+
+Como usar:
+1. Abra a ferramenta e adicione os seus clipes. A nota acima das definições mostra se o Video2X foi encontrado e consegue fazer câmara lenta.
+2. Escolha [[How much slower]]: 2×, 4× ou 8×.
+3. Em [[Result]] escolha um clipe mais lento, ou a mesma velocidade mas mais suave, com mais fotogramas por segundo. Escolha [[Model]] e carregue em [[Make slow motion]].
+
+Bom saber:
+- Um clipe em câmara lenta fica mais longo (2× mais lento dura o dobro) e perde o som. Os loops continuam loops.
+- «Mais suave» mantém a duração e o som, mas não pode passar de 120 fotogramas por segundo.
+- É lento, por isso use a [fila](@guides/queue/) e deixe correr. Carregue em [[Check my graphics card]] se tiver mais de uma placa gráfica.
 
 ## Catalogue {#catalog}
 Cria uma página web e um ficheiro de folha de cálculo com uma imagem, a duração, o tamanho e a qualidade de loop de cada loop. Útil para coleções grandes. [Abrir esta ferramenta](@@tools/app/#catalog).
@@ -319,7 +333,7 @@ Porquê usá-la:
 - **Velocidade.** Se o `ffmpeg` estiver instalado, as ferramentas usam-no em vez do motor mais lento do navegador. A página diz então «Fast mode».
 - **Sem limite de memória** para ficheiros grandes, e não é preciso internet (só [[Find loops]] precisa).
 - **HAP e ProRes.** A [ferramenta HAP / ProRes](@guides/tools/#pro) funciona na versão para Linux.
-- **Ampliação com IA.** A [ferramenta de ampliação com IA](@guides/tools/#ai) usa o Video2X, se o tiver instalado.
+- **Ampliação e câmara lenta com IA.** As ferramentas de [ampliação com IA](@guides/tools/#ai) e de [câmara lenta com IA](@guides/tools/#slowmo) usam o Video2X, se o tiver instalado. Ambas funcionam também na versão para Windows.
 
 Como instalar:
 1. Descarregue o pacote para Linux (`spektronautilus-linux.tar.gz`) e descomprima-o: `tar xzf spektronautilus-linux.tar.gz`.

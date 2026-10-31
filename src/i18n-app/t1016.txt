@@ -1,0 +1,16 @@
+1016 ¦ KI-slowmotion ¦ Cámara lenta con IA ¦ KI-Zeitlupe ¦ Câmara lenta com IA
+1017 ¦ Gjør klipp tregere og jevnere med KI (Video2X med RIFE). Krever den lokale versjonen (Linux eller Windows), et grafikkort med Vulkan og det gratis programmet Video2X. ¦ Hace los clips más lentos y suaves con IA (Video2X con RIFE). Necesita la versión local (Linux o Windows), una tarjeta gráfica con Vulkan y el programa gratuito Video2X. ¦ Macht Clips mit KI langsamer und flüssiger (Video2X mit RIFE). Braucht die lokale Version (Linux oder Windows), eine Grafikkarte mit Vulkan und das kostenlose Programm Video2X. ¦ Torna os clipes mais lentos e suaves com IA (Video2X com RIFE). Precisa da versão local (Linux ou Windows), de uma placa gráfica com Vulkan e do programa gratuito Video2X.
+1018 ¦ Lag slowmotion ¦ Crear cámara lenta ¦ Zeitlupe erstellen ¦ Criar câmara lenta
+1019 ¦ Hvor mye tregere ¦ Cuánto más lento ¦ Wie viel langsamer ¦ Quanto mais lento
+1020 ¦ 2× tregere ¦ 2× más lento ¦ 2× langsamer ¦ 2× mais lento
+1021 ¦ 4× tregere ¦ 4× más lento ¦ 4× langsamer ¦ 4× mais lento
+1022 ¦ 8× tregere ¦ 8× más lento ¦ 8× langsamer ¦ 8× mais lento
+1023 ¦ Resultat ¦ Resultado ¦ Ergebnis ¦ Resultado
+1024 ¦ Slowmotion (klippet blir lengre) ¦ Cámara lenta (el clip se alarga) ¦ Zeitlupe (der Clip wird länger) ¦ Câmara lenta (o clipe fica mais longo)
+1025 ¦ Samme hastighet, men jevnere (flere bilder per sekund) ¦ Misma velocidad, pero más suave (más fotogramas por segundo) ¦ Gleiche Geschwindigkeit, aber flüssiger (mehr Bilder pro Sekunde) ¦ Mesma velocidade, mas mais suave (mais fotogramas por segundo)
+1026 ¦ Vanlig video ¦ Video general ¦ Allgemeines Video ¦ Vídeo geral
+1027 ¦ Kvalitet og grafikkort ¦ Calidad y tarjeta gráfica ¦ Qualität und Grafikkarte ¦ Qualidade e placa gráfica
+1028 ¦ Denne Video2X kan ikke lage slowmotion. Oppdater Video2X til versjon 6 eller nyere. ¦ Este Video2X no puede hacer cámara lenta. Actualiza Video2X a la versión 6 o posterior. ¦ Dieses Video2X kann keine Zeitlupe. Aktualisiere Video2X auf Version 6 oder neuer. ¦ Este Video2X não consegue fazer câmara lenta. Atualize o Video2X para a versão 6 ou posterior.
+1029 ¦ Resultatet ville fått mer enn 120 bilder per sekund. Velg et mindre tall, eller velg slowmotion i stedet. ¦ El resultado tendría más de 120 fotogramas por segundo. Elige un número menor, o cámara lenta en su lugar. ¦ Das Ergebnis hätte mehr als 120 Bilder pro Sekunde. Wähle eine kleinere Zahl oder stattdessen Zeitlupe. ¦ O resultado teria mais de 120 fotogramas por segundo. Escolha um número menor ou câmara lenta.
+1030 ¦ Kunne ikke lage slowmotion av denne filen ({a}) ¦ No se pudo hacer cámara lenta de este archivo ({a}) ¦ Von dieser Datei konnte keine Zeitlupe erstellt werden ({a}) ¦ Não foi possível fazer câmara lenta deste ficheiro ({a})
+1031 ¦ KI-slowmotion … {a} ¦ Cámara lenta con IA… {a} ¦ KI-Zeitlupe … {a} ¦ Câmara lenta com IA… {a}

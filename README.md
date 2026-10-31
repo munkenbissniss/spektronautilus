@@ -13,7 +13,7 @@ The site is static (GitHub Pages: publish the `docs/` folder). English is at the
 | `docs/live-dj/` | Video DJ (`index.html` control window, `output.html` projector window, `app.js`, pure logic in `core.js`) |
 | `docs/live-mobile/` | Phone Video DJ (`index.html`) and the receiver page for sending the picture to another screen (`receiver.html`, `cast.js`) |
 | `docs/vj-pad/` | VJ Mixer (same layout as the Video DJ; shares `../live-dj/core.js`) |
-| `docs/tools/app/` | The loop tools (convert, GIF→MP4, make loops, filters, find loops, crop & trim, sizes, HAP/ProRes, AI upscale (Linux version + your own Video2X), catalogue, loop pack). Needs the engine files, see below. |
+| `docs/tools/app/` | The loop tools (convert, GIF→MP4, make loops, filters, find loops, crop & trim, sizes, HAP/ProRes, AI upscale and AI slow motion (Linux and Windows versions + your own Video2X), catalogue, loop pack). Needs the engine files, see below. |
 | `docs/shared/` | Shared scripts: queue, offline (service worker registration), language (`i18n.js` + `lang/`, generated), the "Ready for the show?" check (`check.js`, `testcard.html`) |
 | `src/i18n-app/` | The texts of the apps and their translations (`en.txt` is the master, one string per line; `t*.txt` hold `ID ¦ no ¦ es ¦ de ¦ pt`). `build_i18n.py` turns them into `docs/shared/lang/*.js` and checks that nothing is missing. |
 | `build.py`, `i18n/`, `content/`, `data/`, `src/` | Generator for the pages around the apps (home, landing pages, guides, packs, sitemap) |
@@ -35,7 +35,7 @@ python3 tests_i18n.py          # every app in every language: nothing left in En
 python3 tests_check.py         # the "Ready for the show?" check and the test card
 python3 tests_v2x.py           # AI upscale with Video2X, tested with a stand-in program (real Video2X needs a Vulkan GPU)
 python3 tests_newtools.py      # crop & trim, sizes, HAP/ProRes, catalogue, loop pack (real ffmpeg)
-node --test tests_filters.mjs   # runs all ten filters with the computer's own ffmpeg
+node --test tests_filters.mjs   # runs all sixteen filters with the computer's own ffmpeg
 node --test tests_live_core.mjs tests_vj_core.mjs
 ```
 
@@ -73,5 +73,14 @@ Every page has its own title and description, a canonical URL, `hreflang` links 
 - Safety: the server refuses other Host names and requests without its custom header (stops other websites from using it), only lets ffmpeg touch its own temporary folder, and deletes that folder on exit.
 
 ## Status
-- Available: Magic Video Mixer (desktop and phone), Video DJ (desktop and phone), VJ Mixer (desktop and phone), tools (crop & trim, sizes, HAP/ProRes (Linux version), AI upscale (Linux version, needs Video2X installed by the user, never bundled), catalogue and loop pack on top of the first five), a "Ready for the show?" check in the live mixers, offline mode (installable), five languages, a shared queue page (`/queue/`) that shows jobs from the tools and both Magic Mixers.
+- Available: Magic Video Mixer (desktop and phone), Video DJ (desktop and phone), VJ Mixer (desktop and phone), tools (crop & trim, sizes, HAP/ProRes (Linux version), AI upscale and AI slow motion (Linux and Windows versions, needs Video2X installed by the user, never bundled), catalogue and loop pack on top of the first five), a "Ready for the show?" check in the live mixers, offline mode (installable), five languages, a shared queue page (`/queue/`) that shows jobs from the tools and both Magic Mixers.
 - Not yet set up: loop packs (waiting for the Jottacloud links), donations.
+
+
+## Windows version (installer)
+The same launcher (`linux/spektronautilus.py`) runs on Windows. `windows/` and `.github/workflows/windows.yml` build `Spektronautilus-Setup.exe` on GitHub (PyInstaller + Inno Setup, ffmpeg bundled, no admin rights needed).
+- Build: GitHub > Actions > "Windows installer" > Run workflow (or push a tag like `v1.0.0` to also publish a release). Download `Spektronautilus-Setup` from the run.
+- Not code-signed, so Windows SmartScreen shows "More info > Run anyway". Signing needs a paid certificate.
+- The bundled ffmpeg is a separate GPL build (BtbN). Its licence is installed next to it.
+- AI upscaling and AI slow motion (RIFE) run through Video2X, which you install yourself (never bundled: separate programme and licence). It is found in PATH, in `SPEKTRO_VIDEO2X`, in a one-line `video2x.txt` in the settings folder, or in the usual install places. The launcher reads `video2x --help` to learn the flag spelling of that version (`-g`/`--list-gpus` or `-d`/`--list-devices`) and whether it has RIFE.
+- Not yet tested on a real Windows machine: the workflow has a smoke test (starts the exe, checks the site and ffmpeg), but please try the installer once yourself.

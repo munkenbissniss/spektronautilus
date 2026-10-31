@@ -1,0 +1,12 @@
+1004 ¦ Blå drøm ¦ Sueño azul ¦ Blauer Traum ¦ Sonho azul
+1005 ¦ Rosa drøm ¦ Sueño rosa ¦ Rosa Traum ¦ Sonho rosa
+1006 ¦ Mørk fremtid ¦ Futuro oscuro ¦ Dunkle Zukunft ¦ Futuro sombrio
+1007 ¦ Sepia ¦ Sepia ¦ Sepia ¦ Sépia
+1008 ¦ The Matrix ¦ The Matrix ¦ The Matrix ¦ The Matrix
+1009 ¦ Las Vegas ¦ Las Vegas ¦ Las Vegas ¦ Las Vegas
+1010 ¦ Dyp blå og fiolett, med glødende rosa og hvite høylys. ¦ Azul profundo y violeta, con luces rosas y blancas brillantes. ¦ Tiefes Blau und Violett mit leuchtenden rosa und weißen Lichtern. ¦ Azul profundo e violeta, com luzes cor-de-rosa e brancas brilhantes.
+1011 ¦ Mørke plommeskygger og kalde blå lys. Mykt og drømmende. ¦ Sombras ciruela oscuras y luces azules frías. Suave y onírico. ¦ Dunkle pflaumenfarbene Schatten und kühle blaue Lichter. Weich und verträumt. ¦ Sombras de ameixa escuras e luzes azuis frias. Suave e sonhador.
+1012 ¦ Isblå, nesten én farge, med skarpe hvite høylys. ¦ Azul helado, casi de un solo color, con luces blancas nítidas. ¦ Eisblau, fast einfarbig, mit klaren weißen Lichtern. ¦ Azul gelado, quase de uma só cor, com luzes brancas nítidas.
+1013 ¦ Varme, bleke gammelfilm-toner med løftede svartnivåer. ¦ Tonos cálidos y desvaídos de película antigua, con negros elevados. ¦ Warme, verblasste Altfilm-Töne mit angehobenen Schwarztönen. ¦ Tons quentes e desbotados de filme antigo, com pretos elevados.
+1014 ¦ Kalde grønn-turkise skygger og blekgrønne høylys. ¦ Sombras verde azuladas frías y luces verde pálido. ¦ Kalte grün-türkise Schatten und blassgrüne Lichter. ¦ Sombras verde-azuladas frias e luzes verde-pálido.
+1015 ¦ En støvete magenta natt med turkise glimt. Mykt og flatt. ¦ Una noche magenta polvorienta con destellos turquesa. Suave y plana. ¦ Eine staubige Magenta-Nacht mit türkisen Lichtblitzen. Weich und flach. ¦ Uma noite magenta empoeirada com brilhos turquesa. Suave e plana.

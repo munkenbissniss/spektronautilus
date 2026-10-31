@@ -969,7 +969,7 @@ Could not export this file ({a})
 Packing the zip…
 Building the files…
 AI upscale
-Make video clips sharper and larger with AI (Video2X). Needs the Linux (local) version, a graphics card with Vulkan and the free program Video2X.
+Make video clips sharper and larger with AI (Video2X). Needs the local version (Linux or Windows), a graphics card with Vulkan and the free program Video2X.
 Upscale
 Kind of picture
 Cartoons and animation
@@ -985,10 +985,49 @@ Check my graphics card
 Asking Video2X…
 Could not ask Video2X about the graphics cards.
 Video2X found: {a}
-Video2X was not found on this computer. Install it (AppImage, AUR or your own build), or set SPEKTRO_VIDEO2X to its path, then start Spektronautilus again.
-AI upscaling needs the Linux (local) version of Spektronautilus. The web version cannot do it. Everything else on this page works in the browser.
-AI upscaling needs Video2X. Read the note above the settings.
+Video2X was not found on this computer. Install it, then start Spektronautilus again. If it is installed somewhere unusual, set SPEKTRO_VIDEO2X to its path (see the guide).
+AI upscaling and slow motion need the local version of Spektronautilus (Linux or Windows). The web version cannot do it. Everything else on this page works in the browser.
+AI upscaling and slow motion need Video2X. Read the note above the settings.
 Could not upscale this file ({a})
 The result would be larger than 8K. Choose a smaller scale or a smaller clip.
 AI upscaling… {a}
 Open the guide
+Short clips only (under 60 seconds)
+Show loops and GIFs first
+Hide government and military footage
+🔁 loops
+{a} hidden by your filters
+Wikimedia GIF animations
+Internet Archive GIF animations
+{a} clips found.
+{a} clips found (nothing new on this page).
+Blue Dream
+Pink Dream
+Dark Future
+Sepia
+The Matrix
+Las Vegas
+Deep blue and violet, with glowing pink and white highlights.
+Dark plum shadows and cool blue lights. Soft and dreamy.
+Icy blue, almost one colour, with crisp white highlights.
+Warm, faded old-film tones with lifted blacks.
+Cold green-teal shadows and pale green highlights.
+A dusty magenta night with teal glints. Soft and flat.
+AI slow motion
+Make clips slower and smoother with AI (Video2X with RIFE). Needs the local version (Linux or Windows), a graphics card with Vulkan and the free program Video2X.
+Make slow motion
+How much slower
+2× slower
+4× slower
+8× slower
+Result
+Slow motion (the clip gets longer)
+Same speed, but smoother (more frames per second)
+General video
+Quality and graphics card
+This Video2X cannot do slow motion. Update Video2X to version 6 or newer.
+The result would have more than 120 frames per second. Choose a smaller number, or slow motion instead.
+Could not make slow motion of this file ({a})
+AI slow motion… {a}
+Model
+Newest model

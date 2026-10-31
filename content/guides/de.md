@@ -195,6 +195,7 @@ Wandelt mov, webm, mkv, gif und andere Formate in VJ-freundliches mp4 um. Wähle
 
 ## Find loops {#search}
 Durchsuche freie Quellen nach Loops und lade sie in einem Schritt herunter und wandle sie um. Internet Archive, Wikimedia Commons, NASA und die Prelinger Archives funktionieren ohne Konto. Pexels und Pixabay haben viele fertige Loops, brauchen aber einen kostenlosen Schlüssel, den du in einer Minute bekommst. Der Schlüssel wird nur in deinem Browser gespeichert und nur an diese Seite gesendet.
+- Standardmäßig zeigt die Suche nur kurze Clips (unter 60 Sekunden), blendet staatliches und militärisches Material (US Army, NASA und Ähnliches) aus und zeigt Loops und GIF-Animationen zuerst. GIFs loopen oft schon und werden beim Herunterladen in mp4 umgewandelt. NASA ist standardmäßig aus: Hake sie an, wenn du Weltraummaterial willst. Jeder Filter hat ein Kästchen, und die Meldung unter der Suche sagt, wie viele Treffer ausgeblendet wurden.
 - Urheber und Lizenz jedes Downloads werden in einer Datei namens `credits.csv` gespeichert. Lizenzen unterscheiden sich je Clip, prüfe sie also, bevor du einen Clip öffentlich nutzt.
 - Manche Seiten erlauben einer Webseite nicht, ihre Dateien herunterzuladen. Nutze dann [[Open page]], lade den Clip selbst herunter und ziehe ihn in [[Convert]].
 - Lade nur herunter, was du nutzen darfst.
@@ -202,7 +203,7 @@ Durchsuche freie Quellen nach Loops und lade sie in einem Schritt herunter und w
 [Dieses Werkzeug öffnen](@@tools/app/#search).
 
 ## Filters {#filters}
-Fügt einem ganzen Ordner voller Loops VJ-typische Looks hinzu: Glow, Glitch, Spiegel, Kaleidoskop, VHS, Duotone, Pixel, Spuren und mehr. Drücke [[Preview on first clip]], um jeden Look vor dem Anwenden zu sehen. Jede Datei bekommt pro gewähltem Look einen neuen Clip. [Dieses Werkzeug öffnen](@@tools/app/#filters).
+Fügt einem ganzen Ordner voller Loops VJ-typische Looks hinzu: Glow, Glitch, Spiegel, Kaleidoskop, VHS, Duotone, Pixel und Spuren. Dazu gibt es sechs Farbstile: Blue Dream, Pink Dream, Dark Future, Sepia, The Matrix und Las Vegas. Stelle den Regler [[Strength]] auf 50 für den Referenz-Look; niedriger ist ein leichter Hauch, höher treibt die Farben weiter. Drücke [[Preview on first clip]], um jeden Look vor dem Anwenden zu sehen. Jede Datei bekommt pro gewähltem Look einen neuen Clip. [Dieses Werkzeug öffnen](@@tools/app/#filters).
 
 ## Crop & trim {#crop}
 Schneidet Clips auf Breitbild, Hochformat oder Quadrat zu und kürzt Anfang und Ende, für einen ganzen Ordner auf einmal. Wähle, wie es passen soll: exakt auf den Rahmen zuschneiden oder mit schwarzen Balken auffüllen. [Dieses Werkzeug öffnen](@@tools/app/#crop).
@@ -214,10 +215,10 @@ Erzeugt von jedem Clip auf einmal einen kleinen Proxy, 720p, 1080p und 4K. Grö�
 Erzeugt professionelle Formate für Resolume, VDMX, Millumin und Videoschnitt. Dafür brauchst du die lokale [Linux-Version](@guides/offline-linux/#linux), weil sie ffmpeg auf deinem eigenen Computer nutzt. [Dieses Werkzeug öffnen](@@tools/app/#pro).
 
 ## KI-Hochskalierung {#ai}
-Macht Videoclips mit KI schärfer und größer, mit dem kostenlosen Programm Video2X. Es funktioniert nur in der lokalen [Linux-Version](@guides/offline-linux/#linux) und braucht eine Grafikkarte mit Vulkan-Unterstützung. Deine Dateien verlassen nie deinen Computer.
+Macht Videoclips mit KI schärfer und größer, mit dem kostenlosen Programm Video2X. Es funktioniert nur in der lokalen Version, unter [Linux](@guides/offline-linux/#linux) oder Windows, und braucht eine Grafikkarte mit Vulkan-Unterstützung. Deine Dateien verlassen nie deinen Computer.
 
 So geht's:
-1. Installiere Video2X selbst (ein AppImage, das AUR-Paket oder ein eigener Build). Spektronautilus findet es selbst. Wenn nicht, setze den Pfad in der Variable `SPEKTRO_VIDEO2X` und starte Spektronautilus neu.
+1. Installiere Video2X selbst (unter Linux ein AppImage, das AUR-Paket oder ein eigener Build; unter Windows die offizielle Version). Spektronautilus findet es selbst. Wenn nicht, schreibe den vollständigen Pfad des Programms in eine Zeile einer Textdatei namens `video2x.txt` im Einstellungsordner (`~/.config/spektronautilus` unter Linux, `%APPDATA%\spektronautilus` unter Windows) oder setze die Variable `SPEKTRO_VIDEO2X`, und starte Spektronautilus neu.
 2. Öffne das Werkzeug und füge deine Clips hinzu. Der Hinweis über den Einstellungen zeigt, ob Video2X gefunden wurde.
 3. Wähle [[Kind of picture]] und [[Make it this much bigger]] und drücke [[Upscale]].
 
@@ -225,6 +226,19 @@ Gut zu wissen:
 - Es ist langsam. Ein kurzer Clip kann viele Minuten dauern, nutze also die [Warteschlange](@guides/queue/) und lass es laufen.
 - Fotos und echter Film werden immer 4× größer. Das Ergebnis darf nicht größer als 8K sein.
 - Mehr als eine Grafikkarte? Drücke [[Check my graphics card]] und stelle [[Graphics card number]] ein.
+
+## KI-Zeitlupe {#slowmo}
+Macht Clips mit KI langsamer und flüssiger. Die KI (RIFE, gestartet von Video2X) erfindet die Bilder zwischen deinen Bildern, damit die Zeitlupe flüssig statt ruckelig aussieht. Sie braucht dasselbe wie die [KI-Hochskalierung](@guides/tools/#ai): die lokale Version, eine Grafikkarte mit Vulkan-Unterstützung und Video2X.
+
+So geht's:
+1. Öffne das Werkzeug und füge deine Clips hinzu. Der Hinweis über den Einstellungen zeigt, ob Video2X gefunden wurde und Zeitlupe kann.
+2. Wähle [[How much slower]]: 2×, 4× oder 8×.
+3. Unter [[Result]] wählst du einen langsameren Clip oder dieselbe Geschwindigkeit, aber flüssiger, mit mehr Bildern pro Sekunde. Wähle [[Model]] und drücke [[Make slow motion]].
+
+Gut zu wissen:
+- Ein Zeitlupen-Clip wird länger (2× langsamer ist doppelt so lang) und verliert den Ton. Loops bleiben Loops.
+- «Flüssiger» behält Länge und Ton, kann aber nicht über 120 Bilder pro Sekunde gehen.
+- Es ist langsam, nutze also die [Warteschlange](@guides/queue/) und lass es laufen. Drücke [[Check my graphics card]], wenn du mehr als eine Grafikkarte hast.
 
 ## Catalogue {#catalog}
 Erstellt eine Webseite und eine Tabellendatei mit Bild, Länge, Größe und Loop-Qualität jedes Loops. Praktisch für große Sammlungen. [Dieses Werkzeug öffnen](@@tools/app/#catalog).
@@ -319,7 +333,7 @@ Warum sie nutzen:
 - **Tempo.** Ist `ffmpeg` installiert, nutzen die Werkzeuge es statt der langsameren Browser-Engine. Die Seite zeigt dann „Fast mode“.
 - **Keine Speichergrenze** für große Dateien, und kein Internet nötig (nur [[Find loops]] braucht es).
 - **HAP und ProRes.** Das [HAP / ProRes-Werkzeug](@guides/tools/#pro) funktioniert in der Linux-Version.
-- **KI-Hochskalierung.** Das [KI-Hochskalierungs-Werkzeug](@guides/tools/#ai) nutzt Video2X, wenn du es installiert hast.
+- **KI-Hochskalierung und Zeitlupe.** Die Werkzeuge [KI-Hochskalierung](@guides/tools/#ai) und [KI-Zeitlupe](@guides/tools/#slowmo) nutzen Video2X, wenn du es installiert hast. Beide funktionieren auch in der Windows-Version.
 
 So installierst du sie:
 1. Lade das Linux-Paket (`spektronautilus-linux.tar.gz`) herunter und entpacke es: `tar xzf spektronautilus-linux.tar.gz`.

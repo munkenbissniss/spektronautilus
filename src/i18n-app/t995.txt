@@ -1,0 +1,9 @@
+995 ¦ Bare korte klipp (under 60 sekunder) ¦ Solo clips cortos (menos de 60 segundos) ¦ Nur kurze Clips (unter 60 Sekunden) ¦ Só clipes curtos (menos de 60 segundos)
+996 ¦ Vis loops og GIF-er først ¦ Mostrar primero loops y GIF ¦ Loops und GIFs zuerst zeigen ¦ Mostrar primeiro loops e GIFs
+997 ¦ Skjul statlige og militære opptak ¦ Ocultar material gubernamental y militar ¦ Staatliches und militärisches Material ausblenden ¦ Ocultar material governamental e militar
+998 ¦ 🔁 looper ¦ 🔁 bucle ¦ 🔁 Loop ¦ 🔁 loop
+999 ¦ {a} skjult av filtrene dine ¦ {a} ocultos por tus filtros ¦ {a} durch deine Filter ausgeblendet ¦ {a} ocultos pelos seus filtros
+1000 ¦ Wikimedia GIF-animasjoner ¦ Animaciones GIF de Wikimedia ¦ Wikimedia-GIF-Animationen ¦ Animações GIF da Wikimedia
+1001 ¦ Internet Archive GIF-animasjoner ¦ Animaciones GIF de Internet Archive ¦ Internet-Archive-GIF-Animationen ¦ Animações GIF do Internet Archive
+1002 ¦ {a} klipp funnet. ¦ {a} clips encontrados. ¦ {a} Clips gefunden. ¦ {a} clipes encontrados.
+1003 ¦ {a} klipp funnet (ingenting nytt på denne siden). ¦ {a} clips encontrados (nada nuevo en esta página). ¦ {a} Clips gefunden (nichts Neues auf dieser Seite). ¦ {a} clipes encontrados (nada de novo nesta página).

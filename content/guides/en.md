@@ -195,6 +195,7 @@ Turns mov, webm, mkv, gif and other formats into VJ-friendly mp4. Choose size, f
 
 ## Find loops {#search}
 Search free sources for loops, then download and convert them in one go. Internet Archive, Wikimedia Commons, NASA and the Prelinger Archives work without an account. Pexels and Pixabay have many ready-made loops, but need a free key, which takes a minute. The key is stored only in your browser and is sent only to that site.
+- By default the search shows only short clips (under 60 seconds), hides government and military footage (US Army, NASA and similar), and puts loops and GIF animations first. GIFs often loop already and are converted to mp4 when you download them. NASA is off by default: tick it if you want space footage. Each filter has a checkbox, and the message under the search tells you how many results were hidden.
 - The author and licence of every download are saved in a file called `credits.csv`. Licences differ per clip, so check them before you use a clip in public.
 - Some sites do not let a web page download their files. Then use [[Open page]], download the clip yourself and drop it into [[Convert]].
 - Only download things you have the right to use.
@@ -202,7 +203,7 @@ Search free sources for loops, then download and convert them in one go. Interne
 [Open this tool](@@tools/app/#search).
 
 ## Filters {#filters}
-Adds VJ-style looks to a whole folder of loops: glow, glitch, mirror, kaleidoscope, VHS, duotone, pixelate, trails and more. Press [[Preview on first clip]] to see each look before you apply them. Every file gets one new clip per look you pick. [Open this tool](@@tools/app/#filters).
+Adds VJ-style looks to a whole folder of loops: glow, glitch, mirror, kaleidoscope, VHS, duotone, pixelate and trails. There are also six colour styles: Blue Dream, Pink Dream, Dark Future, Sepia, The Matrix and Las Vegas. Set the [[Strength]] slider to 50 for the reference look; lower is a light touch, higher pushes the colours further. Press [[Preview on first clip]] to see each look before you apply them. Every file gets one new clip per look you pick. [Open this tool](@@tools/app/#filters).
 
 ## Crop & trim {#crop}
 Cuts clips to widescreen, vertical or square, and trims the start and the end, for a whole folder at once. Choose how to fit: crop to exactly the box, or letterbox with bars. [Open this tool](@@tools/app/#crop).
@@ -214,10 +215,10 @@ Makes a small proxy, 720p, 1080p and 4K of every clip in one go. Sizes larger th
 Makes professional formats for Resolume, VDMX, Millumin and video editors. This needs the local [Linux version](@guides/offline-linux/#linux), because it uses ffmpeg on your own computer. [Open this tool](@@tools/app/#pro).
 
 ## AI upscale {#ai}
-Makes video clips sharper and larger with AI, using the free program Video2X. It works only in the local [Linux version](@guides/offline-linux/#linux) and needs a graphics card with Vulkan support. Your files never leave your computer.
+Makes video clips sharper and larger with AI, using the free program Video2X. It works only in the local version, on [Linux](@guides/offline-linux/#linux) or Windows, and needs a graphics card with Vulkan support. Your files never leave your computer.
 
 How to use it:
-1. Install Video2X yourself (an AppImage, the AUR package, or your own build). Spektronautilus finds it by itself. If it does not, set the path in the `SPEKTRO_VIDEO2X` variable and start Spektronautilus again.
+1. Install Video2X yourself (on Linux an AppImage, the AUR package or your own build; on Windows the official release). Spektronautilus finds it by itself. If it does not, write the full path to the program on one line in a text file called `video2x.txt` in the settings folder (`~/.config/spektronautilus` on Linux, `%APPDATA%\spektronautilus` on Windows), or set the `SPEKTRO_VIDEO2X` variable, and start Spektronautilus again.
 2. Open the tool and add your clips. The note above the settings says whether Video2X was found.
 3. Choose [[Kind of picture]] and [[Make it this much bigger]], then press [[Upscale]].
 
@@ -225,6 +226,19 @@ Good to know:
 - It is slow. A short clip can take many minutes, so use the [Queue](@guides/queue/) and let it run.
 - Photos and real film are always made 4× bigger. The result may not be larger than 8K.
 - Have more than one graphics card? Press [[Check my graphics card]] and set [[Graphics card number]].
+
+## AI slow motion {#slowmo}
+Makes clips slower and smoother with AI. The AI (RIFE, run by Video2X) invents the frames between your frames, so slow motion looks smooth instead of choppy. It needs the same things as [AI upscale](@guides/tools/#ai): the local version, a graphics card with Vulkan support and Video2X.
+
+How to use it:
+1. Open the tool and add your clips. The note above the settings says whether Video2X was found and can do slow motion.
+2. Choose [[How much slower]]: 2×, 4× or 8×.
+3. Under [[Result]] choose a slower clip, or the same speed but smoother, with more frames per second. Choose [[Model]] and press [[Make slow motion]].
+
+Good to know:
+- A slow-motion clip gets longer (2× slower is twice as long) and loses its sound. Loops stay loops.
+- "Smoother" keeps the length and the sound, but cannot go above 120 frames per second.
+- It is slow, so use the [Queue](@guides/queue/) and let it run. Press [[Check my graphics card]] if you have more than one graphics card.
 
 ## Catalogue {#catalog}
 Makes a web page and a spreadsheet file with a picture, the length, the size and the loop quality of every loop. Good for big collections. [Open this tool](@@tools/app/#catalog).
@@ -319,7 +333,7 @@ Why use it:
 - **Speed.** If `ffmpeg` is installed, the tools use it instead of the slower browser engine. The page then says “Fast mode”.
 - **No memory limit** for big files, and no internet is needed (only [[Find loops]] needs it).
 - **HAP and ProRes.** The [HAP / ProRes tool](@guides/tools/#pro) works in the Linux version.
-- **AI upscaling.** The [AI upscale tool](@guides/tools/#ai) uses Video2X, if you have installed it.
+- **AI upscaling and slow motion.** The [AI upscale](@guides/tools/#ai) and [AI slow motion](@guides/tools/#slowmo) tools use Video2X, if you have installed it. Both also work in the Windows version.
 
 How to install:
 1. Download the Linux package (`spektronautilus-linux.tar.gz`) and unpack it: `tar xzf spektronautilus-linux.tar.gz`.

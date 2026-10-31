@@ -195,6 +195,7 @@ Gjør mov, webm, mkv, gif og andre formater om til VJ-vennlig mp4. Velg størrel
 
 ## Find loops {#search}
 Søk i gratis kilder etter loops, og last ned og konverter dem i ett steg. Internet Archive, Wikimedia Commons, NASA og Prelinger Archives virker uten konto. Pexels og Pixabay har mange ferdige loops, men trenger en gratis nøkkel, som tar et minutt å lage. Nøkkelen lagres bare i nettleseren din og sendes bare til den siden.
+- Som standard viser søket bare korte klipp (under 60 sekunder), skjuler statlige og militære opptak (US Army, NASA og lignende), og setter loops og GIF-animasjoner først. GIF-er looper ofte allerede og gjøres om til mp4 når du laster dem ned. NASA er av som standard: huk av hvis du vil ha romopptak. Hvert filter har en avkrysningsboks, og meldingen under søket forteller hvor mange treff som ble skjult.
 - Opphavsperson og lisens for hver nedlasting lagres i en fil som heter `credits.csv`. Lisensene varierer per klipp, så sjekk dem før du bruker et klipp offentlig.
 - Noen sider lar ikke en nettside laste ned filene sine. Bruk da [[Open page]], last ned klippet selv og slipp det i [[Convert]].
 - Last bare ned det du har rett til å bruke.
@@ -202,7 +203,7 @@ Søk i gratis kilder etter loops, og last ned og konverter dem i ett steg. Inter
 [Åpne dette verktøyet](@@tools/app/#search).
 
 ## Filters {#filters}
-Legger VJ-aktige looks på en hel mappe med loops: glød, glitch, speil, kaleidoskop, VHS, duotone, pikselering, spor og flere. Trykk [[Preview on first clip]] for å se hver look før du bruker dem. Hver fil får ett nytt klipp per look du velger. [Åpne dette verktøyet](@@tools/app/#filters).
+Legger VJ-aktige looks på en hel mappe med loops: glød, glitch, speil, kaleidoskop, VHS, duotone, pikselering og spor. Det finnes også seks fargestiler: Blue Dream, Pink Dream, Dark Future, Sepia, The Matrix og Las Vegas. Sett glidebryteren [[Strength]] på 50 for referanse-looken; lavere gir en lett berøring, høyere driver fargene lenger. Trykk [[Preview on first clip]] for å se hver look før du bruker dem. Hver fil får ett nytt klipp per look du velger. [Åpne dette verktøyet](@@tools/app/#filters).
 
 ## Crop & trim {#crop}
 Beskjærer klipp til bredformat, stående eller kvadrat, og trimmer start og slutt, for en hel mappe på en gang. Velg hvordan det skal passe: beskjær til nøyaktig rammen, eller legg på sorte felt. [Åpne dette verktøyet](@@tools/app/#crop).
@@ -214,10 +215,10 @@ Lager en liten proxy, 720p, 1080p og 4K av hvert klipp på en gang. Størrelser 
 Lager profesjonelle formater for Resolume, VDMX, Millumin og videoredigering. Dette krever den lokale [Linux-versjonen](@guides/offline-linux/#linux), fordi den bruker ffmpeg på din egen datamaskin. [Åpne dette verktøyet](@@tools/app/#pro).
 
 ## KI-oppskalering {#ai}
-Gjør videoklipp skarpere og større med KI, ved hjelp av det gratis programmet Video2X. Det fungerer bare i den lokale [Linux-versjonen](@guides/offline-linux/#linux) og krever et grafikkort med Vulkan-støtte. Filene dine forlater aldri datamaskinen din.
+Gjør videoklipp skarpere og større med KI, ved hjelp av det gratis programmet Video2X. Det fungerer bare i den lokale versjonen, på [Linux](@guides/offline-linux/#linux) eller Windows, og krever et grafikkort med Vulkan-støtte. Filene dine forlater aldri datamaskinen din.
 
 Slik gjør du:
-1. Installer Video2X selv (en AppImage, AUR-pakken eller din egen bygging). Spektronautilus finner det selv. Hvis ikke, setter du stien i variabelen `SPEKTRO_VIDEO2X` og starter Spektronautilus på nytt.
+1. Installer Video2X selv (på Linux en AppImage, AUR-pakken eller din egen bygging; på Windows den offisielle utgaven). Spektronautilus finner det selv. Hvis ikke, skriv hele stien til programmet på én linje i en tekstfil som heter `video2x.txt` i innstillingsmappen (`~/.config/spektronautilus` på Linux, `%APPDATA%\spektronautilus` på Windows), eller sett variabelen `SPEKTRO_VIDEO2X`, og start Spektronautilus på nytt.
 2. Åpne verktøyet og legg til klippene dine. Merknaden over innstillingene viser om Video2X ble funnet.
 3. Velg [[Kind of picture]] og [[Make it this much bigger]], og trykk [[Upscale]].
 
@@ -225,6 +226,19 @@ Greit å vite:
 - Det er tregt. Et kort klipp kan ta mange minutter, så bruk [køen](@guides/queue/) og la det gå.
 - Foto og ekte film blir alltid gjort 4× større. Resultatet kan ikke bli større enn 8K.
 - Har du mer enn ett grafikkort? Trykk [[Check my graphics card]] og sett [[Graphics card number]].
+
+## KI-slowmotion {#slowmo}
+Gjør klipp tregere og jevnere med KI. KI-en (RIFE, kjørt av Video2X) finner på bildene mellom bildene dine, så slowmotion ser jevn ut i stedet for hakkete. Den krever det samme som [KI-oppskalering](@guides/tools/#ai): den lokale versjonen, et grafikkort med Vulkan-støtte og Video2X.
+
+Slik gjør du:
+1. Åpne verktøyet og legg til klippene dine. Merknaden over innstillingene viser om Video2X ble funnet og kan lage slowmotion.
+2. Velg [[How much slower]]: 2×, 4× eller 8×.
+3. Under [[Result]] velger du et tregere klipp, eller samme hastighet men jevnere, med flere bilder per sekund. Velg [[Model]] og trykk [[Make slow motion]].
+
+Greit å vite:
+- Et slowmotion-klipp blir lengre (2× tregere er dobbelt så langt) og mister lyden. Loops forblir loops.
+- «Jevnere» beholder lengden og lyden, men kan ikke gå over 120 bilder per sekund.
+- Det er tregt, så bruk [køen](@guides/queue/) og la det gå. Trykk [[Check my graphics card]] hvis du har mer enn ett grafikkort.
 
 ## Catalogue {#catalog}
 Lager en nettside og en regnearkfil med bilde, lengde, størrelse og loop-kvalitet for hver loop. Praktisk for store samlinger. [Åpne dette verktøyet](@@tools/app/#catalog).
@@ -319,7 +333,7 @@ Hvorfor bruke den:
 - **Fart.** Hvis `ffmpeg` er installert, bruker verktøyene den i stedet for den tregere nettlesermotoren. Siden viser da «Fast mode».
 - **Ingen minnegrense** for store filer, og du trenger ikke internett (bare [[Find loops]] trenger det).
 - **HAP og ProRes.** [HAP / ProRes-verktøyet](@guides/tools/#pro) virker i Linux-versjonen.
-- **KI-oppskalering.** [KI-oppskalering-verktøyet](@guides/tools/#ai) bruker Video2X, hvis du har installert det.
+- **KI-oppskalering og slowmotion.** Verktøyene [KI-oppskalering](@guides/tools/#ai) og [KI-slowmotion](@guides/tools/#slowmo) bruker Video2X, hvis du har installert det. Begge fungerer også i Windows-versjonen.
 
 Slik installerer du:
 1. Last ned Linux-pakken (`spektronautilus-linux.tar.gz`) og pakk den ut: `tar xzf spektronautilus-linux.tar.gz`.

@@ -10,13 +10,20 @@ FAKE.write_text('''#!/usr/bin/env python3
 import sys, subprocess, time
 a = sys.argv[1:]
 if a == ["--version"]: print("video2x 6.0.0-standin"); sys.exit(0)
-if a == ["--list-gpus"]: print("0. Fake GPU (Vulkan)"); sys.exit(0)
-OK = {"-i","-o","-p","-s","-c","-e","-g","--realesrgan-model","--libplacebo-shader","-w","-h"}
+if a == ["--help"]: print("usage: video2x -i IN -o OUT -p {libplacebo,realesrgan,rife}  --device N  --list-devices  -m MUL --rife-model M"); sys.exit(0)
+if a == ["--list-devices"]: print("0. Fake GPU (Vulkan)"); sys.exit(0)
+open(__file__ + ".log", "a").write(" ".join(a) + chr(10))
+OK = {"-i","-o","-p","-s","-c","-e","-d","-m","--rife-model","--realesrgan-model","--libplacebo-shader","-w","-h"}
 d = {}
 for i in range(0, len(a), 2):
     if a[i] not in OK: print("unknown option", a[i]); sys.exit(2)
     d[a[i]] = a[i+1]
 s = int(d.get("-s", 2))
+if d.get("-p") == "rife":
+    m = int(d["-m"]); fr = subprocess.run(["ffprobe","-v","error","-select_streams","v:0","-show_entries","stream=r_frame_rate","-of","csv=p=0",d["-i"]],capture_output=True,text=True).stdout.strip().split("/")
+    fps = int(fr[0]) / int(fr[1] if len(fr) > 1 else 1)
+    for i in range(1, 6): print("Processing frame %d/5" % i, flush=True); time.sleep(0.05)
+    r = subprocess.run(["ffmpeg","-v","error","-y","-nostdin","-i",d["-i"],"-vf","fps=%g" % (fps * m),"-c:v","libx264","-pix_fmt","yuv420p",d["-o"]]); sys.exit(r.returncode)
 if d.get("-p") == "libplacebo": vf = "scale=%s:%s" % (d["-w"], d["-h"])
 else: vf = "scale=iw*%d:ih*%d" % (s, s)
 if "SLOW" in d["-i"]:
@@ -51,7 +58,8 @@ finally: srv0.terminate()
 srv = start(8793, {"SPEKTRO_VIDEO2X": str(FAKE)}); B = "http://127.0.0.1:8793"; req = mk(B)
 try:
     info = json.loads(req("/api/native")[1]); check(info["v2x"]["ok"] and "standin" in info["v2x"]["version"], f"Video2X found: {info['v2x']}")
-    check("Fake GPU" in req("/api/v2x-gpus")[1].decode(), "GPU list works")
+    check("Fake GPU" in req("/api/v2x-gpus")[1].decode(), "GPU list works (the new --list-devices spelling was detected)")
+    check(info["v2x"].get("dev") == "-d" and info["v2x"].get("rife") is True, f"capabilities read from --help: {info['v2x']}")
     for bad_args, why in [(["-i", "a.mp4", "-o", "b.mp4", "--evil", "x"], "unknown flag"), (["-i", "/etc/passwd", "-o", "b.mp4"], "absolute path"), (["-i", "../a.mp4", "-o", "b.mp4"], ".. path"),
                           (["-i", "a.mp4", "-o", "b.mp4", "--libplacebo-shader", "/etc/x"], "path as shader"), (["-i", "a.mp4"], "no output"), (["-i", "a.mp4", "-o", "b.mp4", "-s", "9"], "scale 9")]:
         check(req("/api/v2x-exec", "POST", json.dumps(bad_args).encode())[0] == 400, f"rejected: {why}")
@@ -76,6 +84,22 @@ try:
         pg.click("#go"); pg.wait_for_function("VJ.JOBS.length && VJ.JOBS[0].status!=='running' && VJ.JOBS[0].status!=='queued'", timeout=60000)
         j = pg.evaluate("({s: VJ.JOBS[0].status, f: VJ.JOBS[0].failed, n: VJ.JOBS[0].results.map(r=>r.name)})")
         check(j["s"] == "done" and j["f"] == 0 and len(j["n"]) == 1, f"UI job done: {j}"); print("     name:", j["n"])
+        pg.fill("#o_aiGpu", "1"); n0 = pg.evaluate("VJ.JOBS.length"); pg.click("#go"); pg.wait_for_function(f"VJ.JOBS.length>{n0} && VJ.JOBS[0].status!=='running' && VJ.JOBS[0].status!=='queued'", timeout=60000); print("     ", pg.evaluate("({s: VJ.JOBS[0].status, l: VJ.JOBS[0].log})"))
+        check("-d 1" in (FAKE.parent / "video2x.log").read_text(), "the graphics card is passed with the flag this Video2X understands (-d)")
+        for mode, want in (("slow", ("20", "2.0")), ("smooth", ("20", "1.0"))):
+            pg.click("#tabs [data-t=slowmo]"); pg.set_input_files("#picker", [str(T / "c.mp4")]); pg.wait_for_selector("#files .vt")
+            check(pg.locator("#ainote").is_visible() and "Video2X found" in pg.inner_text("#ainote"), "slow motion shows the Video2X note")
+            pg.select_option("#o_slowMode", mode); pg.select_option("#o_slowFactor", "2"); pg.click("#go")
+            n = pg.evaluate("VJ.JOBS.length"); pg.wait_for_function(f"VJ.JOBS.length>={n} && VJ.JOBS[0].status!=='running' && VJ.JOBS[0].status!=='queued'", timeout=60000)
+            j = pg.evaluate("({s: VJ.JOBS[0].status, f: VJ.JOBS[0].failed, n: VJ.JOBS[0].results.map(r=>r.name)})"); print("     ", mode, j)
+            check(j["s"] == "done" and j["f"] == 0 and any(x.endswith(".mp4") for x in j["n"]), f"slow motion job ({mode}) done")
+            with pg.expect_download() as dl: pg.click("#jobs .job:first-child [data-a=zip]")
+            zz = zipfile.ZipFile(dl.value.path()); nm = [x for x in zz.namelist() if x.endswith(".mp4")][0]; (T / "sm.mp4").write_bytes(zz.read(nm))
+            pr = subprocess.run(["ffprobe", "-v", "error", "-count_frames", "-select_streams", "v:0", "-show_entries", "stream=nb_read_frames,r_frame_rate:format=duration", "-of", "json", str(T / "sm.mp4")], capture_output=True, text=True).stdout
+            q = json.loads(pr); fr = q["streams"][0]["nb_read_frames"]; dur = float(q["format"]["duration"]); fps = q["streams"][0]["r_frame_rate"]
+            print("      frames", fr, "duration", round(dur, 2), "fps", fps, "name", nm)
+            check(fr == want[0] and abs(dur - float(want[1])) < 0.15, f"{mode}: {fr} frames over {dur:.2f} s ({fps})")
+        pg.click("#tabs [data-t=ai]"); pg.set_input_files("#picker", [str(T / "c.mp4")]); pg.wait_for_selector("#files .vt")
         pg.click("#aigpu"); pg.wait_for_function("document.querySelector('#aigpus').textContent.includes('Fake GPU')", timeout=10000); check(True, "Check my graphics card shows GPUs")
         check(not errs, "no page errors " + "; ".join(errs[:2])); br.close()
         # wasm mode: plain static server, no local engine
