@@ -255,12 +255,27 @@ Loop Hospital tar seg av ett klipp om gangen, slik at det blir klart for miksern
 
 Slik gjør du:
 1. Trykk [[choose a clip]] eller slipp et klipp.
-2. Trykk [[Add all suggested treatments]], eller huk av stegene selv: klipp, beskjær, slowmotion, oppskalering, endre størrelse, look og få det til å loope. De gjøres i den rekkefølgen.
+2. Trykk [[Add all suggested treatments]], eller trykk på flisene du vil ha: kutt, roter, beskjær, slowmotion, oppskalering, endre størrelse, look og lag loop. Hver flis åpner innstillingene sine under. De gjøres i den rekkefølgen.
 3. Trykk [[Preview the treatment]] for å se før og etter side om side, og så [[Treat and save]].
 4. Trykk [[Treat more clips the same way]] for å gi andre klipp samme behandling.
 
+Vil du ha samme klipp i flere stiler? Trykk på Look-flisen og velg så mange looks du vil, for eksempel The Matrix, Dark Future og Purple Dream. Du får én fil for hver look. Huk av [[Also save the clip without a look]] for å få klippet uten look også.
+
 Alt kjører i nettleseren din. For KI-kvalitet bruker du [Oppskalering](@guides/tools/#ai) og [Slowmotion](@guides/tools/#slowmo) i verktøyene. [Åpne Loop Hospital](@@tools/hospital/).
 
+
+## Last opp til Vimeo {#upload}
+Hver ferdige video kan sendes rett fra nettleseren din til din egen Vimeo-konto. Trykk [[Upload…]] ved siden av et resultat i verktøyene og i Loop Hospital, [[Upload to Vimeo]] på en ferdig Magic Mixer-video, eller [[Upload recording]] i Video DJ. Filen går bare til Vimeo, aldri gjennom Spektronautilus.
+
+Slik setter du det opp:
+1. Bare én gang: lag en app på developer.vimeo.com og generer et tilgangstoken med tillatelsene upload, edit og private.
+2. Lim inn tokenet. Det lagres bare i nettleseren din.
+3. Velg tittel og hvem som kan se den, og trykk [[Upload]].
+
+Greit å vite:
+- Du velger hvem som kan se den: bare du, bare de som har lenken, eller alle.
+- Videoen sendes i deler, og opplastingen prøver på nytt av seg selv hvis nettet faller ut et øyeblikk.
+- Vimeo trenger noen minutter på å behandle videoen etter opplastingen. Gratis Vimeo-kontoer har grenser for hvor mye du kan laste opp hver uke.
 
 ## Greit å vite {#know}
 - Loops har vanligvis ikke lyd. [[Keep sound]] er av som standard.

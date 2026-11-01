@@ -255,12 +255,27 @@ O Loop Hospital trata de um clipe de cada vez, para ficar pronto para os mistura
 
 Como usar:
 1. Carregue em [[choose a clip]] ou largue um clipe.
-2. Carregue em [[Add all suggested treatments]], ou marque os passos você mesmo: cortar, recortar, câmara lenta, ampliar, redimensionar, look e fazer loop. São feitos por essa ordem.
+2. Prima [[Add all suggested treatments]] ou toque nos mosaicos que quiser: cortar, rodar, recortar forma, câmara lenta, ampliar, redimensionar, look e fazer loop. Cada mosaico abre as suas definições abaixo. São feitos por essa ordem.
 3. Carregue em [[Preview the treatment]] para ver o antes e o depois lado a lado, e depois em [[Treat and save]].
 4. Carregue em [[Treat more clips the same way]] para dar o mesmo tratamento a outros clipes.
 
+Quer o mesmo clipe em vários estilos? Toque no mosaico Look e escolha quantos looks quiser, por exemplo The Matrix, Dark Future e Purple Dream. Obtém um ficheiro por cada look. Marque [[Also save the clip without a look]] para ter também o clipe sem look.
+
 Tudo corre no seu navegador. Para qualidade de IA use [Ampliar](@guides/tools/#ai) e [Câmara lenta](@guides/tools/#slowmo) nas ferramentas. [Abrir o Loop Hospital](@@tools/hospital/).
 
+
+## Carregar para o Vimeo {#upload}
+Cada vídeo terminado pode ser enviado diretamente do seu navegador para a sua própria conta do Vimeo. Carregue em [[Upload…]] junto a um resultado nas ferramentas e no Loop Hospital, em [[Upload to Vimeo]] num vídeo terminado do Magic Mixer, ou em [[Upload recording]] no Video DJ. O seu ficheiro vai só para o Vimeo, nunca através do Spektronautilus.
+
+Como configurar:
+1. Só uma vez: crie uma app em developer.vimeo.com e gere um token de acesso com as permissões upload, edit e private.
+2. Cole o token. É guardado só no seu navegador.
+3. Escolha o título e quem pode ver, e carregue em [[Upload]].
+
+Bom saber:
+- Você escolhe quem pode ver: só você, só quem tiver a ligação, ou toda a gente.
+- O vídeo é enviado em partes, e o carregamento tenta de novo sozinho se a rede falhar por um momento.
+- O Vimeo precisa de alguns minutos para processar o vídeo depois do carregamento. As contas gratuitas do Vimeo têm limites do que pode carregar por semana.
 
 ## Bom saber {#know}
 - Os loops normalmente não têm som. [[Keep sound]] está desligado por predefinição.

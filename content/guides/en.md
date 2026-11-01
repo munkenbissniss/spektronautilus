@@ -255,12 +255,27 @@ The Loop Hospital looks after one clip at a time, so it is ready for the mixers.
 
 How to use it:
 1. Press [[choose a clip]] or drop a clip.
-2. Press [[Add all suggested treatments]], or tick the steps yourself: cut, crop, slow motion, upscale, resize, look and make it loop. They are done in that order.
+2. Press [[Add all suggested treatments]], or tap the tiles you want: cut, rotate, crop, slow motion, upscale, resize, look and make it loop. Each tile opens its settings below. They are done in that order.
 3. Press [[Preview the treatment]] to see before and after side by side, then [[Treat and save]].
 4. Press [[Treat more clips the same way]] to give other clips the same treatment.
 
+Want the same clip in several styles? Tap the Look tile and pick as many looks as you like, for example The Matrix, Dark Future and Purple Dream. You get one file for each look. Tick [[Also save the clip without a look]] to get the plain clip too.
+
 Everything runs in your browser. For AI quality use [Upscale](@guides/tools/#ai) and [Slow motion](@guides/tools/#slowmo) in the tools. [Open the Loop Hospital](@@tools/hospital/).
 
+
+## Upload to Vimeo {#upload}
+Every finished video can be sent straight from your browser to your own Vimeo account. Press [[Upload…]] next to a result in the tools and in the Loop Hospital, [[Upload to Vimeo]] on a finished Magic Mixer video, or [[Upload recording]] in the Video DJ. Your file goes only to Vimeo, never through Spektronautilus.
+
+How to set it up:
+1. Once only: create an app at developer.vimeo.com and generate an access token with the scopes upload, edit and private.
+2. Paste the token. It is kept only in your browser.
+3. Choose the title and who can watch, and press [[Upload]].
+
+Good to know:
+- You choose who can watch: only you, only people with the link, or everyone.
+- The video is sent in parts, and the upload tries again by itself if the network drops for a moment.
+- Vimeo needs a few minutes to process the video after the upload. Free Vimeo accounts have limits on how much you can upload each week.
 
 ## Good to know {#know}
 - Loops normally have no sound. [[Keep sound]] is off by default.

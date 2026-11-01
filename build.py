@@ -7,6 +7,7 @@ Open Graph tags and structured data, and the build writes sitemap.xml, robots.tx
 To add a language: copy i18n/en.py to i18n/<code>.py, translate it, run  python3 build.py.
 """
 import html, importlib.util, json, re, sys
+from home_text import HOME
 from datetime import date
 from pathlib import Path
 
@@ -222,6 +223,28 @@ def write(rel, text):
     p.write_text(text, encoding="utf-8")
 
 
+def home_body(L, rl, r):
+    """The front page: what the site is for, who it is for, and a clear way into every part. Texts come from home_text.py."""
+    H = HOME[L["lang"]]
+    href = {"magic": rl + "magic-mixer/", "live": rl + "live-mixer/", "vj": rl + "vj-mixer/", "tools": rl + "tools/", "packs": rl + "packs/", "guides": rl + "guides/",
+            "start": rl + "guides/start/", "local": rl + "guides/offline-linux/", "hospital": r + "tools/hospital/"}
+    link = lambda k: href[k] if k in href else f"{r}tools/app/#{k}"
+    goals = "".join(f'<a class="card goal" href="{link(k)}"><span class="gi" aria-hidden="true">{ic}</span><h3>{e(t)}</h3><p>{e(d)}</p><span class="more">{e(H["open"])}: {e(app)} →</span></a>' for ic, t, d, k, app in H["goals"])
+    flow = "".join(f'<li><span class="n" aria-hidden="true">{i}</span><h3>{e(t)}</h3><p>{e(d)}</p><a href="{link(k)}">{e(a)} →</a></li>' for i, (t, d, a, k) in enumerate(H["flow"], 1))
+    kit = "".join(f'<a class="kit" href="{link(k)}"><span aria-hidden="true">{ic}</span> {e(t)}</a>' for ic, t, k in H["kit"])
+    who = "".join(f"<li>{e(w)}</li>" for w in H["who"])
+    trust = "".join(f'<div class="tr"><span class="gi" aria-hidden="true">{ic}</span><h3>{e(t)}</h3><p>{e(d)}</p></div>' for ic, t, d in H["trust"])
+    return (f'<div class="cta"><a class="btn main" data-app="magic" href="{href["magic"]}">{e(H["cta1"])}</a><a class="btn" href="#toolbox">{e(H["cta2"])}</a></div>'
+            f'<section aria-labelledby="h-goals"><h2 id="h-goals">{e(H["goals_h"])}</h2><p class="mute">{e(H["goals_t"])}</p><div class="cards goals">{goals}</div></section>'
+            f'<section aria-labelledby="h-flow"><h2 id="h-flow">{e(H["flow_h"])}</h2><p class="mute">{e(H["flow_t"])}</p><ol class="flow">{flow}</ol></section>'
+            f'<section id="toolbox" aria-labelledby="h-kit"><h2 id="h-kit">{e(H["kit_h"])}</h2><p class="mute">{e(H["kit_t"])}</p><div class="kits">{kit}</div></section>'
+            f'<section aria-labelledby="h-who"><h2 id="h-who">{e(H["who_h"])}</h2><ul class="who">{who}</ul></section>'
+            f'<section class="trust" aria-label="Spektronautilus">{trust}</section>'
+            f'<section class="split"><div class="card"><h3>{e(H["local_h"])}</h3><p>{e(H["local_t"])}</p><p><a class="btn" href="{href["local"]}">{e(H["local_b"])}</a></p></div>'
+            f'<div class="card"><h3>{e(H["new_h"])}</h3><p>{e(H["new_t"])}</p><p><a class="btn main" href="{href["start"]}">{e(H["new_b"])}</a></p></div></section>'
+            f'<p class="mute easy">{e(H["easy"])}</p>')
+
+
 def page_body(L, key, r, P):
     ui = L["ui"]
     head = ""
@@ -230,7 +253,8 @@ def page_body(L, key, r, P):
     else:
         head = f'<h1>{e(P["h1"])}</h1><p class="lead">{e(P["lead"])}</p>'
     rl = r + prefix(L["lang"])
-    body = re.sub(r"\{r\}(magic-mixer|live-mixer|vj-mixer|packs|guides|about)/", lambda m: rl + m.group(1) + "/", P["body"])
+    body = home_body(L, rl, r) if key == "home" else P["body"]
+    body = re.sub(r"\{r\}(magic-mixer|live-mixer|vj-mixer|packs|guides|about)/", lambda m: rl + m.group(1) + "/", body)
     body = re.sub(r"\{r\}tools/(?!app|hospital)", lambda m: rl + "tools/", body)
     body = body.replace("{r}", r).replace("{devnote}", e(ui["devnote"]))
     if key in GUIDE_OF:                       # a button to the guide next to the buttons that open the tool
@@ -333,6 +357,7 @@ def main():
         rl0 = prefix(lang)
         for key in NAV:
             P = L["pages"][key]
+            if key == "home": P = {**P, **{k: HOME[lang][k] for k in ("title", "desc", "tag", "lead")}}
             path = SLUGS[key]
             r = depth_root(lang, path)
             body = page_body(L, key, r, P)
@@ -366,7 +391,7 @@ def main():
         urls.append(f"<url><loc>{SITE}{extra}</loc></url>")
     write("sitemap.xml", '<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">\n' + "\n".join(urls) + "\n</urlset>\n")
     write("robots.txt", f"User-agent: *\nAllow: /\n\nSitemap: {SITE}sitemap.xml\n")
-    write("favicon.svg", LOGO + "\n")
+    write("favicon.svg", (ROOT / "src" / "favicon.svg").read_text())      # the tab icon sits on its own dark tile, so it reads on light and dark tabs
     L = LANGS["en"]
     write("404.html", render("en", L, "home", '<h1>Page not found</h1><p class="lead">That page does not exist. Try the <a href="./">home page</a>.</p>', "Not found | Spektronautilus", "Page not found", path="", alt={"en": ""}, noindex=True).replace('href="../favicon', 'href="favicon'))
     import build_i18n; build_i18n.build()

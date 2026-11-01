@@ -1105,3 +1105,60 @@ Choose a clip first.
 Stopped.
 Stopping…
 Could not treat this clip ({a})
+The upload failed ({a})
+There is no finished video to upload yet.
+Made with Spektronautilus.
+Paste your Vimeo access token first.
+The upload failed: {a}
+Press Upload to try again.
+Description
+Vimeo access token
+How to set it up
+Upload
+Upload recording
+Upload…
+Your file and your token go only to Vimeo, never through Spektronautilus.
+Still working. Slow motion and loop fixes are heavy for a browser, especially on a phone. Short clips finish sooner.
+This clip is {a} long. Slow motion, upscale and loop fixes can take a very long time in a browser, especially on a phone. Cut it short first, or use the local version.
+2. Treatment
+Tap what you want. Each treatment opens its settings below.
+Rotate
+Turn the picture, or mirror it.
+Turn
+No turn
+↻ 90° right
+↺ 90° left
+No mirror
+↔ Left to right
+↕ Upside down
+Shape
+The start
+The end
+Same speed, smoother
+Slow motion makes the clip longer. Smoother adds frames per second.
+Soft blend
+Smooth motion
+Soft blend is fast. Smooth motion is slower, but cleaner on fast movement.
+Only shrink
+Letterbox
+Crop to fill
+Looks
+Give the clip a style. Pick several to get one file for each.
+Also save the clip without a look
+Auto
+Back and forth
+Trim
+Auto keeps good loops and fixes the rest. Back and forth plays forward, then backward. Crossfade blends the end into the start. Trim cuts at the best loop point.
+Remove this treatment
+One file will be made.
+{a} files will be made, one for each look.
+No look
+Rest between clips
+No rest
+10 seconds
+30 seconds
+1 minute
+A short rest lets the graphics card cool down on long batches.
+Resting… {a} s
+AI on {a} clips can take hours and keeps the graphics card at full load. Try one clip first. Press the button again to run all {a}.
+Tip: choose Save each file straight into a folder, so finished clips are not kept in memory.

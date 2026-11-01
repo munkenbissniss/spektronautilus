@@ -17,7 +17,8 @@ The site is static (GitHub Pages: publish the `docs/` folder). English is at the
 | `docs/tools/app/` | The loop tools (convert, GIF→MP4, make loops, filters, find loops, crop & trim, sizes, HAP/ProRes, upscale and slow motion (sharp/blend/motion methods everywhere; AI methods in the Linux and Windows versions + your own Video2X), catalogue, loop pack). Needs the engine files, see below. |
 | `docs/shared/` | Shared scripts: queue, offline (service worker registration), language (`i18n.js` + `lang/`, generated), the "Ready for the show?" check (`check.js`, `testcard.html`) |
 | `src/i18n-app/` | The texts of the apps and their translations (`en.txt` is the master, one string per line; `t*.txt` hold `ID ¦ no ¦ es ¦ de ¦ pt`). `build_i18n.py` turns them into `docs/shared/lang/*.js` and checks that nothing is missing. |
-| `build.py`, `i18n/`, `content/`, `data/`, `src/` | Generator for the pages around the apps (home, landing pages, guides, packs, sitemap) |
+| `build.py`, `i18n/`, `home_text.py`, `content/`, `data/`, `src/` | Generator for the pages around the apps (home, landing pages, guides, packs, sitemap). The front page texts are in `home_text.py` (all languages side by side) |
+| `make_logos.py` | Draws the logo proposals into `docs/logos/` (a page for choosing, not linked from the site) |
 | `tools-source/` | Desktop/CLI version of the tools (`python3 vj ui`), and the tests for the tools |
 | `tests_site.py` | Checks the built site (links, SEO tags, phone redirect) |
 
@@ -34,11 +35,14 @@ python3 tests_queue.py         # shared queue page
 python3 tests_offline.py       # offline mode and updates
 python3 tests_i18n.py          # every app in every language: nothing left in English, language button
 python3 tests_check.py         # the "Ready for the show?" check and the test card
-python3 tests_hospital.py      # Slow motion and Upscale (ffmpeg methods) and the Loop Hospital
+python3 tests_hospital.py      # Slow motion and Upscale (ffmpeg methods), and the Loop Hospital (rotate, several looks)
+python3 tests_upload.py        # the Vimeo upload dialog (against a pretend server)
+python3 tests_home.py          # the front page in five languages: every link works, fits a phone
+python3 tests_mixer_render.py  # Magic Mixer (desktop and phone) makes a real video in the browser; a broken render must not freeze the queue
 python3 tests_v2x.py           # AI upscale with Video2X, tested with a stand-in program (real Video2X needs a Vulkan GPU)
 python3 tests_newtools.py      # crop & trim, sizes, HAP/ProRes, catalogue, loop pack (real ffmpeg)
 node --test tests_filters.mjs   # runs all eighteen filters with the computer's own ffmpeg
-node --test tests_live_core.mjs tests_vj_core.mjs
+node --test tests_live_core.mjs tests_vj_core.mjs tests_engine.mjs
 ```
 
 ### One-time: the video engine for the browser tools

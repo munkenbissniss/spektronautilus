@@ -1,0 +1,33 @@
+1123 ¦ 2. Behandling ¦ 2. Tratamiento ¦ 2. Behandlung ¦ 2. Tratamento
+1124 ¦ Trykk på det du vil ha. Hver behandling åpner innstillingene sine under. ¦ Toca lo que quieras. Cada tratamiento abre sus ajustes debajo. ¦ Tippe auf das, was du willst. Jede Behandlung öffnet darunter ihre Einstellungen. ¦ Toque no que quiser. Cada tratamento abre as suas definições abaixo.
+1125 ¦ Roter ¦ Girar ¦ Drehen ¦ Rodar
+1126 ¦ Snu bildet, eller speilvend det. ¦ Gira la imagen o ponla en espejo. ¦ Drehe das Bild oder spiegle es. ¦ Rode a imagem ou espelhe-a.
+1127 ¦ Snu ¦ Giro ¦ Drehung ¦ Rotação
+1128 ¦ Ingen snuing ¦ Sin giro ¦ Keine Drehung ¦ Sem rotação
+1129 ¦ ↻ 90° til høyre ¦ ↻ 90° a la derecha ¦ ↻ 90° nach rechts ¦ ↻ 90° para a direita
+1130 ¦ ↺ 90° til venstre ¦ ↺ 90° a la izquierda ¦ ↺ 90° nach links ¦ ↺ 90° para a esquerda
+1131 ¦ Ingen speiling ¦ Sin espejo ¦ Keine Spiegelung ¦ Sem espelho
+1132 ¦ ↔ Venstre til høyre ¦ ↔ De izquierda a derecha ¦ ↔ Links nach rechts ¦ ↔ Da esquerda para a direita
+1133 ¦ ↕ På hodet ¦ ↕ Boca abajo ¦ ↕ Auf den Kopf ¦ ↕ De pernas para o ar
+1134 ¦ Form ¦ Forma ¦ Form ¦ Forma
+1135 ¦ Begynnelsen ¦ El principio ¦ Der Anfang ¦ O início
+1136 ¦ Slutten ¦ El final ¦ Das Ende ¦ O fim
+1137 ¦ Samme fart, jevnere ¦ Misma velocidad, más fluido ¦ Gleiche Geschwindigkeit, flüssiger ¦ Mesma velocidade, mais fluido
+1138 ¦ Slowmotion gjør klippet lengre. Jevnere legger til bilder per sekund. ¦ La cámara lenta alarga el clip. Más fluido añade fotogramas por segundo. ¦ Zeitlupe macht den Clip länger. Flüssiger fügt Bilder pro Sekunde hinzu. ¦ A câmara lenta alonga o clipe. Mais fluido acrescenta fotogramas por segundo.
+1139 ¦ Myk blanding ¦ Mezcla suave ¦ Weiche Überblendung ¦ Mistura suave
+1140 ¦ Jevn bevegelse ¦ Movimiento suave ¦ Weiche Bewegung ¦ Movimento suave
+1141 ¦ Myk blanding er raskt. Jevn bevegelse er tregere, men renere ved rask bevegelse. ¦ La mezcla suave es rápida. El movimiento suave es más lento, pero más limpio con movimiento rápido. ¦ Weiche Überblendung ist schnell. Weiche Bewegung ist langsamer, aber sauberer bei schneller Bewegung. ¦ A mistura suave é rápida. O movimento suave é mais lento, mas mais limpo com movimento rápido.
+1142 ¦ Bare krymp ¦ Solo reducir ¦ Nur verkleinern ¦ Só reduzir
+1143 ¦ Svarte kanter ¦ Barras negras ¦ Letterbox ¦ Barras pretas
+1144 ¦ Beskjær til fylling ¦ Recortar para llenar ¦ Zuschneiden und füllen ¦ Cortar para preencher
+1145 ¦ Looks ¦ Looks ¦ Looks ¦ Looks
+1146 ¦ Gi klippet en stil. Velg flere for å få én fil for hver. ¦ Dale un estilo al clip. Elige varios para obtener un archivo por cada uno. ¦ Gib dem Clip einen Stil. Wähle mehrere, um für jeden eine Datei zu bekommen. ¦ Dê um estilo ao clipe. Escolha vários para obter um ficheiro para cada.
+1147 ¦ Lagre også klippet uten look ¦ Guardar también el clip sin look ¦ Den Clip auch ohne Look speichern ¦ Guardar também o clipe sem look
+1148 ¦ Auto ¦ Auto ¦ Auto ¦ Auto
+1149 ¦ Frem og tilbake ¦ Ida y vuelta ¦ Hin und zurück ¦ Ida e volta
+1150 ¦ Trim ¦ Recortar ¦ Kürzen ¦ Aparar
+1151 ¦ Auto beholder gode looper og fikser resten. Frem og tilbake spiller fremover, så bakover. Crossfade blander slutten inn i starten. Trim klipper ved det beste loop-punktet. ¦ Auto conserva los buenos loops y arregla el resto. Ida y vuelta reproduce hacia delante y luego hacia atrás. Crossfade mezcla el final con el principio. Recortar corta en el mejor punto del loop. ¦ Auto behält gute Loops und repariert den Rest. Hin und zurück spielt vorwärts, dann rückwärts. Crossfade blendet das Ende in den Anfang. Kürzen schneidet am besten Loop-Punkt. ¦ Auto mantém os bons loops e arranja o resto. Ida e volta reproduz para a frente e depois para trás. Crossfade mistura o fim com o início. Aparar corta no melhor ponto do loop.
+1152 ¦ Fjern denne behandlingen ¦ Quitar este tratamiento ¦ Diese Behandlung entfernen ¦ Remover este tratamento
+1153 ¦ Det lages én fil. ¦ Se creará un archivo. ¦ Es wird eine Datei erstellt. ¦ Será criado um ficheiro.
+1154 ¦ Det lages {a} filer, én for hver look. ¦ Se crearán {a} archivos, uno por cada look. ¦ Es werden {a} Dateien erstellt, eine für jeden Look. ¦ Serão criados {a} ficheiros, um para cada look.
+1155 ¦ Ingen look ¦ Sin look ¦ Kein Look ¦ Sem look

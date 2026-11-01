@@ -101,6 +101,14 @@ try:
             check(fr == want[0] and abs(dur - float(want[1])) < 0.15, f"{mode}: {fr} frames over {dur:.2f} s ({fps})")
         pg.click("#tabs [data-t=ai]"); pg.set_input_files("#picker", [str(T / "c.mp4")]); pg.wait_for_selector("#files .vt")
         pg.click("#aigpu"); pg.wait_for_function("document.querySelector('#aigpus').textContent.includes('Fake GPU')", timeout=10000); check(True, "Check my graphics card shows GPUs")
+        import shutil
+        many = []
+        for k in range(4): shutil.copy(T / "c.mp4", T / f"many{k}.mp4"); many.append(str(T / f"many{k}.mp4"))
+        pg.click("#tabs [data-t=ai]"); pg.set_input_files("#picker", many); pg.wait_for_function("document.querySelectorAll('#files .vt').length >= 4"); n0 = pg.evaluate("VJ.JOBS.length")
+        pg.click("#go"); pg.wait_for_timeout(600)
+        check("can take hours" in pg.inner_text("#msg") and pg.evaluate("VJ.JOBS.length") == n0, "AI on many clips asks first and starts nothing: " + pg.inner_text("#msg")[:70])
+        pg.click("#go"); pg.wait_for_function(f"VJ.JOBS.length > {n0}", timeout=20000); check(True, "the second press starts the job")
+        pg.wait_for_function("VJ.JOBS[0].status!=='running' && VJ.JOBS[0].status!=='queued'", timeout=120000)
         check(not errs, "no page errors " + "; ".join(errs[:2])); br.close()
         # wasm mode: plain static server, no local engine
         sv = subprocess.Popen([sys.executable, "-m", "http.server", "8794", "--directory", str(ROOT / "docs")], stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL); time.sleep(1)

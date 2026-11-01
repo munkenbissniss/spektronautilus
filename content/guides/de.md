@@ -255,12 +255,27 @@ Das Loop Hospital kümmert sich um einen Clip nach dem anderen, damit er bereit 
 
 So geht's:
 1. Drücke [[choose a clip]] oder lege einen Clip ab.
-2. Drücke [[Add all suggested treatments]] oder hake die Schritte selbst an: Schneiden, Zuschneiden, Zeitlupe, Hochskalieren, Größe ändern, Look und Zum Loop machen. Sie laufen in dieser Reihenfolge.
+2. Drücke [[Add all suggested treatments]] oder tippe auf die Kacheln, die du willst: Schneiden, Drehen, Zuschneiden, Zeitlupe, Hochskalieren, Größe ändern, Look und Loop machen. Jede Kachel öffnet darunter ihre Einstellungen. Sie werden in dieser Reihenfolge ausgeführt.
 3. Drücke [[Preview the treatment]], um Vorher und Nachher nebeneinander zu sehen, dann [[Treat and save]].
 4. Drücke [[Treat more clips the same way]], um andere Clips genauso zu behandeln.
 
+Den gleichen Clip in mehreren Stilen? Tippe auf die Look-Kachel und wähle so viele Looks, wie du magst, zum Beispiel The Matrix, Dark Future und Purple Dream. Du bekommst eine Datei pro Look. Hake [[Also save the clip without a look]] an, um den Clip auch ohne Look zu bekommen.
+
 Alles läuft in deinem Browser. Für KI-Qualität nutze [Hochskalieren](@guides/tools/#ai) und [Zeitlupe](@guides/tools/#slowmo) in den Werkzeugen. [Loop Hospital öffnen](@@tools/hospital/).
 
+
+## Zu Vimeo hochladen {#upload}
+Jedes fertige Video kann direkt aus deinem Browser an dein eigenes Vimeo-Konto gesendet werden. Drücke [[Upload…]] neben einem Ergebnis in den Werkzeugen und im Loop Hospital, [[Upload to Vimeo]] bei einem fertigen Magic-Mixer-Video oder [[Upload recording]] im Video DJ. Deine Datei geht nur an Vimeo, nie über Spektronautilus.
+
+So richtest du es ein:
+1. Nur einmal: Erstelle auf developer.vimeo.com eine App und erzeuge ein Zugriffstoken mit den Berechtigungen upload, edit und private.
+2. Füge das Token ein. Es wird nur in deinem Browser gespeichert.
+3. Wähle den Titel und wer es sehen darf, und drücke [[Upload]].
+
+Gut zu wissen:
+- Du wählst, wer es sehen darf: nur du, nur Personen mit dem Link oder alle.
+- Das Video wird in Teilen gesendet, und der Upload versucht es von selbst noch einmal, wenn das Netz kurz ausfällt.
+- Vimeo braucht nach dem Upload ein paar Minuten, um das Video zu verarbeiten. Kostenlose Vimeo-Konten haben Grenzen, wie viel du pro Woche hochladen darfst.
 
 ## Gut zu wissen {#know}
 - Loops haben normalerweise keinen Ton. [[Keep sound]] ist standardmäßig aus.

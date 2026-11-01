@@ -255,12 +255,27 @@ El Loop Hospital cuida un clip cada vez, para que quede listo para los mezclador
 
 Cómo se usa:
 1. Pulsa [[choose a clip]] o suelta un clip.
-2. Pulsa [[Add all suggested treatments]], o marca tú los pasos: cortar, recortar, cámara lenta, ampliar, cambiar tamaño, look y hacer loop. Se hacen en ese orden.
+2. Pulsa [[Add all suggested treatments]] o toca los mosaicos que quieras: cortar, girar, recortar forma, cámara lenta, ampliar, cambiar tamaño, look y hacer loop. Cada mosaico abre sus ajustes debajo. Se aplican en ese orden.
 3. Pulsa [[Preview the treatment]] para ver el antes y el después lado a lado, y luego [[Treat and save]].
 4. Pulsa [[Treat more clips the same way]] para dar el mismo tratamiento a otros clips.
 
+¿Quieres el mismo clip en varios estilos? Toca el mosaico Look y elige todos los looks que quieras, por ejemplo The Matrix, Dark Future y Purple Dream. Obtienes un archivo por cada look. Marca [[Also save the clip without a look]] para tener también el clip sin look.
+
 Todo funciona en tu navegador. Para calidad de IA usa [Ampliar](@guides/tools/#ai) y [Cámara lenta](@guides/tools/#slowmo) en las herramientas. [Abrir el Loop Hospital](@@tools/hospital/).
 
+
+## Subir a Vimeo {#upload}
+Cada vídeo terminado se puede enviar directamente desde tu navegador a tu propia cuenta de Vimeo. Pulsa [[Upload…]] junto a un resultado en las herramientas y en el Loop Hospital, [[Upload to Vimeo]] en un vídeo terminado del Magic Mixer, o [[Upload recording]] en el Video DJ. Tu archivo va solo a Vimeo, nunca a través de Spektronautilus.
+
+Cómo configurarlo:
+1. Solo una vez: crea una app en developer.vimeo.com y genera un token de acceso con los permisos upload, edit y private.
+2. Pega el token. Se guarda solo en tu navegador.
+3. Elige el título y quién puede verlo, y pulsa [[Upload]].
+
+Conviene saber:
+- Tú eliges quién puede verlo: solo tú, solo quien tenga el enlace, o todo el mundo.
+- El vídeo se envía en partes, y la subida se reintenta sola si la red se corta un momento.
+- Vimeo necesita unos minutos para procesar el vídeo tras la subida. Las cuentas gratuitas de Vimeo tienen límites de lo que puedes subir cada semana.
 
 ## Conviene saber {#know}
 - Los loops normalmente no llevan sonido. [[Keep sound]] está desactivado por defecto.

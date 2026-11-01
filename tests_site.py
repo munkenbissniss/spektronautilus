@@ -8,7 +8,7 @@ bad = []
 def check(c, m):
     print(("ok   " if c else "FAIL ") + m)
     if not c: bad.append(m)
-pages = [p for p in DOCS.rglob("index.html") if "vendor" not in p.parts and p.relative_to(DOCS).parts[0] not in ("mixer", "mixer-mobile", "live-dj", "vj-pad", "live-mobile", "vj-mobile", "queue", "shared") and p.relative_to(DOCS).parts[:2] not in (("tools", "app"), ("tools", "hospital"))]
+pages = [p for p in DOCS.rglob("index.html") if "vendor" not in p.parts and p.relative_to(DOCS).parts[0] not in ("mixer", "mixer-mobile", "live-dj", "vj-pad", "live-mobile", "vj-mobile", "queue", "shared", "logos") and p.relative_to(DOCS).parts[:2] not in (("tools", "app"), ("tools", "hospital"))]
 pages.append(DOCS / "404.html")
 for p in pages:
     s = p.read_text(encoding="utf-8"); rel = p.relative_to(DOCS)

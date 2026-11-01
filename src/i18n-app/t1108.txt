@@ -1,0 +1,13 @@
+1108 ¦ Opplastingen mislyktes ({a}) ¦ La subida falló ({a}) ¦ Der Upload ist fehlgeschlagen ({a}) ¦ O carregamento falhou ({a})
+1109 ¦ Det finnes ingen ferdig video å laste opp ennå. ¦ Todavía no hay un vídeo terminado para subir. ¦ Es gibt noch kein fertiges Video zum Hochladen. ¦ Ainda não há um vídeo terminado para carregar.
+1110 ¦ Laget med Spektronautilus. ¦ Hecho con Spektronautilus. ¦ Gemacht mit Spektronautilus. ¦ Feito com o Spektronautilus.
+1111 ¦ Lim inn Vimeo-tilgangstokenet ditt først. ¦ Pega primero tu token de acceso de Vimeo. ¦ Füge zuerst dein Vimeo-Zugriffstoken ein. ¦ Cole primeiro o seu token de acesso do Vimeo.
+1112 ¦ Opplastingen mislyktes: {a} ¦ La subida falló: {a} ¦ Der Upload ist fehlgeschlagen: {a} ¦ O carregamento falhou: {a}
+1113 ¦ Trykk Last opp for å prøve igjen. ¦ Pulsa Subir para intentarlo de nuevo. ¦ Drücke Hochladen, um es noch einmal zu versuchen. ¦ Carregue em Carregar para tentar de novo.
+1114 ¦ Beskrivelse ¦ Descripción ¦ Beschreibung ¦ Descrição
+1115 ¦ Vimeo-tilgangstoken ¦ Token de acceso de Vimeo ¦ Vimeo-Zugriffstoken ¦ Token de acesso do Vimeo
+1116 ¦ Slik setter du det opp ¦ Cómo configurarlo ¦ So richtest du es ein ¦ Como configurar
+1117 ¦ Last opp ¦ Subir ¦ Hochladen ¦ Carregar
+1118 ¦ Last opp opptaket ¦ Subir la grabación ¦ Aufnahme hochladen ¦ Carregar a gravação
+1119 ¦ Last opp … ¦ Subir… ¦ Hochladen … ¦ Carregar…
+1120 ¦ Filen og tokenet ditt går bare til Vimeo, aldri gjennom Spektronautilus. ¦ Tu archivo y tu token van solo a Vimeo, nunca a través de Spektronautilus. ¦ Deine Datei und dein Token gehen nur an Vimeo, nie über Spektronautilus. ¦ O seu ficheiro e o seu token vão só para o Vimeo, nunca através do Spektronautilus.

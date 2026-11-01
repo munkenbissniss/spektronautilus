@@ -1,0 +1,9 @@
+1156 ¦ Pause mellom klipp ¦ Descanso entre clips ¦ Pause zwischen Clips ¦ Pausa entre clipes
+1157 ¦ Ingen pause ¦ Sin descanso ¦ Keine Pause ¦ Sem pausa
+1158 ¦ 10 sekunder ¦ 10 segundos ¦ 10 Sekunden ¦ 10 segundos
+1159 ¦ 30 sekunder ¦ 30 segundos ¦ 30 Sekunden ¦ 30 segundos
+1160 ¦ 1 minutt ¦ 1 minuto ¦ 1 Minute ¦ 1 minuto
+1161 ¦ En kort pause lar skjermkortet kjøle seg ned ved lange serier. ¦ Un breve descanso deja que la tarjeta gráfica se enfríe en tandas largas. ¦ Eine kurze Pause lässt die Grafikkarte bei langen Serien abkühlen. ¦ Uma pequena pausa deixa a placa gráfica arrefecer em séries longas.
+1162 ¦ Hviler… {a} s ¦ Descansando… {a} s ¦ Pause… {a} s ¦ A descansar… {a} s
+1163 ¦ AI på {a} klipp kan ta timer og holder skjermkortet på full belastning. Prøv ett klipp først. Trykk på knappen igjen for å kjøre alle {a}. ¦ La IA con {a} clips puede tardar horas y mantiene la tarjeta gráfica a plena carga. Prueba primero con un clip. Pulsa el botón otra vez para procesar los {a}. ¦ KI für {a} Clips kann Stunden dauern und lastet die Grafikkarte voll aus. Probiere zuerst einen Clip. Drücke die Taste noch einmal, um alle {a} zu verarbeiten. ¦ A IA em {a} clipes pode demorar horas e mantém a placa gráfica a plena carga. Experimente primeiro com um clipe. Prima o botão outra vez para processar os {a}.
+1164 ¦ Tips: velg «Lagre hver fil rett i en mappe», så ferdige klipp ikke blir liggende i minnet. ¦ Consejo: elige guardar cada archivo directamente en una carpeta, así los clips terminados no se quedan en la memoria. ¦ Tipp: Wähle „Jede Datei direkt in einen Ordner speichern“, damit fertige Clips nicht im Speicher bleiben. ¦ Dica: escolha guardar cada ficheiro diretamente numa pasta, para que os clipes terminados não fiquem na memória.
