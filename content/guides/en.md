@@ -203,7 +203,7 @@ Search free sources for loops, then download and convert them in one go. Interne
 [Open this tool](@@tools/app/#search).
 
 ## Filters {#filters}
-Adds VJ-style looks to a whole folder of loops: glow, glitch, mirror, kaleidoscope, VHS, duotone, pixelate and trails. There are also seven colour styles: Blue Dream, Purple Dream, Dark Future, Sepia, The Matrix, Las Vegas and Coal. Set the [[Strength]] slider to 50 for the reference look; lower is a light touch, higher pushes the colours further. Press [[Preview on first clip]] to see each look before you apply them. Every file gets one new clip per look you pick. [Open this tool](@@tools/app/#filters).
+Adds VJ-style looks to a whole folder of loops: glow, glitch, mirror, kaleidoscope, VHS, duotone, pixelate and trails. There are also eight colour styles: Blue Dream, Purple Dream, Dark Future, Sepia, The Matrix, Las Vegas, Coal and Grainy. Set the [[Strength]] slider to 50 for the reference look; lower is a light touch, higher pushes the colours further. Press [[Preview on first clip]] to see each look before you apply them. Every file gets one new clip per look you pick. [Open this tool](@@tools/app/#filters).
 
 ## Crop & trim {#crop}
 Cuts clips to widescreen, vertical or square, and trims the start and the end, for a whole folder at once. Choose how to fit: crop to exactly the box, or letterbox with bars. [Open this tool](@@tools/app/#crop).

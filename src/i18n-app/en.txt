@@ -1033,3 +1033,5 @@ Model
 Newest model
 Coal
 Dark, cool and matte, like a night-time film still.
+Grainy
+A film look: cool navy shadows, warm highlights and a little moving grain.
