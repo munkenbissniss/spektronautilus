@@ -23,7 +23,7 @@ with sync_playwright() as pw:
     check(pg.evaluate("fetch('/manifest.webmanifest').then(r=>r.json()).then(j=>j.icons.length)") == 3, "web app manifest is served")
     ctx.set_offline(True)
     for path, sel, what in (("/live-dj/index.html?desktop=1", "#decks .deck", "Video DJ"), ("/vj-pad/index.html?desktop=1", ".pad", "VJ Mixer"), ("/mixer/index.html?desktop=1", "#pre", "Magic Mixer"),
-                            ("/tools/app/index.html", "#groups details", "Tools"), ("/live-mobile/", ".deck", "phone live mixer"), ("/vj-mobile/", ".pad", "phone VJ mixer"),
+                            ("/tools/app/index.html", "#groups details", "Tools"), ("/tools/hospital/index.html", "#drop", "Loop Hospital"), ("/live-mobile/", ".deck", "phone live mixer"), ("/vj-mobile/", ".pad", "phone VJ mixer"),
                             ("/queue/", "#list", "Queue"), ("/no/", "h1", "Norwegian home"), ("/guides/video-dj/", "h1", "a guide")):
         p = ctx.new_page(); p.on("pageerror", lambda e: errs.append(path + " " + str(e)))
         try: p.goto(B + path); p.wait_for_selector(sel, timeout=8000); check(True, f"offline: {what} opens")

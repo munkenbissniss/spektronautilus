@@ -78,7 +78,7 @@ try:
     from playwright.sync_api import sync_playwright
     with sync_playwright() as pw:
         br = pw.chromium.launch(); pg = br.new_page(viewport={"width": 1200, "height": 900}); errs = []; pg.on("pageerror", lambda e: errs.append(str(e)))
-        pg.goto(B + "/tools/app/index.html"); pg.wait_for_selector("#groups details"); pg.click("#tabs [data-t=ai]")
+        pg.goto(B + "/tools/app/index.html"); pg.wait_for_selector("#groups details"); pg.click("#tabs [data-t=ai]"); pg.select_option("#o_upEngine", "ai")
         pg.set_input_files("#picker", [str(T / "c.mp4")]); pg.wait_for_selector("#files .vt")
         check(pg.locator("#ainote").is_visible() and "Video2X found" in pg.inner_text("#ainote"), "note says Video2X found")
         pg.click("#go"); pg.wait_for_function("VJ.JOBS.length && VJ.JOBS[0].status!=='running' && VJ.JOBS[0].status!=='queued'", timeout=60000)
@@ -87,7 +87,7 @@ try:
         pg.fill("#o_aiGpu", "1"); n0 = pg.evaluate("VJ.JOBS.length"); pg.click("#go"); pg.wait_for_function(f"VJ.JOBS.length>{n0} && VJ.JOBS[0].status!=='running' && VJ.JOBS[0].status!=='queued'", timeout=60000); print("     ", pg.evaluate("({s: VJ.JOBS[0].status, l: VJ.JOBS[0].log})"))
         check("-d 1" in (FAKE.parent / "video2x.log").read_text(), "the graphics card is passed with the flag this Video2X understands (-d)")
         for mode, want in (("slow", ("20", "2.0")), ("smooth", ("20", "1.0"))):
-            pg.click("#tabs [data-t=slowmo]"); pg.set_input_files("#picker", [str(T / "c.mp4")]); pg.wait_for_selector("#files .vt")
+            pg.click("#tabs [data-t=slowmo]"); pg.select_option("#o_slowEngine", "ai"); pg.set_input_files("#picker", [str(T / "c.mp4")]); pg.wait_for_selector("#files .vt")
             check(pg.locator("#ainote").is_visible() and "Video2X found" in pg.inner_text("#ainote"), "slow motion shows the Video2X note")
             pg.select_option("#o_slowMode", mode); pg.select_option("#o_slowFactor", "2"); pg.click("#go")
             n = pg.evaluate("VJ.JOBS.length"); pg.wait_for_function(f"VJ.JOBS.length>={n} && VJ.JOBS[0].status!=='running' && VJ.JOBS[0].status!=='queued'", timeout=60000)
@@ -105,7 +105,7 @@ try:
         # wasm mode: plain static server, no local engine
         sv = subprocess.Popen([sys.executable, "-m", "http.server", "8794", "--directory", str(ROOT / "docs")], stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL); time.sleep(1)
         try:
-            br = pw.chromium.launch(); pg = br.new_page(); pg.goto("http://127.0.0.1:8794/tools/app/index.html"); pg.wait_for_selector("#groups details"); pg.click("#tabs [data-t=ai]")
+            br = pw.chromium.launch(); pg = br.new_page(); pg.goto("http://127.0.0.1:8794/tools/app/index.html"); pg.wait_for_selector("#groups details"); pg.click("#tabs [data-t=ai]"); pg.select_option("#o_upEngine", "ai")
             pg.set_input_files("#picker", [str(T / "c.mp4")]); pg.wait_for_selector("#files .vt"); pg.wait_for_timeout(800)
             check(pg.locator("#ainote").is_visible() and "Linux" in pg.inner_text("#ainote"), "web version explains it needs Linux: " + pg.inner_text("#ainote")[:60]); br.close()
         finally: sv.terminate()

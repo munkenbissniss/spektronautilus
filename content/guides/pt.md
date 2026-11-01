@@ -214,37 +214,53 @@ Cria um proxy pequeno, 720p, 1080p e 4K de cada clipe de uma vez. Tamanhos maior
 ## HAP / ProRes {#pro}
 Cria formatos profissionais para Resolume, VDMX, Millumin e editores de vídeo. Precisa da [versão local para Linux](@guides/offline-linux/#linux), porque usa o ffmpeg no seu próprio computador. [Abrir esta ferramenta](@@tools/app/#pro).
 
-## Ampliação com IA {#ai}
-Torna os clipes de vídeo mais nítidos e maiores com IA, usando o programa gratuito Video2X. Só funciona na versão local, em [Linux](@guides/offline-linux/#linux) ou Windows, e precisa de uma placa gráfica com suporte a Vulkan. Os seus ficheiros nunca saem do seu computador.
+## Ampliar {#ai}
+Torna os clipes maiores e mais nítidos. Escolha um [[Method]]:
+- **Nítido** é o predefinido. Amplia com um redimensionamento limpo e uma ligeira nitidez (ajuste com [[Sharpness]]). É rápido e funciona em qualquer lado, até no navegador. No navegador o resultado pode ter no máximo 4K.
+- **IA** inventa detalhes novos com o programa gratuito Video2X. Só funciona na versão local, em [Linux](@guides/offline-linux/#linux) ou Windows, e precisa de uma placa gráfica com suporte a Vulkan.
 
 Como usar:
-1. Instale o Video2X por si (no Linux um AppImage, o pacote do AUR ou a sua própria compilação; no Windows a versão oficial). O Spektronautilus encontra-o sozinho. Se não, escreva o caminho completo do programa numa linha de um ficheiro de texto chamado `video2x.txt` na pasta das definições (`~/.config/spektronautilus` no Linux, `%APPDATA%\spektronautilus` no Windows), ou defina a variável `SPEKTRO_VIDEO2X`, e inicie o Spektronautilus de novo.
-2. Abra a ferramenta e adicione os seus clipes. A nota acima das definições mostra se o Video2X foi encontrado.
-3. Escolha [[Kind of picture]] e [[Make it this much bigger]] e carregue em [[Upscale]].
+1. Adicione os seus clipes, escolha [[Make it this much bigger]] e carregue em [[Upscale]].
+2. Para IA: instale o Video2X você mesmo (no Linux um AppImage, o pacote AUR ou a sua própria compilação; no Windows a versão oficial). O Spektronautilus encontra-o sozinho. Se não, escreva o caminho completo do programa numa linha de um ficheiro de texto chamado `video2x.txt` na pasta de definições (`~/.config/spektronautilus` no Linux, `%APPDATA%\spektronautilus` no Windows), ou defina a variável `SPEKTRO_VIDEO2X`, e inicie o Spektronautilus outra vez. A nota acima das definições diz se o Video2X foi encontrado. Depois escolha [[Kind of picture]].
 
 Bom saber:
-- É lento. Um clipe curto pode demorar muitos minutos, por isso use a [fila](@guides/queue/) e deixe correr.
-- Fotos e filme real são sempre ampliados 4×. O resultado não pode ser maior do que 8K.
+- A IA é lenta. Um clipe curto pode demorar muitos minutos, por isso use a [Fila](@guides/queue/) e deixe correr.
+- Com IA, fotos e filme real são sempre ampliados 4×. O resultado não pode ser maior do que 8K.
 - Tem mais de uma placa gráfica? Carregue em [[Check my graphics card]] e defina [[Graphics card number]].
 
-## Câmara lenta com IA {#slowmo}
-Torna os clipes mais lentos e suaves com IA. A IA (RIFE, executada pelo Video2X) inventa os fotogramas entre os seus fotogramas, para que a câmara lenta pareça fluida e não aos soluços. Precisa do mesmo que a [ampliação com IA](@guides/tools/#ai): a versão local, uma placa gráfica com suporte a Vulkan e o Video2X.
+## Câmara lenta {#slowmo}
+Torna os clipes mais lentos ou mais suaves. Escolha um [[Method]]:
+- **Mistura suave** é o predefinido. Mistura fotogramas vizinhos. É rápido e funciona em qualquer lado, até no navegador.
+- **Movimento suave** calcula o movimento entre os fotogramas. Demora mais, mas fica mais limpo quando as coisas se movem depressa.
+- **IA** (RIFE, executada pelo Video2X) inventa os fotogramas entre os seus fotogramas e fica melhor. Precisa do mesmo que a IA em [Ampliar](@guides/tools/#ai): a versão local, uma placa gráfica com suporte a Vulkan e o Video2X.
 
 Como usar:
-1. Abra a ferramenta e adicione os seus clipes. A nota acima das definições mostra se o Video2X foi encontrado e consegue fazer câmara lenta.
-2. Escolha [[How much slower]]: 2×, 4× ou 8×.
-3. Em [[Result]] escolha um clipe mais lento, ou a mesma velocidade mas mais suave, com mais fotogramas por segundo. Escolha [[Model]] e carregue em [[Make slow motion]].
+1. Adicione os seus clipes e escolha [[How much slower]]: 2×, 4× ou 8×.
+2. Em [[Result]] escolha um clipe mais lento, ou a mesma velocidade mas mais suave, com mais fotogramas por segundo. Carregue em [[Make slow motion]].
 
 Bom saber:
-- Um clipe em câmara lenta fica mais longo (2× mais lento dura o dobro) e perde o som. Os loops continuam loops.
-- «Mais suave» mantém a duração e o som, mas não pode passar de 120 fotogramas por segundo.
-- É lento, por isso use a [fila](@guides/queue/) e deixe correr. Carregue em [[Check my graphics card]] se tiver mais de uma placa gráfica.
+- Um clipe em câmara lenta fica mais longo (2× mais lento é o dobro) e perde o som. Os loops continuam loops.
+- «Mais suave» mantém a duração, mas não pode passar de 60 fotogramas por segundo (120 com IA).
+- O movimento suave e a IA são lentos, por isso use a [Fila](@guides/queue/) e deixe correr.
+
 
 ## Catalogue {#catalog}
 Cria uma página web e um ficheiro de folha de cálculo com uma imagem, a duração, o tamanho e a qualidade de loop de cada loop. Útil para coleções grandes. [Abrir esta ferramenta](@@tools/app/#catalog).
 
 ## Loop pack {#pack}
 Reúne loops num zip que pode partilhar, com imagem de pré-visualização, um ficheiro de informação e uma licença. [Abrir esta ferramenta](@@tools/app/#pack).
+
+## Loop Hospital {#hospital}
+O Loop Hospital trata de um clipe de cada vez, para ficar pronto para os misturadores. Traga um clipe e ele é examinado: tamanho, taxa de fotogramas, duração e se faz loop sem salto. O exame sugere tratamentos, por exemplo ampliar uma imagem pequena, ou arranjar o loop quando se vê um salto.
+
+Como usar:
+1. Carregue em [[choose a clip]] ou largue um clipe.
+2. Carregue em [[Add all suggested treatments]], ou marque os passos você mesmo: cortar, recortar, câmara lenta, ampliar, redimensionar, look e fazer loop. São feitos por essa ordem.
+3. Carregue em [[Preview the treatment]] para ver o antes e o depois lado a lado, e depois em [[Treat and save]].
+4. Carregue em [[Treat more clips the same way]] para dar o mesmo tratamento a outros clipes.
+
+Tudo corre no seu navegador. Para qualidade de IA use [Ampliar](@guides/tools/#ai) e [Câmara lenta](@guides/tools/#slowmo) nas ferramentas. [Abrir o Loop Hospital](@@tools/hospital/).
+
 
 ## Bom saber {#know}
 - Os loops normalmente não têm som. [[Keep sound]] está desligado por predefinição.
@@ -333,7 +349,7 @@ Porquê usá-la:
 - **Velocidade.** Se o `ffmpeg` estiver instalado, as ferramentas usam-no em vez do motor mais lento do navegador. A página diz então «Fast mode».
 - **Sem limite de memória** para ficheiros grandes, e não é preciso internet (só [[Find loops]] precisa).
 - **HAP e ProRes.** A [ferramenta HAP / ProRes](@guides/tools/#pro) funciona na versão para Linux.
-- **Ampliação e câmara lenta com IA.** As ferramentas de [ampliação com IA](@guides/tools/#ai) e de [câmara lenta com IA](@guides/tools/#slowmo) usam o Video2X, se o tiver instalado. Ambas funcionam também na versão para Windows.
+- **Ampliação e câmara lenta com IA.** Os métodos de IA em [Ampliar](@guides/tools/#ai) e [Câmara lenta](@guides/tools/#slowmo) usam o Video2X, se o tiver instalado. Ambos funcionam também na versão para Windows.
 
 Como instalar:
 1. Descarregue o pacote para Linux (`spektronautilus-linux.tar.gz`) e descomprima-o: `tar xzf spektronautilus-linux.tar.gz`.

@@ -214,37 +214,53 @@ Erzeugt von jedem Clip auf einmal einen kleinen Proxy, 720p, 1080p und 4K. Grö�
 ## HAP / ProRes {#pro}
 Erzeugt professionelle Formate für Resolume, VDMX, Millumin und Videoschnitt. Dafür brauchst du die lokale [Linux-Version](@guides/offline-linux/#linux), weil sie ffmpeg auf deinem eigenen Computer nutzt. [Dieses Werkzeug öffnen](@@tools/app/#pro).
 
-## KI-Hochskalierung {#ai}
-Macht Videoclips mit KI schärfer und größer, mit dem kostenlosen Programm Video2X. Es funktioniert nur in der lokalen Version, unter [Linux](@guides/offline-linux/#linux) oder Windows, und braucht eine Grafikkarte mit Vulkan-Unterstützung. Deine Dateien verlassen nie deinen Computer.
+## Hochskalieren {#ai}
+Macht Clips größer und schärfer. Wähle eine [[Method]]:
+- **Scharf** ist die Voreinstellung. Sie vergrößert mit sauberem Skalieren und leichtem Nachschärfen (einstellbar mit [[Sharpness]]). Sie ist schnell und funktioniert überall, auch im Browser. Im Browser kann das Ergebnis höchstens 4K groß sein.
+- **KI** erfindet neue Details mit dem kostenlosen Programm Video2X. Sie funktioniert nur in der lokalen Version, unter [Linux](@guides/offline-linux/#linux) oder Windows, und braucht eine Grafikkarte mit Vulkan-Unterstützung.
 
 So geht's:
-1. Installiere Video2X selbst (unter Linux ein AppImage, das AUR-Paket oder ein eigener Build; unter Windows die offizielle Version). Spektronautilus findet es selbst. Wenn nicht, schreibe den vollständigen Pfad des Programms in eine Zeile einer Textdatei namens `video2x.txt` im Einstellungsordner (`~/.config/spektronautilus` unter Linux, `%APPDATA%\spektronautilus` unter Windows) oder setze die Variable `SPEKTRO_VIDEO2X`, und starte Spektronautilus neu.
-2. Öffne das Werkzeug und füge deine Clips hinzu. Der Hinweis über den Einstellungen zeigt, ob Video2X gefunden wurde.
-3. Wähle [[Kind of picture]] und [[Make it this much bigger]] und drücke [[Upscale]].
+1. Füge deine Clips hinzu, wähle [[Make it this much bigger]] und drücke [[Upscale]].
+2. Für KI: Installiere Video2X selbst (unter Linux ein AppImage, das AUR-Paket oder dein eigener Build; unter Windows die offizielle Version). Spektronautilus findet es selbst. Wenn nicht, schreibe den vollen Pfad zum Programm in eine Zeile einer Textdatei namens `video2x.txt` im Einstellungsordner (`~/.config/spektronautilus` unter Linux, `%APPDATA%\spektronautilus` unter Windows) oder setze die Variable `SPEKTRO_VIDEO2X`, und starte Spektronautilus neu. Der Hinweis über den Einstellungen sagt, ob Video2X gefunden wurde. Wähle dann [[Kind of picture]].
 
 Gut zu wissen:
-- Es ist langsam. Ein kurzer Clip kann viele Minuten dauern, nutze also die [Warteschlange](@guides/queue/) und lass es laufen.
-- Fotos und echter Film werden immer 4× größer. Das Ergebnis darf nicht größer als 8K sein.
-- Mehr als eine Grafikkarte? Drücke [[Check my graphics card]] und stelle [[Graphics card number]] ein.
+- KI ist langsam. Ein kurzer Clip kann viele Minuten dauern, nutze also die [Warteschlange](@guides/queue/) und lass es laufen.
+- Mit KI werden Fotos und echter Film immer 4× größer. Das Ergebnis darf nicht größer als 8K sein.
+- Mehr als eine Grafikkarte? Drücke [[Check my graphics card]] und setze [[Graphics card number]].
 
-## KI-Zeitlupe {#slowmo}
-Macht Clips mit KI langsamer und flüssiger. Die KI (RIFE, gestartet von Video2X) erfindet die Bilder zwischen deinen Bildern, damit die Zeitlupe flüssig statt ruckelig aussieht. Sie braucht dasselbe wie die [KI-Hochskalierung](@guides/tools/#ai): die lokale Version, eine Grafikkarte mit Vulkan-Unterstützung und Video2X.
+## Zeitlupe {#slowmo}
+Macht Clips langsamer oder flüssiger. Wähle eine [[Method]]:
+- **Weiche Überblendung** ist die Voreinstellung. Sie mischt benachbarte Bilder. Sie ist schnell und funktioniert überall, auch im Browser.
+- **Fließende Bewegung** berechnet die Bewegung zwischen den Bildern. Das dauert länger, sieht aber sauberer aus, wenn sich etwas schnell bewegt.
+- **KI** (RIFE, gestartet von Video2X) erfindet die Bilder zwischen deinen Bildern und sieht am besten aus. Sie braucht dasselbe wie die KI im [Hochskalieren](@guides/tools/#ai): die lokale Version, eine Grafikkarte mit Vulkan-Unterstützung und Video2X.
 
 So geht's:
-1. Öffne das Werkzeug und füge deine Clips hinzu. Der Hinweis über den Einstellungen zeigt, ob Video2X gefunden wurde und Zeitlupe kann.
-2. Wähle [[How much slower]]: 2×, 4× oder 8×.
-3. Unter [[Result]] wählst du einen langsameren Clip oder dieselbe Geschwindigkeit, aber flüssiger, mit mehr Bildern pro Sekunde. Wähle [[Model]] und drücke [[Make slow motion]].
+1. Füge deine Clips hinzu und wähle [[How much slower]]: 2×, 4× oder 8×.
+2. Unter [[Result]] wählst du einen langsameren Clip oder dieselbe Geschwindigkeit, aber flüssiger, mit mehr Bildern pro Sekunde. Drücke [[Make slow motion]].
 
 Gut zu wissen:
 - Ein Zeitlupen-Clip wird länger (2× langsamer ist doppelt so lang) und verliert den Ton. Loops bleiben Loops.
-- «Flüssiger» behält Länge und Ton, kann aber nicht über 120 Bilder pro Sekunde gehen.
-- Es ist langsam, nutze also die [Warteschlange](@guides/queue/) und lass es laufen. Drücke [[Check my graphics card]], wenn du mehr als eine Grafikkarte hast.
+- „Flüssiger“ behält die Länge, kann aber nicht über 60 Bilder pro Sekunde gehen (120 mit KI).
+- Fließende Bewegung und KI sind langsam, nutze also die [Warteschlange](@guides/queue/) und lass es laufen.
+
 
 ## Catalogue {#catalog}
 Erstellt eine Webseite und eine Tabellendatei mit Bild, Länge, Größe und Loop-Qualität jedes Loops. Praktisch für große Sammlungen. [Dieses Werkzeug öffnen](@@tools/app/#catalog).
 
 ## Loop pack {#pack}
 Bündelt Loops zu einer zip-Datei zum Teilen, mit Vorschaubild, Infodatei und Lizenz. [Dieses Werkzeug öffnen](@@tools/app/#pack).
+
+## Loop Hospital {#hospital}
+Das Loop Hospital kümmert sich um einen Clip nach dem anderen, damit er bereit für die Mixer ist. Bring einen Clip herein, und er wird untersucht: Größe, Bildrate, Länge und ob er ohne Sprung loopt. Die Untersuchung schlägt Behandlungen vor, zum Beispiel Hochskalieren bei einem kleinen Bild oder eine Loop-Korrektur, wenn man einen Sprung sieht.
+
+So geht's:
+1. Drücke [[choose a clip]] oder lege einen Clip ab.
+2. Drücke [[Add all suggested treatments]] oder hake die Schritte selbst an: Schneiden, Zuschneiden, Zeitlupe, Hochskalieren, Größe ändern, Look und Zum Loop machen. Sie laufen in dieser Reihenfolge.
+3. Drücke [[Preview the treatment]], um Vorher und Nachher nebeneinander zu sehen, dann [[Treat and save]].
+4. Drücke [[Treat more clips the same way]], um andere Clips genauso zu behandeln.
+
+Alles läuft in deinem Browser. Für KI-Qualität nutze [Hochskalieren](@guides/tools/#ai) und [Zeitlupe](@guides/tools/#slowmo) in den Werkzeugen. [Loop Hospital öffnen](@@tools/hospital/).
+
 
 ## Gut zu wissen {#know}
 - Loops haben normalerweise keinen Ton. [[Keep sound]] ist standardmäßig aus.
@@ -333,7 +349,7 @@ Warum sie nutzen:
 - **Tempo.** Ist `ffmpeg` installiert, nutzen die Werkzeuge es statt der langsameren Browser-Engine. Die Seite zeigt dann „Fast mode“.
 - **Keine Speichergrenze** für große Dateien, und kein Internet nötig (nur [[Find loops]] braucht es).
 - **HAP und ProRes.** Das [HAP / ProRes-Werkzeug](@guides/tools/#pro) funktioniert in der Linux-Version.
-- **KI-Hochskalierung und Zeitlupe.** Die Werkzeuge [KI-Hochskalierung](@guides/tools/#ai) und [KI-Zeitlupe](@guides/tools/#slowmo) nutzen Video2X, wenn du es installiert hast. Beide funktionieren auch in der Windows-Version.
+- **KI-Hochskalierung und Zeitlupe.** Die KI-Methoden in [Hochskalieren](@guides/tools/#ai) und [Zeitlupe](@guides/tools/#slowmo) nutzen Video2X, wenn du es installiert hast. Beide funktionieren auch in der Windows-Version.
 
 So installierst du sie:
 1. Lade das Linux-Paket (`spektronautilus-linux.tar.gz`) herunter und entpacke es: `tar xzf spektronautilus-linux.tar.gz`.

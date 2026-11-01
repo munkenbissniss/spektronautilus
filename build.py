@@ -231,7 +231,7 @@ def page_body(L, key, r, P):
         head = f'<h1>{e(P["h1"])}</h1><p class="lead">{e(P["lead"])}</p>'
     rl = r + prefix(L["lang"])
     body = re.sub(r"\{r\}(magic-mixer|live-mixer|vj-mixer|packs|guides|about)/", lambda m: rl + m.group(1) + "/", P["body"])
-    body = re.sub(r"\{r\}tools/(?!app)", lambda m: rl + "tools/", body)
+    body = re.sub(r"\{r\}tools/(?!app|hospital)", lambda m: rl + "tools/", body)
     body = body.replace("{r}", r).replace("{devnote}", e(ui["devnote"]))
     if key in GUIDE_OF:                       # a button to the guide next to the buttons that open the tool
         body = body.replace("</div>", f'<a class="btn" href="{rl}guides/{GUIDE_OF[key]}/">📖 {e(ui["g_guide"])}</a></div>', 1)
@@ -362,7 +362,7 @@ def main():
     for sl in G["en"]:
         alts = {lg: url(lg, f"guides/{sl}/") for lg in LANGS}
         urls += [entry(u, alts) for u in alts.values()]
-    for extra in ("mixer/", "mixer-mobile/", "tools/app/", "live-dj/", "vj-pad/", "live-mobile/", "vj-mobile/"):
+    for extra in ("mixer/", "mixer-mobile/", "tools/app/", "tools/hospital/", "live-dj/", "vj-pad/", "live-mobile/", "vj-mobile/"):
         urls.append(f"<url><loc>{SITE}{extra}</loc></url>")
     write("sitemap.xml", '<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">\n' + "\n".join(urls) + "\n</urlset>\n")
     write("robots.txt", f"User-agent: *\nAllow: /\n\nSitemap: {SITE}sitemap.xml\n")

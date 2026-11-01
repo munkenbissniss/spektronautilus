@@ -12,7 +12,7 @@ class H(http.server.SimpleHTTPRequestHandler):
     def log_message(self, *a): pass
 srv = http.server.ThreadingHTTPServer(("127.0.0.1", 0), functools.partial(H, directory=str(ROOT / "docs"))); threading.Thread(target=srv.serve_forever, daemon=True).start()
 B = f"http://127.0.0.1:{srv.server_port}"
-APPS = (("live-dj/index.html?desktop=1", "#decks .deck"), ("vj-pad/index.html?desktop=1", ".pad"), ("mixer/index.html?desktop=1", "#pre"), ("tools/app/index.html", "#groups details"),
+APPS = (("live-dj/index.html?desktop=1", "#decks .deck"), ("vj-pad/index.html?desktop=1", ".pad"), ("mixer/index.html?desktop=1", "#pre"), ("tools/app/index.html", "#groups details"), ("tools/hospital/index.html", "#steps"),
         ("live-mobile/", ".deck"), ("vj-mobile/", ".pad"), ("mixer-mobile/", "body"), ("queue/", "#list"))
 JS = """() => { const out = []; const w = document.createTreeWalker(document.body, NodeFilter.SHOW_TEXT);
   for (let n = w.nextNode(); n; n = w.nextNode()) { const e = n.parentElement; if (!e || /^(SCRIPT|STYLE|TEXTAREA|NOSCRIPT)$/.test(e.tagName) || e.closest('[data-no-i18n]')) continue;

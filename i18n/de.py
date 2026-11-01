@@ -58,6 +58,7 @@ T = {
 <div class="cta"><a class="btn main" href="{r}tools/app/">Werkzeuge öffnen</a></div>
 <p class="note">{devnote}</p>
 <div class="cards">
+<a class="card" href="{r}tools/hospital/"><h3>🏥 Loop Hospital <span class="badge live">Neu</span></h3><p>Bring einen Clip herein. Er wird untersucht und Schritt für Schritt behandelt: Schneiden, Zuschneiden, Zeitlupe, Hochskalieren, Look und Loop-Korrektur.</p></a>
 <a class="card" href="{r}tools/app/#gif2mp4"><h3>GIF zu MP4 <span class="badge live">Verfügbar</span></h3><p>Wandle GIFs gesammelt um, auch transparente, in flüssiges mp4.</p></a>
 <a class="card" href="{r}tools/app/#loop"><h3>Loops erstellen <span class="badge live">Verfügbar</span></h3><p>Prüft, ob ein Clip loopt. Falls nicht, kürzt es ihn, spielt ihn vorwärts und rückwärts oder überblendet die Enden.</p></a>
 <a class="card" href="{r}tools/app/#convert"><h3>Konvertieren <span class="badge live">Verfügbar</span></h3><p>Wandle mov, webm und andere Formate in VJ-taugliches mp4 um, mit Dateinamen für alle auf einmal.</p></a>
@@ -66,8 +67,8 @@ T = {
 <a class="card" href="{r}tools/app/#crop"><h3>Zuschneiden &amp; kürzen <span class="badge live">Verfügbar</span></h3><p>Schneide Clips auf Breitbild, Hochformat oder quadratisch zu und kürze Anfang und Ende, für einen ganzen Ordner auf einmal.</p></a>
 <a class="card" href="{r}tools/app/#sizes"><h3>Größen <span class="badge live">Verfügbar</span></h3><p>Erzeuge von jedem Clip in einem Rutsch einen kleinen Proxy, 720p, 1080p und 4K.</p></a>
 <a class="card" href="{r}tools/app/#pro"><h3>HAP / ProRes <span class="badge live">Linux-Version</span></h3><p>Profi-Formate für Resolume, VDMX, Millumin und Videoschnitt. Braucht die lokale Linux-Version.</p></a>
-<a class="card" href="{r}tools/app/#ai"><h3>KI-Hochskalierung <span class="badge live">Lokale Version</span></h3><p>Macht Videoclips mit KI schärfer und größer. Braucht die lokale Version (Linux oder Windows) und Video2X.</p></a>
-<a class="card" href="{r}tools/app/#slowmo"><h3>KI-Zeitlupe <span class="badge live">Lokale Version</span></h3><p>Macht Clips mit KI langsamer und flüssiger. Braucht die lokale Version (Linux oder Windows) und Video2X.</p></a>
+<a class="card" href="{r}tools/app/#ai"><h3>Hochskalieren <span class="badge live">Verfügbar</span></h3><p>Mach Clips größer und schärfer. Funktioniert im Browser; KI-Qualität mit der lokalen Version und Video2X.</p></a>
+<a class="card" href="{r}tools/app/#slowmo"><h3>Zeitlupe <span class="badge live">Verfügbar</span></h3><p>Mach Clips langsamer oder flüssiger. Funktioniert im Browser; KI-Qualität mit der lokalen Version und Video2X.</p></a>
 <a class="card" href="{r}tools/app/#catalog"><h3>Katalog <span class="badge live">Verfügbar</span></h3><p>Eine Webseite und eine Tabellendatei mit Bild, Länge, Größe und Loop-Qualität für jeden Loop.</p></a>
 <a class="card" href="{r}tools/app/#pack"><h3>Loop-Paket <span class="badge live">Verfügbar</span></h3><p>Packe Loops in eine zip-Datei, die bereit zum Teilen ist, mit Vorschaubild, Infodatei und Lizenz.</p></a>
 </div>

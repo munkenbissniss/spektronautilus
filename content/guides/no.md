@@ -214,37 +214,53 @@ Lager en liten proxy, 720p, 1080p og 4K av hvert klipp på en gang. Størrelser 
 ## HAP / ProRes {#pro}
 Lager profesjonelle formater for Resolume, VDMX, Millumin og videoredigering. Dette krever den lokale [Linux-versjonen](@guides/offline-linux/#linux), fordi den bruker ffmpeg på din egen datamaskin. [Åpne dette verktøyet](@@tools/app/#pro).
 
-## KI-oppskalering {#ai}
-Gjør videoklipp skarpere og større med KI, ved hjelp av det gratis programmet Video2X. Det fungerer bare i den lokale versjonen, på [Linux](@guides/offline-linux/#linux) eller Windows, og krever et grafikkort med Vulkan-støtte. Filene dine forlater aldri datamaskinen din.
+## Oppskalering {#ai}
+Gjør klipp større og skarpere. Velg en [[Method]]:
+- **Skarp** er standard. Den forstørrer med en ren størrelsesendring og litt skarpere kanter (still inn med [[Sharpness]]). Den er rask og fungerer overalt, også i nettleseren. I nettleseren kan resultatet være 4K på det meste.
+- **KI** finner på nye detaljer med det gratis programmet Video2X. Den fungerer bare i den lokale versjonen, på [Linux](@guides/offline-linux/#linux) eller Windows, og krever et grafikkort med Vulkan-støtte.
 
 Slik gjør du:
-1. Installer Video2X selv (på Linux en AppImage, AUR-pakken eller din egen bygging; på Windows den offisielle utgaven). Spektronautilus finner det selv. Hvis ikke, skriv hele stien til programmet på én linje i en tekstfil som heter `video2x.txt` i innstillingsmappen (`~/.config/spektronautilus` på Linux, `%APPDATA%\spektronautilus` på Windows), eller sett variabelen `SPEKTRO_VIDEO2X`, og start Spektronautilus på nytt.
-2. Åpne verktøyet og legg til klippene dine. Merknaden over innstillingene viser om Video2X ble funnet.
-3. Velg [[Kind of picture]] og [[Make it this much bigger]], og trykk [[Upscale]].
+1. Legg til klippene, velg [[Make it this much bigger]] og trykk [[Upscale]].
+2. For KI: installer Video2X selv (på Linux en AppImage, AUR-pakken eller din egen bygging; på Windows den offisielle utgaven). Spektronautilus finner det selv. Hvis ikke, skriv hele stien til programmet på én linje i en tekstfil som heter `video2x.txt` i innstillingsmappen (`~/.config/spektronautilus` på Linux, `%APPDATA%\spektronautilus` på Windows), eller sett variabelen `SPEKTRO_VIDEO2X`, og start Spektronautilus på nytt. Merknaden over innstillingene sier om Video2X ble funnet. Velg så [[Kind of picture]].
 
 Greit å vite:
-- Det er tregt. Et kort klipp kan ta mange minutter, så bruk [køen](@guides/queue/) og la det gå.
-- Foto og ekte film blir alltid gjort 4× større. Resultatet kan ikke bli større enn 8K.
-- Har du mer enn ett grafikkort? Trykk [[Check my graphics card]] og sett [[Graphics card number]].
+- KI er tregt. Et kort klipp kan ta mange minutter, så bruk [Køen](@guides/queue/) og la det gå.
+- Med KI blir bilder og ekte film alltid gjort 4× større. Resultatet kan ikke være større enn 8K.
+- Har du flere grafikkort? Trykk [[Check my graphics card]] og sett [[Graphics card number]].
 
-## KI-slowmotion {#slowmo}
-Gjør klipp tregere og jevnere med KI. KI-en (RIFE, kjørt av Video2X) finner på bildene mellom bildene dine, så slowmotion ser jevn ut i stedet for hakkete. Den krever det samme som [KI-oppskalering](@guides/tools/#ai): den lokale versjonen, et grafikkort med Vulkan-støtte og Video2X.
+## Slowmotion {#slowmo}
+Gjør klipp tregere eller jevnere. Velg en [[Method]]:
+- **Myk blanding** er standard. Den blander nabobildene. Den er rask og fungerer overalt, også i nettleseren.
+- **Jevn bevegelse** regner ut bevegelsen mellom bildene. Det tar lengre tid, men ser renere ut når ting beveger seg raskt.
+- **KI** (RIFE, kjørt av Video2X) finner på bildene mellom bildene dine og ser best ut. Den krever det samme som KI i [Oppskalering](@guides/tools/#ai): den lokale versjonen, et grafikkort med Vulkan-støtte og Video2X.
 
 Slik gjør du:
-1. Åpne verktøyet og legg til klippene dine. Merknaden over innstillingene viser om Video2X ble funnet og kan lage slowmotion.
-2. Velg [[How much slower]]: 2×, 4× eller 8×.
-3. Under [[Result]] velger du et tregere klipp, eller samme hastighet men jevnere, med flere bilder per sekund. Velg [[Model]] og trykk [[Make slow motion]].
+1. Legg til klippene og velg [[How much slower]]: 2×, 4× eller 8×.
+2. Under [[Result]] velger du et tregere klipp, eller samme fart men jevnere, med flere bilder per sekund. Trykk [[Make slow motion]].
 
 Greit å vite:
 - Et slowmotion-klipp blir lengre (2× tregere er dobbelt så langt) og mister lyden. Loops forblir loops.
-- «Jevnere» beholder lengden og lyden, men kan ikke gå over 120 bilder per sekund.
-- Det er tregt, så bruk [køen](@guides/queue/) og la det gå. Trykk [[Check my graphics card]] hvis du har mer enn ett grafikkort.
+- «Jevnere» beholder lengden, men kan ikke gå over 60 bilder per sekund (120 med KI).
+- Jevn bevegelse og KI er trege, så bruk [Køen](@guides/queue/) og la det gå.
+
 
 ## Catalogue {#catalog}
 Lager en nettside og en regnearkfil med bilde, lengde, størrelse og loop-kvalitet for hver loop. Praktisk for store samlinger. [Åpne dette verktøyet](@@tools/app/#catalog).
 
 ## Loop pack {#pack}
 Pakker loops i en zip du kan dele, med forhåndsbilde, en infofil og en lisens. [Åpne dette verktøyet](@@tools/app/#pack).
+
+## Loop Hospital {#hospital}
+Loop Hospital tar seg av ett klipp om gangen, slik at det blir klart for mikserne. Ta med et klipp, så blir det undersøkt: størrelse, bildefrekvens, lengde og om det looper uten hopp. Undersøkelsen foreslår behandlinger, for eksempel oppskalering for et lite bilde, eller en loop-fiks når du ser et hopp.
+
+Slik gjør du:
+1. Trykk [[choose a clip]] eller slipp et klipp.
+2. Trykk [[Add all suggested treatments]], eller huk av stegene selv: klipp, beskjær, slowmotion, oppskalering, endre størrelse, look og få det til å loope. De gjøres i den rekkefølgen.
+3. Trykk [[Preview the treatment]] for å se før og etter side om side, og så [[Treat and save]].
+4. Trykk [[Treat more clips the same way]] for å gi andre klipp samme behandling.
+
+Alt kjører i nettleseren din. For KI-kvalitet bruker du [Oppskalering](@guides/tools/#ai) og [Slowmotion](@guides/tools/#slowmo) i verktøyene. [Åpne Loop Hospital](@@tools/hospital/).
+
 
 ## Greit å vite {#know}
 - Loops har vanligvis ikke lyd. [[Keep sound]] er av som standard.
@@ -333,7 +349,7 @@ Hvorfor bruke den:
 - **Fart.** Hvis `ffmpeg` er installert, bruker verktøyene den i stedet for den tregere nettlesermotoren. Siden viser da «Fast mode».
 - **Ingen minnegrense** for store filer, og du trenger ikke internett (bare [[Find loops]] trenger det).
 - **HAP og ProRes.** [HAP / ProRes-verktøyet](@guides/tools/#pro) virker i Linux-versjonen.
-- **KI-oppskalering og slowmotion.** Verktøyene [KI-oppskalering](@guides/tools/#ai) og [KI-slowmotion](@guides/tools/#slowmo) bruker Video2X, hvis du har installert det. Begge fungerer også i Windows-versjonen.
+- **KI-oppskalering og slowmotion.** KI-metodene i [Oppskalering](@guides/tools/#ai) og [Slowmotion](@guides/tools/#slowmo) bruker Video2X, hvis du har installert det. Begge fungerer også i Windows-versjonen.
 
 Slik installerer du:
 1. Last ned Linux-pakken (`spektronautilus-linux.tar.gz`) og pakk den ut: `tar xzf spektronautilus-linux.tar.gz`.

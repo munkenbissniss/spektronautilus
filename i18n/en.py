@@ -57,6 +57,7 @@ T = {
   "body": """
 <div class="cta"><a class="btn main" href="{r}tools/app/">Open the tools</a></div>
 <div class="cards">
+<a class="card" href="{r}tools/hospital/"><h3>🏥 Loop Hospital <span class="badge live">New</span></h3><p>Bring in one clip. It is examined, then treated step by step: cut, crop, slow motion, upscale, look and loop fix.</p></a>
 <a class="card" href="{r}tools/app/#gif2mp4"><h3>GIF to MP4 <span class="badge live">Available</span></h3><p>Bulk convert GIFs, also transparent ones, to smooth mp4.</p></a>
 <a class="card" href="{r}tools/app/#loop"><h3>Make loops <span class="badge live">Available</span></h3><p>Checks whether a clip loops. If not, it trims it, plays it forward and backward, or crossfades the ends.</p></a>
 <a class="card" href="{r}tools/app/#convert"><h3>Convert <span class="badge live">Available</span></h3><p>Turn mov, webm and other formats into VJ-friendly mp4, with bulk file naming.</p></a>
@@ -65,8 +66,8 @@ T = {
 <a class="card" href="{r}tools/app/#crop"><h3>Crop &amp; trim <span class="badge live">Available</span></h3><p>Cut clips to widescreen, vertical or square and trim the start and end, for a whole folder at once.</p></a>
 <a class="card" href="{r}tools/app/#sizes"><h3>Sizes <span class="badge live">Available</span></h3><p>Make a small proxy, 720p, 1080p and 4K of every clip in one go.</p></a>
 <a class="card" href="{r}tools/app/#pro"><h3>HAP / ProRes <span class="badge live">Linux version</span></h3><p>Professional formats for Resolume, VDMX, Millumin and video editors. Needs the local Linux version.</p></a>
-<a class="card" href="{r}tools/app/#ai"><h3>AI upscale <span class="badge live">Local version</span></h3><p>Make video clips sharper and larger with AI. Needs the local version (Linux or Windows) and Video2X.</p></a>
-<a class="card" href="{r}tools/app/#slowmo"><h3>AI slow motion <span class="badge live">Local version</span></h3><p>Make clips slower and smoother with AI. Needs the local version (Linux or Windows) and Video2X.</p></a>
+<a class="card" href="{r}tools/app/#ai"><h3>Upscale <span class="badge live">Available</span></h3><p>Make clips larger and sharper. Works in the browser; AI quality with the local version and Video2X.</p></a>
+<a class="card" href="{r}tools/app/#slowmo"><h3>Slow motion <span class="badge live">Available</span></h3><p>Make clips slower or smoother. Works in the browser; AI quality with the local version and Video2X.</p></a>
 <a class="card" href="{r}tools/app/#catalog"><h3>Catalogue <span class="badge live">Available</span></h3><p>A web page and a spreadsheet file with a picture, length, size and loop quality for every loop.</p></a>
 <a class="card" href="{r}tools/app/#pack"><h3>Loop pack <span class="badge live">Available</span></h3><p>Bundle loops into a ready-to-share zip with preview picture, info file and licence.</p></a>
 </div>

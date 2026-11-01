@@ -214,37 +214,53 @@ Makes a small proxy, 720p, 1080p and 4K of every clip in one go. Sizes larger th
 ## HAP / ProRes {#pro}
 Makes professional formats for Resolume, VDMX, Millumin and video editors. This needs the local [Linux version](@guides/offline-linux/#linux), because it uses ffmpeg on your own computer. [Open this tool](@@tools/app/#pro).
 
-## AI upscale {#ai}
-Makes video clips sharper and larger with AI, using the free program Video2X. It works only in the local version, on [Linux](@guides/offline-linux/#linux) or Windows, and needs a graphics card with Vulkan support. Your files never leave your computer.
+## Upscale {#ai}
+Makes clips larger and sharper. Choose a [[Method]]:
+- **Sharp** is the default. It enlarges with a clean resize and a gentle sharpening (set it with [[Sharpness]]). It is fast and works everywhere, even in the browser. In the browser the result can be 4K at the most.
+- **AI** invents new detail with the free program Video2X. It works only in the local version, on [Linux](@guides/offline-linux/#linux) or Windows, and needs a graphics card with Vulkan support.
 
 How to use it:
-1. Install Video2X yourself (on Linux an AppImage, the AUR package or your own build; on Windows the official release). Spektronautilus finds it by itself. If it does not, write the full path to the program on one line in a text file called `video2x.txt` in the settings folder (`~/.config/spektronautilus` on Linux, `%APPDATA%\spektronautilus` on Windows), or set the `SPEKTRO_VIDEO2X` variable, and start Spektronautilus again.
-2. Open the tool and add your clips. The note above the settings says whether Video2X was found.
-3. Choose [[Kind of picture]] and [[Make it this much bigger]], then press [[Upscale]].
+1. Add your clips, choose [[Make it this much bigger]] and press [[Upscale]].
+2. For AI: install Video2X yourself (on Linux an AppImage, the AUR package or your own build; on Windows the official release). Spektronautilus finds it by itself. If it does not, write the full path to the program on one line in a text file called `video2x.txt` in the settings folder (`~/.config/spektronautilus` on Linux, `%APPDATA%\spektronautilus` on Windows), or set the `SPEKTRO_VIDEO2X` variable, and start Spektronautilus again. The note above the settings says whether Video2X was found. Then choose [[Kind of picture]].
 
 Good to know:
-- It is slow. A short clip can take many minutes, so use the [Queue](@guides/queue/) and let it run.
-- Photos and real film are always made 4× bigger. The result may not be larger than 8K.
+- AI is slow. A short clip can take many minutes, so use the [Queue](@guides/queue/) and let it run.
+- With AI, photos and real film are always made 4× bigger. The result may not be larger than 8K.
 - Have more than one graphics card? Press [[Check my graphics card]] and set [[Graphics card number]].
 
-## AI slow motion {#slowmo}
-Makes clips slower and smoother with AI. The AI (RIFE, run by Video2X) invents the frames between your frames, so slow motion looks smooth instead of choppy. It needs the same things as [AI upscale](@guides/tools/#ai): the local version, a graphics card with Vulkan support and Video2X.
+## Slow motion {#slowmo}
+Makes clips slower, or smoother. Choose a [[Method]]:
+- **Soft blend** is the default. It mixes neighbouring frames. It is fast and works everywhere, even in the browser.
+- **Smooth motion** calculates the movement between the frames. It takes longer, but looks cleaner when things move fast.
+- **AI** (RIFE, run by Video2X) invents the frames between your frames and looks best. It needs the same things as AI [Upscale](@guides/tools/#ai): the local version, a graphics card with Vulkan support and Video2X.
 
 How to use it:
-1. Open the tool and add your clips. The note above the settings says whether Video2X was found and can do slow motion.
-2. Choose [[How much slower]]: 2×, 4× or 8×.
-3. Under [[Result]] choose a slower clip, or the same speed but smoother, with more frames per second. Choose [[Model]] and press [[Make slow motion]].
+1. Add your clips and choose [[How much slower]]: 2×, 4× or 8×.
+2. Under [[Result]] choose a slower clip, or the same speed but smoother, with more frames per second. Press [[Make slow motion]].
 
 Good to know:
 - A slow-motion clip gets longer (2× slower is twice as long) and loses its sound. Loops stay loops.
-- "Smoother" keeps the length and the sound, but cannot go above 120 frames per second.
-- It is slow, so use the [Queue](@guides/queue/) and let it run. Press [[Check my graphics card]] if you have more than one graphics card.
+- "Smoother" keeps the length, but cannot go above 60 frames per second (120 with AI).
+- Smooth motion and AI are slow, so use the [Queue](@guides/queue/) and let it run.
+
 
 ## Catalogue {#catalog}
 Makes a web page and a spreadsheet file with a picture, the length, the size and the loop quality of every loop. Good for big collections. [Open this tool](@@tools/app/#catalog).
 
 ## Loop pack {#pack}
 Bundles loops into a zip you can share, with a preview picture, an information file and a licence. [Open this tool](@@tools/app/#pack).
+
+## Loop Hospital {#hospital}
+The Loop Hospital looks after one clip at a time, so it is ready for the mixers. Bring in a clip and it is examined: size, frame rate, length and whether it loops without a jump. The examination suggests treatments, for example upscale for a small picture, or a loop fix when you can see a jump.
+
+How to use it:
+1. Press [[choose a clip]] or drop a clip.
+2. Press [[Add all suggested treatments]], or tick the steps yourself: cut, crop, slow motion, upscale, resize, look and make it loop. They are done in that order.
+3. Press [[Preview the treatment]] to see before and after side by side, then [[Treat and save]].
+4. Press [[Treat more clips the same way]] to give other clips the same treatment.
+
+Everything runs in your browser. For AI quality use [Upscale](@guides/tools/#ai) and [Slow motion](@guides/tools/#slowmo) in the tools. [Open the Loop Hospital](@@tools/hospital/).
+
 
 ## Good to know {#know}
 - Loops normally have no sound. [[Keep sound]] is off by default.
@@ -333,7 +349,7 @@ Why use it:
 - **Speed.** If `ffmpeg` is installed, the tools use it instead of the slower browser engine. The page then says “Fast mode”.
 - **No memory limit** for big files, and no internet is needed (only [[Find loops]] needs it).
 - **HAP and ProRes.** The [HAP / ProRes tool](@guides/tools/#pro) works in the Linux version.
-- **AI upscaling and slow motion.** The [AI upscale](@guides/tools/#ai) and [AI slow motion](@guides/tools/#slowmo) tools use Video2X, if you have installed it. Both also work in the Windows version.
+- **AI upscaling and slow motion.** The AI methods in [Upscale](@guides/tools/#ai) and [Slow motion](@guides/tools/#slowmo) use Video2X, if you have installed it. Both also work in the Windows version.
 
 How to install:
 1. Download the Linux package (`spektronautilus-linux.tar.gz`) and unpack it: `tar xzf spektronautilus-linux.tar.gz`.

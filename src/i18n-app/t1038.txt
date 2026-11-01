@@ -1,0 +1,70 @@
+1038 ¦ Finn ¦ Buscar ¦ Finden ¦ Procurar
+1039 ¦ Fiks ¦ Arreglar ¦ Aufbereiten ¦ Arranjar
+1040 ¦ Slowmotion ¦ Cámara lenta ¦ Zeitlupe ¦ Câmara lenta
+1041 ¦ Look ¦ Look ¦ Look ¦ Look
+1042 ¦ Del og eksporter ¦ Compartir y exportar ¦ Teilen und exportieren ¦ Partilhar e exportar
+1043 ¦ Ny ¦ Nuevo ¦ Neu ¦ Novo
+1044 ¦ 🏥 Loop Hospital ¦ 🏥 Loop Hospital ¦ 🏥 Loop Hospital ¦ 🏥 Loop Hospital
+1045 ¦ Metode ¦ Método ¦ Methode ¦ Método
+1046 ¦ Skarp (rask, fungerer overalt) ¦ Nítido (rápido, funciona en todas partes) ¦ Scharf (schnell, funktioniert überall) ¦ Nítido (rápido, funciona em qualquer lado)
+1047 ¦ KI (best resultat, bare i den lokale versjonen) ¦ IA (mejor resultado, solo en la versión local) ¦ KI (bestes Ergebnis, nur in der lokalen Version) ¦ IA (melhor resultado, só na versão local)
+1048 ¦ Skarp forstørrer med en ren størrelsesendring og litt skarpere kanter. KI finner på nye detaljer, men krever den lokale versjonen og Video2X. ¦ Nítido amplía con un cambio de tamaño limpio y un ligero realce. La IA inventa detalles nuevos, pero necesita la versión local y Video2X. ¦ Scharf vergrößert mit sauberem Skalieren und leichtem Nachschärfen. KI erfindet neue Details, braucht aber die lokale Version und Video2X. ¦ Nítido amplia com um redimensionamento limpo e uma ligeira nitidez. A IA inventa detalhes novos, mas precisa da versão local e do Video2X.
+1049 ¦ Skarphet ¦ Nitidez ¦ Schärfe ¦ Nitidez
+1050 ¦ Myk blanding (rask, fungerer overalt) ¦ Mezcla suave (rápida, funciona en todas partes) ¦ Weiche Überblendung (schnell, funktioniert überall) ¦ Mistura suave (rápida, funciona em qualquer lado)
+1051 ¦ Jevn bevegelse (tregere, renere ved rask bevegelse) ¦ Movimiento suave (más lento, más limpio con movimiento rápido) ¦ Fließende Bewegung (langsamer, sauberer bei schneller Bewegung) ¦ Movimento suave (mais lento, mais limpo com movimento rápido)
+1052 ¦ Blanding blander nabobildene. Jevn bevegelse regner ut bevegelsen mellom bildene, og det tar lengre tid. KI krever den lokale versjonen og Video2X. ¦ La mezcla combina fotogramas vecinos. El movimiento suave calcula el movimiento entre fotogramas, lo que tarda más. La IA necesita la versión local y Video2X. ¦ Überblendung mischt benachbarte Bilder. Fließende Bewegung berechnet die Bewegung zwischen den Bildern, das dauert länger. KI braucht die lokale Version und Video2X. ¦ A mistura combina fotogramas vizinhos. O movimento suave calcula o movimento entre fotogramas, o que demora mais. A IA precisa da versão local e do Video2X.
+1053 ¦ Gjør klipp større og skarpere. Skarp metode fungerer overalt, også i nettleseren. KI (Video2X) gir best resultat, men krever den lokale versjonen (Linux eller Windows), et grafikkort med Vulkan og det gratis programmet Video2X. ¦ Hace los clips más grandes y nítidos. El método nítido funciona en todas partes, incluso en el navegador. La IA (Video2X) da el mejor resultado, pero necesita la versión local (Linux o Windows), una tarjeta gráfica con Vulkan y el programa gratuito Video2X. ¦ Macht Clips größer und schärfer. Die scharfe Methode funktioniert überall, auch im Browser. KI (Video2X) liefert das beste Ergebnis, braucht aber die lokale Version (Linux oder Windows), eine Grafikkarte mit Vulkan und das kostenlose Programm Video2X. ¦ Torna os clipes maiores e mais nítidos. O método nítido funciona em qualquer lado, até no navegador. A IA (Video2X) dá o melhor resultado, mas precisa da versão local (Linux ou Windows), de uma placa gráfica com Vulkan e do programa gratuito Video2X.
+1054 ¦ KI krever den lokale versjonen av Spektronautilus (Linux eller Windows). I nettleseren må du velge en annen metode. ¦ La IA necesita la versión local de Spektronautilus (Linux o Windows). En el navegador, elige otro método. ¦ KI braucht die lokale Version von Spektronautilus (Linux oder Windows). Im Browser wähle eine andere Methode. ¦ A IA precisa da versão local do Spektronautilus (Linux ou Windows). No navegador, escolha outro método.
+1055 ¦ Gjør klipp tregere eller jevnere. Blanding og jevn bevegelse fungerer overalt, også i nettleseren. KI (Video2X med RIFE) gir best resultat, men krever den lokale versjonen (Linux eller Windows). ¦ Hace los clips más lentos o más suaves. La mezcla y el movimiento suave funcionan en todas partes, incluso en el navegador. La IA (Video2X con RIFE) da el mejor resultado, pero necesita la versión local (Linux o Windows). ¦ Macht Clips langsamer oder flüssiger. Überblendung und fließende Bewegung funktionieren überall, auch im Browser. KI (Video2X mit RIFE) liefert das beste Ergebnis, braucht aber die lokale Version (Linux oder Windows). ¦ Torna os clipes mais lentos ou mais suaves. A mistura e o movimento suave funcionam em qualquer lado, até no navegador. A IA (Video2X com RIFE) dá o melhor resultado, mas precisa da versão local (Linux ou Windows).
+1056 ¦ I nettleseren kan resultatet være 4K på det meste. Velg en mindre forstørrelse, eller bruk den lokale versjonen. ¦ En el navegador el resultado puede ser como máximo 4K. Elige una escala menor o usa la versión local. ¦ Im Browser kann das Ergebnis höchstens 4K groß sein. Wähle einen kleineren Faktor oder nutze die lokale Version. ¦ No navegador o resultado pode ter no máximo 4K. Escolha uma escala menor ou use a versão local.
+1057 ¦ Dette klippet har allerede høy bildefrekvens, så jevn modus har ingenting å legge til. Bruk slowmotion i stedet. ¦ Este clip ya tiene una tasa de fotogramas alta, así que el modo suave no tiene nada que añadir. Usa cámara lenta. ¦ Dieser Clip hat schon eine hohe Bildrate, der flüssige Modus hat nichts hinzuzufügen. Nutze stattdessen Zeitlupe. ¦ Este clipe já tem uma taxa de fotogramas alta, por isso o modo suave não tem nada a acrescentar. Use câmara lenta.
+1058 ¦ ← VJ Tools ¦ ← VJ Tools ¦ ← VJ Tools ¦ ← VJ Tools
+1059 ¦ Ta med et klipp. Finn ut hva som er galt, behandle det steg for steg, og send det hjem klart for mikserne. ¦ Trae un clip. Descubre qué le pasa, trátalo paso a paso y mándalo a casa listo para los mezcladores. ¦ Bring einen Clip herein. Finde heraus, was nicht stimmt, behandle ihn Schritt für Schritt und schick ihn bereit für die Mixer nach Hause. ¦ Traga um clipe. Descubra o que tem de errado, trate-o passo a passo e mande-o para casa pronto para os misturadores.
+1060 ¦ 1. Pasienten ¦ 1. El paciente ¦ 1. Der Patient ¦ 1. O paciente
+1061 ¦ Slipp et klipp her ¦ Suelta un clip aquí ¦ Clip hier ablegen ¦ Largue um clipe aqui
+1062 ¦ velg et klipp ¦ elige un clip ¦ Clip wählen ¦ escolha um clipe
+1063 ¦ Før ¦ Antes ¦ Vorher ¦ Antes
+1064 ¦ Etter (forhåndsvisning) ¦ Después (vista previa) ¦ Nachher (Vorschau) ¦ Depois (pré-visualização)
+1065 ¦ Etter ¦ Después ¦ Nachher ¦ Depois
+1066 ¦ 2. Undersøkelse ¦ 2. Examen ¦ 2. Untersuchung ¦ 2. Exame
+1067 ¦ Undersøker … ¦ Examinando… ¦ Untersuche … ¦ A examinar…
+1068 ¦ Legg til alle foreslåtte behandlinger ¦ Añadir todos los tratamientos sugeridos ¦ Alle vorgeschlagenen Behandlungen hinzufügen ¦ Adicionar todos os tratamentos sugeridos
+1069 ¦ Legg til denne behandlingen ¦ Añadir este tratamiento ¦ Diese Behandlung hinzufügen ¦ Adicionar este tratamento
+1070 ¦ Fant ingenting galt. Dette klippet er klart for mikserne. ¦ No se encontró ningún problema. Este clip está listo para los mezcladores. ¦ Nichts Auffälliges gefunden. Dieser Clip ist bereit für die Mixer. ¦ Não foi encontrado nenhum problema. Este clipe está pronto para os misturadores.
+1071 ¦ Lite bilde ({a}). Det vil se blasert ut på en stor skjerm. ¦ Imagen pequeña ({a}). Se verá borrosa en una pantalla grande. ¦ Kleines Bild ({a}). Auf einem großen Bildschirm wirkt es unscharf. ¦ Imagem pequena ({a}). Vai parecer desfocada num ecrã grande.
+1072 ¦ Veldig kort ({a}). Slowmotion gjør det lengre og roligere. ¦ Muy corto ({a}). La cámara lenta lo hace más largo y tranquilo. ¦ Sehr kurz ({a}). Zeitlupe macht ihn länger und ruhiger. ¦ Muito curto ({a}). A câmara lenta torna-o mais longo e calmo.
+1073 ¦ Lav bildefrekvens ({a}). Jevn modus legger til bilder. ¦ Tasa de fotogramas baja ({a}). El modo suave añade fotogramas. ¦ Niedrige Bildrate ({a}). Der flüssige Modus fügt Bilder hinzu. ¦ Taxa de fotogramas baixa ({a}). O modo suave acrescenta fotogramas.
+1074 ¦ Loop-punktet er nesten rent. En liten fiks skjuler hoppet. ¦ El punto de loop está casi limpio. Un pequeño arreglo ocultará el salto. ¦ Der Loop-Punkt ist fast sauber. Eine kleine Korrektur versteckt den Sprung. ¦ O ponto do loop está quase limpo. Um pequeno arranjo esconde o salto.
+1075 ¦ Du ser et hopp der klippet starter på nytt. ¦ Se ve un salto donde el clip vuelve a empezar. ¦ Man sieht einen Sprung, wo der Clip von vorn beginnt. ¦ Vê-se um salto onde o clipe recomeça.
+1076 ¦ Dette klippet har lyd. Det behandlede klippet blir stumt, noe som passer for loops til miksing. ¦ Este clip tiene sonido. El clip tratado será silencioso, lo que va bien para loops de mezcla. ¦ Dieser Clip hat Ton. Der behandelte Clip ist stumm, das passt für Loops zum Mixen. ¦ Este clipe tem som. O clipe tratado ficará silencioso, o que serve para loops de mistura.
+1077 ¦ En GIF. Den blir til en jevn mp4. ¦ Un GIF. Se convertirá en un mp4 fluido. ¦ Ein GIF. Es wird ein flüssiges mp4. ¦ Um GIF. Vai tornar-se um mp4 fluido.
+1078 ¦ nesten loop ¦ casi loop ¦ fast Loop ¦ quase loop
+1079 ¦ hopper ¦ salta ¦ springt ¦ salta
+1080 ¦ 3. Behandling ¦ 3. Tratamiento ¦ 3. Behandlung ¦ 3. Tratamento
+1081 ¦ Huk av behandlingene du vil ha. De gjøres i denne rekkefølgen: klipp, beskjær, slowmotion, oppskaler, endre størrelse, look, loop. ¦ Marca los tratamientos que quieras. Se hacen en este orden: cortar, recortar, cámara lenta, ampliar, cambiar tamaño, look, loop. ¦ Hake die gewünschten Behandlungen an. Sie laufen in dieser Reihenfolge: Schneiden, Zuschneiden, Zeitlupe, Hochskalieren, Größe ändern, Look, Loop. ¦ Marque os tratamentos que quer. São feitos por esta ordem: cortar, recortar, câmara lenta, ampliar, redimensionar, look, loop.
+1082 ¦ Klipp ¦ Cortar ¦ Schneiden ¦ Cortar
+1083 ¦ Fjern starten eller slutten av klippet. ¦ Quita el principio o el final del clip. ¦ Entferne den Anfang oder das Ende des Clips. ¦ Remova o início ou o fim do clipe.
+1084 ¦ Beskjær til en form ¦ Recortar a una forma ¦ Auf eine Form zuschneiden ¦ Recortar para uma forma
+1085 ¦ Beskjær bildet til formen du trenger. ¦ Recorta la imagen a la forma que necesites. ¦ Schneide das Bild auf die Form zu, die du brauchst. ¦ Recorte a imagem para a forma de que precisa.
+1086 ¦ Gjør klippet tregere eller jevnere. ¦ Haz el clip más lento o más suave. ¦ Mach den Clip langsamer oder flüssiger. ¦ Torne o clipe mais lento ou mais suave.
+1087 ¦ Gjør bildet større og skarpere. ¦ Haz la imagen más grande y nítida. ¦ Mach das Bild größer und schärfer. ¦ Torne a imagem maior e mais nítida.
+1088 ¦ Endre størrelse ¦ Cambiar tamaño ¦ Größe ändern ¦ Redimensionar
+1089 ¦ Tilpass klippet til en størrelsesboks. Stående klipp snus automatisk. ¦ Ajusta el clip a una caja de tamaño. Los clips verticales se giran automáticamente. ¦ Passe den Clip an eine Größenbox an. Hochformat wird automatisch gedreht. ¦ Ajuste o clipe a uma caixa de tamanho. Os clipes verticais são rodados automaticamente.
+1090 ¦ Gi klippet en stil. ¦ Dale un estilo al clip. ¦ Gib dem Clip einen Stil. ¦ Dê um estilo ao clipe.
+1091 ¦ Få det til å loope ¦ Hacer que haga loop ¦ Zum Loop machen ¦ Fazer loop
+1092 ¦ Skjul hoppet der klippet starter på nytt. ¦ Oculta el salto donde el clip vuelve a empezar. ¦ Verstecke den Sprung, wo der Clip von vorn beginnt. ¦ Esconda o salto onde o clipe recomeça.
+1093 ¦ Bilder per sekund ¦ Fotogramas por segundo ¦ Bilder pro Sekunde ¦ Fotogramas por segundo
+1094 ¦ Forhåndsvis behandlingen ¦ Previsualizar el tratamiento ¦ Behandlung ansehen ¦ Pré-visualizar o tratamento
+1095 ¦ Lager forhåndsvisning … ¦ Creando la vista previa… ¦ Erstelle Vorschau … ¦ A criar a pré-visualização…
+1096 ¦ Forhåndsvisningen er ferdig. Den er liten og kort, og viser ikke oppskaleringen. ¦ Vista previa lista. Es pequeña y corta, y no muestra la ampliación. ¦ Vorschau fertig. Sie ist klein und kurz und zeigt das Hochskalieren nicht. ¦ Pré-visualização pronta. É pequena e curta, e não mostra a ampliação.
+1097 ¦ Behandle og lagre ¦ Tratar y guardar ¦ Behandeln und speichern ¦ Tratar e guardar
+1098 ¦ Ingen behandling er valgt ennå. Klippet gjøres bare VJ-vennlig. ¦ Aún no hay tratamientos marcados. El clip solo se hace apto para VJ. ¦ Noch keine Behandlung angehakt. Der Clip wird nur VJ-tauglich gemacht. ¦ Ainda não há tratamentos marcados. O clipe só é tornado adequado para VJ.
+1099 ¦ Behandle flere klipp på samme måte ¦ Tratar más clips de la misma manera ¦ Weitere Clips genauso behandeln ¦ Tratar mais clipes da mesma maneira
+1100 ¦ Last ned alle (zip) ¦ Descargar todo (zip) ¦ Alle herunterladen (zip) ¦ Transferir tudo (zip)
+1101 ¦ Trenger du KI-kvalitet for oppskalering eller slowmotion? ¦ ¿Necesitas calidad de IA para ampliar o cámara lenta? ¦ Brauchst du KI-Qualität für Hochskalieren oder Zeitlupe? ¦ Precisa de qualidade de IA para ampliar ou câmara lenta?
+1102 ¦ Åpne VJ Tools ¦ Abrir las VJ Tools ¦ VJ Tools öffnen ¦ Abrir as VJ Tools
+1103 ¦ Det er en videotype jeg ikke kjenner. ¦ Ese no es un tipo de vídeo que conozca. ¦ Diesen Videotyp kenne ich nicht. ¦ Esse não é um tipo de vídeo que eu conheça.
+1104 ¦ Velg et klipp først. ¦ Elige un clip primero. ¦ Wähle zuerst einen Clip. ¦ Escolha primeiro um clipe.
+1105 ¦ Stoppet. ¦ Detenido. ¦ Gestoppt. ¦ Parado.
+1106 ¦ Stopper … ¦ Deteniendo… ¦ Stoppe … ¦ A parar…
+1107 ¦ Kunne ikke behandle dette klippet ({a}) ¦ No se pudo tratar este clip ({a}) ¦ Dieser Clip konnte nicht behandelt werden ({a}) ¦ Não foi possível tratar este clipe ({a})

@@ -1035,3 +1035,73 @@ Coal
 Dark, cool and matte, like a night-time film still.
 Grainy
 A film look: cool navy shadows, warm highlights and a little moving grain.
+Find
+Fix up
+Slow motion
+Look
+Share and export
+New
+🏥 Loop Hospital
+Method
+Sharp (fast, works everywhere)
+AI (best result, local version only)
+Sharp enlarges with a clean resize and a gentle sharpening. AI invents new detail, but needs the local version and Video2X.
+Sharpness
+Soft blend (fast, works everywhere)
+Smooth motion (slower, cleaner on fast movement)
+Blend mixes neighbouring frames. Smooth motion calculates the movement between frames, which takes longer. AI needs the local version and Video2X.
+Make clips larger and sharper. The sharp method works everywhere, even in the browser. AI (Video2X) gives the best result, but needs the local version (Linux or Windows), a graphics card with Vulkan and the free program Video2X.
+AI needs the local version of Spektronautilus (Linux or Windows). In the browser, choose another method.
+Make clips slower, or smoother. The blend and motion methods work everywhere, even in the browser. AI (Video2X with RIFE) gives the best result, but needs the local version (Linux or Windows).
+In the browser the result can be 4K at the most. Choose a smaller scale, or use the local version.
+This clip already has a high frame rate, so smooth mode has nothing to add. Use slow motion instead.
+← VJ Tools
+Bring in a clip. Find out what is wrong, treat it step by step, and send it home ready for the mixers.
+1. The patient
+Drop a clip here
+choose a clip
+Before
+After (preview)
+After
+2. Examination
+Examining…
+Add all suggested treatments
+Add this treatment
+Nothing wrong found. This clip is ready for the mixers.
+Small picture ({a}). It will look soft on a big screen.
+Very short ({a}). Slow motion makes it longer and calmer.
+Low frame rate ({a}). Smooth mode adds frames.
+The loop point is almost clean. A small fix will hide the jump.
+You can see a jump where the clip starts over.
+This clip has sound. The treated clip will be silent, which suits loops for mixing.
+A GIF. It will become a smooth mp4.
+almost loops
+jumps
+3. Treatment
+Tick the treatments you want. They are done in this order: cut, crop, slow motion, upscale, resize, look, loop.
+Cut
+Remove the start or the end of the clip.
+Crop to a shape
+Cut the picture to the shape you need.
+Make the clip slower, or smoother.
+Make the picture larger and sharper.
+Resize
+Fit the clip to a size box. Portrait clips are turned automatically.
+Give the clip a style.
+Make it loop
+Hide the jump where the clip starts over.
+Frames per second
+Preview the treatment
+Making a preview…
+Preview done. It is small and short, and does not show the upscale.
+Treat and save
+No treatment ticked yet. The clip is only made VJ-friendly.
+Treat more clips the same way
+Download all (zip)
+Need AI quality for upscale or slow motion?
+Open the VJ Tools
+That is not a video type I know.
+Choose a clip first.
+Stopped.
+Stopping…
+Could not treat this clip ({a})

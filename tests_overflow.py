@@ -7,7 +7,7 @@ def check(c, m):
     print(("ok   " if c else "FAIL ") + m, flush=True)
     if not c: bad.append(m)
 PAGES = ["", "tools/", "packs/", "guides/", "guides/start/", "guides/tools/", "guides/video-dj/", "guides/offline-linux/", "guides/help/", "about/", "queue/",
-         "tools/app/", "mixer/", "mixer-mobile/", "live-dj/", "live-mobile/", "vj-pad/", "vj-mobile/"]
+         "tools/app/", "tools/hospital/", "mixer/", "mixer-mobile/", "live-dj/", "live-mobile/", "vj-pad/", "vj-mobile/"]
 LANGS = ["", "no/", "es/", "de/", "pt/"]
 sv = subprocess.Popen([sys.executable, "-m", "http.server", "8795", "--directory", str(ROOT / "docs")], stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL); time.sleep(1)
 JS = """() => { const W = document.documentElement.clientWidth, out = [];
