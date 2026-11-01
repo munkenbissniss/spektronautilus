@@ -1,12 +1,12 @@
 1004 ¦ Blå drøm ¦ Sueño azul ¦ Blauer Traum ¦ Sonho azul
-1005 ¦ Rosa drøm ¦ Sueño rosa ¦ Rosa Traum ¦ Sonho rosa
+1005 ¦ Lilla drøm ¦ Sueño púrpura ¦ Violetter Traum ¦ Sonho roxo
 1006 ¦ Mørk fremtid ¦ Futuro oscuro ¦ Dunkle Zukunft ¦ Futuro sombrio
 1007 ¦ Sepia ¦ Sepia ¦ Sepia ¦ Sépia
 1008 ¦ The Matrix ¦ The Matrix ¦ The Matrix ¦ The Matrix
 1009 ¦ Las Vegas ¦ Las Vegas ¦ Las Vegas ¦ Las Vegas
-1010 ¦ Dyp blå og fiolett, med glødende rosa og hvite høylys. ¦ Azul profundo y violeta, con luces rosas y blancas brillantes. ¦ Tiefes Blau und Violett mit leuchtenden rosa und weißen Lichtern. ¦ Azul profundo e violeta, com luzes cor-de-rosa e brancas brilhantes.
-1011 ¦ Mørke plommeskygger og kalde blå lys. Mykt og drømmende. ¦ Sombras ciruela oscuras y luces azules frías. Suave y onírico. ¦ Dunkle pflaumenfarbene Schatten und kühle blaue Lichter. Weich und verträumt. ¦ Sombras de ameixa escuras e luzes azuis frias. Suave e sonhador.
-1012 ¦ Isblå, nesten én farge, med skarpe hvite høylys. ¦ Azul helado, casi de un solo color, con luces blancas nítidas. ¦ Eisblau, fast einfarbig, mit klaren weißen Lichtern. ¦ Azul gelado, quase de uma só cor, com luzes brancas nítidas.
-1013 ¦ Varme, bleke gammelfilm-toner med løftede svartnivåer. ¦ Tonos cálidos y desvaídos de película antigua, con negros elevados. ¦ Warme, verblasste Altfilm-Töne mit angehobenen Schwarztönen. ¦ Tons quentes e desbotados de filme antigo, com pretos elevados.
-1014 ¦ Kalde grønn-turkise skygger og blekgrønne høylys. ¦ Sombras verde azuladas frías y luces verde pálido. ¦ Kalte grün-türkise Schatten und blassgrüne Lichter. ¦ Sombras verde-azuladas frias e luzes verde-pálido.
-1015 ¦ En støvete magenta natt med turkise glimt. Mykt og flatt. ¦ Una noche magenta polvorienta con destellos turquesa. Suave y plana. ¦ Eine staubige Magenta-Nacht mit türkisen Lichtblitzen. Weich und flach. ¦ Uma noite magenta empoeirada com brilhos turquesa. Suave e plana.
+1010 ¦ Dype marineblå skygger med levende cyan, røde og hvite farger. ¦ Sombras azul marino profundo con colores vivos de cian, rojo y blanco. ¦ Tiefe marineblaue Schatten mit lebhaftem Cyan, Rot und Weiß. ¦ Sombras azul-marinho profundo com cores vivas de ciano, vermelho e branco.
+1011 ¦ Dunkle plommeskygger med lyse og mettede farger. ¦ Sombras ciruela apagadas, con colores brillantes y saturados. ¦ Gedämpfte pflaumenfarbene Schatten mit hellen, satten Farben. ¦ Sombras de ameixa suaves, com cores brilhantes e saturadas.
+1012 ¦ Svart og kald mintgrønn, med bleke høylys. ¦ Negro y verde menta frío, con luces pálidas. ¦ Schwarz und kaltes Minzgrün mit blassen Lichtern. ¦ Preto e verde-menta frio, com luzes pálidas.
+1013 ¦ Myk, varm svart-hvitt med løftede svartnivåer. ¦ Blanco y negro suave y cálido con negros elevados. ¦ Weiches, warmes Schwarzweiß mit angehobenen Schwarztönen. ¦ Preto e branco suave e quente, com pretos elevados.
+1014 ¦ Svart til blekgrønn, som en gammel skjerm. ¦ Del negro al verde pálido, como un monitor antiguo. ¦ Von Schwarz zu blassem Grün, wie ein alter Monitor. ¦ Do preto ao verde-pálido, como um monitor antigo.
+1015 ¦ Rødbrune og fiolette skygger som glir over i knallrosa og krem. ¦ Sombras granate y violeta que se funden en rosa intenso y crema. ¦ Kastanienbraune und violette Schatten, die in knalliges Pink und Creme übergehen. ¦ Sombras bordô e violeta que se fundem em rosa vivo e creme.

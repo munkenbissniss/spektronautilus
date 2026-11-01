@@ -1002,17 +1002,17 @@ Internet Archive GIF animations
 {a} clips found.
 {a} clips found (nothing new on this page).
 Blue Dream
-Pink Dream
+Purple Dream
 Dark Future
 Sepia
 The Matrix
 Las Vegas
-Deep blue and violet, with glowing pink and white highlights.
-Dark plum shadows and cool blue lights. Soft and dreamy.
-Icy blue, almost one colour, with crisp white highlights.
-Warm, faded old-film tones with lifted blacks.
-Cold green-teal shadows and pale green highlights.
-A dusty magenta night with teal glints. Soft and flat.
+Deep navy shadows with vivid cyan, red and white colours.
+Dusky plum shadows, with bright and saturated colours.
+Black and cold mint-green, with pale highlights.
+Soft, warm black and white with lifted blacks.
+Black to pale green, like an old monitor.
+Maroon and violet shadows melting into hot pink and cream.
 AI slow motion
 Make clips slower and smoother with AI (Video2X with RIFE). Needs the local version (Linux or Windows), a graphics card with Vulkan and the free program Video2X.
 Make slow motion
@@ -1031,3 +1031,5 @@ Could not make slow motion of this file ({a})
 AI slow motion… {a}
 Model
 Newest model
+Coal
+Dark, cool and matte, like a night-time film still.

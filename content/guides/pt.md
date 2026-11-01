@@ -203,7 +203,7 @@ Pesquise loops em fontes gratuitas e descarregue-os e converta-os de uma vez. In
 [Abrir esta ferramenta](@@tools/app/#search).
 
 ## Filters {#filters}
-Acrescenta looks ao estilo VJ a uma pasta inteira de loops: brilho, glitch, espelho, caleidoscópio, VHS, duotone, pixelização e rastos. Há também seis estilos de cor: Blue Dream, Pink Dream, Dark Future, Sepia, The Matrix e Las Vegas. Coloque o controlo [[Strength]] em 50 para o aspeto de referência; mais baixo é um toque leve, mais alto leva as cores mais longe. Carregue em [[Preview on first clip]] para ver cada look antes de os aplicar. Cada ficheiro recebe um clipe novo por cada look que escolher. [Abrir esta ferramenta](@@tools/app/#filters).
+Acrescenta looks ao estilo VJ a uma pasta inteira de loops: brilho, glitch, espelho, caleidoscópio, VHS, duotone, pixelização e rastos. Há também sete estilos de cor: Blue Dream, Purple Dream, Dark Future, Sepia, The Matrix, Las Vegas e Coal. Coloque o controlo [[Strength]] em 50 para o aspeto de referência; mais baixo é um toque leve, mais alto leva as cores mais longe. Carregue em [[Preview on first clip]] para ver cada look antes de os aplicar. Cada ficheiro recebe um clipe novo por cada look que escolher. [Abrir esta ferramenta](@@tools/app/#filters).
 
 ## Crop & trim {#crop}
 Corta clipes para panorâmico, vertical ou quadrado e apara o início e o fim, para uma pasta inteira de uma vez. Escolha como ajustar: cortar exatamente à moldura ou acrescentar barras pretas. [Abrir esta ferramenta](@@tools/app/#crop).

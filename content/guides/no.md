@@ -203,7 +203,7 @@ Søk i gratis kilder etter loops, og last ned og konverter dem i ett steg. Inter
 [Åpne dette verktøyet](@@tools/app/#search).
 
 ## Filters {#filters}
-Legger VJ-aktige looks på en hel mappe med loops: glød, glitch, speil, kaleidoskop, VHS, duotone, pikselering og spor. Det finnes også seks fargestiler: Blue Dream, Pink Dream, Dark Future, Sepia, The Matrix og Las Vegas. Sett glidebryteren [[Strength]] på 50 for referanse-looken; lavere gir en lett berøring, høyere driver fargene lenger. Trykk [[Preview on first clip]] for å se hver look før du bruker dem. Hver fil får ett nytt klipp per look du velger. [Åpne dette verktøyet](@@tools/app/#filters).
+Legger VJ-aktige looks på en hel mappe med loops: glød, glitch, speil, kaleidoskop, VHS, duotone, pikselering og spor. Det finnes også sju fargestiler: Blue Dream, Purple Dream, Dark Future, Sepia, The Matrix, Las Vegas og Coal. Sett glidebryteren [[Strength]] på 50 for referanse-looken; lavere gir en lett berøring, høyere driver fargene lenger. Trykk [[Preview on first clip]] for å se hver look før du bruker dem. Hver fil får ett nytt klipp per look du velger. [Åpne dette verktøyet](@@tools/app/#filters).
 
 ## Crop & trim {#crop}
 Beskjærer klipp til bredformat, stående eller kvadrat, og trimmer start og slutt, for en hel mappe på en gang. Velg hvordan det skal passe: beskjær til nøyaktig rammen, eller legg på sorte felt. [Åpne dette verktøyet](@@tools/app/#crop).

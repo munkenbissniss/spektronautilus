@@ -203,7 +203,7 @@ Durchsuche freie Quellen nach Loops und lade sie in einem Schritt herunter und w
 [Dieses Werkzeug öffnen](@@tools/app/#search).
 
 ## Filters {#filters}
-Fügt einem ganzen Ordner voller Loops VJ-typische Looks hinzu: Glow, Glitch, Spiegel, Kaleidoskop, VHS, Duotone, Pixel und Spuren. Dazu gibt es sechs Farbstile: Blue Dream, Pink Dream, Dark Future, Sepia, The Matrix und Las Vegas. Stelle den Regler [[Strength]] auf 50 für den Referenz-Look; niedriger ist ein leichter Hauch, höher treibt die Farben weiter. Drücke [[Preview on first clip]], um jeden Look vor dem Anwenden zu sehen. Jede Datei bekommt pro gewähltem Look einen neuen Clip. [Dieses Werkzeug öffnen](@@tools/app/#filters).
+Fügt einem ganzen Ordner voller Loops VJ-typische Looks hinzu: Glow, Glitch, Spiegel, Kaleidoskop, VHS, Duotone, Pixel und Spuren. Dazu gibt es sieben Farbstile: Blue Dream, Purple Dream, Dark Future, Sepia, The Matrix, Las Vegas und Coal. Stelle den Regler [[Strength]] auf 50 für den Referenz-Look; niedriger ist ein leichter Hauch, höher treibt die Farben weiter. Drücke [[Preview on first clip]], um jeden Look vor dem Anwenden zu sehen. Jede Datei bekommt pro gewähltem Look einen neuen Clip. [Dieses Werkzeug öffnen](@@tools/app/#filters).
 
 ## Crop & trim {#crop}
 Schneidet Clips auf Breitbild, Hochformat oder Quadrat zu und kürzt Anfang und Ende, für einen ganzen Ordner auf einmal. Wähle, wie es passen soll: exakt auf den Rahmen zuschneiden oder mit schwarzen Balken auffüllen. [Dieses Werkzeug öffnen](@@tools/app/#crop).

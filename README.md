@@ -35,7 +35,7 @@ python3 tests_i18n.py          # every app in every language: nothing left in En
 python3 tests_check.py         # the "Ready for the show?" check and the test card
 python3 tests_v2x.py           # AI upscale with Video2X, tested with a stand-in program (real Video2X needs a Vulkan GPU)
 python3 tests_newtools.py      # crop & trim, sizes, HAP/ProRes, catalogue, loop pack (real ffmpeg)
-node --test tests_filters.mjs   # runs all sixteen filters with the computer's own ffmpeg
+node --test tests_filters.mjs   # runs all seventeen filters with the computer's own ffmpeg
 node --test tests_live_core.mjs tests_vj_core.mjs
 ```
 
