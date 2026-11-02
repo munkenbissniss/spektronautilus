@@ -14,7 +14,7 @@ const probe = f => { const o = run('ffprobe', ['-v', 'error', '-count_frames', '
 const plain = join(T, 'plain.mp4'); assert.equal(run('ffmpeg', encodeArgs(src, plain, prof, info)).status, 0);
 const psnr = (a, b) => { const o = run('ffmpeg', ['-i', a, '-i', b, '-lavfi', 'psnr', '-f', 'null', '-']).stderr; const m = o.match(/average:([\w.]+)/); return m ? (m[1] === 'inf' ? 99 : +m[1]) : NaN; };
 
-test('there are eighteen filters with unique ids', () => { assert.equal(FILTERS.length, 18); assert.equal(new Set(FILTERS.map(f => f.id)).size, 18); });
+test('there are twenty filters with unique ids', () => { assert.equal(FILTERS.length, 20); assert.equal(new Set(FILTERS.map(f => f.id)).size, 20); });
 for (const f of FILTERS) {
   for (const amount of [0, 50, 100]) {
     test(`${f.id} at ${amount}: valid video, right size and length`, () => {

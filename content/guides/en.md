@@ -161,6 +161,12 @@ Zoom, Shake, Flash, Strobe, Invert, Mirror, Colour spin and Blur. Switch each on
 ## Logo, posters, MIDI and output {#more}
 These work like in the [Video DJ](@guides/video-dj/#posters): a logo, sliding text posters, MIDI control with [[Learn]], and an output window for the projector (press {{F}} for full screen). To stream, capture the output window in OBS or use Chrome’s “Cast…”.
 
+## Advanced view: 100 loops, auto mix and recording {#advanced}
+Press [[Advanced view]] at the top for more. The simple view stays as it was.
+- **Five banks, 100 loops.** The pads show one bank at a time. Switch bank with the Bank buttons, or press {{[}} and {{]}}. The number keys always play the pads of the bank you are looking at. Only the bank on screen and the loops that are playing are kept ready, so 100 loops do not need more memory than 20.
+- **[[Auto mix]].** The mixer plays on its own: it picks loops from this bank or from all banks, in order or shuffled, and fades between channel A and B every few seconds or bars. Choose how many loops play at once, and how long the mix should last, from five minutes to two hours, or until you stop it. Press [[Start auto mix]]. You can still use effects, posters and the logo while it runs.
+- **[[Record the mix]].** Press [[Record]] to save what you see in the output as a video file, without sound. Tick the box in Auto mix to record the whole mix. The recording is kept in memory until you save it, so save it before you close the page. For very long mixes, record in parts.
+
 ## The phone version {#phone}
 8 pads, two layers per channel, a crossfader and effects, with the same beat tools. It also plays loops without sound.
 

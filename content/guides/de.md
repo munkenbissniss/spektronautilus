@@ -161,6 +161,12 @@ Zoom, Shake, Flash, Strobe, Invert, Mirror, Colour spin und Blur. Schalte jeden 
 ## Logo, Plakate, MIDI und Ausgabe {#more}
 Das funktioniert wie im [Video DJ](@guides/video-dj/#posters): ein Logo, gleitende Text-Plakate, MIDI-Steuerung mit [[Learn]] und ein Ausgabefenster für den Projektor ({{F}} für Vollbild). Zum Streamen nimmst du das Ausgabefenster in OBS auf oder nutzt Chromes „Cast…“.
 
+## Erweiterte Ansicht: 100 Loops, Automix und Aufnahme {#advanced}
+Drücke oben auf [[Advanced view]], um mehr zu bekommen. Die einfache Ansicht bleibt wie sie war.
+- **Fünf Bänke, 100 Loops.** Die Pads zeigen jeweils eine Bank. Wechsle die Bank mit den Bank-Tasten oder drücke {{[}} und {{]}}. Die Zifferntasten spielen immer die Pads der Bank, die du gerade siehst. Nur die Bank auf dem Bildschirm und die laufenden Loops werden bereitgehalten, 100 Loops brauchen also nicht mehr Speicher als 20.
+- **[[Auto mix]].** Der Mixer spielt von allein: Er wählt Loops aus dieser Bank oder aus allen, der Reihe nach oder zufällig, und blendet alle paar Sekunden oder Takte zwischen Kanal A und B über. Wähle, wie viele Loops gleichzeitig laufen und wie lange der Mix dauern soll, von fünf Minuten bis zwei Stunden, oder bis du ihn stoppst. Drücke [[Start auto mix]]. Effekte, Plakate und Logo kannst du währenddessen weiter benutzen.
+- **[[Record the mix]].** Drücke [[Record]], um das, was du im Ausgang siehst, als Videodatei ohne Ton zu speichern. Setze im Automix den Haken, um den ganzen Mix aufzunehmen. Die Aufnahme bleibt im Speicher, bis du sie sicherst, sichere sie also, bevor du die Seite schließt. Bei sehr langen Mixen nimm in Teilen auf.
+
 ## Die Handy-Version {#phone}
 8 Pads, zwei Ebenen pro Kanal, Crossfader und Effekte, mit denselben Beat-Werkzeugen. Auch hier laufen Loops ohne Ton.
 

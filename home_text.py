@@ -32,7 +32,7 @@ HOME = {
  "kit_t": "Every blade of the knife, one tap away.",
  "kit": [
   ("🔁", "Convert", "convert"), ("♾️", "Seamless loops", "loop"), ("🐢", "Slow motion", "slowmo"), ("🔍", "Upscale", "ai"),
-  ("🎨", "18 looks", "filters"), ("✂️", "Crop and trim", "crop"), ("🔄", "Rotate and mirror", "hospital"), ("📐", "Sizes", "sizes"),
+  ("🎨", "20 looks", "filters"), ("✂️", "Crop and trim", "crop"), ("🔄", "Rotate and mirror", "hospital"), ("📐", "Sizes", "sizes"),
   ("🎞️", "HAP and ProRes", "pro"), ("🔎", "Find free loops", "search"), ("📋", "Catalogue", "catalog"), ("🏥", "Loop Hospital", "hospital"),
  ],
  "who_h": "Made for",
@@ -80,7 +80,7 @@ HOME = {
  "kit_t": "Hvert blad på kniven, ett trykk unna.",
  "kit": [
   ("🔁", "Konverter", "convert"), ("♾️", "Sømløse loops", "loop"), ("🐢", "Slowmotion", "slowmo"), ("🔍", "Oppskalering", "ai"),
-  ("🎨", "18 looks", "filters"), ("✂️", "Beskjær og trim", "crop"), ("🔄", "Roter og speil", "hospital"), ("📐", "Størrelser", "sizes"),
+  ("🎨", "20 looks", "filters"), ("✂️", "Beskjær og trim", "crop"), ("🔄", "Roter og speil", "hospital"), ("📐", "Størrelser", "sizes"),
   ("🎞️", "HAP og ProRes", "pro"), ("🔎", "Finn gratis loops", "search"), ("📋", "Katalog", "catalog"), ("🏥", "Loop Hospital", "hospital"),
  ],
  "who_h": "Laget for",
@@ -128,7 +128,7 @@ HOME = {
  "kit_t": "Cada hoja de la navaja, a un toque.",
  "kit": [
   ("🔁", "Convertir", "convert"), ("♾️", "Loops sin cortes", "loop"), ("🐢", "Cámara lenta", "slowmo"), ("🔍", "Ampliar", "ai"),
-  ("🎨", "18 looks", "filters"), ("✂️", "Recortar", "crop"), ("🔄", "Girar y reflejar", "hospital"), ("📐", "Tamaños", "sizes"),
+  ("🎨", "20 looks", "filters"), ("✂️", "Recortar", "crop"), ("🔄", "Girar y reflejar", "hospital"), ("📐", "Tamaños", "sizes"),
   ("🎞️", "HAP y ProRes", "pro"), ("🔎", "Buscar loops gratis", "search"), ("📋", "Catálogo", "catalog"), ("🏥", "Loop Hospital", "hospital"),
  ],
  "who_h": "Hecho para",
@@ -176,7 +176,7 @@ HOME = {
  "kit_t": "Jede Klinge des Messers, einen Fingertipp entfernt.",
  "kit": [
   ("🔁", "Konvertieren", "convert"), ("♾️", "Nahtlose Loops", "loop"), ("🐢", "Zeitlupe", "slowmo"), ("🔍", "Hochskalieren", "ai"),
-  ("🎨", "18 Looks", "filters"), ("✂️", "Zuschneiden und kürzen", "crop"), ("🔄", "Drehen und spiegeln", "hospital"), ("📐", "Größen", "sizes"),
+  ("🎨", "20 Looks", "filters"), ("✂️", "Zuschneiden und kürzen", "crop"), ("🔄", "Drehen und spiegeln", "hospital"), ("📐", "Größen", "sizes"),
   ("🎞️", "HAP und ProRes", "pro"), ("🔎", "Freie Loops finden", "search"), ("📋", "Katalog", "catalog"), ("🏥", "Loop Hospital", "hospital"),
  ],
  "who_h": "Gemacht für",
@@ -224,7 +224,7 @@ HOME = {
  "kit_t": "Cada lâmina do canivete, a um toque.",
  "kit": [
   ("🔁", "Converter", "convert"), ("♾️", "Loops sem corte", "loop"), ("🐢", "Câmara lenta", "slowmo"), ("🔍", "Ampliar", "ai"),
-  ("🎨", "18 looks", "filters"), ("✂️", "Cortar e aparar", "crop"), ("🔄", "Rodar e espelhar", "hospital"), ("📐", "Tamanhos", "sizes"),
+  ("🎨", "20 looks", "filters"), ("✂️", "Cortar e aparar", "crop"), ("🔄", "Rodar e espelhar", "hospital"), ("📐", "Tamanhos", "sizes"),
   ("🎞️", "HAP e ProRes", "pro"), ("🔎", "Encontrar loops grátis", "search"), ("📋", "Catálogo", "catalog"), ("🏥", "Loop Hospital", "hospital"),
  ],
  "who_h": "Feito para",

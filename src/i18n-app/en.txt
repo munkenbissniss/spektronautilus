@@ -1163,3 +1163,57 @@ Resting… {a} s
 AI on {a} clips can take hours and keeps the graphics card at full load. Try one clip first. Press the button again to run all {a}.
 Tip: choose Save each file straight into a folder, so finished clips are not kept in memory.
 Cooling down the graphics card… {a} °C
+Invert
+Negative: dark becomes light and every colour flips to its opposite.
+Polarize
+Only the bright parts flip to negative, like a solarised photo. The slider sets how much of the picture flips.
+Advanced view
+Simple view
+More loops, an auto mix that runs for hours, and recording.
+Banks
+Auto mix
+Let the mixer play on its own. It picks loops, fades between channel A and B and can run for hours. The fade time is set above. You can still use the effects, posters and logo while it runs.
+Loops to use
+This bank
+All banks
+Order
+Shuffle
+In order
+Change every
+Unit
+seconds
+bars
+Loops at once
+Mix length
+Until I stop it
+5 minutes
+10 minutes
+20 minutes
+30 minutes
+1 hour
+2 hours
+Record the mix to a video file while it runs
+Start auto mix
+Stop auto mix
+Record the mix
+Saves what you see in the output as a video file, without sound. The recording is kept in memory until you save it, so save it before you close the page.
+Record
+Stop recording
+Save video
+Bank {a}
+Press [ or ] to change bank.
+All {a} pads are full. Remove one with ✕ first.
+Loops in banks 2–5 are kept. They come back in the advanced view.
+Add some loops first.
+Auto mix finished.
+Scene {a} · {b} of {c}
+Scene {a} · {b}
+Recording… {a} · {b} MB
+This browser cannot record the output.
+The recording reached 2 GB and was stopped. Save it now.
+The recording stopped because of an error.
+The previous recording was not saved. It will be replaced when this one ends.
+Nothing was recorded.
+Recording stopped. Save the video before you close this page. To get an mp4, open the file in the Tools.
+Previous bank
+Next bank

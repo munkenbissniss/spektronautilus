@@ -1,0 +1,4 @@
+1166 ¦ Inverter ¦ Invertir ¦ Invertieren ¦ Inverter
+1167 ¦ Negativ: mørkt blir lyst og hver farge snur til motsatt farge. ¦ Negativo: lo oscuro se vuelve claro y cada color pasa a su opuesto. ¦ Negativ: Dunkles wird hell und jede Farbe kippt in ihre Gegenfarbe. ¦ Negativo: o escuro fica claro e cada cor passa para a sua oposta.
+1168 ¦ Polarisere ¦ Polarizar ¦ Polarisieren ¦ Polarizar
+1169 ¦ Bare de lyse delene snur til negativ, som et solarisert foto. Glideren bestemmer hvor mye av bildet som snur. ¦ Solo las partes claras pasan a negativo, como una foto solarizada. El control deslizante decide cuánto de la imagen se invierte. ¦ Nur die hellen Teile kippen ins Negativ, wie bei einem solarisierten Foto. Der Regler bestimmt, wie viel vom Bild kippt. ¦ Só as partes claras passam a negativo, como numa foto solarizada. O controlo deslizante define quanto da imagem é invertido.

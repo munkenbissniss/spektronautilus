@@ -161,6 +161,12 @@ Zoom, Shake, Flash, Strobe, Invert, Mirror, Colour spin og Blur. Slå på hver e
 ## Logo, plakater, MIDI og utgang {#more}
 Dette fungerer som i [Video DJ](@guides/video-dj/#posters): logo, tekstplakater som glir inn, MIDI-styring med [[Learn]], og et utgangsvindu til projektoren (trykk {{F}} for fullskjerm). For å strømme tar du opp utgangsvinduet i OBS eller bruker Chromes «Cast…».
 
+## Avansert visning: 100 loops, automiks og opptak {#advanced}
+Trykk [[Advanced view]] øverst for å få mer. Den enkle visningen er som før.
+- **Fem banker, 100 loops.** Padene viser én bank om gangen. Bytt bank med Bank-knappene, eller trykk {{[}} og {{]}}. Talltastene spiller alltid padene i banken du ser på. Bare banken på skjermen og loopene som spilles holdes klare, så 100 loops trenger ikke mer minne enn 20.
+- **[[Auto mix]].** Mikseren spiller av seg selv: den velger loops fra denne banken eller fra alle, i rekkefølge eller tilfeldig, og toner mellom kanal A og B hvert par sekunder eller takter. Velg hvor mange loops som spilles samtidig, og hvor lenge miksen skal vare, fra fem minutter til to timer, eller til du stopper den. Trykk [[Start auto mix]]. Du kan fortsatt bruke effekter, plakater og logo mens den går.
+- **[[Record the mix]].** Trykk [[Record]] for å lagre det du ser i utgangen som en videofil, uten lyd. Kryss av i Automiks for å ta opp hele miksen. Opptaket ligger i minnet til du lagrer det, så lagre det før du lukker siden. Ved svært lange miks bør du ta opp i deler.
+
 ## Mobilversjonen {#phone}
 8 pads, to lag per kanal, crossfader og effekter, med de samme taktverktøyene. Loops spilles også uten lyd her.
 

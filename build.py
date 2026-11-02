@@ -15,13 +15,13 @@ ROOT = Path(__file__).resolve().parent
 DOCS = ROOT / "docs"
 SITE = json.loads((ROOT / "site.json").read_text())["url"].rstrip("/") + "/"
 SLUGS = {"home": "", "magic": "magic-mixer/", "live": "live-mixer/", "vj": "vj-mixer/", "tools": "tools/", "packs": "packs/", "docs": "guides/", "about": "about/"}
-MIXERS = ["magic", "live", "vj"]
-NAV = ["home", "magic", "live", "vj", "tools", "packs", "docs", "about"]
+MIXERS = ["vj", "magic", "live"]
+NAV = ["home", "vj", "magic", "live", "tools", "packs", "docs", "about"]
 # the guides: (slug, group, icon, tool) ; tool = (desktop path, phone path or None) of the app the guide is about
 GUIDES = [("start", "start", "🧭", None),
+          ("vj-mixer", "mixers", "🎚️", ("vj-pad/", "vj-mobile/")),
           ("magic-mixer", "mixers", "🪄", ("mixer/", "mixer-mobile/")),
           ("video-dj", "mixers", "🎛️", ("live-dj/", "live-mobile/")),
-          ("vj-mixer", "mixers", "🎚️", ("vj-pad/", "vj-mobile/")),
           ("tools", "tools", "🧰", ("tools/app/", None)),
           ("queue", "more", "📋", ("queue/", None)),
           ("show-check", "more", "✅", None),

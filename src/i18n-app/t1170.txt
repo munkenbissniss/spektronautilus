@@ -1,0 +1,50 @@
+1170 ¦ Avansert visning ¦ Vista avanzada ¦ Erweiterte Ansicht ¦ Vista avançada
+1171 ¦ Enkel visning ¦ Vista sencilla ¦ Einfache Ansicht ¦ Vista simples
+1172 ¦ Flere loops, en automiks som går i timevis, og opptak. ¦ Más loops, una mezcla automática que dura horas y grabación. ¦ Mehr Loops, ein Automix, der stundenlang läuft, und Aufnahme. ¦ Mais loops, uma mistura automática que dura horas e gravação.
+1173 ¦ Banker ¦ Bancos ¦ Bänke ¦ Bancos
+1174 ¦ Automiks ¦ Mezcla automática ¦ Automix ¦ Mistura automática
+1175 ¦ La mikseren spille av seg selv. Den velger loops, toner mellom kanal A og B og kan gå i timevis. Tonetiden stilles inn lenger opp. Du kan fortsatt bruke effekter, plakater og logo mens den går. ¦ Deja que el mezclador toque solo. Elige loops, hace fundidos entre el canal A y el B y puede funcionar durante horas. El tiempo de fundido se ajusta arriba. Puedes seguir usando los efectos, los carteles y el logo mientras funciona. ¦ Lass den Mixer von allein spielen. Er wählt Loops, blendet zwischen Kanal A und B über und kann stundenlang laufen. Die Überblendzeit stellst du oben ein. Effekte, Plakate und Logo kannst du währenddessen weiter benutzen. ¦ Deixe o mixer tocar sozinho. Ele escolhe loops, faz transições entre o canal A e o B e pode funcionar durante horas. O tempo de transição define-se acima. Pode continuar a usar os efeitos, cartazes e o logótipo enquanto corre.
+1176 ¦ Loops som brukes ¦ Loops a usar ¦ Zu verwendende Loops ¦ Loops a usar
+1177 ¦ Denne banken ¦ Este banco ¦ Diese Bank ¦ Este banco
+1178 ¦ Alle banker ¦ Todos los bancos ¦ Alle Bänke ¦ Todos os bancos
+1179 ¦ Rekkefølge ¦ Orden ¦ Reihenfolge ¦ Ordem
+1180 ¦ Tilfeldig ¦ Aleatorio ¦ Zufällig ¦ Aleatório
+1181 ¦ I rekkefølge ¦ En orden ¦ Der Reihe nach ¦ Por ordem
+1182 ¦ Bytt hvert ¦ Cambiar cada ¦ Wechseln alle ¦ Mudar a cada
+1183 ¦ Enhet ¦ Unidad ¦ Einheit ¦ Unidade
+1184 ¦ sekund ¦ segundos ¦ Sekunden ¦ segundos
+1185 ¦ takter ¦ compases ¦ Takte ¦ compassos
+1186 ¦ Loops samtidig ¦ Loops a la vez ¦ Loops gleichzeitig ¦ Loops ao mesmo tempo
+1187 ¦ Lengde på miksen ¦ Duración de la mezcla ¦ Länge des Mixes ¦ Duração da mistura
+1188 ¦ Til jeg stopper den ¦ Hasta que la pare ¦ Bis ich stoppe ¦ Até eu parar
+1189 ¦ 5 minutter ¦ 5 minutos ¦ 5 Minuten ¦ 5 minutos
+1190 ¦ 10 minutter ¦ 10 minutos ¦ 10 Minuten ¦ 10 minutos
+1191 ¦ 20 minutter ¦ 20 minutos ¦ 20 Minuten ¦ 20 minutos
+1192 ¦ 30 minutter ¦ 30 minutos ¦ 30 Minuten ¦ 30 minutos
+1193 ¦ 1 time ¦ 1 hora ¦ 1 Stunde ¦ 1 hora
+1194 ¦ 2 timer ¦ 2 horas ¦ 2 Stunden ¦ 2 horas
+1195 ¦ Ta opp miksen til en videofil mens den går ¦ Grabar la mezcla en un archivo de vídeo mientras funciona ¦ Den Mix während des Laufs als Videodatei aufnehmen ¦ Gravar a mistura num ficheiro de vídeo enquanto corre
+1196 ¦ Start automiks ¦ Iniciar mezcla automática ¦ Automix starten ¦ Iniciar mistura automática
+1197 ¦ Stopp automiks ¦ Detener mezcla automática ¦ Automix stoppen ¦ Parar mistura automática
+1198 ¦ Ta opp miksen ¦ Grabar la mezcla ¦ Mix aufnehmen ¦ Gravar a mistura
+1199 ¦ Lagrer det du ser i utgangen som en videofil, uten lyd. Opptaket ligger i minnet til du lagrer det, så lagre det før du lukker siden. ¦ Guarda lo que ves en la salida como un archivo de vídeo, sin sonido. La grabación permanece en la memoria hasta que la guardes, así que guárdala antes de cerrar la página. ¦ Speichert, was du im Ausgang siehst, als Videodatei ohne Ton. Die Aufnahme bleibt im Speicher, bis du sie sicherst. Sichere sie also, bevor du die Seite schließt. ¦ Guarda o que vê na saída como um ficheiro de vídeo, sem som. A gravação fica na memória até a guardar, por isso guarde-a antes de fechar a página.
+1200 ¦ Ta opp ¦ Grabar ¦ Aufnehmen ¦ Gravar
+1201 ¦ Stopp opptak ¦ Detener grabación ¦ Aufnahme stoppen ¦ Parar gravação
+1202 ¦ Lagre video ¦ Guardar vídeo ¦ Video speichern ¦ Guardar vídeo
+1203 ¦ Bank {a} ¦ Banco {a} ¦ Bank {a} ¦ Banco {a}
+1204 ¦ Trykk [ eller ] for å bytte bank. ¦ Pulsa [ o ] para cambiar de banco. ¦ Drücke [ oder ], um die Bank zu wechseln. ¦ Prima [ ou ] para mudar de banco.
+1205 ¦ Alle {a} padene er fulle. Fjern en med ✕ først. ¦ Los {a} pads están llenos. Quita uno con ✕ primero. ¦ Alle {a} Pads sind voll. Entferne zuerst eines mit ✕. ¦ Os {a} pads estão cheios. Remova um com ✕ primeiro.
+1206 ¦ Loopene i bank 2–5 beholdes. De kommer tilbake i den avanserte visningen. ¦ Los loops de los bancos 2–5 se conservan. Vuelven en la vista avanzada. ¦ Die Loops in den Bänken 2–5 bleiben erhalten. Sie sind in der erweiterten Ansicht wieder da. ¦ Os loops dos bancos 2–5 são mantidos. Voltam na vista avançada.
+1207 ¦ Legg til noen loops først. ¦ Añade algunos loops primero. ¦ Füge zuerst ein paar Loops hinzu. ¦ Adicione primeiro alguns loops.
+1208 ¦ Automiksen er ferdig. ¦ La mezcla automática ha terminado. ¦ Der Automix ist fertig. ¦ A mistura automática terminou.
+1209 ¦ Scene {a} · {b} av {c} ¦ Escena {a} · {b} de {c} ¦ Szene {a} · {b} von {c} ¦ Cena {a} · {b} de {c}
+1210 ¦ Scene {a} · {b} ¦ Escena {a} · {b} ¦ Szene {a} · {b} ¦ Cena {a} · {b}
+1211 ¦ Tar opp… {a} · {b} MB ¦ Grabando… {a} · {b} MB ¦ Aufnahme läuft… {a} · {b} MB ¦ A gravar… {a} · {b} MB
+1212 ¦ Denne nettleseren kan ikke ta opp utgangen. ¦ Este navegador no puede grabar la salida. ¦ Dieser Browser kann den Ausgang nicht aufnehmen. ¦ Este navegador não consegue gravar a saída.
+1213 ¦ Opptaket nådde 2 GB og ble stoppet. Lagre det nå. ¦ La grabación alcanzó 2 GB y se detuvo. Guárdala ahora. ¦ Die Aufnahme hat 2 GB erreicht und wurde gestoppt. Sichere sie jetzt. ¦ A gravação atingiu 2 GB e foi parada. Guarde-a agora.
+1214 ¦ Opptaket stoppet på grunn av en feil. ¦ La grabación se detuvo por un error. ¦ Die Aufnahme wurde wegen eines Fehlers gestoppt. ¦ A gravação parou devido a um erro.
+1215 ¦ Forrige opptak ble ikke lagret. Det erstattes når dette er ferdig. ¦ La grabación anterior no se guardó. Se reemplazará cuando termine esta. ¦ Die vorige Aufnahme wurde nicht gesichert. Sie wird ersetzt, wenn diese endet. ¦ A gravação anterior não foi guardada. Será substituída quando esta terminar.
+1216 ¦ Ingenting ble tatt opp. ¦ No se grabó nada. ¦ Es wurde nichts aufgenommen. ¦ Nada foi gravado.
+1217 ¦ Opptaket er stoppet. Lagre videoen før du lukker siden. Åpne filen i Tools hvis du vil ha mp4. ¦ Grabación detenida. Guarda el vídeo antes de cerrar la página. Para obtener un mp4, abre el archivo en las Tools. ¦ Aufnahme gestoppt. Sichere das Video, bevor du die Seite schließt. Für ein mp4 öffne die Datei in den Tools. ¦ Gravação parada. Guarde o vídeo antes de fechar a página. Para obter um mp4, abra o ficheiro nas Tools.
+1218 ¦ Forrige bank ¦ Banco anterior ¦ Vorherige Bank ¦ Banco anterior
+1219 ¦ Neste bank ¦ Banco siguiente ¦ Nächste Bank ¦ Banco seguinte

@@ -161,6 +161,12 @@ Zoom, Shake, Flash, Strobe, Invert, Mirror, Colour spin e Blur. Ative cada um, e
 ## Logotipo, cartazes, MIDI e saída {#more}
 Funcionam como no [Video DJ](@guides/video-dj/#posters): um logotipo, cartazes de texto que deslizam, controlo MIDI com [[Learn]] e uma janela de saída para o projetor ({{F}} para ecrã inteiro). Para transmitir, capture a janela de saída no OBS ou use «Cast…» do Chrome.
 
+## Vista avançada: 100 loops, mistura automática e gravação {#advanced}
+Prima [[Advanced view]] no topo para ter mais. A vista simples fica como estava.
+- **Cinco bancos, 100 loops.** Os pads mostram um banco de cada vez. Mude de banco com os botões Banco, ou prima {{[}} e {{]}}. As teclas numéricas tocam sempre os pads do banco que está a ver. Só o banco no ecrã e os loops que estão a tocar ficam prontos, por isso 100 loops não precisam de mais memória do que 20.
+- **[[Auto mix]].** O mixer toca sozinho: escolhe loops deste banco ou de todos, por ordem ou ao acaso, e faz transições entre o canal A e o B a cada poucos segundos ou compassos. Escolha quantos loops tocam ao mesmo tempo e quanto tempo a mistura deve durar, de cinco minutos a duas horas, ou até a parar. Prima [[Start auto mix]]. Pode continuar a usar efeitos, cartazes e o logótipo enquanto corre.
+- **[[Record the mix]].** Prima [[Record]] para guardar o que vê na saída como um ficheiro de vídeo, sem som. Marque a caixa em Mistura automática para gravar toda a mistura. A gravação fica na memória até a guardar, por isso guarde-a antes de fechar a página. Para misturas muito longas, grave por partes.
+
 ## A versão para telemóvel {#phone}
 8 pads, duas camadas por canal, crossfader e efeitos, com as mesmas ferramentas de ritmo. Aqui os loops também tocam sem som.
 

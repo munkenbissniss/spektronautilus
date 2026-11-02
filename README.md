@@ -29,6 +29,7 @@ python3 build.py        # rebuilds docs/ from the texts, guides and packs
 python3 tests_site.py   # checks links, SEO tags and the phone redirect
 python3 tests_live.py   # browser test of the Video DJ (needs ffmpeg, playwright, Pillow)
 python3 tests_vj.py     # browser test of the VJ mixer
+python3 tests_vj_adv.py # the advanced view of the VJ mixer: banks, auto mix, recording
 python3 tests_live_mobile.py   # phone live mixer, incl. sending the picture to a receiver page over WebRTC
 python3 tests_vj_mobile.py     # phone VJ mixer
 python3 tests_queue.py         # shared queue page
@@ -41,7 +42,7 @@ python3 tests_home.py          # the front page in five languages: every link wo
 python3 tests_mixer_render.py  # Magic Mixer (desktop and phone) makes a real video in the browser; a broken render must not freeze the queue
 python3 tests_v2x.py           # AI upscale with Video2X, tested with a stand-in program (real Video2X needs a Vulkan GPU)
 python3 tests_newtools.py      # crop & trim, sizes, HAP/ProRes, catalogue, loop pack (real ffmpeg)
-node --test tests_filters.mjs   # runs all eighteen filters with the computer's own ffmpeg
+node --test tests_filters.mjs   # runs all twenty filters with the computer's own ffmpeg
 node --test tests_live_core.mjs tests_vj_core.mjs tests_engine.mjs
 ```
 
