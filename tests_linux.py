@@ -6,7 +6,14 @@ ROOT = Path(__file__).resolve().parent; T = Path(tempfile.mkdtemp(prefix="spklin
 def check(c, m):
     print(("ok   " if c else "FAIL ") + m, flush=True)
     if not c: bad.append(m)
-srv = subprocess.Popen([sys.executable, str(ROOT / "linux/spektronautilus.py"), "--no-browser", "--port", "8791", "--docs", str(ROOT / "docs")], stdout=subprocess.PIPE, text=True)
+import os, tempfile as _tf
+FAKE = T / "fakebin"; FAKE.mkdir()
+(FAKE / "nvidia-smi").write_text("#!/bin/sh\necho 'NVIDIA GeForce RTX 3070, 71, 2048, 8192, 93'\n"); (FAKE / "nvidia-smi").chmod(0o755)
+STALE = Path(_tf.gettempdir()) / "spektronautilus-stale-test"; STALE.mkdir(exist_ok=True); old = time.time() - 24 * 3600; os.utime(STALE, (old, old))
+FRESH = Path(_tf.gettempdir()) / "spektronautilus-fresh-test"; FRESH.mkdir(exist_ok=True)
+(T / "sys/class/thermal/thermal_zone0").mkdir(parents=True); (T / "sys/class/thermal/thermal_zone0/type").write_text("x86_pkg_temp\n"); (T / "sys/class/thermal/thermal_zone0/temp").write_text("67000\n")
+(T / "sys/class/power_supply/BAT0").mkdir(parents=True); (T / "sys/class/power_supply/BAT0/type").write_text("Battery\n"); (T / "sys/class/power_supply/BAT0/status").write_text("Discharging\n")
+srv = subprocess.Popen([sys.executable, str(ROOT / "linux/spektronautilus.py"), "--no-browser", "--port", "8791", "--docs", str(ROOT / "docs")], stdout=subprocess.PIPE, text=True, env={**os.environ, "PATH": str(FAKE) + os.pathsep + os.environ["PATH"], "SPEKTRO_SYSFS": str(T / "sys")})
 try:
     line = srv.stdout.readline(); check("8791" in line, "server starts: " + line.strip())
     srv.stdout.readline()
@@ -20,6 +27,16 @@ try:
         except urllib.error.HTTPError as e: return e.code, e.read()
     s, b = req("/api/native"); info = json.loads(b); check(s == 200 and info["ok"] and info["cores"] >= 1, f"native engine reported {info.get('version')}")
     check(req("/")[0] == 200 and req("/tools/app/index.html")[0] == 200 and req("/live-dj/")[0] == 200, "the website is served")
+    check(not STALE.exists() and FRESH.exists(), "old work folders from a crash are removed at start, fresh ones are left alone"); FRESH.rmdir()
+    check("free_mb" in info and info["free_mb"] > 0 and isinstance(info.get("hw"), list), f"native info has free disk ({info.get('free_mb')} MB) and a hardware-encoder list {info.get('hw')}")
+    s, b = req("/api/gpu"); g = json.loads(b); check(s == 200 and g["ok"] and g["gpus"][0]["temp"] == 71 and g["gpus"][0]["mem_total"] == 8192, "graphics card status is read from nvidia-smi")
+    s, b = req("/api/sensors"); z = json.loads(b); check(s == 200 and z["cpu_temp"] == 67 and z["on_battery"] is True, "laptop sensors: processor temperature and battery are read")
+    check(req("/api/gpu", headers={"X-Spk": "0"})[0] == 403, "graphics card status needs the header")
+    big = urllib.request.Request(B + "/api/fs/big/x", data=b"1", method="PUT", headers={"X-Spk": "1", "Content-Length": str(10**15)})
+    try: urllib.request.urlopen(big, timeout=10); code = 200
+    except urllib.error.HTTPError as e: code = e.code
+    except Exception: code = 0
+    check(code == 507, f"an upload bigger than the free disk is refused up front ({code})")
     check(req("/api/native", headers={"X-Spk": "0"})[0] == 403, "API without the header is refused")
     check(req("/api/native", host="evil.example:8791")[0] == 403 and req("/", host="evil.example")[0] == 403, "wrong Host header (DNS rebinding) is refused")
     check(req("/api/fs/../../etc/passwd")[0] in (400, 403, 404) and req("/api/fs/%2e%2e/%2e%2e/etc/passwd")[0] == 400, "path traversal is refused")

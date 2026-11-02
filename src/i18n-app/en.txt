@@ -1162,3 +1162,4 @@ A short rest lets the graphics card cool down on long batches.
 Resting… {a} s
 AI on {a} clips can take hours and keeps the graphics card at full load. Try one clip first. Press the button again to run all {a}.
 Tip: choose Save each file straight into a folder, so finished clips are not kept in memory.
+Cooling down the graphics card… {a} °C
