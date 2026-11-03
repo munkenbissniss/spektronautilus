@@ -153,6 +153,14 @@ Los efectos siguen un ritmo. Puedes fijarlo de tres maneras:
 - Deja que el mezclador **escuche el bombo** a través de una entrada de audio ([[Audio input (kick drum)]]). Ajusta con [[Sensitivity]].
 - Pulsa [[Set beat 1 (downbeat)]] en el momento que deba contar como el primer tiempo de un compás.
 
+## Sonido: micrófono, archivo de audio o pestaña compartida {#sound}
+Bajo los ajustes del ritmo eliges de dónde viene el ritmo:
+- **Entrada de audio (bombo).** El mezclador escucha un micrófono u otra entrada. Elige la que quieras en la lista (micrófono integrado, micrófono externo o tarjeta de sonido). En Linux, una entrada llamada «Monitor of …» lleva todo lo que reproduce el ordenador, así que no hace falta micrófono.
+- **Archivo de audio (mp3, wav …).** Añade uno o más archivos y pulsa Reproducir. La música suena por la salida de sonido de este ordenador y el ritmo la sigue con exactitud. Hay botones de anterior y siguiente, un control de volumen y [[Repeat the list]].
+- **Sonido de una pestaña o de la pantalla.** Comparte una pestaña que reproduce música. En la ventana de compartir elige una pestaña y marca «Compartir audio de la pestaña». Funciona en Chrome y Edge.
+
+Para incluir el sonido en una grabación, marca la casilla de la tarjeta de grabación ([[Include sound from the sound source above (input, audio file or shared tab)]]).
+
 ## Efectos al ritmo {#effects}
 Zoom, Shake, Flash, Strobe, Invert, Mirror, Colour spin y Blur. Activa cada uno, elige con qué frecuencia pulsa (cada tiempo, 2 tiempos o 4 tiempos) y con qué fuerza.
 
@@ -165,7 +173,7 @@ Funcionan como en [Video DJ](@guides/video-dj/#posters): un logotipo, carteles d
 Pulsa [[Advanced view]] arriba para tener más. La vista sencilla queda como estaba.
 - **Cinco bancos, 100 loops.** Los pads muestran un banco cada vez. Cambia de banco con los botones Banco, o pulsa {{[}} y {{]}}. Las teclas numéricas siempre tocan los pads del banco que estás viendo. Solo el banco en pantalla y los loops que suenan se mantienen listos, así que 100 loops no necesitan más memoria que 20.
 - **[[Auto mix]].** El mezclador toca solo: elige loops de este banco o de todos, en orden o al azar, y hace fundidos entre el canal A y el B cada pocos segundos o compases. Elige cuántos loops suenan a la vez y cuánto debe durar la mezcla, de cinco minutos a dos horas, o hasta que la pares. Pulsa [[Start auto mix]]. Puedes seguir usando efectos, carteles y logo mientras funciona.
-- **[[Record the mix]].** Pulsa [[Record]] para guardar lo que ves en la salida como un archivo de vídeo, sin sonido. Marca la casilla en Mezcla automática para grabar toda la mezcla. La grabación permanece en la memoria hasta que la guardes, así que guárdala antes de cerrar la página. Para mezclas muy largas, graba por partes.
+- **[[Record the mix]].** Pulsa [[Record]] para guardar lo que ves en la salida como un archivo de vídeo. Añade sonido con la casilla. Marca la casilla en Mezcla automática para grabar toda la mezcla. La grabación permanece en la memoria hasta que la guardes, así que guárdala antes de cerrar la página. Para mezclas muy largas, graba por partes.
 
 ## La versión para móvil {#phone}
 8 pads, dos capas por canal, crossfader y efectos, con las mismas herramientas de ritmo. Aquí los loops también se reproducen sin sonido.
@@ -305,6 +313,11 @@ Cada tarea larga, como convertir 200 archivos o exportar un video de 10 minutos,
 
 > Los trabajos se ejecutan en la página que los inició. **Mantén esa página abierta** hasta que diga que ha terminado. La página Cola es una ventana a los trabajos, no los ejecuta.
 
+## ¿Se ha atascado? Progreso y pausa {#progress}
+Cada trabajo en marcha tiene una barra, un reloj y, cuando hay datos suficientes, una estimación del tiempo restante. Mientras la barra muestra rayas en movimiento, la herramienta está arrancando o trabajando en algo que aún no puede medir. Tras un rato sin novedades verás un aviso tranquilo de que sigue trabajando. La barra nunca retrocede.
+
+Los trabajos con varios archivos se pueden pausar con **Pausa** (en la cola o en la página de la herramienta). Un archivo que ya se está convirtiendo no se puede congelar, así que la pausa empieza después de él, y **Reanudar** sigue con el siguiente. El Magic Video Mixer se detiene al instante. El reloj se para durante la pausa.
+
 ## ¿Dónde acaban los archivos? {#files}
 Los archivos terminados de las herramientas se guardan en este navegador, hasta unos 600 MB por trabajo, para que puedas descargarlos más tarde. El Mezclador mágico guarda sus propios videos en su propia página, así que usa [[Open page]] desde la Cola para descargarlos. Nada sale de tu ordenador.
 
@@ -357,6 +370,8 @@ Spektronautilus se guarda en tu navegador, así que también funciona sin Wi-Fi 
 3. Pasa [[Ready for the show?]] y mira la línea [[Works without internet]].
 
 También puedes **instalar** la web como una app: usa «Instalar» o «Añadir a la pantalla de inicio» en el menú del navegador. Se abre entonces en su propia ventana.
+
+En un **iPhone o iPad**, abre la web en Safari, toca el botón Compartir y elige «Añadir a pantalla de inicio». Se abre entonces a pantalla completa como una app y funciona sin conexión después de la primera visita.
 
 > Las herramientas cargan su motor de video (unos 30 MB) la primera vez que las usas. Usa cada herramienta una vez mientras estás conectado. La versión para Linux no necesita ese motor.
 

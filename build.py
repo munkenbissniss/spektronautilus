@@ -194,6 +194,7 @@ def render(lang, L, key, body_html, title, desc, extra_ld=None, path=None, alt=N
 <meta name="theme-color" content="#14182b">
 <link rel="icon" href="{r}favicon.svg" type="image/svg+xml">
 <link rel="manifest" href="{r}manifest.webmanifest">
+<link rel="apple-touch-icon" href="{r}apple-touch-icon.png"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-title" content="Spektro"><meta name="apple-mobile-web-app-status-bar-style" content="default">
 <style>{STYLE}</style>
 <script type="application/ld+json">{ld}</script>
 <script>{MOBILE_JS}</script>
@@ -275,7 +276,7 @@ def page_body(L, key, r, P):
 def write_offline():
     """service worker + manifest + icons: the whole site is stored in the browser on the first visit"""
     import hashlib, shutil
-    for n in ("icon-192.png", "icon-512.png"): shutil.copy2(ROOT / "src" / n, DOCS / n)
+    for n in ("icon-192.png", "icon-512.png", "apple-touch-icon.png"): shutil.copy2(ROOT / "src" / n, DOCS / n)
     skip = {"sw.js", "sitemap.xml", "robots.txt"}
     files, h = [], hashlib.sha1()
     for p in sorted(DOCS.rglob("*")):

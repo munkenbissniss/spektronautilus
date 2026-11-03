@@ -153,6 +153,14 @@ Os efeitos seguem um ritmo. Pode defini-lo de três maneiras:
 - Deixe o mixer **ouvir o bombo** através de uma entrada de áudio ([[Audio input (kick drum)]]). Ajuste com [[Sensitivity]].
 - Carregue em [[Set beat 1 (downbeat)]] no momento que deve contar como o primeiro tempo de um compasso.
 
+## Som: microfone, ficheiro de áudio ou separador partilhado {#sound}
+Nas definições do ritmo escolhe de onde vem o ritmo:
+- **Entrada de áudio (bombo).** O mixer ouve um microfone ou outra entrada. Escolha a que quiser na lista (microfone integrado, microfone externo ou placa de som). No Linux, uma entrada chamada «Monitor of …» leva tudo o que o computador está a reproduzir, por isso não precisa de microfone.
+- **Ficheiro de áudio (mp3, wav …).** Adicione um ou mais ficheiros e prima Reproduzir. A música toca pela saída de som deste computador e o ritmo segue-a com exatidão. Há botões de anterior e seguinte, um controlo de volume e [[Repeat the list]].
+- **Som de um separador ou do ecrã.** Partilhe um separador que esteja a tocar música. Na janela de partilha escolha um separador e marque «Partilhar áudio do separador». Funciona no Chrome e no Edge.
+
+Para incluir o som numa gravação, marque a caixa no cartão de gravação ([[Include sound from the sound source above (input, audio file or shared tab)]]).
+
 ## Efeitos ao ritmo {#effects}
 Zoom, Shake, Flash, Strobe, Invert, Mirror, Colour spin e Blur. Ative cada um, escolha com que frequência pulsa (a cada tempo, 2 tempos ou 4 tempos) e com que força.
 
@@ -165,7 +173,7 @@ Funcionam como no [Video DJ](@guides/video-dj/#posters): um logotipo, cartazes d
 Prima [[Advanced view]] no topo para ter mais. A vista simples fica como estava.
 - **Cinco bancos, 100 loops.** Os pads mostram um banco de cada vez. Mude de banco com os botões Banco, ou prima {{[}} e {{]}}. As teclas numéricas tocam sempre os pads do banco que está a ver. Só o banco no ecrã e os loops que estão a tocar ficam prontos, por isso 100 loops não precisam de mais memória do que 20.
 - **[[Auto mix]].** O mixer toca sozinho: escolhe loops deste banco ou de todos, por ordem ou ao acaso, e faz transições entre o canal A e o B a cada poucos segundos ou compassos. Escolha quantos loops tocam ao mesmo tempo e quanto tempo a mistura deve durar, de cinco minutos a duas horas, ou até a parar. Prima [[Start auto mix]]. Pode continuar a usar efeitos, cartazes e o logótipo enquanto corre.
-- **[[Record the mix]].** Prima [[Record]] para guardar o que vê na saída como um ficheiro de vídeo, sem som. Marque a caixa em Mistura automática para gravar toda a mistura. A gravação fica na memória até a guardar, por isso guarde-a antes de fechar a página. Para misturas muito longas, grave por partes.
+- **[[Record the mix]].** Prima [[Record]] para guardar o que vê na saída como um ficheiro de vídeo. Adicione som com a caixa de seleção. Marque a caixa em Mistura automática para gravar toda a mistura. A gravação fica na memória até a guardar, por isso guarde-a antes de fechar a página. Para misturas muito longas, grave por partes.
 
 ## A versão para telemóvel {#phone}
 8 pads, duas camadas por canal, crossfader e efeitos, com as mesmas ferramentas de ritmo. Aqui os loops também tocam sem som.
@@ -305,6 +313,11 @@ Cada tarefa longa, como converter 200 ficheiros ou exportar um vídeo de 10 minu
 
 > Os trabalhos correm na página que os iniciou. **Mantenha essa página aberta** até dizer que está concluído. A página Fila é uma janela para os trabalhos, não os executa.
 
+## Está preso? Progresso e pausa {#progress}
+Cada trabalho em curso tem uma barra, um relógio e, quando há dados suficientes, uma estimativa do tempo que falta. Enquanto a barra mostra riscas em movimento, a ferramenta está a arrancar ou a trabalhar em algo que ainda não consegue medir. Passado um tempo sem novidades aparece um aviso calmo de que continua a trabalhar. A barra nunca recua.
+
+Os trabalhos com vários ficheiros podem ser pausados com **Pausa** (na fila ou na página da ferramenta). Um ficheiro que já está a ser convertido não pode ser congelado, por isso a pausa começa depois dele, e **Retomar** continua com o seguinte. O Magic Video Mixer pára logo. O relógio pára durante a pausa.
+
 ## Para onde vão os ficheiros? {#files}
 Os ficheiros prontos das ferramentas ficam guardados neste navegador, até cerca de 600 MB por trabalho, para os poder descarregar mais tarde. O Mixer mágico guarda os seus próprios vídeos na sua própria página, por isso use [[Open page]] na Fila para os descarregar. Nada sai do seu computador.
 
@@ -357,6 +370,8 @@ O Spektronautilus guarda-se no seu navegador, por isso também funciona sem Wi-F
 3. Faça [[Ready for the show?]] e veja a linha [[Works without internet]].
 
 Também pode **instalar** o site como uma app: use «Instalar» ou «Adicionar ao ecrã inicial» no menu do navegador. Abre então na sua própria janela.
+
+Num **iPhone ou iPad**, abra o site no Safari, toque no botão Partilhar e escolha «Adicionar ao ecrã principal». Abre então em ecrã inteiro como uma app e funciona sem internet depois da primeira visita.
 
 > As ferramentas carregam o seu motor de vídeo (cerca de 30 MB) na primeira vez que as usa. Use cada ferramenta uma vez enquanto está online. A versão para Linux não precisa desse motor.
 

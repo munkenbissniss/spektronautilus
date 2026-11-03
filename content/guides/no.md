@@ -153,6 +153,14 @@ Effektene følger en takt. Du kan sette den på tre måter:
 - La mikseren **lytte til basstrommen** gjennom en lydinngang ([[Audio input (kick drum)]]). Juster med [[Sensitivity]].
 - Trykk [[Set beat 1 (downbeat)]] i øyeblikket som skal telle som første slag i en takt.
 
+## Lyd: mikrofon, lydfil eller delt fane {#sound}
+Under beat-innstillingene velger du hvor beaten kommer fra:
+- **Lydinngang (kick).** Mikseren lytter til en mikrofon eller en annen inngang. Velg den du vil ha i listen (innebygd mikrofon, ekstern mikrofon eller lydkort). På Linux bærer en inngang som heter «Monitor of …» alt maskinen spiller, så du trenger ingen mikrofon.
+- **Lydfil (mp3, wav …).** Legg til én eller flere filer og trykk Spill av. Musikken spilles fra maskinens lydutgang, og beaten følger den nøyaktig. Det finnes forrige- og neste-knapper, volumglider og [[Repeat the list]].
+- **Lyd fra nettleserfane eller skjerm.** Del en fane som spiller musikk. Velg fane i delingsvinduet og kryss av for «Del fanelyd». Dette fungerer i Chrome og Edge.
+
+For å få lyden med i et opptak krysser du av i opptakskortet ([[Include sound from the sound source above (input, audio file or shared tab)]]).
+
 ## Beat-effekter {#effects}
 Zoom, Shake, Flash, Strobe, Invert, Mirror, Colour spin og Blur. Slå på hver enkelt, velg hvor ofte den pulserer (hvert slag, 2 slag eller 4 slag) og hvor sterk den er.
 
@@ -165,7 +173,7 @@ Dette fungerer som i [Video DJ](@guides/video-dj/#posters): logo, tekstplakater 
 Trykk [[Advanced view]] øverst for å få mer. Den enkle visningen er som før.
 - **Fem banker, 100 loops.** Padene viser én bank om gangen. Bytt bank med Bank-knappene, eller trykk {{[}} og {{]}}. Talltastene spiller alltid padene i banken du ser på. Bare banken på skjermen og loopene som spilles holdes klare, så 100 loops trenger ikke mer minne enn 20.
 - **[[Auto mix]].** Mikseren spiller av seg selv: den velger loops fra denne banken eller fra alle, i rekkefølge eller tilfeldig, og toner mellom kanal A og B hvert par sekunder eller takter. Velg hvor mange loops som spilles samtidig, og hvor lenge miksen skal vare, fra fem minutter til to timer, eller til du stopper den. Trykk [[Start auto mix]]. Du kan fortsatt bruke effekter, plakater og logo mens den går.
-- **[[Record the mix]].** Trykk [[Record]] for å lagre det du ser i utgangen som en videofil, uten lyd. Kryss av i Automiks for å ta opp hele miksen. Opptaket ligger i minnet til du lagrer det, så lagre det før du lukker siden. Ved svært lange miks bør du ta opp i deler.
+- **[[Record the mix]].** Trykk [[Record]] for å lagre det du ser i utgangen som en videofil. Legg til lyd med avkrysningsboksen. Kryss av i Automiks for å ta opp hele miksen. Opptaket ligger i minnet til du lagrer det, så lagre det før du lukker siden. Ved svært lange miks bør du ta opp i deler.
 
 ## Mobilversjonen {#phone}
 8 pads, to lag per kanal, crossfader og effekter, med de samme taktverktøyene. Loops spilles også uten lyd her.
@@ -305,6 +313,11 @@ Hver lang oppgave, som å konvertere 200 filer eller eksportere en video på 10 
 
 > Jobbene kjører i siden som startet dem. **Ha den siden åpen** til det står ferdig. Kø-siden er et vindu inn til jobbene, den kjører dem ikke.
 
+## Står den fast? Fremdrift og pause {#progress}
+Hver jobb som går har en strek, en klokke og, når det finnes nok å regne ut fra, et anslag på hvor lang tid som er igjen. Når streken viser striper som beveger seg, starter verktøyet opp eller jobber med noe det ikke kan måle ennå. Etter en stund uten nytt får du en rolig beskjed om at det fortsatt jobbes. Streken går aldri bakover.
+
+Jobber med flere filer kan settes på pause med **Pause** (i køen eller på verktøyets egen side). En fil som allerede konverteres kan ikke fryses, så pausen begynner etter den, og **Fortsett** tar fatt på neste fil. Magic Video Mixer stopper med en gang. Klokken står stille mens det er pause.
+
 ## Hvor blir filene av? {#files}
 Ferdige filer fra verktøyene lagres i denne nettleseren, opptil ca. 600 MB per jobb, så du kan laste dem ned senere. Magisk videomikser beholder sine egne videoer på sin egen side, så bruk [[Open page]] fra køen for å laste ned dem. Ingenting forlater datamaskinen din.
 
@@ -357,6 +370,8 @@ Spektronautilus lagrer seg selv i nettleseren din, så det virker også uten Wi-
 3. Kjør [Klar for showet?](@guides/show-check/) og sjekk linjen [[Works without internet]].
 
 Du kan også **installere** siden som en app: bruk «Installer» eller «Legg til på hjemskjermen» i nettlesermenyen. Da åpnes den i et eget vindu.
+
+På **iPhone eller iPad** åpner du siden i Safari, trykker på Del-knappen og velger «Legg til på Hjem-skjerm». Da åpnes den i full skjerm som en app og fungerer uten nett etter første besøk.
 
 > Verktøyene laster videomotoren sin (ca. 30 MB) første gang du bruker dem. Bruk hvert verktøy én gang mens du er på nett. Linux-versjonen trenger ikke denne motoren.
 

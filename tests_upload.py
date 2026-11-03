@@ -68,7 +68,7 @@ with sync_playwright() as pw:
     pg.select_option("#u-priv", "unlisted"); pg.fill("#u-vtok", "vtok"); pg.click("#u-go"); pg.wait_for_selector("#spk-up .ok a", timeout=20000)
     vs = next(s for s in seen if s[0] == "vimeo-start"); vb = json.loads(vs[2]); patches = [(s[1], s[2]) for s in seen if s[0] == "vimeo-patch"]
     check(vs[1].get("authorization") == "bearer vtok" and vb["privacy"]["view"] == "unlisted" and vb["upload"]["size"] == 20000000 and vb["name"] == "My mix", f"Vimeo: token, privacy, size and a cleaned title {vb}")
-    check(patches == [(0, 16777216), (16777216, 3222784)], f"Vimeo: two tus parts {patches}")
+    check(patches == [(0, 4194304), (4194304, 4194304), (8388608, 4194304), (12582912, 4194304), (16777216, 3222784)], f"Vimeo: 4 MB tus parts so the bar moves often {patches}")
     check(pg.locator("#spk-up .ok a").get_attribute("href") == "https://vimeo.com/999", "Vimeo: link to the new video")
     check(json.loads(pg.evaluate("localStorage.getItem('munken_vimeo')"))["token"] == "vtok", "the token is kept where the Magic Mixer keeps it")
     pg.click("#u-close"); pg.wait_for_selector("#spk-up", state="detached")

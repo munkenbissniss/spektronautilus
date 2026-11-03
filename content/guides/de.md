@@ -153,6 +153,14 @@ Die Effekte folgen einem Beat. Du kannst ihn auf drei Arten festlegen:
 - Lass den Mixer die **Bassdrum hören**, über einen Audioeingang ([[Audio input (kick drum)]]). Feinjustiere mit [[Sensitivity]].
 - Drücke [[Set beat 1 (downbeat)]] in dem Moment, der als erster Schlag eines Taktes zählen soll.
 
+## Ton: Mikrofon, Audiodatei oder geteilter Tab {#sound}
+Unter den Beat-Einstellungen wählst du, woher der Beat kommt:
+- **Audioeingang (Kickdrum).** Der Mixer hört auf ein Mikrofon oder einen anderen Eingang. Wähle in der Liste den gewünschten (eingebautes Mikrofon, externes Mikrofon oder Soundkarte). Unter Linux enthält ein Eingang namens „Monitor of …“ alles, was der Computer abspielt, ein Mikrofon ist dann nicht nötig.
+- **Audiodatei (mp3, wav …).** Füge eine oder mehrere Dateien hinzu und drücke Abspielen. Die Musik läuft über den Tonausgang dieses Computers, und der Beat folgt ihr genau. Es gibt Tasten für vorheriger und nächster Titel, einen Lautstärkeregler und [[Repeat the list]].
+- **Ton eines Browser-Tabs oder des Bildschirms.** Teile einen Tab, in dem Musik läuft. Wähle im Freigabefenster einen Tab und setze den Haken bei „Tab-Audio teilen“. Das funktioniert in Chrome und Edge.
+
+Um den Ton in eine Aufnahme zu bekommen, setze den Haken in der Aufnahme-Karte ([[Include sound from the sound source above (input, audio file or shared tab)]]).
+
 ## Beat-Effekte {#effects}
 Zoom, Shake, Flash, Strobe, Invert, Mirror, Colour spin und Blur. Schalte jeden einzeln ein, wähle, wie oft er pulsiert (jeden Schlag, alle 2 Schläge oder alle 4 Schläge) und wie stark.
 
@@ -165,7 +173,7 @@ Das funktioniert wie im [Video DJ](@guides/video-dj/#posters): ein Logo, gleiten
 Drücke oben auf [[Advanced view]], um mehr zu bekommen. Die einfache Ansicht bleibt wie sie war.
 - **Fünf Bänke, 100 Loops.** Die Pads zeigen jeweils eine Bank. Wechsle die Bank mit den Bank-Tasten oder drücke {{[}} und {{]}}. Die Zifferntasten spielen immer die Pads der Bank, die du gerade siehst. Nur die Bank auf dem Bildschirm und die laufenden Loops werden bereitgehalten, 100 Loops brauchen also nicht mehr Speicher als 20.
 - **[[Auto mix]].** Der Mixer spielt von allein: Er wählt Loops aus dieser Bank oder aus allen, der Reihe nach oder zufällig, und blendet alle paar Sekunden oder Takte zwischen Kanal A und B über. Wähle, wie viele Loops gleichzeitig laufen und wie lange der Mix dauern soll, von fünf Minuten bis zwei Stunden, oder bis du ihn stoppst. Drücke [[Start auto mix]]. Effekte, Plakate und Logo kannst du währenddessen weiter benutzen.
-- **[[Record the mix]].** Drücke [[Record]], um das, was du im Ausgang siehst, als Videodatei ohne Ton zu speichern. Setze im Automix den Haken, um den ganzen Mix aufzunehmen. Die Aufnahme bleibt im Speicher, bis du sie sicherst, sichere sie also, bevor du die Seite schließt. Bei sehr langen Mixen nimm in Teilen auf.
+- **[[Record the mix]].** Drücke [[Record]], um das, was du im Ausgang siehst, als Videodatei zu speichern. Ton fügst du mit dem Kästchen hinzu. Setze im Automix den Haken, um den ganzen Mix aufzunehmen. Die Aufnahme bleibt im Speicher, bis du sie sicherst, sichere sie also, bevor du die Seite schließt. Bei sehr langen Mixen nimm in Teilen auf.
 
 ## Die Handy-Version {#phone}
 8 Pads, zwei Ebenen pro Kanal, Crossfader und Effekte, mit denselben Beat-Werkzeugen. Auch hier laufen Loops ohne Ton.
@@ -305,6 +313,11 @@ Jede lange Arbeit, etwa 200 Dateien umwandeln oder ein 10-Minuten-Video exportie
 
 > Aufgaben laufen in der Seite, die sie gestartet hat. **Lass diese Seite geöffnet**, bis „fertig“ dasteht. Die Seite Warteschlange ist ein Fenster auf die Aufgaben, sie führt sie nicht aus.
 
+## Hängt es? Fortschritt und Pause {#progress}
+Jeder laufende Auftrag hat einen Balken, eine Uhr und, sobald genug Daten da sind, eine Schätzung der Restzeit. Zeigt der Balken bewegte Streifen, startet das Werkzeug gerade oder arbeitet an etwas, das es noch nicht messen kann. Nach einer Weile ohne Neuigkeiten erscheint ein ruhiger Hinweis, dass es weiterarbeitet. Der Balken geht nie zurück.
+
+Aufträge mit mehreren Dateien lassen sich mit **Pause** anhalten (in der Warteschlange oder auf der Seite des Werkzeugs). Eine Datei, die gerade umgewandelt wird, lässt sich nicht einfrieren; die Pause beginnt danach, und **Fortsetzen** macht mit der nächsten Datei weiter. Der Magic Video Mixer hält sofort an. Die Uhr steht während der Pause still.
+
 ## Wo landen die Dateien? {#files}
 Fertige Dateien aus den Werkzeugen werden in diesem Browser gespeichert, bis zu etwa 600 MB pro Aufgabe, damit du sie später herunterladen kannst. Der Magic Videomixer behält seine eigenen Videos auf seiner eigenen Seite, nutze also [[Open page]] in der Warteschlange, um sie herunterzuladen. Nichts verlässt deinen Computer.
 
@@ -357,6 +370,8 @@ Spektronautilus speichert sich in deinem Browser, funktioniert also auch ohne WL
 3. Starte [[Ready for the show?]] und sieh dir die Zeile [[Works without internet]] an.
 
 Du kannst die Seite auch als App **installieren**: Nutze „Installieren“ oder „Zum Startbildschirm hinzufügen“ im Browsermenü. Sie öffnet sich dann in einem eigenen Fenster.
+
+Auf einem **iPhone oder iPad** öffnest du die Seite in Safari, tippst auf die Teilen-Taste und wählst „Zum Home-Bildschirm“. Sie öffnet sich dann im Vollbild wie eine App und funktioniert nach dem ersten Besuch auch ohne Internet.
 
 > Die Werkzeuge laden ihre Video-Engine (etwa 30 MB) beim ersten Benutzen. Benutze jedes Werkzeug einmal, solange du online bist. Die Linux-Version braucht diese Engine nicht.
 

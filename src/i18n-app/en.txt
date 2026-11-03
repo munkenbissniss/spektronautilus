@@ -1217,3 +1217,42 @@ Nothing was recorded.
 Recording stopped. Save the video before you close this page. To get an mp4, open the file in the Tools.
 Previous bank
 Next bank
+Audio file (mp3, wav …)
+Browser tab or screen sound
+Sound input
+Default input
+Add audio files…
+Audio files
+Previous track
+Next track
+Repeat the list
+Include sound from the sound source above (input, audio file or shared tab)
+Saves what you see in the output as a video file. The recording is kept in memory until you save it, so save it before you close the page.
+Track {a} of {b}
+Audio files added.
+Could not play this audio file.
+Playing from the file. The beat follows the music.
+Add one or more audio files, then press Play. The beat follows the music.
+Sharing sound… the beat follows it.
+This browser cannot share sound. Use Chrome or Edge.
+No sound was shared. In the sharing window choose a browser tab and tick “Share tab audio”.
+The shared sound has ended.
+This browser cannot use sound input.
+No sound source is on, so the recording has no sound.
+Output stopped.
+Output is on the external screen. Tap again to stop.
+No external screen found. Connect a projector or TV with an adapter.
+{a} elapsed
+about {a} left
+Still working. Big files can take a while without moving the bar.
+Paused
+Pausing after this file…
+Resume
+Pause after this file
+Downloading
+Waiting in line…
+Pause after this clip
+Paused at {a} % ({b} of {c} MB). Press Resume to carry on.
+About {a} left.
+Loading the CLIP model… {a} % ({b} of {c} MB, first time only)
+Loading the AI model… {a} % ({b} of {c} MB, first time only)

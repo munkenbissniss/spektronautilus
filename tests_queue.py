@@ -49,7 +49,7 @@ with sync_playwright() as pw:
     p2 = ctx.new_page(); p2.goto(B + "/queue/index.html")
     p2.evaluate("""async () => { const Q = await import('/shared/queue.js'); Q.report({ id: 1, app: 'magic', appLabel: 'Magic Mixer', url: '/mixer/', title: 'Show video', status: 'running', progress: .1, canCancel: true }); }""")
     q.wait_for_selector("text=Show video", timeout=4000); p2.close()
-    q.evaluate("() => { for (const j of window.__queue.JOBS.values()) if (j.title === 'Show video') j.updated -= 60000; }"); q.evaluate("document.querySelector('#clear')&&0")
+    q.evaluate("() => { for (const j of window.__queue.JOBS.values()) if (j.title === 'Show video') j.updated -= 200000; }"); q.evaluate("document.querySelector('#clear')&&0")
     q.wait_for_selector(".chip.lost", timeout=7000)
     check(True, "a running job that stopped reporting is flagged as lost")
     # remove + clear

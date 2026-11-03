@@ -1,0 +1,14 @@
+1245 ¦ {a} brukt ¦ {a} transcurridos ¦ {a} vergangen ¦ {a} decorridos
+1246 ¦ ca. {a} igjen ¦ faltan unos {a} ¦ noch etwa {a} ¦ faltam cerca de {a}
+1247 ¦ Jobber fortsatt. Store filer kan ta en stund uten at streken flytter seg. ¦ Sigue trabajando. Los archivos grandes pueden tardar un rato sin que la barra se mueva. ¦ Arbeitet noch. Bei großen Dateien kann es eine Weile dauern, ohne dass sich der Balken bewegt. ¦ Ainda a trabalhar. Ficheiros grandes podem demorar sem que a barra se mexa.
+1248 ¦ Satt på pause ¦ En pausa ¦ Pausiert ¦ Em pausa
+1249 ¦ Pauser etter denne filen … ¦ Se pausará tras este archivo… ¦ Pause nach dieser Datei … ¦ Pausa depois deste ficheiro…
+1250 ¦ Fortsett ¦ Reanudar ¦ Fortsetzen ¦ Retomar
+1251 ¦ Pause etter denne filen ¦ Pausar tras este archivo ¦ Nach dieser Datei pausieren ¦ Pausar depois deste ficheiro
+1252 ¦ Laster ned ¦ Descargando ¦ Lädt herunter ¦ A transferir
+1253 ¦ Venter i køen … ¦ Esperando en la cola… ¦ Wartet in der Schlange … ¦ À espera na fila…
+1254 ¦ Pause etter denne snutten ¦ Pausar tras este clip ¦ Nach diesem Clip pausieren ¦ Pausar depois deste clip
+1255 ¦ Pause ved {a} % ({b} av {c} MB). Trykk Fortsett for å gå videre. ¦ En pausa al {a} % ({b} de {c} MB). Pulsa Reanudar para seguir. ¦ Pausiert bei {a} % ({b} von {c} MB). Zum Weitermachen auf Fortsetzen drücken. ¦ Em pausa aos {a} % ({b} de {c} MB). Prime Retomar para continuar.
+1256 ¦ Ca. {a} igjen. ¦ Faltan unos {a}. ¦ Noch etwa {a}. ¦ Faltam cerca de {a}.
+1257 ¦ Laster CLIP-modellen … {a} % ({b} av {c} MB, bare første gang) ¦ Cargando el modelo CLIP… {a} % ({b} de {c} MB, solo la primera vez) ¦ CLIP-Modell wird geladen … {a} % ({b} von {c} MB, nur beim ersten Mal) ¦ A carregar o modelo CLIP… {a} % ({b} de {c} MB, só a primeira vez)
+1258 ¦ Laster AI-modellen … {a} % ({b} av {c} MB, bare første gang) ¦ Cargando el modelo de IA… {a} % ({b} de {c} MB, solo la primera vez) ¦ KI-Modell wird geladen … {a} % ({b} von {c} MB, nur beim ersten Mal) ¦ A carregar o modelo de IA… {a} % ({b} de {c} MB, só a primeira vez)

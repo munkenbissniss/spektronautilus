@@ -153,6 +153,14 @@ The effects follow a beat. You can set it in three ways:
 - Let the mixer **listen to the kick drum** through an audio input ([[Audio input (kick drum)]]). Use [[Sensitivity]] to tune it.
 - Press [[Set beat 1 (downbeat)]] on the moment that should count as the first beat of a bar.
 
+## Sound: microphone, audio file or shared tab {#sound}
+Under the beat settings, choose where the beat comes from:
+- **Audio input (kick drum).** The mixer listens to a microphone or another input. Pick the one you want in the list (the built-in microphone, an external microphone or a sound card). On Linux, an input named “Monitor of …” carries everything the computer is playing, so no microphone is needed.
+- **Audio file (mp3, wav …).** Add one or more files and press Play. The music plays from this computer’s sound output and the beat follows it exactly. There are previous and next buttons, a volume slider and [[Repeat the list]].
+- **Browser tab or screen sound.** Share a tab that is playing music. In the sharing window choose a tab and tick “Share tab audio”. This works in Chrome and Edge.
+
+To get the sound into a recording, tick the box in the recording card ([[Include sound from the sound source above (input, audio file or shared tab)]]).
+
 ## Beat effects {#effects}
 Zoom, Shake, Flash, Strobe, Invert, Mirror, Colour spin and Blur. Switch each one on, choose how often it pulses (every beat, 2 beats or 4 beats) and how strong it is.
 
@@ -165,7 +173,7 @@ These work like in the [Video DJ](@guides/video-dj/#posters): a logo, sliding te
 Press [[Advanced view]] at the top for more. The simple view stays as it was.
 - **Five banks, 100 loops.** The pads show one bank at a time. Switch bank with the Bank buttons, or press {{[}} and {{]}}. The number keys always play the pads of the bank you are looking at. Only the bank on screen and the loops that are playing are kept ready, so 100 loops do not need more memory than 20.
 - **[[Auto mix]].** The mixer plays on its own: it picks loops from this bank or from all banks, in order or shuffled, and fades between channel A and B every few seconds or bars. Choose how many loops play at once, and how long the mix should last, from five minutes to two hours, or until you stop it. Press [[Start auto mix]]. You can still use effects, posters and the logo while it runs.
-- **[[Record the mix]].** Press [[Record]] to save what you see in the output as a video file, without sound. Tick the box in Auto mix to record the whole mix. The recording is kept in memory until you save it, so save it before you close the page. For very long mixes, record in parts.
+- **[[Record the mix]].** Press [[Record]] to save what you see in the output as a video file. Add sound with the tick box. Tick the box in Auto mix to record the whole mix. The recording is kept in memory until you save it, so save it before you close the page. For very long mixes, record in parts.
 
 ## The phone version {#phone}
 8 pads, two layers per channel, a crossfader and effects, with the same beat tools. It also plays loops without sound.
@@ -305,6 +313,11 @@ Every long task, such as converting 200 files or exporting a 10-minute video, be
 
 > Jobs run in the page that started them. **Keep that page open** until it says done. The Queue page is a window onto the jobs, it does not run them.
 
+## Is it stuck? Progress and pause {#progress}
+Every running job has a bar, a clock and, once there is enough to go on, an estimate of the time left. While the bar shows moving stripes the tool is starting up or working on something it cannot measure yet. After a while without news you get a calm note that it is still working. The bar never goes backwards.
+
+Jobs with several files can be paused with **Pause** (in the Queue or on the tool's own page). A file that is already being converted cannot be frozen, so the pause begins after it, and **Resume** carries on with the next file. The Magic Video Mixer pauses at once. The clock stops while paused.
+
 ## Where do the files go? {#files}
 Finished files from the tools are kept in this browser, up to about 600 MB per job, so you can download them later. The Magic Video Mixer keeps its own videos on its own page, so use [[Open page]] from the Queue to download those. Nothing leaves your computer.
 
@@ -357,6 +370,8 @@ Spektronautilus saves itself in your browser, so it also works without Wi-Fi at 
 3. Run [Ready for the show?](@guides/show-check/) and check the line [[Works without internet]].
 
 You can also **install** the site as an app: use “Install” or “Add to home screen” in your browser menu. It then opens in its own window.
+
+On an **iPhone or iPad**, open the site in Safari, tap the Share button and choose “Add to Home Screen”. It then opens full screen like an app and works offline after the first visit.
 
 > The Tools load their video engine (about 30 MB) the first time you use them. Use each tool once while you are online. The Linux version does not need that engine.
 

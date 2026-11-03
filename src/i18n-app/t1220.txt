@@ -1,0 +1,22 @@
+1220 ¦ Lydfil (mp3, wav …) ¦ Archivo de audio (mp3, wav …) ¦ Audiodatei (mp3, wav …) ¦ Ficheiro de áudio (mp3, wav …)
+1221 ¦ Lyd fra nettleserfane eller skjerm ¦ Sonido de una pestaña o de la pantalla ¦ Ton eines Browser-Tabs oder des Bildschirms ¦ Som de um separador ou do ecrã
+1222 ¦ Lydinngang ¦ Entrada de sonido ¦ Klangeingang ¦ Entrada de som
+1223 ¦ Standard inngang ¦ Entrada predeterminada ¦ Standardeingang ¦ Entrada predefinida
+1224 ¦ Legg til lydfiler… ¦ Añadir archivos de audio… ¦ Audiodateien hinzufügen… ¦ Adicionar ficheiros de áudio…
+1225 ¦ Lydfiler ¦ Archivos de audio ¦ Audiodateien ¦ Ficheiros de áudio
+1226 ¦ Forrige spor ¦ Pista anterior ¦ Vorheriger Titel ¦ Faixa anterior
+1227 ¦ Neste spor ¦ Pista siguiente ¦ Nächster Titel ¦ Faixa seguinte
+1228 ¦ Gjenta listen ¦ Repetir la lista ¦ Liste wiederholen ¦ Repetir a lista
+1229 ¦ Ta med lyd fra lydkilden over (inngang, lydfil eller delt fane) ¦ Incluir el sonido de la fuente de arriba (entrada, archivo de audio o pestaña compartida) ¦ Ton der oben gewählten Quelle aufnehmen (Eingang, Audiodatei oder geteilter Tab) ¦ Incluir o som da fonte acima (entrada, ficheiro de áudio ou separador partilhado)
+1230 ¦ Lagrer det du ser i utgangen som en videofil. Opptaket ligger i minnet til du lagrer det, så lagre det før du lukker siden. ¦ Guarda lo que ves en la salida como un archivo de vídeo. La grabación permanece en la memoria hasta que la guardes, así que guárdala antes de cerrar la página. ¦ Speichert, was du im Ausgang siehst, als Videodatei. Die Aufnahme bleibt im Speicher, bis du sie sicherst. Sichere sie also, bevor du die Seite schließt. ¦ Guarda o que vê na saída como um ficheiro de vídeo. A gravação fica na memória até a guardar, por isso guarde-a antes de fechar a página.
+1231 ¦ Spor {a} av {b} ¦ Pista {a} de {b} ¦ Titel {a} von {b} ¦ Faixa {a} de {b}
+1232 ¦ Lydfiler lagt til. ¦ Archivos de audio añadidos. ¦ Audiodateien hinzugefügt. ¦ Ficheiros de áudio adicionados.
+1233 ¦ Kunne ikke spille denne lydfilen. ¦ No se pudo reproducir este archivo de audio. ¦ Diese Audiodatei konnte nicht abgespielt werden. ¦ Não foi possível reproduzir este ficheiro de áudio.
+1234 ¦ Spiller fra filen. Beaten følger musikken. ¦ Reproduciendo desde el archivo. El ritmo sigue la música. ¦ Wiedergabe aus der Datei. Der Beat folgt der Musik. ¦ A reproduzir do ficheiro. O ritmo segue a música.
+1235 ¦ Legg til én eller flere lydfiler og trykk Spill av. Beaten følger musikken. ¦ Añade uno o más archivos de audio y pulsa Reproducir. El ritmo sigue la música. ¦ Füge eine oder mehrere Audiodateien hinzu und drücke Abspielen. Der Beat folgt der Musik. ¦ Adicione um ou mais ficheiros de áudio e prima Reproduzir. O ritmo segue a música.
+1236 ¦ Deler lyd… beaten følger den. ¦ Compartiendo sonido… el ritmo lo sigue. ¦ Ton wird geteilt… der Beat folgt ihm. ¦ A partilhar som… o ritmo segue-o.
+1237 ¦ Denne nettleseren kan ikke dele lyd. Bruk Chrome eller Edge. ¦ Este navegador no puede compartir sonido. Usa Chrome o Edge. ¦ Dieser Browser kann keinen Ton teilen. Verwende Chrome oder Edge. ¦ Este navegador não consegue partilhar som. Use o Chrome ou o Edge.
+1238 ¦ Ingen lyd ble delt. Velg en nettleserfane i delingsvinduet og kryss av for «Del fanelyd». ¦ No se compartió sonido. En la ventana de compartir elige una pestaña del navegador y marca «Compartir audio de la pestaña». ¦ Es wurde kein Ton geteilt. Wähle im Freigabefenster einen Browser-Tab und setze den Haken bei «Tab-Audio teilen». ¦ Não foi partilhado som. Na janela de partilha escolha um separador do navegador e marque «Partilhar áudio do separador».
+1239 ¦ Den delte lyden er avsluttet. ¦ El sonido compartido ha terminado. ¦ Der geteilte Ton ist beendet. ¦ O som partilhado terminou.
+1240 ¦ Denne nettleseren kan ikke bruke lydinngang. ¦ Este navegador no puede usar entrada de sonido. ¦ Dieser Browser kann keinen Klangeingang verwenden. ¦ Este navegador não consegue usar entrada de som.
+1241 ¦ Ingen lydkilde er på, så opptaket får ikke lyd. ¦ No hay ninguna fuente de sonido activa, así que la grabación no tendrá sonido. ¦ Es ist keine Tonquelle aktiv, die Aufnahme hat also keinen Ton. ¦ Nenhuma fonte de som está ativa, por isso a gravação não terá som.

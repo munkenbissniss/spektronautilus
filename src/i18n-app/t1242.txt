@@ -1,0 +1,3 @@
+1242 ¦ Utgang stoppet. ¦ Salida detenida. ¦ Ausgabe gestoppt. ¦ Saída parada.
+1243 ¦ Utgangen vises på ekstern skjerm. Trykk igjen for å stoppe. ¦ La salida se muestra en la pantalla externa. Toca de nuevo para detenerla. ¦ Die Ausgabe läuft auf dem externen Bildschirm. Zum Beenden erneut tippen. ¦ A saída está no ecrã externo. Toca de novo para parar.
+1244 ¦ Fant ingen ekstern skjerm. Koble til en projektor eller TV med adapter. ¦ No se encontró ninguna pantalla externa. Conecta un proyector o una TV con un adaptador. ¦ Kein externer Bildschirm gefunden. Schließe einen Beamer oder Fernseher über einen Adapter an. ¦ Nenhum ecrã externo encontrado. Liga um projetor ou TV com um adaptador.
