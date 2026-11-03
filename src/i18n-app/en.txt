@@ -1281,3 +1281,7 @@ Gentle tilt
 Light and colour breathing
 Soft trails
 Only {a} s long. Short or still loops get much more interesting with slow-in-and-out motion and a gentle breathing zoom, repeated to 16 s.
+Preview done. It is small and low quality, but shows the loop and life effects. It does not show the upscale.
+Preview done. It is small and low quality, but shows the loop and life effects. The saved file uses your chosen size.
+Jump to the queue
+Pick a mood in the bar at the top, then fine-tune here.

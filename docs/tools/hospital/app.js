@@ -216,13 +216,16 @@ $('#stop').onclick = () => { if (ctl) ctl.cancel = true; engine.terminate(); set
 
 $('#prev').onclick = () => run(async () => {
   if (!patient || !patient.info) throw new Error('Choose a clip first.');
-  const rec = JSON.parse(JSON.stringify(ST.variants(R)[0].rec)), cap = rec.slow.on ? 2 : 4;   // a short, small try-out: no upscale, at most a few seconds
+  // Small but long enough to judge the loop seam and the life effects: low resolution (cheap), a few seconds of the
+  // clip, then the normal loop / life / repeat steps, so the preview runs for 12 to 20 seconds and loops in the player.
+  const rec = JSON.parse(JSON.stringify(ST.variants(R)[0].rec)), cap = rec.slow.on ? 4 : 8;
   rec.cut = { on: true, start: rec.cut.on ? rec.cut.start : 0, len: Math.min(rec.cut.on && rec.cut.len > 0 ? rec.cut.len : cap, cap) };
-  const notUp = rec.up.on; rec.up.on = false; rec.size = { on: true, box: '640x360', fit: 'keep', upscale: false }; rec.out.minSeconds = 0; rec.out.crf = 23;
+  const notUp = rec.up.on; rec.up.on = false; rec.size = { on: true, box: '480x270', fit: 'keep', upscale: false };
+  rec.out.minSeconds = Math.min(20, Math.max(12, rec.out.minSeconds || 0)); rec.out.crf = 28;
   setCur('Making a preview…');
   const r = await treat(patient.file, 'hosp_prev.mp4', rec, 'preview', { ...baseProf(), preset: 'ultrafast' });
   const v = $('#vafter'); if (v.src) URL.revokeObjectURL(v.src); v.src = URL.createObjectURL(new Blob([r.data], { type: 'video/mp4' })); $('#fafter').classList.remove('hide');
-  $('#msg').textContent = notUp ? 'Preview done. It is small and short, and does not show the upscale.' : '';
+  $('#msg').textContent = T(notUp ? 'Preview done. It is small and low quality, but shows the loop and life effects. It does not show the upscale.' : 'Preview done. It is small and low quality, but shows the loop and life effects. The saved file uses your chosen size.');
 });
 
 function addResult(name, data, note) {
