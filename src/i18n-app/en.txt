@@ -1285,3 +1285,12 @@ Preview done. It is small and low quality, but shows the loop and life effects. 
 Preview done. It is small and low quality, but shows the loop and life effects. The saved file uses your chosen size.
 Jump to the queue
 Pick a mood in the bar at the top, then fine-tune here.
+AI needs the Linux version with Video2X installed.
+The preview uses the fast slow-motion method, not AI.
+AI (best)
+Sharp (fast)
+AI model
+Kind of picture (AI)
+Sharpness (Sharp method)
+Soft blend is fast. Smooth motion is slower, but cleaner on fast movement. AI gives the best result, but needs the Linux version with Video2X and a graphics card. It can take a long time.
+Sharp works everywhere. AI gives the best result, but needs the Linux version with Video2X and a graphics card. It can take a long time.

@@ -279,7 +279,7 @@ Los loops quietos o cortos cobran vida con la ficha [[Bring it to life]]. Elige 
 
 Otras formas de dar movimiento orgánico a loops quietos: **ida y vuelta** (hacia delante y luego hacia atrás) con la ficha Make it loop, **cámara lenta** para calmarlo todo, **estelas suaves** para un resplandor onírico y un **look** que cambie de color lentamente. Combínalos.
 
-Todo funciona en tu navegador. Para calidad de IA usa [Ampliar](@guides/tools/#ai) y [Cámara lenta](@guides/tools/#slowmo) en las herramientas. [Abrir el Loop Hospital](@@tools/hospital/).
+Todo funciona en tu navegador. En la versión local en [Linux](@guides/offline-linux/#linux) con Video2X instalado, los bloques de cámara lenta y ampliar también ofrecen un método de **IA** (RIFE y Real-ESRGAN). Los pasos de IA van primero y pueden tardar; el resto del tratamiento sigue después. La vista previa siempre usa los métodos rápidos. Más sobre los métodos de IA: [Ampliar](@guides/tools/#ai) y [Cámara lenta](@guides/tools/#slowmo). [Abrir el Loop Hospital](@@tools/hospital/).
 
 
 ## Subir a Vimeo {#upload}

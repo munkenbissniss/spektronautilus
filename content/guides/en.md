@@ -279,7 +279,7 @@ Still or short loops can be brought to life with the [[Bring it to life]] tile. 
 
 Other ways to make still loops feel organic: **ping-pong** (play forward, then backward) with the Make it loop tile, **slow motion** to calm everything down, **soft trails** for a dreamy afterglow, and a **look** that changes colour slowly. Combine them.
 
-Everything runs in your browser. For AI quality use [Upscale](@guides/tools/#ai) and [Slow motion](@guides/tools/#slowmo) in the tools. [Open the Loop Hospital](@@tools/hospital/).
+Everything runs in your browser. In the local version on [Linux](@guides/offline-linux/#linux) with Video2X installed, the Slow motion and Upscale tiles also offer an **AI** method (RIFE and Real-ESRGAN). The AI steps run first and can take a while; the rest of the treatment follows. The preview always uses the fast methods. More about the AI methods: [Upscale](@guides/tools/#ai) and [Slow motion](@guides/tools/#slowmo). [Open the Loop Hospital](@@tools/hospital/).
 
 
 ## Upload to Vimeo {#upload}

@@ -279,7 +279,7 @@ Stille eller korte looper kan få liv med flisen [[Bring it to life]]. Velg en s
 
 Andre måter å gjøre stille looper mer organiske: **fram og tilbake** (spill forover, så bakover) med flisen Make it loop, **sakte film** for å roe alt ned, **myke spor** for et drømmende ettersmak, og et **look** som skifter farge sakte. Kombiner dem.
 
-Alt kjører i nettleseren din. For KI-kvalitet bruker du [Oppskalering](@guides/tools/#ai) og [Slowmotion](@guides/tools/#slowmo) i verktøyene. [Åpne Loop Hospital](@@tools/hospital/).
+Alt kjører i nettleseren din. I den lokale versjonen på [Linux](@guides/offline-linux/#linux) med Video2X installert tilbyr Slowmotion- og Oppskalering-flisene også en **AI**-metode (RIFE og Real-ESRGAN). AI-stegene kjører først og kan ta en stund; resten av behandlingen kommer etterpå. Forhåndsvisningen bruker alltid de raske metodene. Mer om AI-metodene: [Oppskalering](@guides/tools/#ai) og [Slowmotion](@guides/tools/#slowmo). [Åpne Loop Hospital](@@tools/hospital/).
 
 
 ## Last opp til Vimeo {#upload}

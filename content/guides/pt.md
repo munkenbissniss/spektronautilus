@@ -279,7 +279,7 @@ Loops parados ou curtos ganham vida com o mosaico [[Bring it to life]]. Escolhe 
 
 Outras formas de dar movimento orgânico a loops parados: **vaivém** (para a frente e depois para trás) com o mosaico Make it loop, **câmara lenta** para acalmar tudo, **rastos suaves** para um brilho onírico e um **look** que muda de cor devagar. Combina-os.
 
-Tudo corre no seu navegador. Para qualidade de IA use [Ampliar](@guides/tools/#ai) e [Câmara lenta](@guides/tools/#slowmo) nas ferramentas. [Abrir o Loop Hospital](@@tools/hospital/).
+Tudo corre no seu navegador. Na versão local em [Linux](@guides/offline-linux/#linux) com o Video2X instalado, os blocos de câmara lenta e ampliar também oferecem um método de **IA** (RIFE e Real-ESRGAN). Os passos de IA vão primeiro e podem demorar; o resto do tratamento segue depois. A pré-visualização usa sempre os métodos rápidos. Mais sobre os métodos de IA: [Ampliar](@guides/tools/#ai) e [Câmara lenta](@guides/tools/#slowmo). [Abrir o Loop Hospital](@@tools/hospital/).
 
 
 ## Carregar para o Vimeo {#upload}

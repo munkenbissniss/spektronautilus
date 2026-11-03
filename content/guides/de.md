@@ -279,7 +279,7 @@ Ruhige oder kurze Loops erwachen mit der Kachel [[Bring it to life]] zum Leben. 
 
 Weitere Wege zu organischerer Bewegung: **Hin und zurück** (vorwärts, dann rückwärts) mit der Kachel Make it loop, **Zeitlupe**, die alles beruhigt, **weiche Spuren** für ein verträumtes Nachleuchten und ein **Look**, der langsam die Farbe wechselt. Kombiniere sie.
 
-Alles läuft in deinem Browser. Für KI-Qualität nutze [Hochskalieren](@guides/tools/#ai) und [Zeitlupe](@guides/tools/#slowmo) in den Werkzeugen. [Loop Hospital öffnen](@@tools/hospital/).
+Alles läuft in deinem Browser. In der lokalen Version unter [Linux](@guides/offline-linux/#linux) mit installiertem Video2X bieten die Kacheln Zeitlupe und Hochskalieren auch eine **KI**-Methode (RIFE und Real-ESRGAN). Die KI-Schritte laufen zuerst und können dauern; der Rest der Behandlung folgt danach. Die Vorschau nutzt immer die schnellen Methoden. Mehr zu den KI-Methoden: [Hochskalieren](@guides/tools/#ai) und [Zeitlupe](@guides/tools/#slowmo). [Loop Hospital öffnen](@@tools/hospital/).
 
 
 ## Zu Vimeo hochladen {#upload}
