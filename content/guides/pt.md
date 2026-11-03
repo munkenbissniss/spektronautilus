@@ -275,6 +275,10 @@ Como usar:
 
 Quer o mesmo clipe em vários estilos? Toque no mosaico Look e escolha quantos looks quiser, por exemplo The Matrix, Dark Future e Purple Dream. Obtém um ficheiro por cada look. Marque [[Also save the clip without a look]] para ter também o clipe sem look.
 
+Loops parados ou curtos ganham vida com o mosaico [[Bring it to life]]. Escolhe um estilo (respiração calma, flutuante, onírico ou pulso) e o clipe recebe entrada e saída suaves, um zoom que respira e, se quiseres, uma câmara flutuante, inclinação e luz que respira. Repete-se até pelo menos 16 segundos (tu escolhes) e cada movimento encaixa na perfeição na repetição, por isso continua a fazer loop sem saltos. Afina cada parte em Avançado.
+
+Outras formas de dar movimento orgânico a loops parados: **vaivém** (para a frente e depois para trás) com o mosaico Make it loop, **câmara lenta** para acalmar tudo, **rastos suaves** para um brilho onírico e um **look** que muda de cor devagar. Combina-os.
+
 Tudo corre no seu navegador. Para qualidade de IA use [Ampliar](@guides/tools/#ai) e [Câmara lenta](@guides/tools/#slowmo) nas ferramentas. [Abrir o Loop Hospital](@@tools/hospital/).
 
 

@@ -66,6 +66,7 @@ with sync_playwright() as pw:
         m.evaluate("() => { window.__tj.status = 'done'; window.__spkq(window.__tj); }"); q.wait_for_selector(".card:has-text('Test render') .chip.done", timeout=4000)
         check(True, f"{app}: finished state arrives")
         check(q.locator(".card:has-text('Test render') a:has-text('Open page')").count() == 1, f"{app}: Open page link is offered")
+        m.evaluate("() => window.__spkforget(window.__tj)"); q.wait_for_function("!document.body.innerText.includes('Test render')", timeout=4000); check(True, f"{app}: removing the job on its page removes it from the Queue")
         m.close(); q.click("#clear"); q.wait_for_timeout(300)
     # menu badge on a normal site page
     s = ctx.new_page(); s.goto(B + "/index.html"); s.evaluate("localStorage.setItem('spk_q', JSON.stringify({n:2,t:Date.now()}))"); s.reload(); s.wait_for_timeout(300)

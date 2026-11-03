@@ -1256,3 +1256,28 @@ Paused at {a} % ({b} of {c} MB). Press Resume to carry on.
 About {a} left.
 Loading the CLIP model… {a} % ({b} of {c} MB, first time only)
 Loading the AI model… {a} % ({b} of {c} MB, first time only)
+Highest data rate
+3 MB/s (recommended)
+2 MB/s
+4 MB/s
+6 MB/s
+No limit
+A ceiling on top of the quality setting. VJ software plays many videos at once and reads every one from the disk, so keep it low. 3 MB/s is smooth for several full HD layers.
+Higher = better picture and a larger file. 8 Mbit/s is about 600 MB for 10 minutes. 24 Mbit/s (3 MB/s) is the highest, so the video still plays smoothly in VJ software.
+Bring it to life
+Make still or short loops more alive: slow in and out, a gentle breathing, a floating camera. The clip is repeated to the length you choose, and the movement fits exactly, so it still loops without a jump.
+Style
+Calm breathing
+Floating
+Dreamy
+Pulse
+Pick a style, then fine-tune under Advanced if you like.
+Make it at least (seconds)
+The loop is repeated until it is this long. 16 s and longer suits the Magic Video Mixer.
+Slow in and out
+The movement lingers at the loop point and glides through the middle.
+The picture drifts slowly sideways and up and down. It is enlarged a little so no edges show.
+Gentle tilt
+Light and colour breathing
+Soft trails
+Only {a} s long. Short or still loops get much more interesting with slow-in-and-out motion and a gentle breathing zoom, repeated to 16 s.

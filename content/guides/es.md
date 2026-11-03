@@ -275,6 +275,10 @@ Cómo se usa:
 
 ¿Quieres el mismo clip en varios estilos? Toca el mosaico Look y elige todos los looks que quieras, por ejemplo The Matrix, Dark Future y Purple Dream. Obtienes un archivo por cada look. Marca [[Also save the clip without a look]] para tener también el clip sin look.
 
+Los loops quietos o cortos cobran vida con la ficha [[Bring it to life]]. Elige un estilo (respiración calmada, flotante, onírico o pulso) y el clip recibe entrada y salida suaves, un zoom que respira y, si quieres, una cámara flotante, inclinación y luz que respira. Se repite hasta al menos 16 segundos (tú eliges) y cada movimiento encaja exactamente en la repetición, así que sigue haciendo loop sin saltos. Ajusta cada parte en Avanzado.
+
+Otras formas de dar movimiento orgánico a loops quietos: **ida y vuelta** (hacia delante y luego hacia atrás) con la ficha Make it loop, **cámara lenta** para calmarlo todo, **estelas suaves** para un resplandor onírico y un **look** que cambie de color lentamente. Combínalos.
+
 Todo funciona en tu navegador. Para calidad de IA usa [Ampliar](@guides/tools/#ai) y [Cámara lenta](@guides/tools/#slowmo) en las herramientas. [Abrir el Loop Hospital](@@tools/hospital/).
 
 

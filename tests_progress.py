@@ -61,6 +61,14 @@ with sync_playwright() as pw:
     r = pg.evaluate("({s:VJ.JOBS[0].status,n:VJ.JOBS[0].results.length,p:VJ.JOBS[0].progress,smp:__samples})")
     check(r["s"] == "done" and r["n"] == 3 and r["p"] == 1, f"resumed job finishes all 3 files ({r['s']}, {r['n']})")
     check(all(b2 >= a - 1e-9 for a, b2 in zip(r["smp"], r["smp"][1:])) and all(0 <= x <= 1 for x in r["smp"]), "progress never goes backwards or outside 0..1")
+    # removing a finished job from Jobs also removes it from the Queue (page and pop-up panel), also after a reload
+    qp.wait_for_selector("[data-k] .chip.done", timeout=8000)
+    ep = ctx.new_page(); ep.goto(BASE + "/queue/index.html?embed=1"); ep.wait_for_selector("[data-k] .chip.done", timeout=8000)
+    pg.click("#jobs [data-a=del]")
+    qp.wait_for_function("document.querySelectorAll('[data-k]').length===0", timeout=8000); ep.wait_for_function("document.querySelectorAll('[data-k]').length===0", timeout=8000)
+    check(True, "Remove from list in Tools empties the Queue page and the pop-up Queue at once")
+    qp.reload(); qp.wait_for_function("window.__queue", timeout=8000); qp.wait_for_timeout(600)
+    check(qp.locator("[data-k]").count() == 0, "...and it stays gone after a reload")
     # helper rules
     h = pg.evaluate("""async () => { const m = await import('/shared/progress.js');
       return { clamp: [m.clamp01(-1), m.clamp01(2), m.clamp01(.4)], dur: [m.fmtDur(65), m.fmtDur(3723)],

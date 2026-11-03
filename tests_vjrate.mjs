@@ -1,0 +1,13 @@
+// VJ-friendly data rate: the encoder ceiling (default 3 MB/s) really holds on very busy material, and can be changed or turned off.
+import test from 'node:test'; import assert from 'node:assert'; import { execFileSync } from 'node:child_process'; import { mkdtempSync, statSync } from 'node:fs'; import { tmpdir } from 'node:os'; import { join } from 'node:path';
+import { encodeArgs, defaultProfile, codecArgs, v2xVbvArgs } from './docs/tools/app/core.js';
+const d = mkdtempSync(join(tmpdir(), 'vjrate_')), src = join(d, 'noise.mp4');
+// 1080p noise: the worst case for an encoder (nothing to predict, everything costs bits)
+execFileSync('ffmpeg', ['-v', 'error', '-y', '-f', 'lavfi', '-i', 'color=c=gray:s=1920x1080:r=30:d=6,noise=alls=100:allf=t+u', '-c:v', 'libx264', '-crf', '10', '-pix_fmt', 'yuv420p', src]);
+const info = { width: 1920, height: 1080, fps: 30, duration: 6, hasAudio: false, codec: 'h264' };
+const run = prof => { const out = join(d, 'o' + Math.random().toString(36).slice(2) + '.mp4'); execFileSync('ffmpeg', ['-v', 'error', ...encodeArgs(src, out, prof, info).map(x => x === '-y' ? '-y' : x)]); return statSync(out).size / 6 / 1e6; };   // MB per second
+test('default profile caps at 3 MB/s', () => { const p = defaultProfile(); assert.equal(p.maxMBps, 3); const r = run({ ...p, crf: 12, preset: 'ultrafast' }); assert.ok(r <= 3.4, `busy picture came out at ${r.toFixed(2)} MB/s`); assert.ok(r > 1.5, `the cap should not starve it (${r.toFixed(2)} MB/s)`); });
+test('a profile saved before the setting existed still gets the cap', () => { const p = defaultProfile(); delete p.maxMBps; assert.ok(codecArgs(p).includes('-maxrate')); assert.equal(codecArgs(p)[codecArgs(p).indexOf('-maxrate') + 1], '24M'); });
+test('2 MB/s is lower than 3 MB/s, and 0 means no ceiling', () => { const p = { ...defaultProfile(), crf: 12, preset: 'ultrafast' }; const a = run({ ...p, maxMBps: 2 }), b = run({ ...p, maxMBps: 0 }); assert.ok(a <= 2.3, `${a}`); assert.ok(b > 3.6, `no ceiling should be bigger (${b.toFixed(2)})`); assert.ok(!codecArgs({ ...p, maxMBps: 0 }).includes('-maxrate')); });
+test('AI (Video2X) encoder options carry the same ceiling (half a second of buffer, so short loops cannot overshoot)', () => { assert.deepEqual(v2xVbvArgs(defaultProfile()), ['-e', 'maxrate=24M', '-e', 'bufsize=12M']); assert.deepEqual(v2xVbvArgs({ ...defaultProfile(), maxMBps: 0 }), []); });
+test('still VJ friendly: short keyframe interval, constant frame rate, faststart, yuv420p', () => { const a = encodeArgs('a', 'b', defaultProfile(), info).join(' '); for (const k of ['-g 30', '-fps_mode cfr', '+faststart', 'yuv420p']) assert.ok(a.includes(k), k); });

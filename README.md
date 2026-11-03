@@ -47,6 +47,9 @@ python3 tests_mixer_render.py  # Magic Mixer (desktop and phone) makes a real vi
 python3 tests_v2x.py           # AI upscale with Video2X, tested with a stand-in program (real Video2X needs a Vulkan GPU)
 python3 tests_newtools.py      # crop & trim, sizes, HAP/ProRes, catalogue, loop pack (real ffmpeg)
 node --test tests_filters.mjs   # runs all twenty filters with the computer's own ffmpeg
+node --test tests_life.mjs        # Loop Hospital "Bring it to life": real ffmpeg, seamless loop, still pictures move, 16 s
+python3 tests_life_ui.py         # the same step in the page: suggestion, styles, Advanced, a real 16 s result
+node --test tests_vjrate.mjs      # exports stay under the data-rate ceiling (default 3 MB/s) even on 1080p noise
 node --test tests_live_core.mjs tests_vj_core.mjs tests_engine.mjs
 ```
 

@@ -275,6 +275,10 @@ How to use it:
 
 Want the same clip in several styles? Tap the Look tile and pick as many looks as you like, for example The Matrix, Dark Future and Purple Dream. You get one file for each look. Tick [[Also save the clip without a look]] to get the plain clip too.
 
+Still or short loops can be brought to life with the [[Bring it to life]] tile. Pick a style (calm breathing, floating, dreamy or pulse) and the clip gets slow-in-and-out movement, a gentle breathing zoom and, if you like, a floating camera, tilt and light breathing. It is repeated to at least 16 seconds (you choose), and every movement fits exactly into the repeat, so it still loops without a jump. Fine-tune each part under Advanced.
+
+Other ways to make still loops feel organic: **ping-pong** (play forward, then backward) with the Make it loop tile, **slow motion** to calm everything down, **soft trails** for a dreamy afterglow, and a **look** that changes colour slowly. Combine them.
+
 Everything runs in your browser. For AI quality use [Upscale](@guides/tools/#ai) and [Slow motion](@guides/tools/#slowmo) in the tools. [Open the Loop Hospital](@@tools/hospital/).
 
 

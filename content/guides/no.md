@@ -275,6 +275,10 @@ Slik gjør du:
 
 Vil du ha samme klipp i flere stiler? Trykk på Look-flisen og velg så mange looks du vil, for eksempel The Matrix, Dark Future og Purple Dream. Du får én fil for hver look. Huk av [[Also save the clip without a look]] for å få klippet uten look også.
 
+Stille eller korte looper kan få liv med flisen [[Bring it to life]]. Velg en stil (rolig pust, svevende, drømmende eller puls), så får klippet myk inn- og utbremsing, en rolig pustende zoom og, hvis du vil, et svevende kamera, litt helning og pustende lys. Det gjentas til minst 16 sekunder (du velger), og hver bevegelse passer nøyaktig inn i gjentakelsen, så det fortsatt looper uten hakk. Finjuster hver del under Avansert.
+
+Andre måter å gjøre stille looper mer organiske: **fram og tilbake** (spill forover, så bakover) med flisen Make it loop, **sakte film** for å roe alt ned, **myke spor** for et drømmende ettersmak, og et **look** som skifter farge sakte. Kombiner dem.
+
 Alt kjører i nettleseren din. For KI-kvalitet bruker du [Oppskalering](@guides/tools/#ai) og [Slowmotion](@guides/tools/#slowmo) i verktøyene. [Åpne Loop Hospital](@@tools/hospital/).
 
 

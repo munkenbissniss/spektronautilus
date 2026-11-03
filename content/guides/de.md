@@ -275,6 +275,10 @@ So geht's:
 
 Den gleichen Clip in mehreren Stilen? Tippe auf die Look-Kachel und wähle so viele Looks, wie du magst, zum Beispiel The Matrix, Dark Future und Purple Dream. Du bekommst eine Datei pro Look. Hake [[Also save the clip without a look]] an, um den Clip auch ohne Look zu bekommen.
 
+Ruhige oder kurze Loops erwachen mit der Kachel [[Bring it to life]] zum Leben. Wähle einen Stil (ruhiges Atmen, schwebend, verträumt oder Puls), und der Clip bekommt sanftes Ein- und Ausblenden der Bewegung, einen atmenden Zoom und auf Wunsch eine schwebende Kamera, Neigung und atmendes Licht. Er wird auf mindestens 16 Sekunden wiederholt (du wählst), und jede Bewegung passt genau in die Wiederholung, sodass er ohne Sprung weiter loopt. Feinjustiere jeden Teil unter Erweitert.
+
+Weitere Wege zu organischerer Bewegung: **Hin und zurück** (vorwärts, dann rückwärts) mit der Kachel Make it loop, **Zeitlupe**, die alles beruhigt, **weiche Spuren** für ein verträumtes Nachleuchten und ein **Look**, der langsam die Farbe wechselt. Kombiniere sie.
+
 Alles läuft in deinem Browser. Für KI-Qualität nutze [Hochskalieren](@guides/tools/#ai) und [Zeitlupe](@guides/tools/#slowmo) in den Werkzeugen. [Loop Hospital öffnen](@@tools/hospital/).
 
 
