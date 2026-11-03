@@ -55,6 +55,8 @@ Most people never need these. They are under [[Advanced]] sections.
 - [[Style match]] makes the next clip look like the one before, so the mix flows.
 - [[Layers & looks]] blend a second clip on top, add a colour tint per section and let the picture breathe with the music.
 - [[Motion & effects]] add beat zoom, shake, brightness pulse and echo trails. All are gentle by default.
+- [[Cuts & sync]] is about the editing. Hard cuts land on the beat, mostly on drops and new parts of the song. Build-up rush makes the shots shorter and shorter before a drop, so the last one ends exactly on it. Clips can start from their first frame on the cut, move in time with the tempo and punch with the kick. The **Demo** mood at the top turns all of this on.
+- [[Demoscene style]] is inspired by the demo scene of the 1990s and 2000s: plasma, copper bars, tunnel echo, wavy picture, pixel crunch, colour split, starfield, glow, film grain, a flash on new parts, cinema bars and a scrolling text. Everything locks to the beat and is off until you turn it up.
 - [[Use every loop]] tries to show all your loops at least once.
 - [[Use CLIP (AI image understanding)]] lets an AI model (CLIP) look at your loops. It downloads about 100 to 150 MB the first time, so use Wi-Fi. It works offline after that.
 - [[Seed (empty = random)]]. The same seed and the same settings give the same mix. Use [[Versions]] to make several different mixes at once.
@@ -279,7 +281,7 @@ Still or short loops can be brought to life with the [[Bring it to life]] tile. 
 
 Other ways to make still loops feel organic: **ping-pong** (play forward, then backward) with the Make it loop tile, **slow motion** to calm everything down, **soft trails** for a dreamy afterglow, and a **look** that changes colour slowly. Combine them.
 
-Everything runs in your browser. In the local version on [Linux](@guides/offline-linux/#linux) with Video2X installed, the Slow motion and Upscale tiles also offer an **AI** method (RIFE and Real-ESRGAN). The AI steps run first and can take a while; the rest of the treatment follows. The preview always uses the fast methods. More about the AI methods: [Upscale](@guides/tools/#ai) and [Slow motion](@guides/tools/#slowmo). [Open the Loop Hospital](@@tools/hospital/).
+Everything runs in your browser. In the local version on [Linux](@guides/offline-linux/#linux) with Video2X installed, the Slow motion and Upscale tiles also offer an **AI** method (RIFE and Real-ESRGAN). The AI steps run first and can take a while; the rest of the treatment follows. The preview always uses the fast methods. **Try the AI on 2 seconds** shows the real AI quality and how long the whole clip will take. The graphics card is chosen automatically, and the very slow software driver (llvmpipe) is avoided. More about the AI methods: [Upscale](@guides/tools/#ai) and [Slow motion](@guides/tools/#slowmo). [Open the Loop Hospital](@@tools/hospital/).
 
 
 ## Upload to Vimeo {#upload}

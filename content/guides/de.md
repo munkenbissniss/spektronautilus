@@ -55,6 +55,8 @@ Die meisten Leute brauchen sie nie. Sie stehen in den Bereichen [[Advanced]].
 - [[Style match]] sorgt dafür, dass der nächste Clip dem vorigen ähnelt, damit der Mix fließt.
 - [[Layers & looks]] blendet einen zweiten Clip darüber, gibt jedem Abschnitt einen Farbton und lässt das Bild mit der Musik atmen.
 - [[Motion & effects]] bringen Beat-Zoom, Wackeln, Helligkeitspuls und Echo-Spuren. Alles ist standardmäßig sanft.
+- [[Cuts & sync]] betrifft den Schnitt. Harte Schnitte landen im Beat, meist bei Drops und neuen Songteilen. Die Build-up-Beschleunigung macht die Einstellungen vor einem Drop immer kürzer, sodass die letzte genau darauf endet. Clips können beim Schnitt von ihrem ersten Bild starten, sich im Tempo bewegen und mit der Kick zuschlagen. Die Stimmung **Demo** ganz oben schaltet all das ein.
+- [[Demoscene style]] ist von der Demoszene der 1990er und 2000er inspiriert: Plasma, Copper Bars, Tunnel-Echo, wellendes Bild, Pixel-Crunch, Farbversatz, Sternenfeld, Glühen, Filmkorn, Blitz bei neuen Teilen, Kinobalken und ein Lauftext. Alles rastet am Beat ein und ist aus, bis du es aufdrehst.
 - [[Use every loop]] versucht, alle deine Loops mindestens einmal zu zeigen.
 - [[Use CLIP (AI image understanding)]] lässt ein KI-Modell (CLIP) deine Loops ansehen. Beim ersten Mal lädt es etwa 100 bis 150 MB herunter, nutze also WLAN. Danach funktioniert es offline.
 - [[Seed (empty = random)]]. Gleicher Seed und gleiche Einstellungen ergeben denselben Mix. Mit [[Versions]] erzeugst du mehrere verschiedene Mixe auf einmal.
@@ -279,7 +281,7 @@ Ruhige oder kurze Loops erwachen mit der Kachel [[Bring it to life]] zum Leben. 
 
 Weitere Wege zu organischerer Bewegung: **Hin und zurück** (vorwärts, dann rückwärts) mit der Kachel Make it loop, **Zeitlupe**, die alles beruhigt, **weiche Spuren** für ein verträumtes Nachleuchten und ein **Look**, der langsam die Farbe wechselt. Kombiniere sie.
 
-Alles läuft in deinem Browser. In der lokalen Version unter [Linux](@guides/offline-linux/#linux) mit installiertem Video2X bieten die Kacheln Zeitlupe und Hochskalieren auch eine **KI**-Methode (RIFE und Real-ESRGAN). Die KI-Schritte laufen zuerst und können dauern; der Rest der Behandlung folgt danach. Die Vorschau nutzt immer die schnellen Methoden. Mehr zu den KI-Methoden: [Hochskalieren](@guides/tools/#ai) und [Zeitlupe](@guides/tools/#slowmo). [Loop Hospital öffnen](@@tools/hospital/).
+Alles läuft in deinem Browser. In der lokalen Version unter [Linux](@guides/offline-linux/#linux) mit installiertem Video2X bieten die Kacheln Zeitlupe und Hochskalieren auch eine **KI**-Methode (RIFE und Real-ESRGAN). Die KI-Schritte laufen zuerst und können dauern; der Rest der Behandlung folgt danach. Die Vorschau nutzt immer die schnellen Methoden. **KI an 2 Sekunden testen** zeigt die echte KI-Qualität und wie lange der ganze Clip dauert. Die Grafikkarte wird automatisch gewählt, und der sehr langsame Software-Treiber (llvmpipe) wird gemieden. Mehr zu den KI-Methoden: [Hochskalieren](@guides/tools/#ai) und [Zeitlupe](@guides/tools/#slowmo). [Loop Hospital öffnen](@@tools/hospital/).
 
 
 ## Zu Vimeo hochladen {#upload}

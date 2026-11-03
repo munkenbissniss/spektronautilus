@@ -1294,3 +1294,60 @@ Kind of picture (AI)
 Sharpness (Sharp method)
 Soft blend is fast. Smooth motion is slower, but cleaner on fast movement. AI gives the best result, but needs the Linux version with Video2X and a graphics card. It can take a long time.
 Sharp works everywhere. AI gives the best result, but needs the Linux version with Video2X and a graphics card. It can take a long time.
+Demo
+Demoscene style
+Inspired by the demo scene of the 1990s and 2000s: plasma, copper bars, tunnels and glitchy hits that lock to the beat. All are off until you turn them up.
+Plasma
+A slow, colourful plasma wash over the picture, like in the old demos. It swells with the music.
+Copper bars
+Glowing horizontal colour bars that glide up and down and light up on the beat.
+Tunnel echo
+The picture echoes into a slowly zooming and turning tunnel. It looks best with darker loops.
+Wavy picture
+The picture ripples sideways in stripes, a classic demo effect. The waves kick on the beat.
+Pixel crunch
+The picture breaks into big blocks for a moment on each beat hit.
+Colour split
+Red, green and blue slip apart on each beat hit, like a glitchy old screen.
+Starfield
+Stars fly towards you from the centre, faster on the beat.
+Old screen
+Scanlines and dark corners, like a CRT monitor.
+Scroller text (optional)
+A wavy, colourful text that scrolls along the bottom, like the greetings in old demos. Leave empty for none.
+Scroller speed
+Letters per second.
+Lock effects to
+Change per section
+Each part of the song gets its own mix of these effects, like the parts of a demo. 0 = every effect all the time.
+Inspired by the demo scene: plasma, copper bars, starfield and glitchy hits on the kick. Heavy on the phone, so a smaller picture size runs more smoothly.
+Glow
+A soft glow around bright areas, the dreamy, filmic look of the best 64k intros. It swells on the beat.
+Film grain
+Fine, moving grain over the picture.
+Flash on new parts
+A white flash when a new part of the song starts, strongest on drops. The hard cut of a demo.
+Cinema bars
+Black bars at the top and bottom for a widescreen, film-like picture.
+Cuts & sync
+Inspired by the editing of demos and VJ sets: cuts that land exactly on the beat, shots that get faster before a drop, and loops that start on the cut and move in time with the tempo.
+Hard cuts on the beat
+How many of the changes between clips are sharp cuts instead of fades. Cuts are most likely on drops, at the start of a new part of the song and on the first beat of a four-bar phrase. 0 = only fades.
+Build-up rush
+Before a drop the shots get shorter and shorter, half as long each time, and the last one ends exactly on the drop. 0 = off, 0.5 = down to 2 beats, 1 = down to single beats.
+Start each clip from its beginning on the cut
+A clip starts from its first frame when it comes in, so its movement begins on the beat instead of somewhere in the middle. Works best with sharp cuts.
+Move the loops in time with the tempo
+Each loop is sped up or slowed down a little, by up to about a third, so that one round of the loop lasts a whole number of beats. The movement then repeats in time with the music. This replaces slow motion in calm parts.
+Speed punch on the kick
+Loops speed up for a moment on every kick and settle back down, like a pulse in the movement.
+Sharp cuts on the beat, shots that get faster before a drop, and a flash on every new part.
+AI upscaling…
+AI slow motion…
+Only a software graphics driver was found. AI will be very slow. Install the Vulkan driver for your graphics card.
+Graphics card number for AI (0 = automatic)
+Automatic picks a real graphics card and avoids the slow software driver. Change it only if the wrong card is used.
+Try the AI on 2 seconds
+Runs the AI on 2 seconds and tells you how long the whole clip will take.
+Making an AI sample…
+AI sample done in {a}. The whole clip would take about {b}, plus the other steps.

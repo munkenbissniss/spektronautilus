@@ -55,6 +55,8 @@ De fleste trenger dem aldri. De ligger under [[Advanced]].
 - [[Style match]] gjør at neste klipp ligner på det forrige, så miksen flyter.
 - [[Layers & looks]] legger et klipp til oppå, gir hver del en fargetone og lar bildet puste med musikken.
 - [[Motion & effects]] gir beat-zoom, risting, lyspuls og ekko-spor. Alt er behagelig som standard.
+- [[Cuts & sync]] handler om klippingen. Harde klipp lander på beaten, mest på drops og nye deler av låta. Build-up-rush gjør bildene kortere og kortere før en drop, så det siste ender nøyaktig på den. Klipp kan starte fra første bilde på klippet, bevege seg i takt med tempoet og slå til med kicken. Stemningen **Demo** øverst skrur alt dette på.
+- [[Demoscene style]] er inspirert av demoscenen fra 1990- og 2000-tallet: plasma, copper bars, tunnelekko, bølgende bilde, pikselknas, fargesplitt, stjernehimmel, glød, filmkorn, blink på nye deler, kinostriper og rulletekst. Alt låser seg til beaten og er av til du skrur det opp.
 - [[Use every loop]] prøver å vise alle loopene minst én gang.
 - [[Use CLIP (AI image understanding)]] lar en KI-modell (CLIP) se på loopene dine. Den laster ned ca. 100 til 150 MB første gang, så bruk Wi-Fi. Etter det fungerer den uten internett.
 - [[Seed (empty = random)]]. Samme seed og samme innstillinger gir samme miks. Bruk [[Versions]] for å lage flere ulike miksere på en gang.
@@ -279,7 +281,7 @@ Stille eller korte looper kan få liv med flisen [[Bring it to life]]. Velg en s
 
 Andre måter å gjøre stille looper mer organiske: **fram og tilbake** (spill forover, så bakover) med flisen Make it loop, **sakte film** for å roe alt ned, **myke spor** for et drømmende ettersmak, og et **look** som skifter farge sakte. Kombiner dem.
 
-Alt kjører i nettleseren din. I den lokale versjonen på [Linux](@guides/offline-linux/#linux) med Video2X installert tilbyr Slowmotion- og Oppskalering-flisene også en **AI**-metode (RIFE og Real-ESRGAN). AI-stegene kjører først og kan ta en stund; resten av behandlingen kommer etterpå. Forhåndsvisningen bruker alltid de raske metodene. Mer om AI-metodene: [Oppskalering](@guides/tools/#ai) og [Slowmotion](@guides/tools/#slowmo). [Åpne Loop Hospital](@@tools/hospital/).
+Alt kjører i nettleseren din. I den lokale versjonen på [Linux](@guides/offline-linux/#linux) med Video2X installert tilbyr Slowmotion- og Oppskalering-flisene også en **AI**-metode (RIFE og Real-ESRGAN). AI-stegene kjører først og kan ta en stund; resten av behandlingen kommer etterpå. Forhåndsvisningen bruker alltid de raske metodene. **Prøv AI på 2 sekunder** viser den ekte AI-kvaliteten og hvor lang tid hele klippet vil ta. Skjermkortet velges automatisk, og den veldig trege programvaredriveren (llvmpipe) unngås. Mer om AI-metodene: [Oppskalering](@guides/tools/#ai) og [Slowmotion](@guides/tools/#slowmo). [Åpne Loop Hospital](@@tools/hospital/).
 
 
 ## Last opp til Vimeo {#upload}

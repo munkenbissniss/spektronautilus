@@ -55,6 +55,8 @@ A maioria das pessoas nunca precisa delas. Estão nas secções [[Advanced]].
 - [[Style match]] faz com que o clipe seguinte se pareça com o anterior, para a mistura fluir.
 - [[Layers & looks]] mistura um segundo clipe por cima, dá um tom de cor a cada secção e deixa a imagem respirar com a música.
 - [[Motion & effects]] acrescentam zoom ao ritmo, abanão, pulso de brilho e rastos. Tudo é suave por predefinição.
+- [[Cuts & sync]] trata da edição. Os cortes secos caem no ritmo, sobretudo nos drops e nas partes novas da música. A aceleração antes do drop encurta os planos cada vez mais, e o último termina mesmo nele. Os clipes podem começar do primeiro fotograma no corte, mover-se ao compasso do tempo e dar um impulso com o bombo. O clima **Demo** no topo liga tudo isto.
+- [[Demoscene style]] é inspirado na demoscene dos anos 90 e 2000: plasma, barras de cobre, eco de túnel, imagem ondulante, pixelado brusco, divisão de cor, campo de estrelas, brilho, grão de filme, flash em partes novas, barras de cinema e um texto em rolagem. Tudo se sincroniza com o ritmo e está desligado até o aumentares.
 - [[Use every loop]] tenta mostrar todos os seus loops pelo menos uma vez.
 - [[Use CLIP (AI image understanding)]] deixa um modelo de IA (CLIP) olhar para os seus loops. Descarrega cerca de 100 a 150 MB à primeira vez, por isso use Wi-Fi. Depois funciona sem ligação.
 - [[Seed (empty = random)]]. A mesma semente e as mesmas definições dão a mesma mistura. Use [[Versions]] para criar várias misturas diferentes de uma vez.
@@ -279,7 +281,7 @@ Loops parados ou curtos ganham vida com o mosaico [[Bring it to life]]. Escolhe 
 
 Outras formas de dar movimento orgânico a loops parados: **vaivém** (para a frente e depois para trás) com o mosaico Make it loop, **câmara lenta** para acalmar tudo, **rastos suaves** para um brilho onírico e um **look** que muda de cor devagar. Combina-os.
 
-Tudo corre no seu navegador. Na versão local em [Linux](@guides/offline-linux/#linux) com o Video2X instalado, os blocos de câmara lenta e ampliar também oferecem um método de **IA** (RIFE e Real-ESRGAN). Os passos de IA vão primeiro e podem demorar; o resto do tratamento segue depois. A pré-visualização usa sempre os métodos rápidos. Mais sobre os métodos de IA: [Ampliar](@guides/tools/#ai) e [Câmara lenta](@guides/tools/#slowmo). [Abrir o Loop Hospital](@@tools/hospital/).
+Tudo corre no seu navegador. Na versão local em [Linux](@guides/offline-linux/#linux) com o Video2X instalado, os blocos de câmara lenta e ampliar também oferecem um método de **IA** (RIFE e Real-ESRGAN). Os passos de IA vão primeiro e podem demorar; o resto do tratamento segue depois. A pré-visualização usa sempre os métodos rápidos. **Experimentar a IA em 2 segundos** mostra a qualidade real da IA e quanto tempo demorará o clipe todo. A placa gráfica é escolhida automaticamente e evita-se o lentíssimo controlador por software (llvmpipe). Mais sobre os métodos de IA: [Ampliar](@guides/tools/#ai) e [Câmara lenta](@guides/tools/#slowmo). [Abrir o Loop Hospital](@@tools/hospital/).
 
 
 ## Carregar para o Vimeo {#upload}
