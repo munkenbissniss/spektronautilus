@@ -268,6 +268,8 @@ Bündelt Loops zu einer zip-Datei zum Teilen, mit Vorschaubild, Infodatei und Li
 ## Loop Hospital {#hospital}
 Das Loop Hospital kümmert sich um einen Clip nach dem anderen, damit er bereit für die Mixer ist. Bring einen Clip herein, und er wird untersucht: Größe, Bildrate, Länge und ob er ohne Sprung loopt. Die Untersuchung schlägt Behandlungen vor, zum Beispiel Hochskalieren bei einem kleinen Bild oder eine Loop-Korrektur, wenn man einen Sprung sieht.
 
+Du hast ein GIF? Wähle es und drücke [[Convert GIF to MP4]], direkt über dem Videofenster. Es wird zuerst zu einem normalen mp4, das du herunterladen kannst, und danach kannst du es mit den Behandlungen unten verbessern.
+
 So geht's:
 1. Drücke [[choose a clip]] oder lege einen Clip ab.
 2. Drücke [[Add all suggested treatments]] oder tippe auf die Kacheln, die du willst: Schneiden, Drehen, Zuschneiden, Zeitlupe, Hochskalieren, Größe ändern, Look und Loop machen. Jede Kachel öffnet darunter ihre Einstellungen. Sie werden in dieser Reihenfolge ausgeführt.

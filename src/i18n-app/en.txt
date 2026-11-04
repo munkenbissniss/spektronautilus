@@ -1356,3 +1356,10 @@ Fix jerky movement. It finds the places where the picture lurches or crawls and 
 How much to even out
 Higher is smoother, but it changes the natural rhythm of the clip more.
 Remove stray frames that jump out of place
+Convert GIF to MP4
+Makes a normal video of this GIF first, so you can fix it with the treatments below. The GIF itself is not changed.
+Converted to MP4. You can treat it below.
+Download the MP4
+Converting the GIF…
+Done. This is now an MP4. Choose your treatments below.
+Choose a GIF first.

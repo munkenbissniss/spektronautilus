@@ -268,6 +268,8 @@ Pakker loops i en zip du kan dele, med forhåndsbilde, en infofil og en lisens. 
 ## Loop Hospital {#hospital}
 Loop Hospital tar seg av ett klipp om gangen, slik at det blir klart for mikserne. Ta med et klipp, så blir det undersøkt: størrelse, bildefrekvens, lengde og om det looper uten hopp. Undersøkelsen foreslår behandlinger, for eksempel oppskalering for et lite bilde, eller en loop-fiks når du ser et hopp.
 
+Har du en GIF? Velg den og trykk [[Convert GIF to MP4]], rett over videovinduet. Den blir først en vanlig mp4 som du kan laste ned, og så kan du fikse den med behandlingene under.
+
 Slik gjør du:
 1. Trykk [[choose a clip]] eller slipp et klipp.
 2. Trykk [[Add all suggested treatments]], eller trykk på flisene du vil ha: kutt, roter, beskjær, slowmotion, oppskalering, endre størrelse, look og lag loop. Hver flis åpner innstillingene sine under. De gjøres i den rekkefølgen.

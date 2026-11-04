@@ -268,6 +268,8 @@ Bundles loops into a zip you can share, with a preview picture, an information f
 ## Loop Hospital {#hospital}
 The Loop Hospital looks after one clip at a time, so it is ready for the mixers. Bring in a clip and it is examined: size, frame rate, length and whether it loops without a jump. The examination suggests treatments, for example upscale for a small picture, or a loop fix when you can see a jump.
 
+Got a GIF? Choose it and press [[Convert GIF to MP4]], right above the video window. It becomes a normal mp4 first, which you can download, and then you can fix it with the treatments below.
+
 How to use it:
 1. Press [[choose a clip]] or drop a clip.
 2. Press [[Add all suggested treatments]], or tap the tiles you want: cut, rotate, crop, slow motion, upscale, resize, look and make it loop. Each tile opens its settings below. They are done in that order.

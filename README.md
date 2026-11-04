@@ -51,6 +51,7 @@ node --test tests_life.mjs        # Loop Hospital "Bring it to life": real ffmpe
 node tests_smooth.mjs           # "Smooth out": stray frames found, a lurch is evened out, works after Cut
 node tests_loops.mjs            # "Make it loop": back-and-forth keeps its tempo, eases at the turnaround, no jump at the seam
 python3 tests_hospital_ai.py       # Loop Hospital: AI slow motion + AI upscale (stand-in Video2X), disabled in the browser version, preview stays light
+python3 tests_gif.py             # Loop Hospital: Convert GIF to MP4 above the video window, then treat the mp4
 python3 tests_cuts.py            # Magic Mixer cuts & sync: build-up rush, hard cuts, real render (desktop and phone)
 python3 tests_aiprogress.py     # true progress when the result is longer than the input, graphics card choice for AI
 python3 tests_life_ui.py         # the same step in the page: suggestion, styles, Advanced, a real 16 s result

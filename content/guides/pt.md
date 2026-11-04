@@ -268,6 +268,8 @@ Reúne loops num zip que pode partilhar, com imagem de pré-visualização, um f
 ## Loop Hospital {#hospital}
 O Loop Hospital trata de um clipe de cada vez, para ficar pronto para os misturadores. Traga um clipe e ele é examinado: tamanho, taxa de fotogramas, duração e se faz loop sem salto. O exame sugere tratamentos, por exemplo ampliar uma imagem pequena, ou arranjar o loop quando se vê um salto.
 
+Tens um GIF? Escolhe-o e carrega em [[Convert GIF to MP4]], mesmo acima da janela de vídeo. Primeiro fica um mp4 normal, que podes descarregar, e depois podes corrigi-lo com os tratamentos abaixo.
+
 Como usar:
 1. Carregue em [[choose a clip]] ou largue um clipe.
 2. Prima [[Add all suggested treatments]] ou toque nos mosaicos que quiser: cortar, rodar, recortar forma, câmara lenta, ampliar, redimensionar, look e fazer loop. Cada mosaico abre as suas definições abaixo. São feitos por essa ordem.

@@ -1,0 +1,7 @@
+1359 ¦ Konverter GIF til MP4 ¦ Convertir GIF a MP4 ¦ GIF in MP4 umwandeln ¦ Converter GIF em MP4
+1360 ¦ Lager først en vanlig video av denne GIF-en, så du kan fikse den med behandlingene under. Selve GIF-en endres ikke. ¦ Primero crea un vídeo normal de este GIF, para que puedas arreglarlo con los tratamientos de abajo. El GIF en sí no cambia. ¦ Erzeugt zuerst ein normales Video aus diesem GIF, das du dann mit den Behandlungen unten verbessern kannst. Das GIF selbst bleibt unverändert. ¦ Primeiro cria um vídeo normal deste GIF, para o poderes corrigir com os tratamentos abaixo. O GIF em si não é alterado.
+1361 ¦ Konvertert til MP4. Du kan behandle den under. ¦ Convertido a MP4. Puedes tratarlo abajo. ¦ In MP4 umgewandelt. Du kannst es unten behandeln. ¦ Convertido para MP4. Podes tratá-lo abaixo.
+1362 ¦ Last ned MP4-en ¦ Descargar el MP4 ¦ MP4 herunterladen ¦ Descarregar o MP4
+1363 ¦ Konverterer GIF-en… ¦ Convirtiendo el GIF… ¦ GIF wird umgewandelt… ¦ A converter o GIF…
+1364 ¦ Ferdig. Dette er nå en MP4. Velg behandlingene dine under. ¦ Listo. Ahora es un MP4. Elige tus tratamientos abajo. ¦ Fertig. Das ist jetzt ein MP4. Wähle unten deine Behandlungen. ¦ Pronto. Agora é um MP4. Escolhe os teus tratamentos abaixo.
+1365 ¦ Velg en GIF først. ¦ Elige primero un GIF. ¦ Wähle zuerst ein GIF. ¦ Escolhe primeiro um GIF.
