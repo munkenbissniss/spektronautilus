@@ -56,7 +56,6 @@ La mayoría de la gente nunca los necesita. Están en las secciones [[Advanced]]
 - [[Layers & looks]] mezcla un segundo clip por encima, añade un tono de color por sección y deja que la imagen respire con la música.
 - [[Motion & effects]] añaden zoom al ritmo, sacudida, pulso de brillo y estelas. Todo es suave por defecto.
 - [[Cuts & sync]] trata del montaje. Los cortes secos caen en el ritmo, sobre todo en los drops y en las partes nuevas de la canción. La aceleración antes del drop acorta los planos cada vez más, y el último termina justo en él. Los clips pueden empezar desde su primer fotograma en el corte, moverse al compás del tempo y dar un golpe con el bombo. El ambiente **Demo** de arriba activa todo esto.
-- [[Demoscene style]] está inspirado en la demoscene de los años 90 y 2000: plasma, barras de cobre, eco de túnel, imagen ondulante, pixelado brusco, división de color, campo de estrellas, resplandor, grano de película, destello en partes nuevas, barras de cine y un texto desplazable. Todo se sincroniza con el ritmo y está apagado hasta que lo subas.
 - [[Use every loop]] intenta mostrar todos tus loops al menos una vez.
 - [[Use CLIP (AI image understanding)]] deja que un modelo de IA (CLIP) mire tus loops. Descarga unos 100 a 150 MB la primera vez, así que usa Wi-Fi. Después funciona sin conexión.
 - [[Seed (empty = random)]]. La misma semilla y los mismos ajustes dan la misma mezcla. Usa [[Versions]] para crear varias mezclas distintas a la vez.

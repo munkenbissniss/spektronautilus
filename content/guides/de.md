@@ -56,7 +56,6 @@ Die meisten Leute brauchen sie nie. Sie stehen in den Bereichen [[Advanced]].
 - [[Layers & looks]] blendet einen zweiten Clip darüber, gibt jedem Abschnitt einen Farbton und lässt das Bild mit der Musik atmen.
 - [[Motion & effects]] bringen Beat-Zoom, Wackeln, Helligkeitspuls und Echo-Spuren. Alles ist standardmäßig sanft.
 - [[Cuts & sync]] betrifft den Schnitt. Harte Schnitte landen im Beat, meist bei Drops und neuen Songteilen. Die Build-up-Beschleunigung macht die Einstellungen vor einem Drop immer kürzer, sodass die letzte genau darauf endet. Clips können beim Schnitt von ihrem ersten Bild starten, sich im Tempo bewegen und mit der Kick zuschlagen. Die Stimmung **Demo** ganz oben schaltet all das ein.
-- [[Demoscene style]] ist von der Demoszene der 1990er und 2000er inspiriert: Plasma, Copper Bars, Tunnel-Echo, wellendes Bild, Pixel-Crunch, Farbversatz, Sternenfeld, Glühen, Filmkorn, Blitz bei neuen Teilen, Kinobalken und ein Lauftext. Alles rastet am Beat ein und ist aus, bis du es aufdrehst.
 - [[Use every loop]] versucht, alle deine Loops mindestens einmal zu zeigen.
 - [[Use CLIP (AI image understanding)]] lässt ein KI-Modell (CLIP) deine Loops ansehen. Beim ersten Mal lädt es etwa 100 bis 150 MB herunter, nutze also WLAN. Danach funktioniert es offline.
 - [[Seed (empty = random)]]. Gleicher Seed und gleiche Einstellungen ergeben denselben Mix. Mit [[Versions]] erzeugst du mehrere verschiedene Mixe auf einmal.

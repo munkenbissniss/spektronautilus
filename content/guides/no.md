@@ -56,7 +56,6 @@ De fleste trenger dem aldri. De ligger under [[Advanced]].
 - [[Layers & looks]] legger et klipp til oppå, gir hver del en fargetone og lar bildet puste med musikken.
 - [[Motion & effects]] gir beat-zoom, risting, lyspuls og ekko-spor. Alt er behagelig som standard.
 - [[Cuts & sync]] handler om klippingen. Harde klipp lander på beaten, mest på drops og nye deler av låta. Build-up-rush gjør bildene kortere og kortere før en drop, så det siste ender nøyaktig på den. Klipp kan starte fra første bilde på klippet, bevege seg i takt med tempoet og slå til med kicken. Stemningen **Demo** øverst skrur alt dette på.
-- [[Demoscene style]] er inspirert av demoscenen fra 1990- og 2000-tallet: plasma, copper bars, tunnelekko, bølgende bilde, pikselknas, fargesplitt, stjernehimmel, glød, filmkorn, blink på nye deler, kinostriper og rulletekst. Alt låser seg til beaten og er av til du skrur det opp.
 - [[Use every loop]] prøver å vise alle loopene minst én gang.
 - [[Use CLIP (AI image understanding)]] lar en KI-modell (CLIP) se på loopene dine. Den laster ned ca. 100 til 150 MB første gang, så bruk Wi-Fi. Etter det fungerer den uten internett.
 - [[Seed (empty = random)]]. Samme seed og samme innstillinger gir samme miks. Bruk [[Versions]] for å lage flere ulike miksere på en gang.
