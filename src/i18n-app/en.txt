@@ -1351,3 +1351,8 @@ Try the AI on 2 seconds
 Runs the AI on 2 seconds and tells you how long the whole clip will take.
 Making an AI sample…
 AI sample done in {a}. The whole clip would take about {b}, plus the other steps.
+Smooth out
+Fix jerky movement. It finds the places where the picture lurches or crawls and evens out the speed. The clip can come out a little shorter or longer.
+How much to even out
+Higher is smoother, but it changes the natural rhythm of the clip more.
+Remove stray frames that jump out of place

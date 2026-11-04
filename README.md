@@ -48,6 +48,7 @@ python3 tests_v2x.py           # AI upscale with Video2X, tested with a stand-in
 python3 tests_newtools.py      # crop & trim, sizes, HAP/ProRes, catalogue, loop pack (real ffmpeg)
 node --test tests_filters.mjs   # runs all twenty filters with the computer's own ffmpeg
 node --test tests_life.mjs        # Loop Hospital "Bring it to life": real ffmpeg, seamless loop, still pictures move, 16 s
+node tests_smooth.mjs           # "Smooth out": stray frames found, a lurch is evened out, works after Cut
 node tests_loops.mjs            # "Make it loop": back-and-forth keeps its tempo, eases at the turnaround, no jump at the seam
 python3 tests_hospital_ai.py       # Loop Hospital: AI slow motion + AI upscale (stand-in Video2X), disabled in the browser version, preview stays light
 python3 tests_demofx.py          # Magic Mixer demoscene effects: each one changes the picture, Demo mood, real render (desktop and phone)

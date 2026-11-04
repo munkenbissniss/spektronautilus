@@ -279,6 +279,8 @@ Vil du ha samme klipp i flere stiler? Trykk på Look-flisen og velg så mange lo
 
 Stille eller korte looper kan få liv med flisen [[Bring it to life]]. Velg en stil (rolig pust, svevende, drømmende eller puls), så får klippet myk inn- og utbremsing, en rolig pustende zoom og, hvis du vil, et svevende kamera, litt helning og pustende lys. Det gjentas til minst 16 sekunder (du velger), og hver bevegelse passer nøyaktig inn i gjentakelsen, så det fortsatt looper uten hakk. Finjuster hver del under Avansert.
 
+Rykkete bevegelse, for eksempel i klipp satt sammen av looper som ikke passer helt, rettes opp med flisen [[Smooth out]]. Den finner stedene der bildet rykker fram eller kryper, jevner ut farten og fjerner enkeltbilder som hopper ut av rekkefølgen. Klippet kan bli litt kortere eller lengre. Bruk [[Cut]] først hvis du bare vil beholde én loop.
+
 Andre måter å gjøre stille looper mer organiske: **fram og tilbake** (spill forover, så bakover) med flisen Make it loop, **sakte film** for å roe alt ned, **myke spor** for et drømmende ettersmak, og et **look** som skifter farge sakte. Kombiner dem.
 
 Alt kjører i nettleseren din. I den lokale versjonen på [Linux](@guides/offline-linux/#linux) med Video2X installert tilbyr Slowmotion- og Oppskalering-flisene også en **AI**-metode (RIFE og Real-ESRGAN). AI-stegene kjører først og kan ta en stund; resten av behandlingen kommer etterpå. Forhåndsvisningen bruker alltid de raske metodene. **Prøv AI på 2 sekunder** viser den ekte AI-kvaliteten og hvor lang tid hele klippet vil ta. Skjermkortet velges automatisk, og den veldig trege programvaredriveren (llvmpipe) unngås. Mer om AI-metodene: [Oppskalering](@guides/tools/#ai) og [Slowmotion](@guides/tools/#slowmo). [Åpne Loop Hospital](@@tools/hospital/).
