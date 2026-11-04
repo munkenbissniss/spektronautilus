@@ -52,12 +52,19 @@ with sync_playwright() as pw:
         if "16 s" in pg.locator("#findings li").nth(i).inner_text(): fix = pg.locator("#findings li").nth(i).locator("[data-fix]"); break
     fix.click(); pg.wait_for_timeout(300)
     check(pg.locator("[data-step=life]").is_visible(), "adding the suggestion turns the step on")
-    check(pg.input_value("#h_life_breathe") == "35" and pg.input_value("#h_life_minSeconds") == "16", "calm style filled the sliders (breathing 35, at least 16 s)")
+    check(pg.input_value("#h_life_breathe") == "30" and pg.input_value("#h_life_minSeconds") == "16", "calm style filled the sliders (breathing 30, at least 16 s)")
     check(not pg.locator("[data-step=life] details.adv").evaluate("e => e.open"), "the fine-tuning sliders are behind Advanced")
     pg.locator("[data-step=life] input[value=float]").check(force=True); pg.wait_for_timeout(200)
-    check(pg.evaluate("HOSP.R.life.drift") == 60 and pg.evaluate("HOSP.R.life.style") == "float", "choosing Floating sets drift to 60")
+    check(pg.evaluate("HOSP.R.life.drift") == 50 and pg.evaluate("HOSP.R.life.style") == "float", "choosing Floating sets a gentle drift (50)")
     pg.locator("[data-step=life] details.adv summary").click(); pg.fill("#h_life_ease", "80"); pg.dispatch_event("#h_life_ease", "input"); pg.wait_for_timeout(200)
     check(pg.evaluate("HOSP.R.life.style") == "custom" and pg.locator("[data-step=life] input[name=h_life_style]:checked").count() == 0, "moving a slider makes it a custom mix")
+    check(pg.locator("[data-tile=kb]").count() == 1, "the tile 'Ken Burns' exists")
+    pg.click("[data-tile=kb]"); pg.wait_for_timeout(300)
+    check(pg.locator("[data-step=kb]").is_visible() and pg.evaluate("HOSP.R.kb.on") is True and pg.input_value("#h_kb_minSeconds") == "24", "Ken Burns turns on, with a long default (24 s)")
+    check(not pg.locator("[data-step=kb] details.adv").evaluate("e => e.open"), "'glide back' is behind Advanced")
+    pg.locator("[data-step=kb] input[value=drift]").check(force=True); pg.wait_for_timeout(200)
+    check(pg.evaluate("HOSP.R.kb.mode") == "drift", "a movement can be chosen")
+    pg.click("[data-tile=kb]"); pg.wait_for_timeout(200)
     pg.click("#go"); pg.wait_for_selector("#res .rr", timeout=240000)
     dur = pg.evaluate("""async () => { const u8 = new Uint8Array(await (await fetch(document.querySelector('#vafter').src)).arrayBuffer()); let i = 0;
       for (; i < u8.length - 24; i++) if (u8[i] === 0x6d && u8[i+1] === 0x76 && u8[i+2] === 0x68 && u8[i+3] === 0x64) break;   // 'mvhd'

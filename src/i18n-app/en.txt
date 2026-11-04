@@ -1363,3 +1363,17 @@ Download the MP4
 Converting the GIF…
 Done. This is now an MP4. Choose your treatments below.
 Choose a GIF first.
+Ken Burns
+A slow, gliding zoom or pan over the whole clip, like a camera that moves very gently. The clip is repeated to the length you choose, and the camera glides back to where it began, so it still loops without a jump.
+Movement
+Slow zoom in
+Slow zoom out
+Pan left to right
+Pan right to left
+Pan upwards
+Pan downwards
+Drift in (zoom and sideways)
+How far
+A small number is a very subtle move. 100 moves the camera about a third of the way in.
+The whole movement takes this long. Longer is slower and smoother. 24 s and longer glides nicely.
+Glide back to the start (keeps it looping)

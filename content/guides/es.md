@@ -280,6 +280,8 @@ Cómo se usa:
 
 Los loops quietos o cortos cobran vida con la ficha [[Bring it to life]]. Elige un estilo (respiración calmada, flotante, onírico o pulso) y el clip recibe entrada y salida suaves, un zoom que respira y, si quieres, una cámara flotante, inclinación y luz que respira. Se repite hasta al menos 16 segundos (tú eliges) y cada movimiento encaja exactamente en la repetición, así que sigue haciendo loop sin saltos. Ajusta cada parte en Avanzado.
 
+¿Quieres un movimiento largo y fluido? La ficha [[Ken Burns]] añade un zoom o una panorámica lenta sobre todo el clip, como una cámara que se mueve con mucha suavidad. Elige el movimiento y hasta dónde llega, y hazlo de al menos 24 s para que se deslice. Vuelve al punto de partida, así que el clip sigue en bucle. Se puede combinar con [[Bring it to life]].
+
 El movimiento a tirones, por ejemplo en clips hechos uniendo loops que no encajan del todo, se corrige con la ficha [[Smooth out]]. Busca los momentos en que la imagen da sacudidas o se arrastra, uniformiza la velocidad y quita los fotogramas sueltos que saltan de su sitio. El clip puede quedar un poco más corto o más largo. Usa [[Cut]] antes si solo quieres conservar un loop.
 
 Otras formas de dar movimiento orgánico a loops quietos: **ida y vuelta** (hacia delante y luego hacia atrás) con la ficha Make it loop, **cámara lenta** para calmarlo todo, **estelas suaves** para un resplandor onírico y un **look** que cambie de color lentamente. Combínalos.

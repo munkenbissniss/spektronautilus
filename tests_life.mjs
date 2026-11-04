@@ -14,8 +14,8 @@ const frame = (f, n) => execFileSync('ffmpeg', ['-v', 'error', '-nostdin', '-i',
 const diff = (a, b) => { let s = 0; for (let i = 0; i < a.length; i++) s += Math.abs(a[i] - b[i]); return s / a.length; };
 
 test('breath length is a whole number of loop lengths that fits into the final length', () => {
-  assert.deepEqual([lifePeriod(4, 16, false).P, lifePeriod(4, 16, false).T], [8, 16]);
-  assert.equal(lifePeriod(5, 16, false).P, 10); assert.equal(lifePeriod(20, 16, false).P, 20);
+  assert.deepEqual([lifePeriod(4, 16, false).P, lifePeriod(4, 16, false).T], [16, 16]);   // long, gliding breaths
+  assert.equal(lifePeriod(4, 64, false).P, 32, 'a breath is never longer than 32 s'); assert.equal(lifePeriod(5, 16, false).P, 20); assert.equal(lifePeriod(20, 16, false).P, 20);
   assert.equal(lifePeriod(4, 16, true).P, 4, 'when something repeats the clip afterwards the breath must fit one loop');
   assert.equal(lifePeriod(0, 16, false).T, 0);
 });
@@ -56,4 +56,28 @@ test('a short clip gets the suggestion, and adding it turns the step on with 16 
 test('with the loop step on, the breath fits one loop (the loop step repeats it afterwards)', () => {
   const R = defaultRecipe(); R.life = { on: true, style: 'calm', ...LIFE_STYLES.calm, minSeconds: 16 }; R.loop.on = true;
   const p = planRecipe({ width: 640, height: 360, duration: 4, fps: 25 }, R, defaultProfile()); assert.match(p.extra, /on\/100\b|on\/100\)/);   // 4 s * 25 fps = 100 frames per breath
+});
+
+// ---- Ken Burns: a slow zoom or pan that glides back to the start
+import { kenPlan, KB_MODES } from './docs/tools/app/steps.js';
+test('Ken Burns: every movement makes a clip of the chosen length, shows no black edge, and loops back to the start', async () => {
+  for (const [mode] of KB_MODES) {
+    const f = `o_kb_${mode}.mp4`, { p } = await treat('still.mp4', f, R => { R.kb = { on: true, mode, amount: 80, ret: true, minSeconds: 12 }; });
+    assert.ok(Math.abs(p.dur - 12) < 0.3 || p.dur >= 12, `${mode}: length ${p.dur}`); assert.deepEqual([p.w, p.h, p.codec], [640, 360, 'h264'], mode);
+    const n = Math.round(p.dur * 25), first = frame(f, 0), mid = frame(f, Math.floor(n / 2)), last = frame(f, n - 1);
+    assert.ok(diff(first, mid) > 1.5, `${mode}: the picture really moves (${diff(first, mid).toFixed(2)})`);
+    assert.ok(diff(last, first) < diff(first, mid) * 0.35, `${mode}: it glides back to the start (${diff(last, first).toFixed(2)} vs ${diff(first, mid).toFixed(2)})`);
+    let step = 0; for (let k = 20; k < n - 20; k += 37) step = Math.max(step, diff(frame(f, k), frame(f, k + 1)));
+    assert.ok(step < 3, `${mode}: no sudden steps (biggest ${step.toFixed(2)})`);
+    const W = 640, H = 360; for (const k of [0, Math.floor(n / 4), Math.floor(n / 2), Math.floor(3 * n / 4)]) { const g = frame(f, k); for (const [x, y] of [[0, 0], [W - 1, 0], [0, H - 1], [W - 1, H - 1], [W / 2, 0], [0, H / 2], [W - 1, H / 2], [W / 2, H - 1]]) assert.ok(g[y * W + x] > 30, `${mode}: black edge at frame ${k} (${x},${y})`); }
+  }
+});
+test('Ken Burns: it is slow, and works together with Bring it to life', async () => {
+  assert.equal(kenPlan({ duration: 4, fps: 25 }, { mode: 'zoomin', amount: 0 }, { minSeconds: 24 }).extra, '', 'amount 0 does nothing');
+  const { r, p } = await treat('loop.mp4', 'o_kblife.mp4', R => { R.kb = { on: true, mode: 'drift', amount: 60, ret: true, minSeconds: 24 }; R.life = { on: true, style: 'dream', ...LIFE_STYLES.dream, minSeconds: 16 }; });
+  assert.ok(p.dur >= 23.5, `both on, length ${p.dur}`); assert.match(r.note, /Ken Burns/); assert.match(r.note, /breathing|floating/);
+});
+test('Life: the movement over a 16 s result is one slow breath, not several quick ones', () => {
+  const R = defaultRecipe(); R.life = { on: true, style: 'float', ...LIFE_STYLES.float, minSeconds: 16 };
+  const pl = planRecipe({ width: 640, height: 360, duration: 4, fps: 25 }, R, defaultProfile()); assert.match(pl.extra, /on\/400\b|on\/400\)/, 'one breath = 16 s * 25 fps');
 });

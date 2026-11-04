@@ -280,6 +280,8 @@ Want the same clip in several styles? Tap the Look tile and pick as many looks a
 
 Still or short loops can be brought to life with the [[Bring it to life]] tile. Pick a style (calm breathing, floating, dreamy or pulse) and the clip gets slow-in-and-out movement, a gentle breathing zoom and, if you like, a floating camera, tilt and light breathing. It is repeated to at least 16 seconds (you choose), and every movement fits exactly into the repeat, so it still loops without a jump. Fine-tune each part under Advanced.
 
+Want a long, gliding movement? The [[Ken Burns]] tile adds a slow zoom or pan over the whole clip, like a camera that moves very gently. Choose the movement and how far it goes, and make it at least 24 s so it glides. It returns to where it began, so the clip still loops. It can be combined with [[Bring it to life]].
+
 Jerky movement, for instance in clips made by joining loops that do not quite fit, is fixed with the [[Smooth out]] tile. It looks for places where the picture lurches or crawls and evens out the speed, and it removes single frames that jump out of place. The clip can end up a little shorter or longer. Use [[Cut]] first to keep just one loop.
 
 Other ways to make still loops feel organic: **ping-pong** (play forward, then backward) with the Make it loop tile, **slow motion** to calm everything down, **soft trails** for a dreamy afterglow, and a **look** that changes colour slowly. Combine them.

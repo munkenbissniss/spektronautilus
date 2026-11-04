@@ -1,0 +1,14 @@
+1366 ¦ Ken Burns ¦ Ken Burns ¦ Ken Burns ¦ Ken Burns
+1367 ¦ En langsom, glidende zoom eller panorering over hele klippet, som et kamera som beveger seg veldig rolig. Klippet gjentas til lengden du velger, og kameraet glir tilbake dit det startet, så det fortsatt looper uten hopp. ¦ Un zoom o panorámica lenta y fluida sobre todo el clip, como una cámara que se mueve con mucha suavidad. El clip se repite hasta la duración que elijas y la cámara vuelve al punto de partida, así que sigue en bucle sin saltos. ¦ Ein langsamer, gleitender Zoom oder Schwenk über den ganzen Clip, wie eine Kamera, die sich sehr sanft bewegt. Der Clip wird auf die gewählte Länge wiederholt, und die Kamera gleitet zum Anfang zurück, sodass er ohne Sprung weiter loopt. ¦ Um zoom ou panorâmica lenta e suave ao longo de todo o clipe, como uma câmara que se move com muita delicadeza. O clipe repete-se até à duração que escolheres e a câmara volta ao ponto de partida, por isso continua em loop sem saltos.
+1368 ¦ Bevegelse ¦ Movimiento ¦ Bewegung ¦ Movimento
+1369 ¦ Rolig zoom inn ¦ Zoom lento hacia dentro ¦ Langsam hineinzoomen ¦ Zoom lento para dentro
+1370 ¦ Rolig zoom ut ¦ Zoom lento hacia fuera ¦ Langsam herauszoomen ¦ Zoom lento para fora
+1371 ¦ Panorer fra venstre til høyre ¦ Panorámica de izquierda a derecha ¦ Schwenk von links nach rechts ¦ Panorâmica da esquerda para a direita
+1372 ¦ Panorer fra høyre til venstre ¦ Panorámica de derecha a izquierda ¦ Schwenk von rechts nach links ¦ Panorâmica da direita para a esquerda
+1373 ¦ Panorer oppover ¦ Panorámica hacia arriba ¦ Schwenk nach oben ¦ Panorâmica para cima
+1374 ¦ Panorer nedover ¦ Panorámica hacia abajo ¦ Schwenk nach unten ¦ Panorâmica para baixo
+1375 ¦ Drift inn (zoom og sideveis) ¦ Deriva hacia dentro (zoom y lateral) ¦ Hineingleiten (Zoom und seitlich) ¦ Deriva para dentro (zoom e lateral)
+1376 ¦ Hvor langt ¦ Hasta dónde ¦ Wie weit ¦ Até onde
+1377 ¦ Et lavt tall gir en veldig diskret bevegelse. 100 flytter kameraet omtrent en tredjedel inn. ¦ Un número bajo es un movimiento muy sutil. 100 acerca la cámara aproximadamente un tercio. ¦ Eine kleine Zahl ist eine sehr dezente Bewegung. 100 bewegt die Kamera etwa ein Drittel hinein. ¦ Um número baixo é um movimento muito subtil. 100 aproxima a câmara cerca de um terço.
+1378 ¦ Hele bevegelsen tar så lang tid. Lengre er roligere og jevnere. 24 s og lengre glir fint. ¦ Todo el movimiento dura esto. Más largo es más lento y suave. Con 24 s o más se desliza muy bien. ¦ So lange dauert die ganze Bewegung. Länger ist langsamer und weicher. Ab 24 s gleitet es schön. ¦ Todo o movimento demora este tempo. Mais longo é mais lento e suave. Com 24 s ou mais desliza muito bem.
+1379 ¦ Gli tilbake til start (beholder loopen) ¦ Volver al inicio suavemente (mantiene el bucle) ¦ Zum Anfang zurückgleiten (bleibt ein Loop) ¦ Voltar ao início suavemente (mantém o loop)

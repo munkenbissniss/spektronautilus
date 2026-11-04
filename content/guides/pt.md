@@ -280,6 +280,8 @@ Quer o mesmo clipe em vários estilos? Toque no mosaico Look e escolha quantos l
 
 Loops parados ou curtos ganham vida com o mosaico [[Bring it to life]]. Escolhe um estilo (respiração calma, flutuante, onírico ou pulso) e o clipe recebe entrada e saída suaves, um zoom que respira e, se quiseres, uma câmara flutuante, inclinação e luz que respira. Repete-se até pelo menos 16 segundos (tu escolhes) e cada movimento encaixa na perfeição na repetição, por isso continua a fazer loop sem saltos. Afina cada parte em Avançado.
 
+Queres um movimento longo e suave? O mosaico [[Ken Burns]] acrescenta um zoom ou uma panorâmica lenta ao longo de todo o clipe, como uma câmara que se move com muita delicadeza. Escolhe o movimento e até onde vai, e faz o clipe com pelo menos 24 s para deslizar. Volta ao ponto de partida, por isso o clipe continua em loop. Pode combinar-se com [[Bring it to life]].
+
 O movimento aos solavancos, por exemplo em clipes feitos juntando loops que não encaixam bem, corrige-se com o mosaico [[Smooth out]]. Encontra os pontos em que a imagem dá saltos ou se arrasta, uniformiza a velocidade e remove os quadros soltos que saltam do lugar. O clipe pode ficar um pouco mais curto ou mais longo. Usa [[Cut]] antes se só quiseres manter um loop.
 
 Outras formas de dar movimento orgânico a loops parados: **vaivém** (para a frente e depois para trás) com o mosaico Make it loop, **câmara lenta** para acalmar tudo, **rastos suaves** para um brilho onírico e um **look** que muda de cor devagar. Combina-os.

@@ -280,6 +280,8 @@ Vil du ha samme klipp i flere stiler? Trykk på Look-flisen og velg så mange lo
 
 Stille eller korte looper kan få liv med flisen [[Bring it to life]]. Velg en stil (rolig pust, svevende, drømmende eller puls), så får klippet myk inn- og utbremsing, en rolig pustende zoom og, hvis du vil, et svevende kamera, litt helning og pustende lys. Det gjentas til minst 16 sekunder (du velger), og hver bevegelse passer nøyaktig inn i gjentakelsen, så det fortsatt looper uten hakk. Finjuster hver del under Avansert.
 
+Vil du ha en lang, glidende bevegelse? Flisen [[Ken Burns]] legger til en langsom zoom eller panorering over hele klippet, som et kamera som beveger seg veldig rolig. Velg bevegelse og hvor langt den går, og gjør klippet minst 24 s så det glir. Den kommer tilbake dit den startet, så klippet looper fortsatt. Den kan kombineres med [[Bring it to life]].
+
 Rykkete bevegelse, for eksempel i klipp satt sammen av looper som ikke passer helt, rettes opp med flisen [[Smooth out]]. Den finner stedene der bildet rykker fram eller kryper, jevner ut farten og fjerner enkeltbilder som hopper ut av rekkefølgen. Klippet kan bli litt kortere eller lengre. Bruk [[Cut]] først hvis du bare vil beholde én loop.
 
 Andre måter å gjøre stille looper mer organiske: **fram og tilbake** (spill forover, så bakover) med flisen Make it loop, **sakte film** for å roe alt ned, **myke spor** for et drømmende ettersmak, og et **look** som skifter farge sakte. Kombiner dem.

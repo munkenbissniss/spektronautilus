@@ -280,6 +280,8 @@ Den gleichen Clip in mehreren Stilen? Tippe auf die Look-Kachel und wähle so vi
 
 Ruhige oder kurze Loops erwachen mit der Kachel [[Bring it to life]] zum Leben. Wähle einen Stil (ruhiges Atmen, schwebend, verträumt oder Puls), und der Clip bekommt sanftes Ein- und Ausblenden der Bewegung, einen atmenden Zoom und auf Wunsch eine schwebende Kamera, Neigung und atmendes Licht. Er wird auf mindestens 16 Sekunden wiederholt (du wählst), und jede Bewegung passt genau in die Wiederholung, sodass er ohne Sprung weiter loopt. Feinjustiere jeden Teil unter Erweitert.
 
+Du möchtest eine lange, gleitende Bewegung? Die Kachel [[Ken Burns]] fügt einen langsamen Zoom oder Schwenk über den ganzen Clip hinzu, wie eine Kamera, die sich sehr sanft bewegt. Wähle die Bewegung und wie weit sie geht, und mach den Clip mindestens 24 s lang, damit es gleitet. Sie kehrt zum Anfang zurück, sodass der Clip weiter loopt. Sie lässt sich mit [[Bring it to life]] kombinieren.
+
 Ruckelnde Bewegung, etwa in Clips aus aneinandergereihten Loops, die nicht ganz passen, behebst du mit der Kachel [[Smooth out]]. Sie findet die Stellen, an denen das Bild vorschnellt oder schleicht, gleicht das Tempo an und entfernt einzelne Bilder, die aus der Reihe springen. Der Clip kann etwas kürzer oder länger werden. Nutze vorher [[Cut]], wenn du nur einen Loop behalten willst.
 
 Weitere Wege zu organischerer Bewegung: **Hin und zurück** (vorwärts, dann rückwärts) mit der Kachel Make it loop, **Zeitlupe**, die alles beruhigt, **weiche Spuren** für ein verträumtes Nachleuchten und ein **Look**, der langsam die Farbe wechselt. Kombiniere sie.
