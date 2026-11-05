@@ -282,6 +282,10 @@ Stille eller korte looper kan få liv med flisen [[Bring it to life]]. Velg en s
 
 Vil du ha en lang, glidende bevegelse? Flisen [[Ken Burns]] legger til en langsom zoom eller panorering over hele klippet, som et kamera som beveger seg veldig rolig. Velg bevegelse og hvor langt den går, og gjør klippet minst 24 s så det glir. Den kommer tilbake dit den startet, så klippet looper fortsatt. Den kan kombineres med [[Bring it to life]].
 
+For silkemyke 60 fps-looper bruker du flisen [[Frame rate]]. Den lager nye bilder mellom de gamle, så en loop på 24 eller 30 fps blir 60 fps uten hakking. Et klipp som looper beholder skjøten og nøyaktig samme lengde, og klipp med gjentatte bilder (animasjon på to, eller 12 fps i en 30 fps-fil) rettes opp først. Soft blend fungerer overalt, også på mobil. Smooth motion er renere på rask action, men tregt, så hold klippene korte på mobil. AI bruker RIFE og gir best resultat i Linux-versjonen.
+
+Står noe fast, eller vil du begynne på nytt? **↺ Start på nytt** (øverst til høyre, og ved siden av Stopp) tømmer klippet, innstillingene og resultatene, og stopper alt som kjører. Trykk to ganger, så mister du ikke noe ved et uhell.
+
 Rykkete bevegelse, for eksempel i klipp satt sammen av looper som ikke passer helt, rettes opp med flisen [[Smooth out]]. Den finner stedene der bildet rykker fram eller kryper, jevner ut farten og fjerner enkeltbilder som hopper ut av rekkefølgen. Klippet kan bli litt kortere eller lengre. Bruk [[Cut]] først hvis du bare vil beholde én loop.
 
 Andre måter å gjøre stille looper mer organiske: **fram og tilbake** (spill forover, så bakover) med flisen Make it loop, **sakte film** for å roe alt ned, **myke spor** for et drømmende ettersmak, og et **look** som skifter farge sakte. Kombiner dem.

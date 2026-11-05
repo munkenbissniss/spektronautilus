@@ -282,6 +282,10 @@ Still or short loops can be brought to life with the [[Bring it to life]] tile. 
 
 Want a long, gliding movement? The [[Ken Burns]] tile adds a slow zoom or pan over the whole clip, like a camera that moves very gently. Choose the movement and how far it goes, and make it at least 24 s so it glides. It returns to where it began, so the clip still loops. It can be combined with [[Bring it to life]].
 
+For silky 60 fps loops, use the [[Frame rate]] tile. It makes new frames between the old ones, so a 24 or 30 fps loop becomes 60 fps without stutter. A clip that loops keeps its seam and its exact length, and clips with repeated frames (animation on twos, or 12 fps in a 30 fps file) are straightened out first. Soft blend works everywhere, also on a phone. Smooth motion is cleaner on fast action but slow, so keep clips short on a phone. AI uses RIFE and gives the best result in the Linux version.
+
+Something stuck, or want a fresh start? **↺ Start over** (top right, and next to Stop) clears the clip, your settings and the results, and stops anything that is running. Tap twice, so nothing is lost by accident.
+
 Jerky movement, for instance in clips made by joining loops that do not quite fit, is fixed with the [[Smooth out]] tile. It looks for places where the picture lurches or crawls and evens out the speed, and it removes single frames that jump out of place. The clip can end up a little shorter or longer. Use [[Cut]] first to keep just one loop.
 
 Other ways to make still loops feel organic: **ping-pong** (play forward, then backward) with the Make it loop tile, **slow motion** to calm everything down, **soft trails** for a dreamy afterglow, and a **look** that changes colour slowly. Combine them.

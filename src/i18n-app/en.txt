@@ -1377,3 +1377,16 @@ How far
 A small number is a very subtle move. 100 moves the camera about a third of the way in.
 The whole movement takes this long. Longer is slower and smoother. 24 s and longer glides nicely.
 Glide back to the start (keeps it looping)
+The video engine stopped responding. On a phone this usually means it ran out of memory. It has been restarted. Try again, with a shorter or smaller clip.
+Frame rate
+Make the clip 60 frames per second without stutter. New frames are made between the old ones, so the movement stays smooth. A clip that loops keeps its seam and its length.
+Frames per second
+Soft blend is fast and works everywhere, also on a phone. Smooth motion follows the movement and is cleaner on fast action, but it is slow, so use a short clip on a phone. AI gives the best result, but needs the Linux version with Video2X and a graphics card.
+This clip loops (keep the seam smooth)
+The new frames across the loop point are made from the last and the first frame, so there is no jump or stutter there. Clips that do not loop are left alone.
+Fix stepping from repeated frames
+Some clips repeat frames (animation on twos, or 12 fps in a 30 fps file). They are removed first, so the movement is spread out smoothly instead of moving in steps.
+AI frame rate…
+↺ Start over
+Tap again to start over
+Clears the clip, all your settings and the results, and stops anything that is running.

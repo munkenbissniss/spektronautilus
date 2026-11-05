@@ -1,5 +1,5 @@
 // VJ-friendly data rate: the encoder ceiling (default 3 MB/s) really holds on very busy material, and can be changed or turned off.
-import test from 'node:test'; import assert from 'node:assert'; import { execFileSync } from 'node:child_process'; import { mkdtempSync, statSync } from 'node:fs'; import { tmpdir } from 'node:os'; import { join } from 'node:path';
+import test from 'node:test'; import assert from 'node:assert'; import { execFileSync } from 'node:child_process'; import { mkdtempSync, statSync, rmSync } from 'node:fs'; import { tmpdir } from 'node:os'; import { join } from 'node:path';
 import { encodeArgs, defaultProfile, codecArgs, v2xVbvArgs } from './docs/tools/app/core.js';
 const d = mkdtempSync(join(tmpdir(), 'vjrate_')), src = join(d, 'noise.mp4');
 // 1080p noise: the worst case for an encoder (nothing to predict, everything costs bits)
@@ -11,3 +11,4 @@ test('a profile saved before the setting existed still gets the cap', () => { co
 test('2 MB/s is lower than 3 MB/s, and 0 means no ceiling', () => { const p = { ...defaultProfile(), crf: 12, preset: 'ultrafast' }; const a = run({ ...p, maxMBps: 2 }), b = run({ ...p, maxMBps: 0 }); assert.ok(a <= 2.3, `${a}`); assert.ok(b > 3.6, `no ceiling should be bigger (${b.toFixed(2)})`); assert.ok(!codecArgs({ ...p, maxMBps: 0 }).includes('-maxrate')); });
 test('AI (Video2X) encoder options carry the same ceiling (half a second of buffer, so short loops cannot overshoot)', () => { assert.deepEqual(v2xVbvArgs(defaultProfile()), ['-e', 'maxrate=24M', '-e', 'bufsize=12M']); assert.deepEqual(v2xVbvArgs({ ...defaultProfile(), maxMBps: 0 }), []); });
 test('still VJ friendly: short keyframe interval, constant frame rate, faststart, yuv420p', () => { const a = encodeArgs('a', 'b', defaultProfile(), info).join(' '); for (const k of ['-g 30', '-fps_mode cfr', '+faststart', 'yuv420p']) assert.ok(a.includes(k), k); });
+import { after } from 'node:test'; after(() => { try { rmSync(d, { recursive: true, force: true }); } catch (e) { /* ignore */ } });   // the test makes a large noise clip: do not leave it in /tmp

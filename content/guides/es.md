@@ -282,6 +282,10 @@ Los loops quietos o cortos cobran vida con la ficha [[Bring it to life]]. Elige 
 
 ¿Quieres un movimiento largo y fluido? La ficha [[Ken Burns]] añade un zoom o una panorámica lenta sobre todo el clip, como una cámara que se mueve con mucha suavidad. Elige el movimiento y hasta dónde llega, y hazlo de al menos 24 s para que se deslice. Vuelve al punto de partida, así que el clip sigue en bucle. Se puede combinar con [[Bring it to life]].
 
+Para loops sedosos a 60 fps, usa la ficha [[Frame rate]]. Crea fotogramas nuevos entre los antiguos, así que un loop de 24 o 30 fps pasa a 60 fps sin tirones. Un clip en bucle mantiene su unión y su duración exacta, y los clips con fotogramas repetidos (animación a doses, o 12 fps en un archivo de 30 fps) se corrigen primero. Soft blend funciona en todas partes, también en el móvil. Smooth motion es más limpio en acción rápida pero lento, así que mantén los clips cortos en el móvil. La IA usa RIFE y da el mejor resultado en la versión de Linux.
+
+¿Algo se ha atascado, o quieres empezar de cero? **↺ Empezar de nuevo** (arriba a la derecha, y junto a Parar) borra el clip, tus ajustes y los resultados, y detiene todo lo que esté en marcha. Toca dos veces, para no perder nada por accidente.
+
 El movimiento a tirones, por ejemplo en clips hechos uniendo loops que no encajan del todo, se corrige con la ficha [[Smooth out]]. Busca los momentos en que la imagen da sacudidas o se arrastra, uniformiza la velocidad y quita los fotogramas sueltos que saltan de su sitio. El clip puede quedar un poco más corto o más largo. Usa [[Cut]] antes si solo quieres conservar un loop.
 
 Otras formas de dar movimiento orgánico a loops quietos: **ida y vuelta** (hacia delante y luego hacia atrás) con la ficha Make it loop, **cámara lenta** para calmarlo todo, **estelas suaves** para un resplandor onírico y un **look** que cambie de color lentamente. Combínalos.

@@ -282,6 +282,10 @@ Ruhige oder kurze Loops erwachen mit der Kachel [[Bring it to life]] zum Leben. 
 
 Du möchtest eine lange, gleitende Bewegung? Die Kachel [[Ken Burns]] fügt einen langsamen Zoom oder Schwenk über den ganzen Clip hinzu, wie eine Kamera, die sich sehr sanft bewegt. Wähle die Bewegung und wie weit sie geht, und mach den Clip mindestens 24 s lang, damit es gleitet. Sie kehrt zum Anfang zurück, sodass der Clip weiter loopt. Sie lässt sich mit [[Bring it to life]] kombinieren.
 
+Für seidenweiche 60-fps-Loops nimmst du die Kachel [[Frame rate]]. Sie erzeugt neue Bilder zwischen den alten, sodass aus einem Loop mit 24 oder 30 fps ohne Ruckeln einer mit 60 fps wird. Ein Loop behält seine Nahtstelle und seine exakte Länge, und Clips mit wiederholten Bildern (Animation auf Zweien oder 12 fps in einer 30-fps-Datei) werden zuerst geradegezogen. Soft blend läuft überall, auch auf dem Handy. Smooth motion ist bei schneller Action sauberer, aber langsam, also halte Clips auf dem Handy kurz. KI nutzt RIFE und liefert in der Linux-Version das beste Ergebnis.
+
+Hängt etwas, oder willst du neu anfangen? **↺ Neu starten** (oben rechts und neben Stopp) leert den Clip, deine Einstellungen und die Ergebnisse und stoppt alles, was läuft. Zweimal tippen, damit nichts aus Versehen verloren geht.
+
 Ruckelnde Bewegung, etwa in Clips aus aneinandergereihten Loops, die nicht ganz passen, behebst du mit der Kachel [[Smooth out]]. Sie findet die Stellen, an denen das Bild vorschnellt oder schleicht, gleicht das Tempo an und entfernt einzelne Bilder, die aus der Reihe springen. Der Clip kann etwas kürzer oder länger werden. Nutze vorher [[Cut]], wenn du nur einen Loop behalten willst.
 
 Weitere Wege zu organischerer Bewegung: **Hin und zurück** (vorwärts, dann rückwärts) mit der Kachel Make it loop, **Zeitlupe**, die alles beruhigt, **weiche Spuren** für ein verträumtes Nachleuchten und ein **Look**, der langsam die Farbe wechselt. Kombiniere sie.

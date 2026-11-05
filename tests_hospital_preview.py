@@ -37,13 +37,21 @@ def run(width, height):
         pg.set_input_files("#picker", str(IN / "wide clip.mp4")); pg.wait_for_selector("#facts span:not(.muted)", timeout=60000)
         pg.click("#prev"); pg.wait_for_function("document.querySelector('#vafter').src && !document.querySelector('#fafter').classList.contains('hide')", timeout=120000); pg.wait_for_timeout(800)
         r = pg.evaluate("""() => { const f = document.querySelector('#fafter'), c4 = document.querySelector('#c4'), run = c4.querySelector('.run'), rect = f.getBoundingClientRect(), rr = run.getBoundingClientRect();
-          return { inC4: f.parentElement === c4, above: f.compareDocumentPosition(document.querySelector('#prev')) & 4, gap: rr.top - rect.bottom, inView: rect.top >= 0 && rect.bottom <= innerHeight, btnInView: rr.top >= 0 && rr.bottom <= innerHeight, playing: !document.querySelector('#vafter').paused, overflow: document.documentElement.scrollWidth > document.documentElement.clientWidth }; }""")
+          return { inC4: f.parentElement === c4, above: f.compareDocumentPosition(document.querySelector('#prev')) & 4, gap: rr.top - rect.bottom, inView: rect.top >= 0 && rect.bottom <= innerHeight, btnInView: rr.top >= 0 && rr.bottom <= innerHeight, playing: !document.querySelector('#vafter').paused, state: { prev: document.querySelector('#prev').disabled, go: document.querySelector('#go').disabled, stopHidden: document.querySelector('#stop').classList.contains('hide'), cur: document.querySelector('#cur').textContent }, idle: !document.querySelector('#prev').disabled && !document.querySelector('#go').disabled && document.querySelector('#stop').classList.contains('hide'), overflow: document.documentElement.scrollWidth > document.documentElement.clientWidth }; }""")
         b.close(); return r, errs
 r, e = run(390, 800)
+check(r["idle"], f"phone: after the preview the buttons are free again and Stop is hidden: {r['state']}")
 check(r["inC4"] and r["above"], "phone: the After video is in the preview card, above the preview button")
 check(0 <= r["gap"] < 40, f"phone: it sits right above the button (gap {r['gap']:.0f}px)")
 check(r["inView"] and r["btnInView"], "phone: the preview and the button are both on screen after the preview is made")
 check(not r["overflow"] and not e, f"phone: nothing overflows, no errors {e[:2]}")   # playback itself cannot be tested: the test browser has no H.264
+with sync_playwright() as pw:   # a long file name (a hash) in the status line must wrap, not run off the screen
+    b = pw.chromium.launch(); pg = b.new_context(viewport={"width": 390, "height": 800}).new_page()
+    pg.add_init_script(ENGINE_JS); pg.expose_function("host", host); pg.goto(URL); pg.wait_for_selector("#picker", state="attached")
+    pg.set_input_files("#picker", str(IN / "wide clip.mp4")); pg.wait_for_selector("#facts span:not(.muted)", timeout=60000)
+    pg.evaluate("document.querySelector('#cur').textContent = '35fc02248182d16e846336df9b52c2b6a1d7e9f0c3b4a5968778695a4b3c2d1e0f · 50% · 1:00'")
+    check(pg.evaluate("document.querySelector('#cur').scrollWidth <= document.querySelector('#cur').clientWidth + 1 && document.documentElement.scrollWidth <= document.documentElement.clientWidth"), "phone: a long file name in the status line wraps instead of running off the screen")
+    b.close()
 r, e = run(1200, 900)
 check(not r["inC4"], "wide screen: the After video stays next to Before")
 check(not e, f"wide screen: no errors {e[:2]}")

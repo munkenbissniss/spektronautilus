@@ -65,6 +65,12 @@ with sync_playwright() as pw:
     pg.locator("[data-step=kb] input[value=drift]").check(force=True); pg.wait_for_timeout(200)
     check(pg.evaluate("HOSP.R.kb.mode") == "drift", "a movement can be chosen")
     pg.click("[data-tile=kb]"); pg.wait_for_timeout(200)
+    check(pg.locator("[data-tile=fps]").count() == 1, "the tile 'Frame rate' exists")
+    pg.click("[data-tile=fps]"); pg.wait_for_timeout(300)
+    check(pg.evaluate("HOSP.R.fps.on") is True and pg.evaluate("HOSP.R.fps.target") == 60 and pg.evaluate("HOSP.R.fps.engine") == "blend", "Frame rate turns on with 60 fps and the soft blend (works on a phone)")
+    check(pg.locator("[data-step=fps] [data-k=engine][value=ai]").is_disabled(), "AI is not offered without the Linux version")
+    check(not pg.locator("[data-step=fps] details.adv").evaluate("e => e.open"), "the loop and stepping switches are behind Advanced")
+    pg.click("[data-tile=fps]"); pg.wait_for_timeout(200)
     pg.click("#go"); pg.wait_for_selector("#res .rr", timeout=240000)
     dur = pg.evaluate("""async () => { const u8 = new Uint8Array(await (await fetch(document.querySelector('#vafter').src)).arrayBuffer()); let i = 0;
       for (; i < u8.length - 24; i++) if (u8[i] === 0x6d && u8[i+1] === 0x76 && u8[i+2] === 0x68 && u8[i+3] === 0x64) break;   // 'mvhd'

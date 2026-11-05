@@ -15,4 +15,16 @@ const turn = Math.round(F.length / 2); const around = s.slice(turn - 3, turn + 3
 ok(Math.max(...around) < m * .4, 'eases to a stop at the turnaround');
 ok(mad(F[F.length - 1], F[0]) < m * .4, 'no jump where the loop starts over');
 ok(s.every(x => x < m * 1.3), 'no spikes anywhere');
+
+
+// ---- progress: every phase of the loop step reports, so the bar never stands still at "half" while the loop is made
+{
+  const seen = []; const pe = { ...engine, async exec(args, opts) { const r = await engine.exec(args, opts); if (opts && opts.onProgress) { opts.onProgress(0.5); opts.onProgress(1); } return r; } };
+  for (const mode of ['pingpong', 'crossfade', 'trim', 'auto']) {
+    const got = []; await makeLoop(pe, 'c30.mp4', `pg_${mode}.mp4`, prof, info('c30.mp4'), { mode, onProgress: x => got.push(x) });
+    const mono = got.every((x, i) => i === 0 || x >= got[i - 1] - 1e-9), first = got.findIndex(x => x > 0), distinct = new Set(got.map(x => Math.round(x * 100))).size;
+    ok(mono && got.at(-1) > 0.99 && got.every(x => x >= 0 && x <= 1.0001), `${mode}: progress rises steadily to 100 % (${got.length} reports, ${distinct} steps)`);
+    ok(distinct >= (mode === 'trim' || mode === 'auto' ? 5 : 7), `${mode}: the whole job reports, not only the last encode (${distinct} different values)`);
+  }
+}
 console.log(bad ? 'FAILED' : 'ALL OK'); process.exit(bad ? 1 : 0);

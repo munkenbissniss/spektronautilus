@@ -1,0 +1,3 @@
+1390 ¦ ↺ Start på nytt ¦ ↺ Empezar de nuevo ¦ ↺ Neu starten ¦ ↺ Recomeçar
+1391 ¦ Trykk igjen for å starte på nytt ¦ Toca otra vez para empezar de nuevo ¦ Nochmal tippen zum Neustart ¦ Toca de novo para recomeçar
+1392 ¦ Tømmer klippet, alle innstillinger og resultater, og stopper alt som kjører. ¦ Borra el clip, todos los ajustes y los resultados, y detiene todo lo que esté en marcha. ¦ Löscht den Clip, alle Einstellungen und Ergebnisse und stoppt alles, was läuft. ¦ Limpa o clipe, todas as definições e os resultados, e para tudo o que estiver a correr.
