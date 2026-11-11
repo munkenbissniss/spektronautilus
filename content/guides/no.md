@@ -113,6 +113,8 @@ Slå på [[Auto-mix to the next track]], så starter mikseren neste spor på det
 ## MIDI-kontroller {#midi}
 Koble til kontrolleren, trykk [[Enable MIDI]] (Chrome eller Edge på datamaskin), trykk [[Learn]] ved siden av en funksjon og beveg kontrollen du vil bruke.
 
+Har du en **Akai MPD218**? Trykk [[Set up Akai MPD218]]. Padene settes opp med en gang, og så vrir du hver knapp én gang når den ber om det. I Video DJ er nederste rad play A, miks, miks, play B, og neste rad er plakat 1-4. I VJ Mixer er pad bank A de 16 første klippene, bank B de 4 siste klippene, effektene, miks og tap tempo, og bank C lagene, plakatene og logoen.
+
 ## Ta opp og strøm {#record}
 - [[● Record]] lagrer miksen, bilde og lyd, til en fil.
 - For å strømme tar du opp utgangsvinduet i OBS (Window Capture), eller bruker Chromes «Cast…» og velger utgangsvinduet. Mikseren sender ikke video over internett selv.

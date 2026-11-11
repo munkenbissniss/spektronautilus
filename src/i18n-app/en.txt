@@ -1390,3 +1390,10 @@ AI frame rate…
 ↺ Start over
 Tap again to start over
 Clears the clip, all your settings and the results, and stops anything that is running.
+Set up Akai MPD218
+Sets up the pads of an Akai MPD218 at once. Then you turn each knob once, so it learns them.
+Skip this knob
+Done
+Turn knob {a} (it becomes: {b}).
+MPD218 is ready: the pads are set up, and {a} knobs are learned. Change anything with Learn below.
+Turn on MIDI first (Chrome or Edge on a computer).

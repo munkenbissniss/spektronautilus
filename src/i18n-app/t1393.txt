@@ -1,0 +1,7 @@
+1393 ¦ Sett opp Akai MPD218 ¦ Configurar Akai MPD218 ¦ Akai MPD218 einrichten ¦ Configurar Akai MPD218
+1394 ¦ Setter opp padene på en Akai MPD218 med en gang. Så vrir du hver knapp én gang, så lærer den dem. ¦ Configura los pads de un Akai MPD218 de una vez. Luego giras cada perilla una vez para que las aprenda. ¦ Richtet die Pads eines Akai MPD218 sofort ein. Dann drehst du jeden Regler einmal, damit er sie lernt. ¦ Configura os pads de um Akai MPD218 de uma vez. Depois rodas cada botão uma vez para que os aprenda.
+1395 ¦ Hopp over denne knappen ¦ Saltar esta perilla ¦ Diesen Regler überspringen ¦ Saltar este botão
+1396 ¦ Ferdig ¦ Listo ¦ Fertig ¦ Concluído
+1397 ¦ Vri knapp {a} (blir: {b}). ¦ Gira la perilla {a} (será: {b}). ¦ Dreh Regler {a} (wird: {b}). ¦ Roda o botão {a} (fica: {b}).
+1398 ¦ MPD218 er klar: padene er satt opp, og {a} knapper er lært. Endre hva som helst med Lær nedenfor. ¦ MPD218 está listo: los pads están configurados y se aprendieron {a} perillas. Cambia lo que quieras con Aprender abajo. ¦ MPD218 ist bereit: Die Pads sind eingerichtet und {a} Regler gelernt. Ändere alles mit Lernen unten. ¦ O MPD218 está pronto: os pads estão configurados e {a} botões foram aprendidos. Muda o que quiseres com Aprender abaixo.
+1399 ¦ Slå på MIDI først (Chrome eller Edge på en datamaskin). ¦ Activa MIDI primero (Chrome o Edge en un ordenador). ¦ Schalte zuerst MIDI ein (Chrome oder Edge auf einem Computer). ¦ Ativa o MIDI primeiro (Chrome ou Edge num computador).

@@ -113,6 +113,8 @@ Activa [[Auto-mix to the next track]] y el mezclador empieza la siguiente pista 
 ## Controlador MIDI {#midi}
 Conecta tu controlador, pulsa [[Enable MIDI]] (Chrome o Edge en ordenador), pulsa [[Learn]] junto a una función y mueve el control que quieras usar.
 
+¿Tienes un **Akai MPD218**? Pulsa [[Set up Akai MPD218]]. Los pads se configuran al instante y luego giras cada perilla una vez cuando lo pida. En el Video DJ la fila de abajo es play A, mezclar, mezclar, play B, y la siguiente fila los carteles 1-4. En el VJ Mixer el pad bank A son los 16 primeros clips, el bank B los 4 últimos clips, los efectos, mezclar y tap tempo, y el bank C las capas, los carteles y el logo.
+
 ## Grabar y retransmitir {#record}
 - [[● Record]] guarda la mezcla, imagen y sonido, en un archivo.
 - Para retransmitir, captura la ventana de salida en OBS (Window Capture) o usa «Cast…» de Chrome y elige la ventana de salida. El mezclador no envía video por internet por sí mismo.
