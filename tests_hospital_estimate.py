@@ -13,6 +13,7 @@ def check(c, m):
 def ff(*a): subprocess.run(["ffmpeg", "-v", "error", "-y", "-nostdin", *a], check=True)
 ff("-f", "lavfi", "-i", "testsrc2=size=1280x720:rate=24:duration=12", "-c:v", "libx264", "-pix_fmt", "yuv420p", str(IN / "long clip.mp4"))
 ff("-f", "lavfi", "-i", "testsrc2=size=320x180:rate=25:duration=2", "-c:v", "libx264", "-pix_fmt", "yuv420p", str(IN / "short.mp4"))
+ff("-f", "lavfi", "-i", "testsrc2=size=640x640:rate=25:duration=3.5", "-c:v", "libx264", "-pix_fmt", "yuv420p", str(IN / "square.mp4"))
 PROCS = {}
 def host(op, a=None, b=None):
     if op == "start":   # ffmpeg runs on its own, so the test can read the page while it works
@@ -69,6 +70,17 @@ with sync_playwright() as pw:
     check(lo >= total * 0.7, f"never too low: the lowest predicted total was {lo:.0f} s, the real total {total:.0f} s")
     hi = max(p for _, _, p in pred) if pred else 0
     check(hi <= total * 1.8, f"not wildly too high either: highest {hi:.0f} s")
+    # like the clips from a phone: short and square, cropped to 16:9, 60 fps with Smooth motion, 2x slower, brought to life and repeated
+    # to 16 s. The heavy steps work on the short clip only; the repeat is light. (This was estimated 1.4 to 3.7 times too high.)
+    pg.click("#reset")
+    with pg.expect_navigation(): pg.click("#reset")
+    pg.wait_for_selector("#picker", state="attached"); pg.set_input_files("#picker", str(IN / "square.mp4")); pg.wait_for_selector("#facts span:not(.muted)", timeout=60000)
+    pg.evaluate("""Object.assign(HOSP.R.crop, { on: true, shape: '169' }); Object.assign(HOSP.R.fps, { on: true, target: 60, engine: 'motion' });
+      Object.assign(HOSP.R.slow, { on: true, factor: 2, engine: 'motion' }); HOSP.R.life.on = true; HOSP.R.life.minSeconds = 16; Object.assign(HOSP.R.size, { on: true, box: '640x360', fit: 'keep' })""")
+    t0 = time.time(); pg.click("#go"); pg.wait_for_selector("#res a", timeout=600000)
+    msg = pg.inner_text("#msg"); m = re.search(r"Done in (\d+):(\d\d) \(estimated (\d+):(\d\d)\)", msg)
+    real, est = (int(m.group(1)) * 60 + int(m.group(2)), int(m.group(3)) * 60 + int(m.group(4))) if m else (0, 0)
+    check(m and 0.75 * real <= est <= 1.4 * real, f"short clip repeated to 16 s: estimated {est} s, took {real} s ({msg!r})")
     # a short job is not measured
     pg.click("#reset"); 
     with pg.expect_navigation(): pg.click("#reset")

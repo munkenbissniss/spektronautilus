@@ -1406,3 +1406,4 @@ Not widescreen ({a}). Crop it to 16:9 so it fills the screen.
 The preview uses Smooth motion, not AI.
 Welcome back. The work waited while the app was in the background, and goes on from where it was.
 Welcome back.
+The preview makes new frames the fast way, so movement can look a little softer. The saved clip uses the method you chose.
