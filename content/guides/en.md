@@ -286,6 +286,10 @@ Want a long, gliding movement? The [[Ken Burns]] tile adds a slow zoom or pan ov
 
 For silky 60 fps loops, use the [[Frame rate]] tile. It makes new frames between the old ones, so a 24 or 30 fps loop becomes 60 fps without stutter. A clip that loops keeps its seam and its exact length, and clips with repeated frames (animation on twos, or 12 fps in a 30 fps file) are straightened out first. Soft blend works everywhere, also on a phone. Smooth motion is cleaner on fast action but slow, so keep clips short on a phone. AI uses RIFE and gives the best result in the Linux version.
 
+Before a longer job starts, the Hospital first runs your whole recipe on two short pieces of the clip. That takes a few seconds, and gives a time estimate that fits your computer and your settings, also when the heavy steps come last. When it is done, it shows how long it really took next to the estimate.
+
+On a phone you can switch to another app while it works: the work waits and goes on when you come back. If the phone is short of memory it may close the page instead, so for long jobs it is safest to keep the Hospital open.
+
 Something stuck, or want a fresh start? **↺ Start over** (top right, and next to Stop) clears the clip, your settings and the results, and stops anything that is running. Tap twice, so nothing is lost by accident.
 
 Jerky movement, for instance in clips made by joining loops that do not quite fit, is fixed with the [[Smooth out]] tile. It looks for places where the picture lurches or crawls and evens out the speed, and it removes single frames that jump out of place. The clip can end up a little shorter or longer. Use [[Cut]] first to keep just one loop.

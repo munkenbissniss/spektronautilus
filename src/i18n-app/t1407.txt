@@ -1,0 +1,2 @@
+1407 ¦ Velkommen tilbake. Arbeidet ventet mens appen lå i bakgrunnen, og fortsetter der det var. ¦ Bienvenido de nuevo. El trabajo esperó mientras la app estaba en segundo plano y sigue donde estaba. ¦ Willkommen zurück. Die Arbeit hat gewartet, während die App im Hintergrund war, und geht dort weiter, wo sie war. ¦ Bem-vindo de volta. O trabalho esperou enquanto a app estava em segundo plano e continua onde estava.
+1408 ¦ Velkommen tilbake. ¦ Bienvenido de nuevo. ¦ Willkommen zurück. ¦ Bem-vindo de volta.

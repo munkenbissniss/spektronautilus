@@ -67,7 +67,7 @@ with sync_playwright() as pw:
     pg.click("[data-tile=kb]"); pg.wait_for_timeout(200)
     check(pg.locator("[data-tile=fps]").count() == 1, "the tile 'Frame rate' exists")
     pg.click("[data-tile=fps]"); pg.wait_for_timeout(300)
-    check(pg.evaluate("HOSP.R.fps.on") is True and pg.evaluate("HOSP.R.fps.target") == 60 and pg.evaluate("HOSP.R.fps.engine") == "blend", "Frame rate turns on with 60 fps and the soft blend (works on a phone)")
+    check(pg.evaluate("HOSP.R.fps.on") is True and pg.evaluate("HOSP.R.fps.target") == 60 and pg.evaluate("HOSP.R.fps.engine") == "motion", "Frame rate turns on with 60 fps and Smooth motion")
     check(pg.locator("[data-step=fps] [data-k=engine][value=ai]").is_disabled(), "AI is not offered without the Linux version")
     check(not pg.locator("[data-step=fps] details.adv").evaluate("e => e.open"), "the loop and stepping switches are behind Advanced")
     pg.click("[data-tile=fps]"); pg.wait_for_timeout(200)

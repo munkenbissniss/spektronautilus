@@ -1397,3 +1397,12 @@ Done
 Turn knob {a} (it becomes: {b}).
 MPD218 is ready: the pads are set up, and {a} knobs are learned. Change anything with Learn below.
 Turn on MIDI first (Chrome or Edge on a computer).
+Measuring how long it will take…
+Done in {a} (estimated {b}).
+a little longer than estimated
+Portrait ({a}). Turn it a quarter turn so it is wide, then crop it to 16:9.
+Not widescreen ({a}). Crop it to 16:9 so it fills the screen.
+{a} fps. Frame rate makes it 60 fps with smooth movement.
+The preview uses Smooth motion, not AI.
+Welcome back. The work waited while the app was in the background, and goes on from where it was.
+Welcome back.

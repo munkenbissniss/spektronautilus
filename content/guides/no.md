@@ -286,6 +286,10 @@ Vil du ha en lang, glidende bevegelse? Flisen [[Ken Burns]] legger til en langso
 
 For silkemyke 60 fps-looper bruker du flisen [[Frame rate]]. Den lager nye bilder mellom de gamle, så en loop på 24 eller 30 fps blir 60 fps uten hakking. Et klipp som looper beholder skjøten og nøyaktig samme lengde, og klipp med gjentatte bilder (animasjon på to, eller 12 fps i en 30 fps-fil) rettes opp først. Soft blend fungerer overalt, også på mobil. Smooth motion er renere på rask action, men tregt, så hold klippene korte på mobil. AI bruker RIFE og gir best resultat i Linux-versjonen.
 
+Før en lengre jobb starter, kjører Hospital hele oppskriften din på to korte biter av klippet. Det tar noen sekunder, og gir et tidsestimat som passer din maskin og dine innstillinger, også når de tunge stegene kommer sist. Når den er ferdig, viser den hvor lang tid det faktisk tok ved siden av estimatet.
+
+På mobil kan du bytte til en annen app mens den jobber: arbeidet venter og fortsetter når du kommer tilbake. Hvis telefonen har lite minne, kan den lukke siden i stedet, så ved lange jobber er det tryggest å holde Hospital åpen.
+
 Står noe fast, eller vil du begynne på nytt? **↺ Start på nytt** (øverst til høyre, og ved siden av Stopp) tømmer klippet, innstillingene og resultatene, og stopper alt som kjører. Trykk to ganger, så mister du ikke noe ved et uhell.
 
 Rykkete bevegelse, for eksempel i klipp satt sammen av looper som ikke passer helt, rettes opp med flisen [[Smooth out]]. Den finner stedene der bildet rykker fram eller kryper, jevner ut farten og fjerner enkeltbilder som hopper ut av rekkefølgen. Klippet kan bli litt kortere eller lengre. Bruk [[Cut]] først hvis du bare vil beholde én loop.

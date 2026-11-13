@@ -86,6 +86,7 @@ with sync_playwright() as pw:
     check(any("Small picture" in t for t in items) and any("Very short" in t for t in items), f"examination finds problems: {items}")
     pg.click("#healall"); on = lambda s: pg.get_attribute(f"[data-tile={s}]", "aria-pressed") == "true"
     check(on("up") and on("slow") and pg.locator("[data-step=up]").is_visible() and pg.locator("[data-step=crop]").is_hidden(), "'Add all suggested treatments' switches the tiles on and opens their settings only")
+    check(on("fps") and pg.is_checked("[data-step=fps] input[value=motion]") and pg.is_checked("[data-step=slow] input[value=motion]"), "12 fps is offered Frame rate (60 fps), and Smooth motion is the method")
     pg.click("[data-off=up]"); check(not on("up") and pg.locator("[data-step=up]").is_hidden(), "the x on a treatment switches it off")
     pg.click("[data-tile=look]"); pg.check("[data-look=grainy]"); pg.uncheck("[data-look=sepia]"); check(pg.is_checked("[data-look=sepia]") is False and "One file" in pg.inner_text("#lookcount"), "one look picked: one file")
     (None if on("loop") else pg.click("[data-tile=loop]")); pg.check("input[name=h_loop_mode][value=pingpong]")

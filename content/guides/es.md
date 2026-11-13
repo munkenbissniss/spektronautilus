@@ -286,6 +286,10 @@ Los loops quietos o cortos cobran vida con la ficha [[Bring it to life]]. Elige 
 
 Para loops sedosos a 60 fps, usa la ficha [[Frame rate]]. Crea fotogramas nuevos entre los antiguos, así que un loop de 24 o 30 fps pasa a 60 fps sin tirones. Un clip en bucle mantiene su unión y su duración exacta, y los clips con fotogramas repetidos (animación a doses, o 12 fps en un archivo de 30 fps) se corrigen primero. Soft blend funciona en todas partes, también en el móvil. Smooth motion es más limpio en acción rápida pero lento, así que mantén los clips cortos en el móvil. La IA usa RIFE y da el mejor resultado en la versión de Linux.
 
+Antes de empezar un trabajo largo, el Hospital ejecuta toda tu receta en dos trozos cortos del clip. Tarda unos segundos y da una estimación de tiempo que se ajusta a tu ordenador y a tus ajustes, también cuando los pasos pesados van al final. Al terminar, muestra cuánto tardó de verdad junto a la estimación.
+
+En el móvil puedes cambiar a otra app mientras trabaja: el trabajo espera y sigue cuando vuelves. Si al teléfono le falta memoria, puede cerrar la página, así que en trabajos largos lo más seguro es dejar el Hospital abierto.
+
 ¿Algo se ha atascado, o quieres empezar de cero? **↺ Empezar de nuevo** (arriba a la derecha, y junto a Parar) borra el clip, tus ajustes y los resultados, y detiene todo lo que esté en marcha. Toca dos veces, para no perder nada por accidente.
 
 El movimiento a tirones, por ejemplo en clips hechos uniendo loops que no encajan del todo, se corrige con la ficha [[Smooth out]]. Busca los momentos en que la imagen da sacudidas o se arrastra, uniformiza la velocidad y quita los fotogramas sueltos que saltan de su sitio. El clip puede quedar un poco más corto o más largo. Usa [[Cut]] antes si solo quieres conservar un loop.

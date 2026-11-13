@@ -286,6 +286,10 @@ Queres um movimento longo e suave? O mosaico [[Ken Burns]] acrescenta um zoom ou
 
 Para loops sedosos a 60 fps, usa o mosaico [[Frame rate]]. Cria fotogramas novos entre os antigos, por isso um loop de 24 ou 30 fps passa a 60 fps sem soluços. Um clipe em loop mantém a junção e a duração exata, e os clipes com fotogramas repetidos (animação a dois, ou 12 fps num ficheiro de 30 fps) são corrigidos primeiro. Soft blend funciona em todo o lado, também no telemóvel. Smooth motion é mais limpo em ação rápida mas lento, por isso mantém os clipes curtos no telemóvel. A IA usa RIFE e dá o melhor resultado na versão Linux.
 
+Antes de começar um trabalho mais longo, o Hospital executa toda a tua receita em dois pedaços curtos do clipe. Demora alguns segundos e dá uma estimativa de tempo que se ajusta ao teu computador e às tuas definições, mesmo quando os passos pesados vêm no fim. No fim, mostra quanto tempo demorou de facto ao lado da estimativa.
+
+No telemóvel podes mudar para outra app enquanto trabalha: o trabalho espera e continua quando voltas. Se o telemóvel tiver pouca memória, pode fechar a página, por isso em trabalhos longos o mais seguro é manter o Hospital aberto.
+
 Algo encravou, ou queres começar do zero? **↺ Recomeçar** (em cima à direita, e ao lado de Parar) limpa o clipe, as tuas definições e os resultados, e para tudo o que estiver a correr. Toca duas vezes, para não perderes nada por acidente.
 
 O movimento aos solavancos, por exemplo em clipes feitos juntando loops que não encaixam bem, corrige-se com o mosaico [[Smooth out]]. Encontra os pontos em que a imagem dá saltos ou se arrasta, uniformiza a velocidade e remove os quadros soltos que saltam do lugar. O clipe pode ficar um pouco mais curto ou mais longo. Usa [[Cut]] antes se só quiseres manter um loop.

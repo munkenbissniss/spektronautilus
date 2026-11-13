@@ -286,6 +286,10 @@ Du möchtest eine lange, gleitende Bewegung? Die Kachel [[Ken Burns]] fügt eine
 
 Für seidenweiche 60-fps-Loops nimmst du die Kachel [[Frame rate]]. Sie erzeugt neue Bilder zwischen den alten, sodass aus einem Loop mit 24 oder 30 fps ohne Ruckeln einer mit 60 fps wird. Ein Loop behält seine Nahtstelle und seine exakte Länge, und Clips mit wiederholten Bildern (Animation auf Zweien oder 12 fps in einer 30-fps-Datei) werden zuerst geradegezogen. Soft blend läuft überall, auch auf dem Handy. Smooth motion ist bei schneller Action sauberer, aber langsam, also halte Clips auf dem Handy kurz. KI nutzt RIFE und liefert in der Linux-Version das beste Ergebnis.
 
+Bevor ein längerer Auftrag startet, führt das Hospital dein ganzes Rezept an zwei kurzen Stücken des Clips aus. Das dauert ein paar Sekunden und ergibt eine Zeitschätzung, die zu deinem Computer und deinen Einstellungen passt, auch wenn die schweren Schritte zuletzt kommen. Am Ende zeigt es, wie lange es wirklich gedauert hat, neben der Schätzung.
+
+Auf dem Handy kannst du während der Arbeit zu einer anderen App wechseln: Die Arbeit wartet und geht weiter, wenn du zurückkommst. Hat das Handy zu wenig Speicher, kann es die Seite stattdessen schließen. Bei langen Aufträgen lässt du das Hospital am besten offen.
+
 Hängt etwas, oder willst du neu anfangen? **↺ Neu starten** (oben rechts und neben Stopp) leert den Clip, deine Einstellungen und die Ergebnisse und stoppt alles, was läuft. Zweimal tippen, damit nichts aus Versehen verloren geht.
 
 Ruckelnde Bewegung, etwa in Clips aus aneinandergereihten Loops, die nicht ganz passen, behebst du mit der Kachel [[Smooth out]]. Sie findet die Stellen, an denen das Bild vorschnellt oder schleicht, gleicht das Tempo an und entfernt einzelne Bilder, die aus der Reihe springen. Der Clip kann etwas kürzer oder länger werden. Nutze vorher [[Cut]], wenn du nur einen Loop behalten willst.

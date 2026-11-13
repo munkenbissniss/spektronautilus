@@ -55,3 +55,29 @@ test('file operations have a time limit too', async () => {
   let t = 0; const e = make({ readFile: () => new Promise(() => {}), terminate() { t++; } }); e.opMs = 50;
   await assert.rejects(e.read('a.mp4'), err => err.message === STALLED); assert.equal(t, 1);
 });
+
+// A phone freezes the page when you switch apps. The time away must not count, or the work is given up on return.
+test('time in the background does not count as a stall', async () => {
+  const D = { visibilityState: 'visible', l: [], addEventListener(n, f) { this.l.push(f); } }, prev = globalThis.document;
+  globalThis.document = D;
+  try {
+    const mod = await import('./docs/tools/app/engine.js?hidden'), set = v => { D.visibilityState = v; D.l.forEach(f => f()); };
+    let finish, terminated = 0;
+    const e = new mod.WasmEngine(); e.loading = null; e.ff = { exec: () => new Promise(r => { finish = r; }), listDir: async () => [], terminate() { terminated++; } };
+    e.stallMs = 150; e.pingMs = 50; mod.activeNow();
+    const run = e.exec(['-i', 'x']); let done = null; run.then(r => { done = r; }, err => { done = err; });
+    await new Promise(r => setTimeout(r, 20)); set('hidden');
+    await new Promise(r => setTimeout(r, 600));            // four times the stall limit away
+    assert.equal(done, null, 'still waiting while away'); assert.equal(terminated, 0, 'not given up');
+    set('visible'); await new Promise(r => setTimeout(r, 50)); finish(0); await run;
+    assert.deepEqual(done && done.code, 0, 'finishes normally after coming back');
+    // but a worker that really died is still noticed, counted in visible time only
+    const run2 = e.exec(['-i', 'y']); let err2 = null; run2.catch(x => { err2 = x; });
+    set('hidden'); await new Promise(r => setTimeout(r, 400)); assert.equal(err2, null, 'not while away');
+    set('visible'); await new Promise(r => setTimeout(r, 400)); assert.ok(err2 && err2.message === mod.STALLED, 'given up after the limit in visible time');
+    // file operations: the same
+    e.ff = { readFile: () => new Promise(() => {}), listDir: async () => [], terminate() {} }; e.opMs = 150;
+    const rd = e.limit(e.ff.readFile('a')); let err3 = null; rd.catch(x => { err3 = x; });
+    set('hidden'); await new Promise(r => setTimeout(r, 400)); assert.equal(err3, null); set('visible'); await new Promise(r => setTimeout(r, 400)); assert.ok(err3);
+  } finally { globalThis.document = prev; }
+});
