@@ -1,4 +1,5 @@
-"""Loop Hospital: Start over (idle, while a job hangs) and very long file names that must not break the layout."""
+"""Loop Hospital: Start over (a fresh page; asks first when there is something to lose; works while a job hangs) and very long file
+names that must not break the layout."""
 import base64, functools, http.server, json, re, shutil, subprocess, tempfile, threading
 from pathlib import Path
 from playwright.sync_api import sync_playwright
@@ -32,11 +33,14 @@ URL = f"http://127.0.0.1:{srv.server_port}/tools/hospital/index.html"
 OVER = "() => { const w = document.documentElement; const bad = [...document.querySelectorAll('#cur,#msg,#facts,.res a,.card')].filter(e => e.scrollWidth > e.clientWidth + 1 && getComputedStyle(e).overflow === 'visible' && e.getBoundingClientRect().right > innerWidth + 1); return { page: w.scrollWidth - innerWidth, bad: bad.map(e => e.id || e.className) }; }"
 with sync_playwright() as pw:
     b = pw.chromium.launch(); pg = b.new_context(viewport={"width": 390, "height": 800}).new_page(); errs = []; pg.on("pageerror", lambda e: errs.append(str(e)))
+    ASKED = []; ANSWER = {"ok": False}
+    def dlg(d): ASKED.append(d.message); (d.accept() if ANSWER["ok"] else d.dismiss())
+    pg.on("dialog", dlg)
     pg.add_init_script(ENGINE_JS); pg.expose_function("host", host)
     pg.goto(URL); pg.wait_for_selector("#picker", state="attached")
     check(pg.locator("[data-reset]").count() == 2, "two Start over buttons (top, and next to Stop)")
     with pg.expect_navigation(): pg.click("#reset")
-    pg.wait_for_selector("#picker", state="attached"); check(pg.is_hidden("#patient"), "idle with nothing to lose: no confirmation, a clean page")
+    pg.wait_for_selector("#picker", state="attached"); check(pg.is_hidden("#patient") and not ASKED, "idle with nothing to lose: no question, a fresh page")
     # long name
     pg.set_input_files("#picker", str(IN / LONG)); pg.wait_for_selector("#facts span:not(.muted)", timeout=60000)
     o = pg.evaluate(OVER); check(o["page"] <= 0 and not o["bad"], f"80+ character name: no sideways overflow after choosing {o}")
@@ -46,16 +50,15 @@ with sync_playwright() as pw:
     check(pg.get_attribute("#res a", "download") == "hosp_1.mp4" or LONG[:10] in (pg.get_attribute("#res a", "download") or "") or True, "download name kept")
     # two-tap reset with results
     pg.fill("#cut_len", "1") if pg.locator("#cut_len").count() else None
-    pg.click("#reset"); lab = pg.inner_text("#reset"); check("again" in lab.lower(), f"first tap only asks: {lab!r}")
-    check(pg.locator("#res a").count() == 1, "nothing is lost after the first tap")
+    ANSWER["ok"] = False; pg.click("#reset"); pg.wait_for_timeout(300)
+    check(len(ASKED) == 1 and "Start over" in ASKED[0] and pg.locator("#res a").count() == 1, f"with results it asks first, and 'no' keeps everything: {ASKED[-1:]}")
+    ANSWER["ok"] = True
     with pg.expect_navigation(): pg.click("#reset")
     pg.wait_for_selector("#picker", state="attached")
-    check(pg.locator("#res a").count() == 0 and pg.is_hidden("#patient") and pg.is_hidden("#c4"), "second tap clears the clip and the results (a clean page)")
-    check("Start over" in pg.inner_text("#reset"), "the label is back to normal")
+    check(pg.locator("#res a").count() == 0 and pg.is_hidden("#patient") and pg.is_hidden("#c4"), "'yes' gives a fresh page: no clip, no results")
     # hang: engine never answers, reset frees everything
     pg.set_input_files("#picker", str(IN / LONG)); pg.wait_for_selector("#facts span:not(.muted)", timeout=60000)
     pg.evaluate("window.__hang = true"); pg.click("#go"); pg.wait_for_function("document.querySelector('#stop') && !document.querySelector('#stop').classList.contains('hide')", timeout=10000)
-    pg.click("#reset2")
     with pg.expect_navigation(): pg.click("#reset2")
     pg.wait_for_selector("#picker", state="attached")
     check(pg.is_hidden("#stop"), "after a hang: nothing is running any more")
@@ -64,7 +67,6 @@ with sync_playwright() as pw:
     with pg.expect_file_chooser(timeout=5000) as fc: pg.click("#pick")
     fc.value.set_files(str(IN / LONG)); pg.wait_for_selector("#facts span:not(.muted)", timeout=60000)
     check(True, "the real 'choose a clip' button opens the file dialog after Start over, and the clip loads")
-    pg.click("#reset")
     with pg.expect_navigation(): pg.click("#reset")
     pg.wait_for_selector("#picker", state="attached")
     pg.set_input_files("#picker", str(IN / LONG)); pg.wait_for_selector("#facts span:not(.muted)", timeout=60000)

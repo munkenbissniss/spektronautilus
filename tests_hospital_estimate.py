@@ -14,6 +14,7 @@ def ff(*a): subprocess.run(["ffmpeg", "-v", "error", "-y", "-nostdin", *a], chec
 ff("-f", "lavfi", "-i", "testsrc2=size=1280x720:rate=24:duration=12", "-c:v", "libx264", "-pix_fmt", "yuv420p", str(IN / "long clip.mp4"))
 ff("-f", "lavfi", "-i", "testsrc2=size=320x180:rate=25:duration=2", "-c:v", "libx264", "-pix_fmt", "yuv420p", str(IN / "short.mp4"))
 ff("-f", "lavfi", "-i", "testsrc2=size=640x640:rate=25:duration=3.5", "-c:v", "libx264", "-pix_fmt", "yuv420p", str(IN / "square.mp4"))
+ff("-f", "lavfi", "-i", "testsrc2=size=960x540:rate=25:duration=5", "-c:v", "libx264", "-pix_fmt", "yuv420p", str(IN / "kb.mp4"))
 PROCS = {}
 def host(op, a=None, b=None):
     if op == "start":   # ffmpeg runs on its own, so the test can read the page while it works
@@ -49,7 +50,7 @@ with sync_playwright() as pw:
     t0 = time.time(); pg.click("#go"); seen = []; measuring = False
     while time.time() - t0 < 600:
         txt = pg.inner_text("#cur") if pg.locator("#cur").count() else ""
-        if "Measuring" in txt: measuring = True
+        if "Estimating" in txt: measuring = True
         import re
         m = re.search(r"(?:(\d+)% · )?(\d+):(\d\d) · about (?:(\d+):)?(\d+):(\d\d) left", txt)
         if m:
@@ -59,7 +60,7 @@ with sync_playwright() as pw:
         pg.wait_for_timeout(1000)
     total = time.time() - t0
     check(pg.locator("#res a").count() == 1, f"the job finished in {total:.0f} s")
-    check(measuring, "it says it is measuring first")
+    check(measuring, "it says it is estimating first")
     msg = pg.inner_text("#msg"); check("estimated" in msg, f"the result says how long it took and what was estimated: {msg!r}")
     # every shown estimate (time so far + time left) against the real total
     pred = [(t, pct, t + left) for t, pct, el, left in seen]
@@ -72,7 +73,7 @@ with sync_playwright() as pw:
     check(hi <= total * 1.8, f"not wildly too high either: highest {hi:.0f} s")
     # like the clips from a phone: short and square, cropped to 16:9, 60 fps with Smooth motion, 2x slower, brought to life and repeated
     # to 16 s. The heavy steps work on the short clip only; the repeat is light. (This was estimated 1.4 to 3.7 times too high.)
-    pg.click("#reset")
+    pg.on("dialog", lambda d: d.accept())
     with pg.expect_navigation(): pg.click("#reset")
     pg.wait_for_selector("#picker", state="attached"); pg.set_input_files("#picker", str(IN / "square.mp4")); pg.wait_for_selector("#facts span:not(.muted)", timeout=60000)
     pg.evaluate("""Object.assign(HOSP.R.crop, { on: true, shape: '169' }); Object.assign(HOSP.R.fps, { on: true, target: 60, engine: 'motion' });
@@ -81,13 +82,21 @@ with sync_playwright() as pw:
     msg = pg.inner_text("#msg"); m = re.search(r"Done in (\d+):(\d\d) \(estimated (\d+):(\d\d)\)", msg)
     real, est = (int(m.group(1)) * 60 + int(m.group(2)), int(m.group(3)) * 60 + int(m.group(4))) if m else (0, 0)
     check(m and 0.75 * real <= est <= 1.4 * real, f"short clip repeated to 16 s: estimated {est} s, took {real} s ({msg!r})")
+    # Ken Burns with Make it loop and 60 fps (Ken Burns was usually estimated too long)
+    with pg.expect_navigation(): pg.click("#reset")
+    pg.wait_for_selector("#picker", state="attached"); pg.set_input_files("#picker", str(IN / "kb.mp4")); pg.wait_for_selector("#facts span:not(.muted)", timeout=60000)
+    pg.evaluate("""HOSP.R.kb.on = true; HOSP.R.kb.minSeconds = 24; Object.assign(HOSP.R.fps, { on: true, target: 60, engine: 'blend' }); Object.assign(HOSP.R.loop, { on: true, mode: 'auto' });
+      Object.assign(HOSP.R.size, { on: true, box: '640x360', fit: 'keep' })""")
+    pg.click("#go"); pg.wait_for_selector("#res a", timeout=600000)
+    msg = pg.inner_text("#msg"); m = re.search(r"Done in (\d+):(\d\d) \(estimated (\d+):(\d\d)\)", msg)
+    real, est = (int(m.group(1)) * 60 + int(m.group(2)), int(m.group(3)) * 60 + int(m.group(4))) if m else (0, 0)
+    check(m and 0.75 * real <= est <= 1.3 * real, f"Ken Burns + loop + 60 fps: estimated {est} s, took {real} s ({msg!r})")
     # a short job is not measured
-    pg.click("#reset"); 
     with pg.expect_navigation(): pg.click("#reset")
     pg.wait_for_selector("#picker", state="attached"); pg.set_input_files("#picker", str(IN / "short.mp4")); pg.wait_for_selector("#facts span:not(.muted)", timeout=60000)
     pg.click("#go"); saw = False
     for _ in range(120):
-        if "Measuring" in (pg.inner_text("#cur") or ""): saw = True
+        if "Estimating" in (pg.inner_text("#cur") or ""): saw = True
         if pg.locator("#res a").count(): break
         pg.wait_for_timeout(250)
     check(pg.locator("#res a").count() == 1 and "estimated" not in pg.inner_text("#msg"), "a short job is not measured first (it would cost more than it saves)")

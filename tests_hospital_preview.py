@@ -1,4 +1,4 @@
-"""Loop Hospital on a phone: the preview video appears right above the preview button (no scrolling up); on a wide screen it stays next to Before."""
+"""Loop Hospital: the preview video appears right above the preview button (no scrolling up), on a phone and on a wide screen alike."""
 import base64, functools, http.server, json, os, re, shutil, subprocess, tempfile, threading, zipfile
 from pathlib import Path
 from playwright.sync_api import sync_playwright
@@ -53,6 +53,6 @@ with sync_playwright() as pw:   # a long file name (a hash) in the status line m
     check(pg.evaluate("document.querySelector('#cur').scrollWidth <= document.querySelector('#cur').clientWidth + 1 && document.documentElement.scrollWidth <= document.documentElement.clientWidth"), "phone: a long file name in the status line wraps instead of running off the screen")
     b.close()
 r, e = run(1200, 900)
-check(not r["inC4"], "wide screen: the After video stays next to Before")
+check(r["inC4"], "wide screen: the After video is in the bottom card too, above the preview button")
 check(not e, f"wide screen: no errors {e[:2]}")
 print("\nALL OK" if not bad else f"\n{len(bad)} FAILED"); raise SystemExit(1 if bad else 0)

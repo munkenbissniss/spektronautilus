@@ -1,0 +1,7 @@
+1410 ¦ AI-video (ReCaVSR) ¦ IA de vídeo (ReCaVSR) ¦ KI-Video (ReCaVSR) ¦ IA de vídeo (ReCaVSR)
+1411 ¦ Hold loopen sømløs (ReCaVSR, tar dobbelt så lang tid) ¦ Mantener el loop sin cortes (ReCaVSR, tarda el doble) ¦ Loop nahtlos halten (ReCaVSR, dauert doppelt so lange) ¦ Manter o loop sem cortes (ReCaVSR, demora o dobro)
+1412 ¦ ReCaVSR jobber fremover i tid og husker det som kom før. Klippet kjøres to ganger etter hverandre, og andre runde beholdes, så slutten glir over i starten. ¦ ReCaVSR avanza en el tiempo y recuerda lo anterior. El clip se pasa dos veces seguidas y se guarda la segunda vuelta, así el final enlaza con el principio. ¦ ReCaVSR arbeitet vorwärts in der Zeit und merkt sich, was vorher kam. Der Clip läuft zweimal hintereinander, die zweite Runde wird behalten, so geht das Ende in den Anfang über. ¦ O ReCaVSR avança no tempo e lembra-se do que veio antes. O clipe passa duas vezes seguidas e fica a segunda volta, para o fim ligar ao início.
+1413 ¦ Fargetilpasning (ReCaVSR) ¦ Ajuste de color (ReCaVSR) ¦ Farbangleichung (ReCaVSR) ¦ Ajuste de cor (ReCaVSR)
+1414 ¦ Behold fargene fra originalen ¦ Mantener los colores del original ¦ Farben des Originals behalten ¦ Manter as cores do original
+1415 ¦ Tilpass lysstyrke og kontrast ¦ Igualar brillo y contraste ¦ Helligkeit und Kontrast angleichen ¦ Igualar brilho e contraste
+1416 ¦ AI-videooppskalering (ReCaVSR)… ¦ Escalado de vídeo con IA (ReCaVSR)… ¦ KI-Video-Hochskalierung (ReCaVSR)… ¦ Ampliação de vídeo com IA (ReCaVSR)…
