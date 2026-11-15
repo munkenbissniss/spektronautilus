@@ -191,7 +191,7 @@ def render(lang, L, key, body_html, title, desc, extra_ld=None, path=None, alt=N
 {hre}
 <meta property="og:site_name" content="Spektronautilus"><meta property="og:type" content="{og_type}"><meta property="og:title" content="{e(title)}"><meta property="og:description" content="{e(desc)}"><meta property="og:url" content="{canon}"><meta property="og:locale" content="{L['locale']}">
 <meta name="twitter:card" content="summary">
-<meta name="theme-color" content="#14182b">
+<meta name="theme-color" content="#1c0b3a">
 <link rel="icon" href="{r}favicon.svg" type="image/svg+xml">
 <link rel="manifest" href="{r}manifest.webmanifest">
 <link rel="apple-touch-icon" href="{r}apple-touch-icon.png"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-title" content="Spektro"><meta name="apple-mobile-web-app-status-bar-style" content="default">
