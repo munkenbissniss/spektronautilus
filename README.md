@@ -52,7 +52,7 @@ node tests_fps.mjs              # "Frame rate": 60 fps without stutter, loop sea
 node tests_smooth.mjs           # "Smooth out": stray frames found, a lurch is evened out, works after Cut
 node tests_loops.mjs            # "Make it loop": back-and-forth keeps its tempo, eases at the turnaround, no jump at the seam
 python3 tests_hospital_ai.py       # Loop Hospital: AI slow motion + AI upscale (stand-in Video2X), disabled in the browser version, preview stays light
-python3 tests_hospital_preview.py, tests_hospital_reset.py, tests_mpd218.py, tests_battery.py, tests_hospital_estimate.py, tests_hospital_background.py, tests_hospital_prevfast.py, tests_estimate.mjs, tests_goal.mjs, tests_kbloop.mjs  # Loop Hospital on a phone: the preview video sits right above the preview button
+python3 tests_hospital_preview.py, tests_hospital_reset.py, tests_mpd218.py, tests_battery.py, tests_hospital_estimate.py, tests_hospital_background.py, tests_hospital_prevfast.py, tests_estimate.mjs, tests_goal.mjs, tests_kbloop.mjs, tests_bands.mjs  # Loop Hospital on a phone: the preview video sits right above the preview button
 python3 tests_gif.py             # Loop Hospital: Convert GIF to MP4 above the video window, then treat the mp4
 python3 tests_cuts.py            # Magic Mixer cuts & sync: build-up rush, hard cuts, real render (desktop and phone)
 python3 tests_aiprogress.py     # true progress when the result is longer than the input, graphics card choice for AI
@@ -93,6 +93,9 @@ Every page has its own title and description, a canonical URL, `hreflang` links 
 - Make a package: `python3 linux/build_linux.py` gives `dist/spektronautilus-linux.tar.gz` (unpack, run `./install.sh`; it adds a menu entry and a `spektronautilus` command; `uninstall.sh` removes it).
 - Tests: `python3 tests_linux.py` (server, safety rules, tools on the real ffmpeg) and `python3 tests_linux_install.py` (package, install, launcher, uninstall).
 - Safety: the server refuses other Host names and requests without its custom header (stops other websites from using it), only lets ffmpeg touch its own temporary folder, and deletes that folder on exit.
+
+### Spektronautilus Output (Rust, in progress)
+`output/` is a native Linux player for the projector, in Rust (wgpu + GStreamer). Phase 0 is a measuring player that plays one clip or a test pattern full screen with vsync and counts missed refreshes. GitHub Actions builds and tests it (`.github/workflows/output.yml`, headless with software Vulkan) and attaches the program. See `output/README.md`.
 
 ### NVIDIA version (separate repository)
 [spektronautilus-nvidia](https://github.com/munkenbissniss/spektronautilus-nvidia) is this Linux version plus AI video upscaling with ReCaVSR (through ComfyUI) on an NVIDIA card, with one installer for everything. The Loop Hospital here knows the choice (`up.engine = 'recavsr'`), but only shows it when the NVIDIA launcher reports ComfyUI ready; the normal versions never see it.

@@ -28,3 +28,7 @@ test('Smooth motion is the default for slow motion and frame rate', () => {
   const R = defaultRecipe(); assert.equal(R.slow.engine, 'motion'); assert.equal(R.fps.engine, 'motion');
   const s = diagnose({ width: 1920, height: 1080, fps: 60, duration: 2 }, null).find(x => x.id === 'short'); assert.equal(s.fix.slow.engine, 'motion');
 });
+test('the local version with Video2X: the suggestions use AI for new frames', () => {
+  const d = diagnose({ width: 1920, height: 1080, fps: 30, duration: 2 }, null, { ai: true });
+  assert.equal(d.find(x => x.id === 'fps').fix.fps.engine, 'ai'); assert.equal(d.find(x => x.id === 'short').fix.slow.engine, 'ai');
+});

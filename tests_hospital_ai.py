@@ -78,9 +78,13 @@ with sync_playwright() as pw:
     # 1. browser engine: the AI choices are there but switched off
     pg = page("wasm")
     check(pg.locator("[data-s=slow][data-k=engine][value=ai]").is_disabled() and pg.locator("[data-s=up][data-k=engine][value=ai]").is_disabled(), "browser version: AI choices are disabled")
+    check(pg.evaluate("HOSP.R.slow.engine") == "motion" and pg.evaluate("HOSP.R.fps.engine") == "motion", "browser version: Smooth motion stays the default")
     # 2. local engine: AI slow motion 2x then AI upscale 2x, then the normal pass
     pg = page("native")
     check(not pg.locator("[data-s=slow][data-k=engine][value=ai]").is_disabled(), "local version: AI choices are enabled")
+    check(pg.evaluate("HOSP.R.slow.engine") == "ai" and pg.evaluate("HOSP.R.fps.engine") == "ai", "local version with Video2X: AI is the method for Slow motion and Frame rate by default")
+    fx = pg.evaluate("(window.__fx = null, document.querySelector('#findings').textContent)")
+    check("fps" in fx, "the clip is offered Frame rate")
     pg.locator("[data-s=slow][data-k=engine][value=ai]").check(force=True); pg.locator("[data-s=up][data-k=engine][value=ai]").check(force=True)
     pg.locator("[data-s=slow][data-k=factor][value=\"2\"]").check(force=True); pg.locator("[data-s=up][data-k=scale][value=\"2\"]").check(force=True)
     pg.click("#go"); pg.wait_for_selector("#res .rr", timeout=240000)

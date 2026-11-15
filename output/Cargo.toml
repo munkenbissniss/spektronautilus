@@ -1,0 +1,19 @@
+[package]
+name = "spektronautilus-output"
+version = "0.1.0"
+edition = "2021"
+license = "MIT"
+description = "Spektronautilus Output, phase 0: plays one clip (or a test pattern) full screen with vsync and counts every missed refresh."
+
+# Versions are pinned to releases whose APIs this code is written against.
+[dependencies]
+winit = "0.30"
+wgpu = "22.1"
+pollster = "0.3"
+gstreamer = "0.23"
+gstreamer-app = "0.23"
+gstreamer-video = "0.23"
+
+[profile.release]
+lto = "thin"
+codegen-units = 4
