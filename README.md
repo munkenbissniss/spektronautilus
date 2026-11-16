@@ -61,6 +61,17 @@ node --test tests_vjrate.mjs      # exports stay under the data-rate ceiling (de
 node --test tests_live_core.mjs tests_vj_core.mjs tests_engine.mjs
 ```
 
+### The fast way in the Loop Hospital (WebCodecs + graphics card)
+In the browser the Hospital reads and writes video with the device's own video chip (WebCodecs) and does all picture work on the graphics card
+(WebGL 2), Smooth motion included: `docs/tools/app/mp4.js` (MP4/MOV index and writer), `gpu.js` (turn, crop, scale, Ken Burns, Life,
+blends, trails and motion-following new frames), `wc.js` (the passes, in the same order and with the same numbers as `steps.js`).
+ffmpeg.wasm is only loaded for what it cannot do yet (Looks, keeping sound, GIFs and other files the device cannot read). The local Linux
+version keeps using ffmpeg. `localStorage.spk_wc = 'off'` switches the fast way off in a browser.
+```
+python3 tests_wc.py              # each recipe the fast way and the ffmpeg way: same size, frame rate and length, close picture (VP9 here: no H.264 in this Chromium)
+python3 tests_wc_hospital.py     # the page: examining, preview and treating without ffmpeg; Looks and unreadable clips go the ffmpeg way
+```
+
 ### One-time: the video engine for the browser tools
 ```
 python3 get-ffmpeg.py   # downloads ffmpeg.wasm (~31 MB) into docs/tools/app/vendor/

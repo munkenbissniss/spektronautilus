@@ -286,6 +286,8 @@ Vil du ha en lang, glidende bevegelse? Flisen [[Ken Burns]] legger til en langso
 
 For silkemyke 60 fps-looper bruker du flisen [[Frame rate]]. Den lager nye bilder mellom de gamle, så en loop på 24 eller 30 fps blir 60 fps uten hakking. Et klipp som looper beholder skjøten og nøyaktig samme lengde, og klipp med gjentatte bilder (animasjon på to, eller 12 fps i en 30 fps-fil) rettes opp først. Soft blend fungerer overalt, også på mobil. Smooth motion er renere på rask action, men tregt, så hold klippene korte på mobil. AI bruker RIFE og gir best resultat i Linux-versjonen.
 
+**Den raske veien.** I de fleste nyere nettlesere, både på datamaskiner, mobiler og nettbrett, lar Hospitalet enhetens egen videobrikke og grafikkort gjøre jobben, også Smooth motion. Bildene strømmer gjennom ett og ett, så selv store klipp trenger lite minne, og videomotoren på 30 MB lastes ikke i det hele tatt. Siden sier da «Rask vei». Looker, å beholde lyden og filer den ikke kan lese (for eksempel GIF-er) går fortsatt den langsommere veien. Linux-versjonen bruker fortsatt ffmpeg på datamaskinen din.
+
 Før en lengre jobb starter, estimerer Hospital først tiden: den kjører hele oppskriften din på to korte biter av klippet. Det tar noen sekunder, og gir et tidsestimat som passer din maskin og dine innstillinger, også når de tunge stegene kommer sist. Når den er ferdig, viser den hvor lang tid det faktisk tok ved siden av estimatet.
 
 På mobil kan du bytte til en annen app mens den jobber: arbeidet venter og fortsetter når du kommer tilbake. Hvis telefonen har lite minne, kan den lukke siden i stedet, så ved lange jobber er det tryggest å holde Hospital åpen.

@@ -47,7 +47,12 @@ with sync_playwright() as pw:
     pg.set_input_files("#picker", str(IN / "long clip.mp4")); pg.wait_for_selector("#facts span:not(.muted)", timeout=60000)
     pg.evaluate("Object.assign(HOSP.R.size, { on: true, box: '640x360', fit: 'keep' }); Object.assign(HOSP.R.loop, { on: true, mode: 'crossfade', fade: 1 })")
     pg.click("#go"); pg.wait_for_timeout(2500)
-    clock = lambda: (lambda m: int(m.group(1)) * 60 + int(m.group(2)) if m else None)(re.search(r"(\d+):(\d\d)(?! left)", pg.inner_text("#cur")))
+    def clock():   # the label is rewritten when a new step starts; the clock comes back with the next tick
+        for _ in range(12):
+            m = re.search(r"(\d+):(\d\d)(?! left)", pg.inner_text("#cur"))
+            if m: return int(m.group(1)) * 60 + int(m.group(2))
+            pg.wait_for_timeout(200)
+        return None
     c0 = clock(); away(pg, True); pg.wait_for_timeout(12000); away(pg, False); pg.wait_for_timeout(1200)
     check(pg.is_visible("#stop") and "Welcome back" in pg.inner_text("#msg"), f"after 12 s in the background: still working, and it says so: {pg.inner_text('#msg')!r}")
     c1 = clock(); check(c0 is not None and c1 is not None and c1 - c0 <= 5, f"the time away is not counted as working time (clock {c0} -> {c1} s over 14 s, 12 of them away)")

@@ -286,6 +286,8 @@ Want a long, gliding movement? The [[Ken Burns]] tile adds a slow zoom or pan ov
 
 For silky 60 fps loops, use the [[Frame rate]] tile. It makes new frames between the old ones, so a 24 or 30 fps loop becomes 60 fps without stutter. A clip that loops keeps its seam and its exact length, and clips with repeated frames (animation on twos, or 12 fps in a 30 fps file) are straightened out first. Soft blend works everywhere, also on a phone. Smooth motion is cleaner on fast action but slow, so keep clips short on a phone. AI uses RIFE and gives the best result in the Linux version.
 
+**The fast way.** In most newer browsers, on computers, phones and tablets alike, the Hospital lets your device's own video chip and graphics card do the work, Smooth motion included. The frames stream through one at a time, so even big clips need little memory, and the 30 MB video engine is not loaded at all. The page then says “Fast way”. Looks, keeping the sound and files it cannot read (GIFs, for example) still take the slower way. The Linux version keeps using ffmpeg on your computer.
+
 Before a longer job starts, the Hospital first estimates the time: it runs your whole recipe on two short pieces of the clip. That takes a few seconds, and gives a time estimate that fits your computer and your settings, also when the heavy steps come last. When it is done, it shows how long it really took next to the estimate.
 
 On a phone you can switch to another app while it works: the work waits and goes on when you come back. If the phone is short of memory it may close the page instead, so for long jobs it is safest to keep the Hospital open.
