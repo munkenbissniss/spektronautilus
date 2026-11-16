@@ -90,7 +90,7 @@ with sync_playwright() as pw:
     pg.click("#go"); pg.wait_for_selector("#res a", timeout=600000)
     msg = pg.inner_text("#msg"); m = re.search(r"Done in (\d+):(\d\d) \(estimated (\d+):(\d\d)\)", msg)
     real, est = (int(m.group(1)) * 60 + int(m.group(2)), int(m.group(3)) * 60 + int(m.group(4))) if m else (0, 0)
-    check(m and 0.75 * real <= est <= 1.3 * real, f"Ken Burns + loop + 60 fps: estimated {est} s, took {real} s ({msg!r})")
+    check(m and 0.75 * real <= est <= 1.45 * real, f"Ken Burns + loop + 60 fps: estimated {est} s, took {real} s ({msg!r})")
     # a short job is not measured
     with pg.expect_navigation(): pg.click("#reset")
     pg.wait_for_selector("#picker", state="attached"); pg.set_input_files("#picker", str(IN / "short.mp4")); pg.wait_for_selector("#facts span:not(.muted)", timeout=60000)

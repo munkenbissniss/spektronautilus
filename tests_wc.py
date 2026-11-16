@@ -16,6 +16,7 @@ VP9 = ["-c:v", "libvpx-vp9", "-b:v", "3M", "-deadline", "realtime", "-cpu-used",
 ff("-f", "lavfi", "-i", "testsrc2=size=640x360:rate=30:duration=3", *VP9, str(IN / "wide.mp4"))
 ff("-f", "lavfi", "-i", "testsrc2=size=360x640:rate=25:duration=2", *VP9, str(IN / "tall.mp4"))
 ff("-f", "lavfi", "-i", "testsrc2=size=180x320:rate=25:duration=2", *VP9, str(IN / "tallsmall.mp4"))
+ff("-f", "lavfi", "-i", "testsrc2=size=618x348:rate=25:duration=1", *VP9, str(IN / "odd.mp4"))   # a width that is not a multiple of 8
 ff("-f", "lavfi", "-i", "testsrc2=size=640x360:rate=30:duration=2", *VP9, str(IN / "_flat.mp4")); ff("-display_rotation", "90", "-i", str(IN / "_flat.mp4"), "-c", "copy", str(IN / "turned.mp4"))
 # a real moving loop (fast movement), and a short one that does not loop
 src = "/mnt/user-data/uploads/matrix-abstract-big-green-135-1920x1080-60.mp4"
@@ -74,6 +75,7 @@ RUN = r"""async ([name, patch, tag]) => {
 }"""
 CASES = [
     ("plain", "wide.mp4", {}, {}),
+    ("odd width (rows packed tight)", "odd.mp4", {}, {}),
     ("fps60 motion", "real.mp4", {"fps": {"on": True, "engine": "motion"}}, {"psnr": 24}),
     ("fps60 blend", "wide.mp4", {"fps": {"on": True, "engine": "blend"}}, {"psnr": 24}),
     ("slow2 motion", "real.mp4", {"slow": {"on": True, "factor": 2, "engine": "motion"}}, {"psnr": 24}),
