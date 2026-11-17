@@ -53,7 +53,7 @@ def host(op, a=None, b=None):
 def engine_js(kind):
     return r"""(() => { const b64 = u8 => { let s = ''; for (let i = 0; i < u8.length; i += 0x8000) s += String.fromCharCode.apply(null, u8.subarray(i, i + 0x8000)); return btoa(s); };
   const un64 = s => Uint8Array.from(atob(s), c => c.charCodeAt(0)); let n = 0;
-  window.__VJ_ENGINE__ = { kind: '%s', info: { v2x: { ok: %s, mul: '-m', rife: true } }, async load() {}, async exec(args) { return JSON.parse(await window.host('exec', JSON.stringify(args))); },
+  window.__VJ_ENGINE__ = { kind: '%s', info: { v2x: { ok: %s, mul: '-m', rife: true, dev: '-d' } }, async v2xGpus() { return { ok: true, lines: ['0. ' + (window.__CARD || 'NVIDIA GeForce RTX 3070')] }; }, async load() {}, async exec(args) { return JSON.parse(await window.host('exec', JSON.stringify(args))); },
     async v2x(args, o) { const r = JSON.parse(await window.host('v2x', JSON.stringify(args))); if (o && o.onProgress) o.onProgress(1); return r; },
     async write(p, u8) { await window.host('write', p, b64(u8)); }, async read(p) { return un64(await window.host('read', p)); }, async remove(p) { await window.host('remove', p); },
     async mount(file) { const d = 'm' + (++n); await window.host('write', d + '/' + file.name, b64(new Uint8Array(await file.arrayBuffer()))); return d + '/' + file.name; },
@@ -68,9 +68,10 @@ def probe(f):
 
 with sync_playwright() as pw:
     b = pw.chromium.launch()
-    def page(kind):
+    def page(kind, card=None):
         ctx = b.new_context(viewport={"width": 1000, "height": 900}, service_workers="block")
         ctx.add_init_script("try{localStorage.setItem('spk_desktop','1')}catch(e){}"); ctx.add_init_script(engine_js(kind))
+        if card: ctx.add_init_script("window.__CARD = %s" % json.dumps(card))
         pg = ctx.new_page(); pg.expose_function("host", host); pg.errs = []; pg.on("pageerror", lambda e: pg.errs.append(str(e)))
         pg.goto(BASE + "/tools/hospital/index.html"); pg.wait_for_selector("#picker", state="attached")
         pg.set_input_files("#picker", str(IN / "clip4.mp4")); pg.wait_for_selector("#findings li", timeout=60000)
@@ -79,10 +80,16 @@ with sync_playwright() as pw:
     pg = page("wasm")
     check(pg.locator("[data-s=slow][data-k=engine][value=ai]").is_disabled() and pg.locator("[data-s=up][data-k=engine][value=ai]").is_disabled(), "browser version: AI choices are disabled")
     check(pg.evaluate("HOSP.R.slow.engine") == "motion" and pg.evaluate("HOSP.R.fps.engine") == "motion", "browser version: Smooth motion stays the default")
+    # 1b. local engine on a laptop's built-in graphics: AI can be chosen, but Smooth motion (the fast way) stays the default
+    pg = page("native", "Intel(R) Iris(R) Xe Graphics (TGL GT2)")
+    check(not pg.locator("[data-s=slow][data-k=engine][value=ai]").is_disabled() and pg.evaluate("HOSP.R.slow.engine") == "motion" and pg.evaluate("HOSP.R.fps.engine") == "motion",
+          "local version with Video2X on built-in graphics (Intel Iris Xe): AI is offered, Smooth motion stays the default")
+    fx = pg.evaluate("JSON.stringify(HOSP.ST.diagnose({width:320,height:180,fps:24,duration:4}, null, {}).length)")
+    pg.context.close()
     # 2. local engine: AI slow motion 2x then AI upscale 2x, then the normal pass
     pg = page("native")
     check(not pg.locator("[data-s=slow][data-k=engine][value=ai]").is_disabled(), "local version: AI choices are enabled")
-    check(pg.evaluate("HOSP.R.slow.engine") == "ai" and pg.evaluate("HOSP.R.fps.engine") == "ai", "local version with Video2X: AI is the method for Slow motion and Frame rate by default")
+    check(pg.evaluate("HOSP.R.slow.engine") == "ai" and pg.evaluate("HOSP.R.fps.engine") == "ai", "local version with Video2X and a separate graphics card (RTX 3070): AI is the method for Slow motion and Frame rate by default")
     fx = pg.evaluate("(window.__fx = null, document.querySelector('#findings').textContent)")
     check("fps" in fx, "the clip is offered Frame rate")
     pg.locator("[data-s=slow][data-k=engine][value=ai]").check(force=True); pg.locator("[data-s=up][data-k=engine][value=ai]").check(force=True)

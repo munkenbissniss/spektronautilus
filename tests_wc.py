@@ -96,12 +96,14 @@ CASES = [
     ("smooth out", "real.mp4", {"smooth": {"on": True, "strength": 70}}, {"psnr": 22}),
     ("all at once", "tallsmall.mp4", {"rotate": {"on": True, "turn": "90"}, "crop": {"on": True, "shape": "169"}, "fps": {"on": True, "engine": "motion"}, "life": {"on": True, "minSeconds": 4}, "loop": {"on": True, "mode": "auto"}}, {"psnr": 20}),
 ]
-only = sys.argv[1:]
+SYNC = "--sync" in sys.argv          # the plain way of reading pictures back (what Safari and iPhones use), instead of the one that does not wait
+only = [a for a in sys.argv[1:] if not a.startswith("--")]
 with sync_playwright() as pw:
     b = pw.chromium.launch(); pg = b.new_context().new_page(); errs = []; pg.on("pageerror", lambda e: errs.append(str(e)))
     pg.add_init_script(ENGINE_JS); pg.expose_function("host", host)
+    if SYNC: pg.add_init_script("window.SPK_WC_TEST.syncRead = true")
     pg.goto(BASE + "/tools/hospital/index.html"); pg.wait_for_selector("#picker", state="attached")
-    check(pg.evaluate("import('/tools/app/wc.js').then(m => m.supported())"), "the fast path is available in this browser (VP9 for the test)")
+    check(pg.evaluate("import('/tools/app/wc.js').then(m => m.supported())"), "the fast path is available in this browser (VP9 for the test)" + (", reading pictures back the plain way" if SYNC else ""))
     for i, (label, name, patch, opt) in enumerate(CASES):
         if only and not any(o in label for o in only): continue
         tag = f"c{i}"

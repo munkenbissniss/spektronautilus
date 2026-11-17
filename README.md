@@ -67,8 +67,14 @@ In the browser the Hospital reads and writes video with the device's own video c
 blends, trails and motion-following new frames), `wc.js` (the passes, in the same order and with the same numbers as `steps.js`).
 ffmpeg is only used for what it cannot do yet (Looks, keeping sound, AI, GIFs and other files the device cannot read): ffmpeg.wasm in the
 browser, the computer's own ffmpeg in the local Linux version (which uses the fast way too). `localStorage.spk_wc = 'off'` switches the fast way off in a browser.
+In the local Linux version the finished frames are sent to the launcher (`/api/enc-start`, `/api/enc-frame`, `/api/enc-end`), where ffmpeg
+(x264, all cores) writes the video; the clip is studied with the computer's ffmpeg; AI steps (Video2X, ReCaVSR) do only their own part
+and the rest goes the fast way. Pictures are read back from the graphics card without waiting (not in Safari / on iOS, which keep the
+plain way), and the decoder is fed only a few frames ahead of what is needed.
 ```
 python3 tests_wc.py              # each recipe the fast way and the ffmpeg way: same size, frame rate and length, close picture (VP9 here: no H.264 in this Chromium)
+python3 tests_wc.py --sync       # the same with the plain way of reading pictures back (what Safari and iPhones use)
+python3 tests_wc_linux.py        # the real launcher: frames from the browser, video written by the computer's x264; the page on the local engine
 python3 tests_wc_hospital.py     # the page: examining, preview and treating without ffmpeg; Looks and unreadable clips go the ffmpeg way
 ```
 

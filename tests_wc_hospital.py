@@ -83,7 +83,9 @@ with sync_playwright() as pw:
     check("Done in" in pg.inner_text("#msg"), f"done, with the time and the estimate: {pg.inner_text('#msg')!r}")
     # a Look is not done the fast way yet: the ffmpeg way takes over
     pg.evaluate("HOSP.R.look.on = true; HOSP.R.loop.on = false; HOSP.R.life.on = false; HOSP.R.fps.on = false")
-    pg.click("#go"); pg.wait_for_function("document.querySelectorAll('#res a').length >= 2", timeout=600000)
+    pg.click("#go"); w0 = pg.evaluate("parseFloat(document.querySelector('#bar i').style.width) || 0")
+    check(w0 < 50, f"a second run starts the bar from the beginning ({w0} %)")
+    pg.wait_for_function("document.querySelectorAll('#res a').length >= 2", timeout=600000)
     check(len(EXECS) > 0, f"with a Look the ffmpeg way is used ({len(EXECS)} calls)")
     # a clip the fast way cannot read here (H.264 in this test browser) goes the ffmpeg way from the start
     pg.evaluate("HOSP.R.look.on = false"); EXECS.clear()

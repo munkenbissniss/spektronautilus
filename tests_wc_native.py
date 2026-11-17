@@ -66,7 +66,10 @@ with sync_playwright() as pw:
     pg.add_init_script(ENGINE_JS); pg.expose_function("host", host2)
     pg.goto(BASE + "/tools/hospital/index.html"); pg.wait_for_selector("#picker", state="attached")
     pg.set_input_files("#picker", str(IN / "wide.mp4")); pg.wait_for_selector("#facts span:not(.muted)", timeout=120000)
-    check(not EXECS and pg.is_visible("#fastway"), f"the local version examines the clip the fast way ({len(EXECS)} ffmpeg calls)")
+    scan = [" ".join(x) for x in EXECS]
+    check(len(EXECS) == 1 and "format=gray" in scan[0] and "passthrough" in scan[0] and pg.is_visible("#fastway"), f"the local version studies the clip with the computer's ffmpeg (one quick pass over every frame) and will treat it the fast way ({len(EXECS)} ffmpeg call)")
+    check(pg.evaluate("!!(HOSP.engine) && document.querySelector('#facts').textContent.length > 10"), "the facts are shown")
+    EXECS.clear()
     pg.evaluate("HOSP.R.fps.on = true; HOSP.R.fps.engine = 'blend'")
     pg.click("#go"); pg.wait_for_selector("#res a", timeout=600000)
     with pg.expect_download() as dl: pg.click("#res a")
@@ -75,6 +78,16 @@ with sync_playwright() as pw:
     pg.evaluate("HOSP.R.look.on = true; HOSP.R.fps.on = false")
     pg.click("#go"); pg.wait_for_function("document.querySelectorAll('#res a').length >= 2", timeout=600000)
     check(len(EXECS) > 0, f"a Look goes to the computer's own ffmpeg ({len(EXECS)} calls)")
+    # a browser that draws without the graphics card (software): the local version uses its own ffmpeg, and the page says what to change
+    pg2 = b.new_context().new_page(); pg2.on("pageerror", lambda e: errs.append(str(e)))
+    pg2.add_init_script(ENGINE_JS); pg2.add_init_script("window.SPK_WC_TEST.allowSoftware = false"); pg2.expose_function("host", host2)
+    pg2.goto(BASE + "/tools/hospital/index.html"); pg2.wait_for_selector("#picker", state="attached")
+    soft = pg2.evaluate("import('/tools/app/gpu.js').then(m => { const g = new m.Gpu(); return [g.software, g.renderer]; })")
+    if soft[0]:
+        EXECS.clear(); pg2.set_input_files("#picker", str(IN / "wide.mp4")); pg2.wait_for_selector("#facts span:not(.muted)", timeout=120000)
+        note = pg2.inner_text("#fastway")
+        check(len(EXECS) > 0 and "graphics card" in note and "Fast way:" not in note, f"software drawing ({soft[1][:40]}): the computer's own ffmpeg is used, with advice: {note[:70]!r}")
+    else: print("(this browser has a real graphics card: the software check is skipped)")
     check(not errs, f"no script errors {errs[:2]}")
     b.close()
 print("\nALL OK" if not bad else f"\n{len(bad)} FAILED"); raise SystemExit(1 if bad else 0)
