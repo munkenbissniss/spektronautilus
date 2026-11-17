@@ -96,6 +96,12 @@ try:
         for n in names:
             (T / n).write_bytes(z.read(n)); pr = subprocess.run(["ffprobe", "-v", "error", "-select_streams", "v:0", "-show_entries", "stream=codec_name,pix_fmt,width", "-of", "csv=p=0", str(T / n)], capture_output=True, text=True).stdout.strip()
             check(pr.startswith("h264,") and "yuv420p" in pr, f"{n}: {pr}")
+        # the name tokens describe the finished file: 60 fps asked for, so {fps} is 60 (the clips are 30 and 10 fps)
+        n0 = pg.evaluate("VJ.JOBS.length"); pg.select_option("#o_fps", "60"); pg.fill("#o_template", "{name}_{res}_{fps}fps"); pg.click("#go")
+        pg.wait_for_function(f"VJ.JOBS.length > {n0} && VJ.JOBS[0].status!=='running' && VJ.JOBS[0].status!=='queued'", timeout=90000)
+        nm = pg.evaluate("VJ.JOBS[0].results.map(r=>r.name)")
+        check(len(nm) == 2 and all(n.endswith("_60fps.mp4") for n in nm) and any("_1280x720_" in n for n in nm), f"name tokens come from the finished file: {nm}")
+        pg.select_option("#o_fps", "0"); pg.fill("#o_template", "vj_{n3}_{name}")
         # filters through the same path
         pg.click("#tabs [data-t=filters]"); pg.set_input_files("#picker", [str(IN / "Mitt Klipp.mov")]); pg.wait_for_selector("#files .vt")
         pg.wait_for_selector("#fgrid .ft"); pg.click("#fgrid .ft:nth-child(1)"); pg.click("#fgrid .ft:nth-child(3)"); pg.select_option("#o_preset", "ultrafast"); pg.click("#go")
