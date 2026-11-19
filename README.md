@@ -75,6 +75,7 @@ plain way), and the decoder is fed only a few frames ahead of what is needed.
 python3 tests_wc.py              # each recipe the fast way and the ffmpeg way: same size, frame rate and length, close picture (VP9 here: no H.264 in this Chromium)
 python3 tests_wc.py --sync       # the same with the plain way of reading pictures back (what Safari and iPhones use)
 python3 tests_wc_linux.py        # the real launcher: frames from the browser, video written by the computer's x264; the page on the local engine
+node tests_loopplan.mjs          # how Make it loop chooses: as is, the longest clean trim, a crossfade with the best place and length, or back and forth with gentle turns
 python3 tests_wc_hospital.py     # the page: examining, preview and treating without ffmpeg; Looks and unreadable clips go the ffmpeg way
 ```
 

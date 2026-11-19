@@ -14,7 +14,7 @@ for (const [what, set, min] of [['Ken Burns', R => { R.kb.on = true; R.kb.minSec
 }
 const F = loops.loopForecast;
 ok(F({ isLoop: true }, { mode: 'auto' }, 5).method === 'asis' && F({ isLoop: true }, { mode: 'auto' }, 5).len === 5, 'a clip that loops is kept as it is');
-{ const l = F({ isLoop: false, bestCut: -1 }, { mode: 'auto', fallback: 'pingpong' }, 5).len; ok(l > 11.3 && l < 11.4, `no good loop point: forward and backward, twice as long plus the two eased turns (${l.toFixed(2)} s)`); }
+{ const l = F({ isLoop: false, bestCut: -1 }, { mode: 'auto', fallback: 'pingpong' }, 5).len; ok(l > 12.7 && l < 12.8, `no good loop point: forward and backward, twice as long plus the two gentle turns (${l.toFixed(2)} s)`); }
 ok(F({ isLoop: false, bestCut: 80, bestRatio: 1.1, bestKeeps: 0.8 }, { mode: 'auto' }, 5).method === 'trim', 'a good loop point: trimmed');
 ok(Math.abs(F(null, { mode: 'crossfade', fade: 1.5 }, 5).len - 3.5) < 1e-9, 'crossfade: shorter by the fade');
 ok(F(null, { mode: 'none' }, 5).method === 'asis', 'no report: still a sensible answer');

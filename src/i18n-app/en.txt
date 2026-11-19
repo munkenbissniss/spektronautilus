@@ -1421,3 +1421,11 @@ Estimating how long it will take…
 Fast way: this device does the work with its own video chip and graphics card.
 The fast way could not finish this clip, so the slower way is used.
 This browser does not use the graphics card (it draws with the processor), so the fast way is slow here. Turn on hardware acceleration in the browser settings and restart the browser. In Chrome, the page chrome://gpu shows what is used.
+Auto looks for the way that keeps the movement going in one direction for as long as possible: a clean cut, otherwise a crossfade, and back and forth only when nothing else works. Crossfade blends the end into the start. Trim cuts at the latest clean loop point. Back and forth plays forward, then backward.
+Find the best crossfade length and place automatically
+The cut and the length of the blend are chosen together, so the two blended moments look as much alike as possible.
+Used when the automatic length is off.
+Back and forth: the turns
+Gentle
+Quick
+Gentle slows down over about a second before it turns, which looks more natural. Quick turns in about half a second.
