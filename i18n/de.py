@@ -17,7 +17,7 @@ T = {
 <a class="card" href="{r}magic-mixer/"><h3>Magic Video Mixer <span class="badge live">Verfügbar</span></h3><p>Gib ihm einen Song und einen Ordner mit Loops. Er hört die Musik und schneidet ein Video, das der Stimmung folgt.</p></a>
 <a class="card" href="{r}live-mixer/"><h3>Video DJ <span class="badge live">Verfügbar</span></h3><p>Mixe komplette Musikvideos auf zwei Kanälen wie ein DJ, mit Crossfader, Vorschau und HDMI-Ausgang.</p></a>
 <a class="card" href="{r}vj-mixer/"><h3>VJ-Mixer <span class="badge live">Verfügbar</span></h3><p>Spiele deine Loops live mit Ebenen, Beat-Effekten, Logo und Text-Plakaten.</p></a>
-<a class="card" href="{r}tools/"><h3>Werkzeuge <span class="badge live">Verfügbar</span></h3><p>Wandle GIFs und Videos um, erstelle nahtlose Loops und finde kostenlose Loops im Netz.</p></a>
+<a class="card" href="{r}tools/"><h3>Werkzeuge <span class="badge live">Verfügbar</span></h3><p>Wandle GIFs und Videos um, erstelle nahtlose Loops und hol dir kostenlose Loop-Pakete.</p></a>
 <a class="card" href="{r}packs/"><h3>Loop-Pakete</h3><p>Fertige Loop-Pakete zum Herunterladen und Verwenden.</p></a>
 <a class="card" href="{r}guides/"><h3>Anleitungen</h3><p>Handbücher und Anleitungen für alles auf dieser Seite.</p></a>
 </div>
@@ -52,7 +52,7 @@ T = {
 <h2>Was er kann</h2>
 <ul class="spec"><li>20 Loop-Pads. Drücke ein Pad oder seine Taste, um den Loop sofort auf der gewählten Ebene zu spielen.</li><li>Zwei Kanäle mit je drei Ebenen, mit Deckkraft und Mischmodi (normal, add, screen, multiply).</li><li>Crossfader von Hand oder eine automatische Überblendung.</li><li>Beat: Tippe das Tempo, gib BPM ein oder lass ihn über einen Audioeingang die Bassdrum hören.</li><li>Acht Beat-Effekte: Zoom, Wackeln, Blitz, Stroboskop, Invertieren, Spiegel, Farbdrehung und Unschärfe.</li><li>Vorschau beider Kanäle neben der Ausgabe, dein eigenes Logo und gleitende Text-Plakate.</li><li>MIDI-Steuerung mit Lernfunktion und ein sauberes Ausgabefenster für den Projektor.</li><li>Er kann sich deine 20 Loops auf deinem Computer merken.</li><li>Ein Check „Bereit für die Show?“ vor dem Auftritt.</li></ul>
 <details><summary>Gut zu wissen</summary><p>Loops spielen ohne Ton. Nutze mp4-Loops (H.264) für die flüssigste Wiedergabe; die Werkzeuge können andere Formate umwandeln.</p></details>"""},
-"tools": {"title": "Werkzeuge für VJ-Loops – umwandeln, Loops erstellen und finden | Spektronautilus", "desc": "Kostenlose Browser-Werkzeuge für VJ-Loops: GIF und Video in VJ-taugliches mp4 umwandeln, nahtlose Loops erstellen, zuschneiden, Größen erzeugen, Kataloge und Pakete bauen, Dateien gesammelt umbenennen und kostenlose Quellen durchsuchen.",
+"tools": {"title": "Werkzeuge für VJ-Loops – umwandeln, Loops und Pakete erstellen | Spektronautilus", "desc": "Kostenlose Browser-Werkzeuge für VJ-Loops: GIF und Video in VJ-taugliches mp4 umwandeln, nahtlose Loops erstellen, zuschneiden, Größen erzeugen, Kataloge und Pakete bauen und Dateien gesammelt umbenennen.",
   "h1": "Werkzeuge", "lead": "Kleine Werkzeuge, die deine Loops für jede VJ-Software vorbereiten. Sie laufen in deinem Browser, und deine Dateien bleiben auf deinem Computer.",
   "body": """
 <div class="cta"><a class="btn main" href="{r}tools/app/">Werkzeuge öffnen</a></div>
@@ -62,7 +62,6 @@ T = {
 <a class="card" href="{r}tools/app/#gif2mp4"><h3>GIF zu MP4 <span class="badge live">Verfügbar</span></h3><p>Wandle GIFs gesammelt um, auch transparente, in flüssiges mp4.</p></a>
 <a class="card" href="{r}tools/app/#loop"><h3>Loops erstellen <span class="badge live">Verfügbar</span></h3><p>Prüft, ob ein Clip loopt. Falls nicht, kürzt es ihn, spielt ihn vorwärts und rückwärts oder überblendet die Enden.</p></a>
 <a class="card" href="{r}tools/app/#convert"><h3>Konvertieren <span class="badge live">Verfügbar</span></h3><p>Wandle mov, webm und andere Formate in VJ-taugliches mp4 um, mit Dateinamen für alle auf einmal.</p></a>
-<a class="card" href="{r}tools/app/#search"><h3>Loops finden <span class="badge live">Verfügbar</span></h3><p>Durchsuche kostenlose Videoquellen, lade herunter und konvertiere. Credits und Lizenzen werden gespeichert.</p></a>
 <a class="card" href="{r}tools/app/#filters"><h3>Filter <span class="badge live">Verfügbar</span></h3><p>Gib einem ganzen Ordner voller Loops VJ-Looks: Glühen, Glitch, Spiegel, Kaleidoskop, Farbstile wie Sepia und The Matrix und mehr.</p></a>
 <a class="card" href="{r}tools/app/#crop"><h3>Zuschneiden &amp; kürzen <span class="badge live">Verfügbar</span></h3><p>Schneide Clips auf Breitbild, Hochformat oder quadratisch zu und kürze Anfang und Ende, für einen ganzen Ordner auf einmal.</p></a>
 <a class="card" href="{r}tools/app/#sizes"><h3>Größen <span class="badge live">Verfügbar</span></h3><p>Erzeuge von jedem Clip in einem Rutsch einen kleinen Proxy, 720p, 1080p und 4K.</p></a>
@@ -84,8 +83,8 @@ T = {
 <h2>Kontakt</h2>
 <p>Fragen und Ideen sind willkommen: <a href="https://github.com/munkenbissniss/spektronautilus/issues">GitHub</a>.</p>
 <h2>Datenschutz</h2>
-<p>Keine Konten und kein Tracking. Videos und Musik, die du hinzufügst, werden auf deinem Gerät verarbeitet. Die Suche nach Loops kontaktiert die Videoquellen, die du auswählst.</p>
+<p>Keine Konten und kein Tracking. Videos und Musik, die du hinzufügst, werden auf deinem Gerät verarbeitet.</p>
 <h2>Lizenzen</h2>
-<p>Open Source unter der MIT-Lizenz. Videos, die du mit dem Suchwerkzeug findest, behalten ihre eigenen Lizenzen, die neben den heruntergeladenen Dateien gespeichert werden.</p>"""},
+<p>Open Source unter der MIT-Lizenz. Loops und Videos, die du hinzufügst, behalten ihre eigenen Lizenzen.</p>"""},
 },
 }

@@ -18,6 +18,9 @@ ff("-f", "lavfi", "-i", "testsrc2=size=360x640:rate=25:duration=2", *VP9, str(IN
 ff("-f", "lavfi", "-i", "testsrc2=size=180x320:rate=25:duration=2", *VP9, str(IN / "tallsmall.mp4"))
 ff("-f", "lavfi", "-i", "testsrc2=size=618x348:rate=25:duration=1", *VP9, str(IN / "odd.mp4"))   # a width that is not a multiple of 8
 ff("-f", "lavfi", "-i", "testsrc2=size=640x360:rate=30:duration=2", *VP9, str(IN / "_flat.mp4")); ff("-display_rotation", "90", "-i", str(IN / "_flat.mp4"), "-c", "copy", str(IN / "turned.mp4"))
+# a moving picture with a "logo" that stays in the bottom right corner (a small, sharp test picture), and the same as a phone clip
+ff("-f", "lavfi", "-i", "mandelbrot=size=640x360:rate=30", "-f", "lavfi", "-i", "testsrc=size=120x80:rate=30", "-t", "2", "-filter_complex", "[1:v]trim=end_frame=1,loop=-1:1:0[l];[0:v][l]overlay=500:262:shortest=1", *VP9, str(IN / "logo.mp4"))
+ff("-display_rotation", "90", "-i", str(IN / "logo.mp4"), "-c", "copy", str(IN / "turned_logo.mp4"))
 # a real moving loop (fast movement), and a short one that does not loop
 src = "/mnt/user-data/uploads/matrix-abstract-big-green-135-1920x1080-60.mp4"
 if os.path.exists(src): ff("-ss", "2", "-t", "1.5", "-i", src, "-vf", "scale=320:180,fps=30", *VP9, str(IN / "real.mp4"))
@@ -28,6 +31,11 @@ def probe(p):
     a, b = map(int, j["r_frame_rate"].split("/")); return {"w": j["width"], "h": j["height"], "fps": a / b, "n": int(j["nb_read_frames"]), "codec": j["codec_name"]}
 def psnr(a, b):
     r = subprocess.run(["ffmpeg", "-nostdin", "-i", str(a), "-i", str(b), "-lavfi", "[0:v][1:v]scale2ref=flags=bicubic[x][y];[x][y]psnr", "-f", "null", "-"], capture_output=True, text=True).stderr
+    m = re.search(r"average:([\d.]+|inf)", r); return float(m.group(1)) if m and m.group(1) != "inf" else 99.0
+
+def psnr_box(a, b, box):   # the same part (x, y, w, h as parts of the picture) of two clips
+    cr = f"crop=iw*{box[2]}:ih*{box[3]}:iw*{box[0]}:ih*{box[1]}"
+    r = subprocess.run(["ffmpeg", "-nostdin", "-i", str(a), "-i", str(b), "-lavfi", f"[0:v]{cr}[x];[1:v]{cr}[y];[x][y]psnr", "-f", "null", "-"], capture_output=True, text=True).stderr
     m = re.search(r"average:([\d.]+|inf)", r); return float(m.group(1)) if m and m.group(1) != "inf" else 99.0
 
 def host(op, a=None, b=None):
@@ -74,6 +82,9 @@ RUN = r"""async ([name, patch, tag]) => {
   return { note: r.note, ffnote: r2.note, ms, ms2, prog: [prog.length, prog[prog.length - 1], mono] };
 }"""
 CASES = [
+    ("logo removed", "logo.mp4", {"clean": {"on": True, "boxes": [[0.77, 0.71, 0.21, 0.26]]}}, {"psnr": 30, "box": [0.77, 0.71, 0.21, 0.26]}),
+    ("logo removed, phone clip (stored turned)", "turned_logo.mp4", {"clean": {"on": True, "boxes": [[0.7, 0.02, 0.28, 0.21]]}}, {"psnr": 30, "box": [0.7, 0.02, 0.28, 0.21]}),
+    ("logo removed + crop + motion frame rate", "logo.mp4", {"clean": {"on": True, "boxes": [[0.77, 0.71, 0.21, 0.26]]}, "crop": {"on": True, "shape": "11"}, "fps": {"on": True, "engine": "blend"}}, {"psnr": 26}),
     ("plain", "wide.mp4", {}, {}),
     ("odd width (rows packed tight)", "odd.mp4", {}, {}),
     ("fps60 motion", "real.mp4", {"fps": {"on": True, "engine": "motion"}}, {"psnr": 24}),
@@ -115,6 +126,9 @@ with sync_playwright() as pw:
         p = psnr(T / f"{tag}_wc.mp4", T / f"{tag}_ff.mp4")
         check(same, f"{label}: {a['w']}x{a['h']} {a['fps']:.2f} fps {a['n']} frames (ffmpeg way: {f['w']}x{f['h']} {f['fps']:.2f} fps {f['n']} frames), {r['ms']/1000:.1f} s vs {r['ms2']/1000:.1f} s" + ("" if same else f" | fast: {r['note']} | ffmpeg: {r['ffnote']}"))
         check(p >= opt.get("psnr", 28), f"{label}: picture close to the ffmpeg way (PSNR {p:.1f} dB)")
+        if opt.get("box"):
+            pb = psnr_box(T / f"{tag}_wc.mp4", T / f"{tag}_ff.mp4", opt["box"]); po = psnr_box(T / f"{tag}_wc.mp4", IN / name, opt["box"])
+            check(pb >= 26 and po < 22, f"{label}: the box is filled in like the ffmpeg way does it (PSNR {pb:.1f} dB there; against the clip with the logo {po:.1f} dB)")
         check(r["prog"][0] > 0 and r["prog"][1] > 0.97 and r["prog"][2], f"{label}: progress goes up to the end {r['prog']}")
     check(not errs, f"no script errors {errs[:2]}")
     b.close()

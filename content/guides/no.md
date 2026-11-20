@@ -187,8 +187,8 @@ Bruk mp4 (H.264) i 720p eller 1080p. Konverter andre formater og krymp store fil
 === tools
 name: Loop-verktøy
 title: Loop-verktøy: konverter, fiks, filtrer og organiser loopene dine
-desc: Gratis nettleserverktøy for VJ-loops: konverter GIF-er og video, lag sømløse loops, beskjær, endre størrelse, legg på looks, finn gratis loops og lag pakker.
-summary: Konverter, loop, beskjær, filtrer, finn og pakk videoloopene dine.
+desc: Gratis nettleserverktøy for VJ-loops: konverter GIF-er og video, lag sømløse loops, beskjær, endre størrelse, legg på looks og lag pakker.
+summary: Konverter, loop, beskjær, filtrer og pakk videoloopene dine.
 
 ## Slik fungerer verktøyene {#how}
 Åpne verktøyene og velg ett fra listen. Alle følger samme mønster:
@@ -210,17 +210,8 @@ Sjekker om et klipp allerede går rundt som en loop. Hvis det gjør det, blir de
 ## Convert {#convert}
 Gjør mov, webm, mkv, gif og andre formater om til VJ-vennlig mp4. Velg størrelse, bildefrekvens og kvalitet, og bruk [[Name template]] for å gi nytt navn i bulk. Malen kjenner koder som `{name}`, `{n}`, `{n2}` (et tall med to sifre), `{w}`, `{h}`, `{res}`, `{fps}`, `{dur}` og `{date}`. Du kan også fjerne mellomrom, bruke små bokstaver og bytte ut æøå. [Åpne dette verktøyet](@@tools/app/#convert).
 
-## Find loops {#search}
-Søk i gratis kilder etter loops, og last ned og konverter dem i ett steg. Internet Archive, Wikimedia Commons, NASA og Prelinger Archives virker uten konto. Pexels og Pixabay har mange ferdige loops, men trenger en gratis nøkkel, som tar et minutt å lage. Nøkkelen lagres bare i nettleseren din og sendes bare til den siden.
-- Som standard viser søket bare korte klipp (under 60 sekunder), skjuler statlige og militære opptak (US Army, NASA og lignende), og setter loops og GIF-animasjoner først. GIF-er looper ofte allerede og gjøres om til mp4 når du laster dem ned. NASA er av som standard: huk av hvis du vil ha romopptak. Hvert filter har en avkrysningsboks, og meldingen under søket forteller hvor mange treff som ble skjult.
-- Opphavsperson og lisens for hver nedlasting lagres i en fil som heter `credits.csv`. Lisensene varierer per klipp, så sjekk dem før du bruker et klipp offentlig.
-- Noen sider lar ikke en nettside laste ned filene sine. Bruk da [[Open page]], last ned klippet selv og slipp det i [[Convert]].
-- Last bare ned det du har rett til å bruke.
-
-[Åpne dette verktøyet](@@tools/app/#search).
-
 ## Filters {#filters}
-Legger VJ-aktige looks på en hel mappe med loops: glød, glitch, speil, kaleidoskop, VHS, duotone, pikselering og spor. Det finnes også åtte fargestiler: Blue Dream, Purple Dream, Dark Future, Sepia, The Matrix, Las Vegas, Coal og Grainy. Sett glidebryteren [[Strength]] på 50 for referanse-looken; lavere gir en lett berøring, høyere driver fargene lenger. Trykk [[Preview on first clip]] for å se hver look før du bruker dem. Hver fil får ett nytt klipp per look du velger. [Åpne dette verktøyet](@@tools/app/#filters).
+Legger VJ-aktige looks på en hel mappe med loops: glød, glitch, speil, kaleidoskop, VHS, duotone, pikselering og spor. Det finnes også ni fargestiler: Blue Dream, Purple Dream, Dark Future, Sepia, The Matrix, Las Vegas, Coal, Grainy og Cozy Night. Sett glidebryteren [[Strength]] på 50 for referanse-looken; lavere gir en lett berøring, høyere driver fargene lenger. Trykk [[Preview on first clip]] for å se hver look før du bruker dem. Hver fil får ett nytt klipp per look du velger. [Åpne dette verktøyet](@@tools/app/#filters).
 
 ## Crop & trim {#crop}
 Beskjærer klipp til bredformat, stående eller kvadrat, og trimmer start og slutt, for en hel mappe på en gang. Velg hvordan det skal passe: beskjær til nøyaktig rammen, eller legg på sorte felt. [Åpne dette verktøyet](@@tools/app/#crop).
@@ -287,6 +278,8 @@ Vil du ha en lang, glidende bevegelse? Flisen [[Ken Burns]] legger til en langso
 For silkemyke 60 fps-looper bruker du flisen [[Frame rate]]. Den lager nye bilder mellom de gamle, så en loop på 24 eller 30 fps blir 60 fps uten hakking. Et klipp som looper beholder skjøten og nøyaktig samme lengde, og klipp med gjentatte bilder (animasjon på to, eller 12 fps i en 30 fps-fil) rettes opp først. Soft blend fungerer overalt, også på mobil. Smooth motion er renere på rask action, men tregt, så hold klippene korte på mobil. AI bruker RIFE og gir best resultat i Linux-versjonen.
 
 **Den raske veien.** I de fleste nyere nettlesere, både på datamaskiner, mobiler og nettbrett, lar Hospitalet enhetens egen videobrikke og grafikkort gjøre jobben, også Smooth motion. Bildene strømmer gjennom ett og ett, så selv store klipp trenger lite minne, og videomotoren på 30 MB lastes ikke i det hele tatt. Siden sier da «Rask vei». Looker, å beholde lyden og filer den ikke kan lese (for eksempel GIF-er) går fortsatt den langsommere veien. Linux-versjonen bruker også den raske veien: grafikkortet gjør bildearbeidet, og maskinens egen ffmpeg skriver videoen på alle prosessorkjernene. Den samme ffmpeg gjør også resten (og KI), mye raskere enn nettlesermotoren. Med Video2X er KI standardmetode for nye bilder bare på et eget grafikkort; på grafikken som er innebygd i en laptop er Smooth motion mye raskere og forblir standard. Sier siden at nettleseren ikke bruker grafikkortet, slår du på maskinvareakselerasjon i nettleserinnstillingene og starter den på nytt (i Chrome viser chrome://gpu hva som brukes): uten den er den raske veien treg på en datamaskin.
+
+**Fjern logoer og tekst.** Av til du slår det på. Den ser gjennom hele klippet etter logoer, vannmerker og tekst som ligger stille oppå bildet, og viser et stillbilde med bokser. Rosa bokser blir fjernet, stiplede er bare forslag: trykk på en boks for å bytte, eller dra over bildet for å merke noe selv. Hver boks fylles inn fra bildet rundt. Det blir rent på rolige og mørke bakgrunner, og mykt på urolige.
 
 **Make it loop.** Auto leter etter måten som holder bevegelsen gående i én retning så lenge som mulig. Et klipp som allerede looper, beholdes. Ellers kuttes det ved det seneste punktet som skjøter rent mot starten (den lengste rene loopen), og finnes det ingen, blandes slutten inn i starten: plassering og lengde på crossfaden velges sammen, så de to øyeblikkene som blandes ligner mest mulig, og der de er ulike blir blandingen lengre, så den ser ut som en langsom forvandling. Fram og tilbake er siste utvei, fordi den aldri kan bevege seg lenger enn klippet er langt; vendingene bremser nå rolig ned over omtrent et sekund. Du kan også velge hver metode selv, sette crossfade-lengden for hånd eller velge raske vendinger.
 
@@ -408,7 +401,7 @@ Det finnes en versjon som kjører hele siden på din egen Linux-maskin. Den kan 
 
 Hvorfor bruke den:
 - **Fart.** Hvis `ffmpeg` er installert, bruker verktøyene den i stedet for den tregere nettlesermotoren. Siden viser da «Fast mode».
-- **Ingen minnegrense** for store filer, og du trenger ikke internett (bare [[Find loops]] trenger det).
+- **Ingen minnegrense** for store filer, og du trenger ikke internett.
 - **HAP og ProRes.** [HAP / ProRes-verktøyet](@guides/tools/#pro) virker i Linux-versjonen.
 - **KI-oppskalering og slowmotion.** KI-metodene i [Oppskalering](@guides/tools/#ai) og [Slowmotion](@guides/tools/#slowmo) bruker Video2X, hvis du har installert det. Begge fungerer også i Windows-versjonen.
 
@@ -461,7 +454,7 @@ Bruk Chrome eller Edge på en datamaskin. Koble til kontrolleren først, trykk s
 I nettleseren din, på datamaskinen din. Ferdige resultater fra verktøyene og videoer fra Magisk videomikser står på [Kø](@guides/queue/)-siden. Hvis du sletter nettstedsdata i nettleseren, er de borte, så last ned det du vil beholde.
 
 ## Personvern {#privacy}
-Ingen kontoer og ingen sporing. Videoer og musikk behandles på enheten din. Når du søker etter loops, kontaktes videokildene du velger, og valgfri Vimeo-opplasting kontakter Vimeo.
+Ingen kontoer og ingen sporing. Videoer og musikk behandles på enheten din. Bare den valgfrie Vimeo-opplastingen kontakter internett (Vimeo).
 
 ## Ta kontakt {#feedback}
 Trykk på **Tilbakemelding**-knappen nederst på alle sider og skriv hva som skjedde. Den åpner e-postprogrammet ditt med meldingen ferdig utfylt. Skriv hvilken nettleser du bruker og hva du holdt på med. Ved et problem på en show-datamaskin legger du ved rapporten fra [Klar for showet?](@guides/show-check/#report). Du kan også skrive til oss på [GitHub](https://github.com/munkenbissniss/spektronautilus/issues).

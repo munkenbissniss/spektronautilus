@@ -1,6 +1,6 @@
 Spektronautilus for Windows
 ===========================
-The whole site on your own computer. It works offline (only "Find loops" needs the internet) and your files never leave the computer.
+The whole site on your own computer. It works offline and your files never leave the computer.
 
 START
   Use the Start menu: Spektronautilus, Video DJ, VJ Mixer, Magic Video Mixer or Loop tools.

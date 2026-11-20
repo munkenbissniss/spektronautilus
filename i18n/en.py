@@ -17,7 +17,7 @@ T = {
 <a class="card" href="{r}magic-mixer/"><h3>Magic Video Mixer <span class="badge live">Available</span></h3><p>Give it a song and a folder of loops. It listens to the music and cuts together a video that follows the mood.</p></a>
 <a class="card" href="{r}live-mixer/"><h3>Video DJ <span class="badge live">Available</span></h3><p>Mix full music videos on two channels like a DJ, with a crossfader, a preview and an HDMI output.</p></a>
 <a class="card" href="{r}vj-mixer/"><h3>VJ Mixer <span class="badge live">Available</span></h3><p>Play your loops live with layers, beat effects, logo and text posters.</p></a>
-<a class="card" href="{r}tools/"><h3>Tools <span class="badge live">Available</span></h3><p>Convert GIFs and videos, make seamless loops, and find free loops online.</p></a>
+<a class="card" href="{r}tools/"><h3>Tools <span class="badge live">Available</span></h3><p>Convert GIFs and videos, make seamless loops, and get free loop packs.</p></a>
 <a class="card" href="{r}packs/"><h3>Loop Packs</h3><p>Ready-made loop packs to download and use.</p></a>
 <a class="card" href="{r}guides/"><h3>Guides</h3><p>Manuals and how-tos for everything on the site.</p></a>
 </div>
@@ -52,7 +52,7 @@ T = {
 <h2>What it does</h2>
 <ul class="spec"><li>20 loop pads. Press a pad, or its key, to play the loop on the selected layer instantly.</li><li>Two channels with three layers each, with opacity and blend modes (normal, add, screen, multiply).</li><li>Crossfader by hand, or an automatic fade.</li><li>Beat: tap the tempo, type a BPM, or let it listen to the kick drum through an audio input.</li><li>Eight beat effects: zoom, shake, flash, strobe, invert, mirror, colour spin and blur.</li><li>Preview of both channels next to the output, your own logo and sliding text posters.</li><li>MIDI control with learn, and a clean output window for the projector.</li><li>It can remember your 20 loops on your computer.</li></ul>
 <details><summary>Good to know</summary><p>Loops play without sound. Use mp4 (H.264) loops for the smoothest playback; the Tools can convert other formats.</p></details>"""},
-"tools": {"title": "VJ loop tools – convert, make loops, find loops | Spektronautilus", "desc": "Free browser tools for VJ loops: convert GIF and video to VJ-friendly mp4, make seamless loops, rename in bulk, and search free sources.",
+"tools": {"title": "VJ loop tools – convert, make loops, build packs | Spektronautilus", "desc": "Free browser tools for VJ loops: convert GIF and video to VJ-friendly mp4, make seamless loops, rename in bulk and build loop packs.",
   "h1": "Tools", "lead": "Small tools that prepare your loops for any VJ software. They run in your browser, and your files stay on your computer.",
   "body": """
 <div class="cta"><a class="btn main" href="{r}tools/app/">Open the tools</a></div>
@@ -61,7 +61,6 @@ T = {
 <a class="card" href="{r}tools/app/#gif2mp4"><h3>GIF to MP4 <span class="badge live">Available</span></h3><p>Bulk convert GIFs, also transparent ones, to smooth mp4.</p></a>
 <a class="card" href="{r}tools/app/#loop"><h3>Make loops <span class="badge live">Available</span></h3><p>Checks whether a clip loops. If not, it trims it, plays it forward and backward, or crossfades the ends.</p></a>
 <a class="card" href="{r}tools/app/#convert"><h3>Convert <span class="badge live">Available</span></h3><p>Turn mov, webm and other formats into VJ-friendly mp4, with bulk file naming.</p></a>
-<a class="card" href="{r}tools/app/#search"><h3>Find loops <span class="badge live">Available</span></h3><p>Search free video sources, then download and convert. Credits and licences are saved.</p></a>
 <a class="card" href="{r}tools/app/#filters"><h3>Filters <span class="badge live">Available</span></h3><p>Add VJ-style looks to a whole folder of loops: glow, glitch, mirror, kaleidoscope, colour styles like Sepia and The Matrix, and more.</p></a>
 <a class="card" href="{r}tools/app/#crop"><h3>Crop &amp; trim <span class="badge live">Available</span></h3><p>Cut clips to widescreen, vertical or square and trim the start and end, for a whole folder at once.</p></a>
 <a class="card" href="{r}tools/app/#sizes"><h3>Sizes <span class="badge live">Available</span></h3><p>Make a small proxy, 720p, 1080p and 4K of every clip in one go.</p></a>
@@ -83,8 +82,8 @@ T = {
 <h2>Contact</h2>
 <p>Questions and ideas are welcome: <a href="https://github.com/munkenbissniss/spektronautilus/issues">GitHub</a>.</p>
 <h2>Privacy</h2>
-<p>No accounts and no tracking. Videos and music you add are processed on your device. Searching for loops contacts the video sources you pick.</p>
+<p>No accounts and no tracking. Videos and music you add are processed on your device.</p>
 <h2>Licences</h2>
-<p>Open source under the MIT licence. Videos found with the search tool keep their own licences, which are saved next to the downloaded files.</p>"""},
+<p>Open source under the MIT licence. Loops and videos you add keep their own licences.</p>"""},
 },
 }

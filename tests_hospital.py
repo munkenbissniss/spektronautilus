@@ -53,7 +53,7 @@ with sync_playwright() as pw:
     pg = ctx.new_page(); errs = []; pg.on("pageerror", lambda e: errs.append(str(e))); pg.expose_function("host", host)
     pg.goto(URL); pg.wait_for_selector("#tabs button")
     groups = pg.locator("#tabs .tg small").evaluate_all("els => els.map(e => e.textContent)")
-    check(groups == ["Find", "Fix up", "Look", "Share and export", "New"], f"the tools are grouped: {groups}")
+    check(groups == ["Fix up", "Look", "Share and export", "New"], f"the tools are grouped: {groups}")
     tabs = pg.locator("#tabs button").all_inner_texts()
     check("Slow motion" in tabs and "Upscale" in tabs and "AI upscale" not in tabs, f"Slow motion and Upscale are tools: {tabs}")
     check(pg.locator("#tabs a.hosp").get_attribute("href") == "../hospital/", "link to the Loop Hospital")

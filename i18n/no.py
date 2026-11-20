@@ -17,7 +17,7 @@ T = {
 <a class="card" href="{r}magic-mixer/"><h3>Magisk videomikser <span class="badge live">Tilgjengelig</span></h3><p>Gi den en sang og en mappe med loops. Den lytter til musikken og klipper sammen en video som følger stemningen.</p></a>
 <a class="card" href="{r}live-mixer/"><h3>Video DJ <span class="badge live">Tilgjengelig</span></h3><p>Miks hele musikkvideoer på to kanaler som en DJ, med crossfader, forhåndsvisning og HDMI-utgang.</p></a>
 <a class="card" href="{r}vj-mixer/"><h3>VJ-mikser <span class="badge live">Tilgjengelig</span></h3><p>Spill loopene dine live med lag, beat-effekter, logo og tekstplakater.</p></a>
-<a class="card" href="{r}tools/"><h3>Verktøy <span class="badge live">Tilgjengelig</span></h3><p>Konverter GIF-er og videoer, lag sømløse loops og finn gratis loops på nett.</p></a>
+<a class="card" href="{r}tools/"><h3>Verktøy <span class="badge live">Tilgjengelig</span></h3><p>Konverter GIF-er og videoer, lag sømløse loops og hent gratis looppakker.</p></a>
 <a class="card" href="{r}packs/"><h3>Loop-pakker</h3><p>Ferdige loop-pakker du kan laste ned og bruke.</p></a>
 <a class="card" href="{r}guides/"><h3>Guider</h3><p>Manualer og veiledninger for alt på siden.</p></a>
 </div>
@@ -52,7 +52,7 @@ T = {
 <h2>Hva den gjør</h2>
 <ul class="spec"><li>20 loop-pads. Trykk på en pad, eller tasten for den, så spilles loopen med en gang på valgt lag.</li><li>To kanaler med tre lag hver, med gjennomsiktighet og blandemoduser (normal, add, screen, multiply).</li><li>Crossfader for hånd, eller automatisk overgang.</li><li>Beat: tapp tempoet, skriv inn BPM, eller la den lytte etter basstrommen via en lydinngang.</li><li>Åtte beat-effekter: zoom, risting, blitz, strobe, invertering, speil, fargerotasjon og uskarphet.</li><li>Forhåndsvisning av begge kanaler ved siden av utgangen, din egen logo og glidende tekstplakater.</li><li>MIDI-styring med innlæring, og et rent utgangsvindu for projektoren.</li><li>Den kan huske de 20 loopene dine på datamaskinen.</li></ul>
 <details><summary>Greit å vite</summary><p>Loops spilles uten lyd. Bruk mp4-loops (H.264) for jevnest avspilling. Verktøyene kan konvertere andre formater.</p></details>"""},
-"tools": {"title": "Verktøy for VJ-loops – konverter, lag loops, finn loops | Spektronautilus", "desc": "Gratis nettleserverktøy for VJ-loops: konverter GIF og video til VJ-vennlig mp4, lag sømløse loops, gi nytt navn i bulk og søk i gratis kilder.",
+"tools": {"title": "Verktøy for VJ-loops – konverter, lag loops, bygg pakker | Spektronautilus", "desc": "Gratis nettleserverktøy for VJ-loops: konverter GIF og video til VJ-vennlig mp4, lag sømløse loops, gi nytt navn i bulk og bygg loop-pakker.",
   "h1": "Verktøy", "lead": "Små verktøy som gjør loopene dine klare for all VJ-programvare. De kjører i nettleseren, og filene dine blir på datamaskinen din.",
   "body": """
 <div class="cta"><a class="btn main" href="{r}tools/app/">Åpne verktøyene</a></div>
@@ -62,7 +62,6 @@ T = {
 <a class="card" href="{r}tools/app/#gif2mp4"><h3>GIF til MP4 <span class="badge live">Tilgjengelig</span></h3><p>Konverter GIF-er i bulk, også gjennomsiktige, til jevn mp4.</p></a>
 <a class="card" href="{r}tools/app/#loop"><h3>Lag loops <span class="badge live">Tilgjengelig</span></h3><p>Sjekker om et klipp loopes. Hvis ikke trimmer den, spiller frem og tilbake, eller toner endene i hverandre.</p></a>
 <a class="card" href="{r}tools/app/#convert"><h3>Konverter <span class="badge live">Tilgjengelig</span></h3><p>Gjør mov, webm og andre formater om til VJ-vennlig mp4, med filnavn i bulk.</p></a>
-<a class="card" href="{r}tools/app/#search"><h3>Finn loops <span class="badge live">Tilgjengelig</span></h3><p>Søk i gratis videokilder, last ned og konverter. Kreditering og lisens lagres.</p></a>
 <a class="card" href="{r}tools/app/#filters"><h3>Filtre <span class="badge live">Tilgjengelig</span></h3><p>Legg VJ-looks på en hel mappe med loops: glød, glitch, speil, kaleidoskop, fargestiler som Sepia og The Matrix, og flere.</p></a>
 <a class="card" href="{r}tools/app/#crop"><h3>Beskjær og trim <span class="badge live">Tilgjengelig</span></h3><p>Kutt klipp til bredformat, stående eller kvadrat og trim start og slutt, for en hel mappe samtidig.</p></a>
 <a class="card" href="{r}tools/app/#sizes"><h3>Størrelser <span class="badge live">Tilgjengelig</span></h3><p>Lag en liten proxy, 720p, 1080p og 4K av hvert klipp i én operasjon.</p></a>
@@ -84,8 +83,8 @@ T = {
 <h2>Kontakt</h2>
 <p>Spørsmål og ideer er velkomne: <a href="https://github.com/munkenbissniss/spektronautilus/issues">GitHub</a>.</p>
 <h2>Personvern</h2>
-<p>Ingen kontoer og ingen sporing. Video og musikk du legger til behandles på enheten din. Når du søker etter loops, kontakter nettleseren videokildene du velger.</p>
+<p>Ingen kontoer og ingen sporing. Video og musikk du legger til behandles på enheten din.</p>
 <h2>Lisenser</h2>
-<p>Åpen kildekode under MIT-lisensen. Videoer funnet med søkeverktøyet beholder sine egne lisenser, som lagres ved siden av de nedlastede filene.</p>"""},
+<p>Åpen kildekode under MIT-lisensen. Loops og videoer du legger til, beholder sine egne lisenser.</p>"""},
 },
 }

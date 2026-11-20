@@ -14,7 +14,7 @@ The site is static (GitHub Pages: publish the `docs/` folder). English is at the
 | `docs/live-mobile/` | Phone Video DJ (`index.html`) and the receiver page for sending the picture to another screen (`receiver.html`, `cast.js`) |
 | `docs/vj-pad/` | VJ Mixer (same layout as the Video DJ; shares `../live-dj/core.js`) |
 | `docs/tools/hospital/` | Loop Hospital: examine one clip and treat it step by step (cut, crop, slow motion, upscale, resize, look, loop fix), with before/after preview |
-| `docs/tools/app/` | The loop tools (convert, GIF→MP4, make loops, filters, find loops, crop & trim, sizes, HAP/ProRes, upscale and slow motion (sharp/blend/motion methods everywhere; AI methods in the Linux and Windows versions + your own Video2X), catalogue, loop pack). Needs the engine files, see below. |
+| `docs/tools/app/` | The loop tools (convert, GIF→MP4, make loops, filters, crop & trim, sizes, HAP/ProRes, upscale and slow motion (sharp/blend/motion methods everywhere; AI methods in the Linux and Windows versions + your own Video2X), catalogue, loop pack). Needs the engine files, see below. |
 | `docs/shared/` | Shared scripts: queue, offline (service worker registration), language (`i18n.js` + `lang/`, generated), the "Ready for the show?" check (`check.js`, `testcard.html`) |
 | `src/i18n-app/` | The texts of the apps and their translations (`en.txt` is the master, one string per line; `t*.txt` hold `ID ¦ no ¦ es ¦ de ¦ pt`). `build_i18n.py` turns them into `docs/shared/lang/*.js` and checks that nothing is missing. |
 | `build.py`, `i18n/`, `home_text.py`, `content/`, `data/`, `src/` | Generator for the pages around the apps (home, landing pages, guides, packs, sitemap). The front page texts are in `home_text.py` (all languages side by side) |
@@ -46,7 +46,7 @@ python3 tests_home.py          # the front page in five languages: every link wo
 python3 tests_mixer_render.py  # Magic Mixer (desktop and phone) makes a real video in the browser; a broken render must not freeze the queue
 python3 tests_v2x.py           # AI upscale with Video2X, tested with a stand-in program (real Video2X needs a Vulkan GPU)
 python3 tests_newtools.py      # crop & trim, sizes, HAP/ProRes, catalogue, loop pack (real ffmpeg)
-node --test tests_filters.mjs   # runs all twenty filters with the computer's own ffmpeg
+node --test tests_filters.mjs   # runs all twenty-one filters with the computer's own ffmpeg
 node --test tests_life.mjs        # Loop Hospital "Bring it to life": real ffmpeg, seamless loop, still pictures move, 16 s
 node tests_fps.mjs              # "Frame rate": 60 fps without stutter, loop seam and length kept, stepping fixed, AI (stand-in) path
 node tests_smooth.mjs           # "Smooth out": stray frames found, a lurch is evened out, works after Cut

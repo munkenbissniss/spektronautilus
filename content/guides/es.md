@@ -187,8 +187,8 @@ Usa mp4 (H.264) en 720p o 1080p. Convierte otros formatos y reduce los archivos 
 === tools
 name: Herramientas de loops
 title: Herramientas de loops: convierte, arregla, filtra y organiza tus loops
-desc: Herramientas gratuitas en el navegador para loops de VJ: convierte GIF y video, crea loops perfectos, recorta, cambia el tamaño, añade looks, encuentra loops gratis y crea paquetes.
-summary: Convierte, enlaza, recorta, filtra, busca y empaqueta tus loops de video.
+desc: Herramientas gratuitas en el navegador para loops de VJ: convierte GIF y video, crea loops perfectos, recorta, cambia el tamaño, añade looks y crea paquetes.
+summary: Convierte, enlaza, recorta, filtra y empaqueta tus loops de video.
 
 ## Cómo funcionan las herramientas {#how}
 Abre las herramientas y elige una de la lista. Todas siguen el mismo patrón:
@@ -210,17 +210,8 @@ Comprueba si un clip ya enlaza como loop. Si es así, lo deja como está. Si no,
 ## Convert {#convert}
 Convierte mov, webm, mkv, gif y otros formatos en mp4 adecuado para VJ. Elige tamaño, fotogramas por segundo y calidad, y usa una [[Name template]] para renombrar en bloque. La plantilla entiende códigos como `{name}`, `{n}`, `{n2}` (un número de dos cifras), `{w}`, `{h}`, `{res}`, `{fps}`, `{dur}` y `{date}`. También puedes quitar espacios, pasar a minúsculas y sustituir æøå. [Abrir esta herramienta](@@tools/app/#convert).
 
-## Find loops {#search}
-Busca loops en fuentes gratuitas, y descárgalos y conviértelos de una vez. Internet Archive, Wikimedia Commons, NASA y los Prelinger Archives funcionan sin cuenta. Pexels y Pixabay tienen muchos loops ya hechos, pero necesitan una clave gratuita, que se consigue en un minuto. La clave se guarda solo en tu navegador y solo se envía a ese sitio.
-- De forma predeterminada, la búsqueda muestra solo clips cortos (menos de 60 segundos), oculta el material gubernamental y militar (US Army, NASA y similares) y pone primero los loops y las animaciones GIF. Los GIF a menudo ya hacen bucle y se convierten a mp4 al descargarlos. NASA está desactivada por defecto: márcala si quieres imágenes del espacio. Cada filtro tiene una casilla, y el mensaje bajo la búsqueda indica cuántos resultados se ocultaron.
-- El autor y la licencia de cada descarga se guardan en un archivo llamado `credits.csv`. Las licencias varían según el clip, así que compruébalas antes de usar un clip en público.
-- Algunos sitios no permiten que una página web descargue sus archivos. Entonces usa [[Open page]], descarga el clip tú mismo y suéltalo en [[Convert]].
-- Descarga solo lo que tengas derecho a usar.
-
-[Abrir esta herramienta](@@tools/app/#search).
-
 ## Filters {#filters}
-Añade looks de estilo VJ a una carpeta entera de loops: brillo, glitch, espejo, caleidoscopio, VHS, duotono, pixelado y estelas. También hay ocho estilos de color: Blue Dream, Purple Dream, Dark Future, Sepia, The Matrix, Las Vegas, Coal y Grainy. Pon el control [[Strength]] en 50 para el aspecto de referencia; más bajo es un toque suave, más alto lleva los colores más lejos. Pulsa [[Preview on first clip]] para ver cada look antes de aplicarlos. Cada archivo recibe un clip nuevo por cada look que elijas. [Abrir esta herramienta](@@tools/app/#filters).
+Añade looks de estilo VJ a una carpeta entera de loops: brillo, glitch, espejo, caleidoscopio, VHS, duotono, pixelado y estelas. También hay nueve estilos de color: Blue Dream, Purple Dream, Dark Future, Sepia, The Matrix, Las Vegas, Coal, Grainy y Cozy Night. Pon el control [[Strength]] en 50 para el aspecto de referencia; más bajo es un toque suave, más alto lleva los colores más lejos. Pulsa [[Preview on first clip]] para ver cada look antes de aplicarlos. Cada archivo recibe un clip nuevo por cada look que elijas. [Abrir esta herramienta](@@tools/app/#filters).
 
 ## Crop & trim {#crop}
 Recorta clips a formato panorámico, vertical o cuadrado, y recorta el principio y el final, para una carpeta entera de una vez. Elige cómo encajar: recortar al marco exacto o añadir barras negras. [Abrir esta herramienta](@@tools/app/#crop).
@@ -287,6 +278,8 @@ Los loops quietos o cortos cobran vida con la ficha [[Bring it to life]]. Elige 
 Para loops sedosos a 60 fps, usa la ficha [[Frame rate]]. Crea fotogramas nuevos entre los antiguos, así que un loop de 24 o 30 fps pasa a 60 fps sin tirones. Un clip en bucle mantiene su unión y su duración exacta, y los clips con fotogramas repetidos (animación a doses, o 12 fps en un archivo de 30 fps) se corrigen primero. Soft blend funciona en todas partes, también en el móvil. Smooth motion es más limpio en acción rápida pero lento, así que mantén los clips cortos en el móvil. La IA usa RIFE y da el mejor resultado en la versión de Linux.
 
 **La vía rápida.** En la mayoría de los navegadores recientes, tanto en ordenadores como en móviles y tabletas, el Hospital deja que el propio chip de vídeo y la tarjeta gráfica de tu dispositivo hagan el trabajo, Smooth motion incluido. Los fotogramas pasan de uno en uno, así que incluso los clips grandes necesitan poca memoria, y el motor de vídeo de 30 MB ni siquiera se carga. La página dice entonces «Vía rápida». Los looks, conservar el sonido y los archivos que no puede leer (por ejemplo, GIF) siguen yendo por la vía más lenta. La versión de Linux también usa la vía rápida: la tarjeta gráfica hace el trabajo de imagen y el ffmpeg del propio ordenador escribe el vídeo con todos los núcleos del procesador. Ese ffmpeg hace también lo demás (y la IA), mucho más rápido que el motor del navegador. Con Video2X, la IA es el método por defecto para los fotogramas nuevos solo con una tarjeta gráfica dedicada; con la gráfica integrada de un portátil, Smooth motion es mucho más rápido y sigue siendo el método por defecto. Si la página dice que el navegador no usa la tarjeta gráfica, activa la aceleración por hardware en sus ajustes y reinícialo (en Chrome, chrome://gpu muestra qué se usa): sin ella la vía rápida es lenta en un ordenador.
+
+**Quitar logos y texto.** Desactivado hasta que lo actives. Revisa todo el clip en busca de logos, marcas de agua y texto que están quietos encima de la imagen, y muestra una imagen fija con recuadros. Los recuadros rosas se quitan; los discontinuos son solo sugerencias: toca un recuadro para cambiarlo, o arrastra sobre la imagen para marcar algo tú mismo. Cada recuadro se rellena con la imagen de alrededor. Queda limpio en fondos tranquilos y oscuros, y suave en los muy cargados.
 
 **Make it loop.** Auto busca la forma de mantener el movimiento en una sola dirección el mayor tiempo posible. Un clip que ya está en bucle se conserva. Si no, corta en el último punto que enlaza limpiamente con el principio (el bucle limpio más largo), y si no lo hay, funde el final con el principio: la posición y la duración del fundido se eligen juntas para que los dos momentos mezclados se parezcan lo más posible, y donde difieren más el fundido se alarga para que se vea como una transformación lenta. Ida y vuelta es el último recurso, porque nunca puede moverse más de lo que dura el clip; sus giros ahora frenan suavemente durante aproximadamente un segundo. También puedes elegir cada método tú mismo, fijar la duración del fundido a mano o elegir giros rápidos.
 
@@ -408,7 +401,7 @@ Hay una versión que ejecuta toda la web en tu propio ordenador Linux. Solo es a
 
 Por qué usarla:
 - **Velocidad.** Si `ffmpeg` está instalado, las herramientas lo usan en lugar del motor más lento del navegador. La página dice entonces «Fast mode».
-- **Sin límite de memoria** para archivos grandes, y no hace falta internet (solo [[Find loops]] lo necesita).
+- **Sin límite de memoria** para archivos grandes, y no hace falta internet.
 - **HAP y ProRes.** La [herramienta HAP / ProRes](@guides/tools/#pro) funciona en la versión para Linux.
 - **Ampliación y cámara lenta con IA.** Los métodos de IA de [Ampliar](@guides/tools/#ai) y [Cámara lenta](@guides/tools/#slowmo) usan Video2X, si lo has instalado. Ambos funcionan también en la versión de Windows.
 
@@ -461,7 +454,7 @@ Usa Chrome o Edge en un ordenador. Conecta primero el controlador, luego pulsa [
 En tu navegador, en tu ordenador. Los resultados terminados de las herramientas y los videos del Mezclador mágico aparecen en la página [Cola](@guides/queue/). Si borras los datos del sitio en tu navegador, desaparecen, así que descarga lo que quieras conservar.
 
 ## Privacidad {#privacy}
-Sin cuentas y sin seguimiento. Los videos y la música se procesan en tu dispositivo. Al buscar loops se contacta con las fuentes de video que elijas, y la subida opcional a Vimeo contacta con Vimeo.
+Sin cuentas y sin seguimiento. Los videos y la música se procesan en tu dispositivo. Solo la subida opcional a Vimeo contacta con internet (Vimeo).
 
 ## Ponte en contacto {#feedback}
 Pulsa el botón **Comentarios**, al pie de cada página, y escribe qué ha pasado. Abre tu programa de correo con el mensaje ya preparado. Añade qué navegador usas y qué estabas haciendo. Si el problema es en el ordenador de un show, añade el informe de [¿Listo para el show?](@guides/show-check/#report). También puedes escribirnos en [GitHub](https://github.com/munkenbissniss/spektronautilus/issues).

@@ -1429,3 +1429,17 @@ Back and forth: the turns
 Gentle
 Quick
 Gentle slows down over about a second before it turns, which looks more natural. Quick turns in about half a second.
+Remove logos and text
+Takes away logos, watermarks and text that sit on top of the picture. The boxes it finds are suggestions: tap a box to use it or not, or drag across the picture to mark something yourself. The box is filled in from the picture around it, which works best on calm or dark backgrounds.
+A still from the clip. Marked boxes will be removed.
+Find them again
+Clear all
+{a} box will be removed.
+{a} boxes will be removed.
+Dashed boxes are left alone.
+Tap a box to remove it.
+Nothing found. Drag across the picture to mark a logo.
+Looking for logos and text…
+Could not look at the clip:
+Cozy Night
+A storybook night: deep indigo and blue, ink-dark lines, and only the brightest spots glow as warm yellow windows.

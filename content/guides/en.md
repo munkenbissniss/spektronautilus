@@ -187,8 +187,8 @@ Use mp4 (H.264) at 720p or 1080p. Convert other formats and shrink big files wit
 === tools
 name: Loop tools
 title: Loop tools: convert, fix, filter and organise your loops
-desc: Free browser tools for VJ loops: convert GIFs and videos, make seamless loops, crop, resize, add looks, find free loops and bundle packs.
-summary: Convert, loop, crop, filter, find and pack your video loops.
+desc: Free browser tools for VJ loops: convert GIFs and videos, make seamless loops, crop, resize, add looks and bundle packs.
+summary: Convert, loop, crop, filter and pack your video loops.
 
 ## How the tools work {#how}
 Open the tools and pick one from the list. Every tool follows the same pattern:
@@ -210,17 +210,8 @@ Checks whether a clip already loops. If it does, it is left alone. If not, it ca
 ## Convert {#convert}
 Turns mov, webm, mkv, gif and other formats into VJ-friendly mp4. Choose size, frame rate and quality, and use a [[Name template]] to rename in bulk. The template understands tokens such as `{name}`, `{n}`, `{n2}` (a number with two digits), `{w}`, `{h}`, `{res}`, `{fps}`, `{dur}` and `{date}`. You can also remove spaces, switch to lowercase and replace æøå. [Open this tool](@@tools/app/#convert).
 
-## Find loops {#search}
-Search free sources for loops, then download and convert them in one go. Internet Archive, Wikimedia Commons, NASA and the Prelinger Archives work without an account. Pexels and Pixabay have many ready-made loops, but need a free key, which takes a minute. The key is stored only in your browser and is sent only to that site.
-- By default the search shows only short clips (under 60 seconds), hides government and military footage (US Army, NASA and similar), and puts loops and GIF animations first. GIFs often loop already and are converted to mp4 when you download them. NASA is off by default: tick it if you want space footage. Each filter has a checkbox, and the message under the search tells you how many results were hidden.
-- The author and licence of every download are saved in a file called `credits.csv`. Licences differ per clip, so check them before you use a clip in public.
-- Some sites do not let a web page download their files. Then use [[Open page]], download the clip yourself and drop it into [[Convert]].
-- Only download things you have the right to use.
-
-[Open this tool](@@tools/app/#search).
-
 ## Filters {#filters}
-Adds VJ-style looks to a whole folder of loops: glow, glitch, mirror, kaleidoscope, VHS, duotone, pixelate and trails. There are also eight colour styles: Blue Dream, Purple Dream, Dark Future, Sepia, The Matrix, Las Vegas, Coal and Grainy. Set the [[Strength]] slider to 50 for the reference look; lower is a light touch, higher pushes the colours further. Press [[Preview on first clip]] to see each look before you apply them. Every file gets one new clip per look you pick. [Open this tool](@@tools/app/#filters).
+Adds VJ-style looks to a whole folder of loops: glow, glitch, mirror, kaleidoscope, VHS, duotone, pixelate and trails. There are also nine colour styles: Blue Dream, Purple Dream, Dark Future, Sepia, The Matrix, Las Vegas, Coal, Grainy and Cozy Night. Set the [[Strength]] slider to 50 for the reference look; lower is a light touch, higher pushes the colours further. Press [[Preview on first clip]] to see each look before you apply them. Every file gets one new clip per look you pick. [Open this tool](@@tools/app/#filters).
 
 ## Crop & trim {#crop}
 Cuts clips to widescreen, vertical or square, and trims the start and the end, for a whole folder at once. Choose how to fit: crop to exactly the box, or letterbox with bars. [Open this tool](@@tools/app/#crop).
@@ -287,6 +278,8 @@ Want a long, gliding movement? The [[Ken Burns]] tile adds a slow zoom or pan ov
 For silky 60 fps loops, use the [[Frame rate]] tile. It makes new frames between the old ones, so a 24 or 30 fps loop becomes 60 fps without stutter. A clip that loops keeps its seam and its exact length, and clips with repeated frames (animation on twos, or 12 fps in a 30 fps file) are straightened out first. Soft blend works everywhere, also on a phone. Smooth motion is cleaner on fast action but slow, so keep clips short on a phone. AI uses RIFE and gives the best result in the Linux version.
 
 **The fast way.** In most newer browsers, on computers, phones and tablets alike, the Hospital lets your device's own video chip and graphics card do the work, Smooth motion included. The frames stream through one at a time, so even big clips need little memory, and the 30 MB video engine is not loaded at all. The page then says “Fast way”. Looks, keeping the sound and files it cannot read (GIFs, for example) still take the slower way. The Linux version uses the fast way too: the graphics card does the picture work and the computer's own ffmpeg writes the video on all processor cores. Its ffmpeg also does the rest (and AI), much faster than the browser engine. With Video2X, AI is the default method for new frames only on a separate graphics card; on a laptop's built-in graphics, Smooth motion is much quicker and stays the default. If the page says the browser does not use the graphics card, turn on hardware acceleration in the browser settings and restart it (in Chrome, chrome://gpu shows what is used): without it the fast way is slow on a computer.
+
+**Remove logos and text.** Off unless you turn it on. It looks through the whole clip for logos, watermarks and text that sit still on top of the picture, and shows a still with boxes. Pink boxes are removed, dashed ones are only suggestions: tap a box to switch it, or drag across the picture to mark something yourself. Each box is filled in from the picture around it. That looks clean on calm and dark backgrounds, and soft on busy ones.
 
 **Make it loop.** Auto looks for the way that keeps the movement going in one direction for as long as possible. A clip that already loops is kept. Otherwise it cuts at the latest point that joins the start cleanly (the longest clean loop), and if there is none, it blends the end into the start: the place and the length of that crossfade are chosen together, so the two blended moments look as much alike as possible, and where they differ more the blend is made longer so it reads as a slow morph. Back and forth is the last resort, because it can never move further than the clip is long; its turns now slow down gently over about a second. You can also pick each method yourself, set the crossfade length by hand, or choose quick turns.
 
@@ -408,7 +401,7 @@ There is a version that runs the whole site on your own Linux computer. It is on
 
 Why use it:
 - **Speed.** If `ffmpeg` is installed, the tools use it instead of the slower browser engine. The page then says “Fast mode”.
-- **No memory limit** for big files, and no internet is needed (only [[Find loops]] needs it).
+- **No memory limit** for big files, and no internet is needed.
 - **HAP and ProRes.** The [HAP / ProRes tool](@guides/tools/#pro) works in the Linux version.
 - **AI upscaling and slow motion.** The AI methods in [Upscale](@guides/tools/#ai) and [Slow motion](@guides/tools/#slowmo) use Video2X, if you have installed it. Both also work in the Windows version.
 
@@ -461,7 +454,7 @@ Use Chrome or Edge on a computer. Plug in the controller first, then press [[Ena
 In your browser, on your computer. Finished tool results and Magic Mixer videos are listed on the [Queue](@guides/queue/) page. If you clear the site data of your browser, they are gone, so download what you want to keep.
 
 ## Privacy {#privacy}
-No accounts and no tracking. Videos and music are processed on your device. Searching for loops contacts the video sources you pick, and the optional Vimeo upload contacts Vimeo.
+No accounts and no tracking. Videos and music are processed on your device. Only the optional Vimeo upload contacts the internet (Vimeo).
 
 ## Get in touch {#feedback}
 Press the **Feedback** button, at the bottom of every page, and write what happened. It opens your email program with the message filled in. Add what browser you use and what you were doing. For a problem on a show computer, add the report from [Ready for the show?](@guides/show-check/#report). You can also write to us on [GitHub](https://github.com/munkenbissniss/spektronautilus/issues).

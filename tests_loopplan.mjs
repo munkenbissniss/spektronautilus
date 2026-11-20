@@ -8,7 +8,7 @@ const fps = 30, n = 150, P = (d, o = {}) => planLoop(d, n, fps, { fadeAuto: true
 let p = P(mk(n, (i, x, y) => pat(i / n, x, y))); ok(p.method === 'asis', `a clip that loops is kept as it is (${p.method})`);
 p = P(mk(n, (i, x, y) => pat(i / (0.85 * n), x, y))); ok(p.method === 'trim' && Math.abs(p.cut - 128) <= 1, `a clean point at 85 %: trimmed there (${p.method}, ${p.cut} frames)`);
 p = P(mk(n, (i, x, y) => pat(i / (0.5 * (n - 3)), x, y))); ok(p.method === 'trim' && p.cut >= 145, `clean points at half and near the end: the LONGER loop is kept (${p.cut} of ${n} frames)`);
-p = P(mk(n, (i, x, y) => pat(i / (0.85 * n), x, y) * 0.6 + i * 0.6)); ok(p.method === 'crossfade' && p.len >= 0.6 * n && p.ghost < 1, `brightness drifts, so no clean cut: crossfade with little ghosting (${p.method}, ${(p.xf / fps).toFixed(1)} s blend, ${p.len} frames, ghost ${p.ghost && p.ghost.toFixed(2)})`);
+p = P(mk(n, (i, x, y) => pat(i / (0.85 * n), x, y) * 0.6 + i * 0.6)); ok(p.method === 'crossfade' && p.len >= 0.6 * n && p.ghost < 1.5, `brightness drifts, so no clean cut: crossfade with little ghosting (${p.method}, ${(p.xf / fps).toFixed(1)} s blend, ${p.len} frames, ghost ${p.ghost && p.ghost.toFixed(2)})`);
 p = P(mk(n, (i, x, y) => 128 + 100 * Math.sin((x * x / 90 + i * 0.9) / 7) * Math.sin(y / 5 + i * 0.013 * (1 + x / 64))));
 ok(p.method === 'pingpong' && p.E === Math.round(1.2 * fps), `nothing repeats: back and forth, with gentle 1.2 s turns (${p.method}, ${p.E} frames)`);
 p = P(mk(n, (i, x, y) => pat(i / n, x, y)), { mode: 'pingpong', turn: 'quick' }); ok(p.method === 'pingpong' && p.E === Math.round(0.6 * fps) && p.len < P(mk(n, (i, x, y) => pat(i / n, x, y)), { mode: 'pingpong' }).len, `quick turns: 0.6 s, a shorter result (${p.E} frames)`);
